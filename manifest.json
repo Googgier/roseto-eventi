@@ -1,0 +1,26 @@
+{
+  "name": "Eventi Roseto & Dintorni",
+  "short_name": "Eventi Roseto",
+  "description": "Eventi, sagre e concerti nel raggio di 25 km da Roseto degli Abruzzi",
+  "start_url": "/roseto-eventi/",
+  "scope": "/roseto-eventi/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f5f5f5",
+  "theme_color": "#1a1a2e",
+  "categories": ["events", "lifestyle", "travel"],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
