@@ -6,31 +6,40 @@
 <title>Eventi Roseto degli Abruzzi & Dintorni</title>
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#222;line-height:1.5}
+  :root{--bg:#f5f5f5;--card:#fff;--text:#222;--title:#1a1a2e;--sub:#666;--desc:#555;--meta:#888;--border:#e0e0e0;--search-bg:#fff;--tag-bg:#eef2ff;--tag:#4f46e5;--btn-bg:#fff;--btn-border:#ddd;--btn-hover:#e8e8e8;--shadow:rgba(0,0,0,.06);--shadow-hover:rgba(0,0,0,.1)}
+  @media(prefers-color-scheme:dark){
+    :root{--bg:#121212;--card:#1e1e1e;--text:#e4e4e4;--title:#f0f0f0;--sub:#aaa;--desc:#bbb;--meta:#999;--border:#333;--search-bg:#1e1e1e;--tag-bg:#1e293b;--tag:#93c5fd;--btn-bg:#2a2a2a;--btn-border:#444;--btn-hover:#3a3a3a;--shadow:rgba(0,0,0,.3);--shadow-hover:rgba(0,0,0,.4)}
+  }
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;transition:background .3s,color .3s}
   .container{max-width:960px;margin:0 auto;padding:1rem}
-  h1{font-size:1.5rem;margin-bottom:.25rem;color:#1a1a2e}
-  .subtitle{color:#666;font-size:.9rem;margin-bottom:1rem}
-  .search-bar{position:sticky;top:0;z-index:10;background:#fff;padding:.75rem;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.08);margin-bottom:1rem}
-  #search{width:100%;padding:.7rem 1rem;border:2px solid #e0e0e0;border-radius:8px;font-size:1rem;outline:none;transition:border-color .2s}
-  #search:focus{border-color:#1a1a2e}
+  h1{font-size:1.5rem;margin-bottom:.25rem;color:var(--title)}
+  .subtitle{color:var(--sub);font-size:.9rem;margin-bottom:1rem}
+  .search-bar{position:sticky;top:0;z-index:10;background:var(--search-bg);padding:.75rem;border-radius:12px;box-shadow:0 2px 8px var(--shadow);margin-bottom:1rem;transition:background .3s}
+  #search{width:100%;padding:.7rem 1rem;border:2px solid var(--border);border-radius:8px;font-size:1rem;outline:none;transition:border-color .2s;background:var(--card);color:var(--text)}
+  #search:focus{border-color:var(--title)}
   .filtri{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.5rem}
-  .filtri button{padding:.35rem .8rem;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;transition:all .2s}
-  .filtri button.attivo{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
-  .filtri button:hover:not(.attivo){background:#e8e8e8}
-  .evento{background:#fff;border-radius:12px;padding:1rem;margin-bottom:.75rem;box-shadow:0 1px 4px rgba(0,0,0,.06);transition:box-shadow .2s}
-  .evento:hover{box-shadow:0 3px 12px rgba(0,0,0,.1)}
+  .filtri button{padding:.35rem .8rem;border:1px solid var(--btn-border);border-radius:20px;background:var(--btn-bg);cursor:pointer;font-size:.8rem;transition:all .2s;color:var(--text)}
+  .filtri button.attivo{background:var(--title);color:#fff;border-color:var(--title)}
+  .filtri button:hover:not(.attivo){background:var(--btn-hover)}
+  .evento{background:var(--card);border-radius:12px;padding:1rem;margin-bottom:.75rem;box-shadow:0 1px 4px var(--shadow);transition:box-shadow .2s,background .3s}
+  .evento:hover{box-shadow:0 3px 12px var(--shadow-hover)}
   .evento.hidden{display:none}
   .evento .data{font-size:.8rem;color:#e94560;font-weight:600;margin-bottom:.2rem}
-  .evento .titolo{font-size:1.05rem;font-weight:600;color:#1a1a2e;margin-bottom:.2rem}
-  .evento .luogo{font-size:.85rem;color:#888;margin-bottom:.3rem}
+  .evento .titolo{font-size:1.05rem;font-weight:600;color:var(--title);margin-bottom:.2rem}
+  .evento .luogo{font-size:.85rem;color:var(--meta);margin-bottom:.3rem}
   .evento .luogo::before{content:"📍 "}
-  .evento .desc{font-size:.9rem;color:#555}
+  .evento .desc{font-size:.9rem;color:var(--desc)}
   .evento .etichette{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.5rem}
-  .evento .etichetta{font-size:.7rem;padding:.15rem .55rem;border-radius:10px;background:#eef2ff;color:#4f46e5}
-  .intestazione-comune{font-size:1.2rem;font-weight:700;color:#1a1a2e;margin:1.5rem 0 .75rem;padding-bottom:.3rem;border-bottom:2px solid #e94560}
-  .stats{text-align:center;font-size:.8rem;color:#999;margin-bottom:1rem}
-  #nessun-risultato{text-align:center;padding:2rem;color:#999;display:none}
-  footer{text-align:center;font-size:.75rem;color:#aaa;padding:2rem 0}
+  .evento .etichetta{font-size:.7rem;padding:.15rem .55rem;border-radius:10px;background:var(--tag-bg);color:var(--tag)}
+  .intestazione-comune{font-size:1.2rem;font-weight:700;color:var(--title);margin:1.5rem 0 .75rem;padding-bottom:.3rem;border-bottom:2px solid #e94560}
+  .stats{text-align:center;font-size:.8rem;color:var(--meta);margin-bottom:1rem}
+  #nessun-risultato{text-align:center;padding:2rem;color:var(--meta);display:none}
+  .ad-banner{text-align:center;padding:1.5rem 1rem;margin:1.5rem 0;min-height:90px;background:var(--card);border-radius:12px;box-shadow:0 1px 4px var(--shadow);transition:background .3s;overflow:hidden}
+  .ad-banner .ad-label{font-size:.65rem;color:var(--meta);text-transform:uppercase;letter-spacing:1px;margin-bottom:.5rem}
+  .ad-banner ins{display:block}
+  .ad-banner .adsbygoogle{max-width:100%;height:auto;min-height:90px}
+  @media(max-width:768px){.ad-banner .adsbygoogle{width:100%;min-height:90px}}
+  footer{text-align:center;font-size:.75rem;color:var(--meta);padding:1rem 0 2rem}
 </style>
 </head>
 <body>
@@ -54,8 +63,20 @@
   <div class="stats" id="stats"></div>
   <div id="eventi"></div>
   <div id="nessun-risultato">Nessun evento trovato 😕</div>
+
+  <!-- SPAZIO BANNER PUBBLICITARIO GOOGLE ADSENSE -->
+  <div class="ad-banner">
+    <div class="ad-label">Sponsor</div>
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:728px;height:90px"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="XXXXXXXXXX"></ins>
+  </div>
+
   <footer>Generato automaticamente — <a href="https://github.com/xellos81/roseto-eventi">GitHub</a></footer>
 </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <script>
 const eventi = [
