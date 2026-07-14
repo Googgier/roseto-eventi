@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eventi Roseto degli Abruzzi & Dintorni</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#222;line-height:1.5}
+  .container{max-width:960px;margin:0 auto;padding:1rem}
+  h1{font-size:1.5rem;margin-bottom:.25rem;color:#1a1a2e}
+  .subtitle{color:#666;font-size:.9rem;margin-bottom:1rem}
+  .search-bar{position:sticky;top:0;z-index:10;background:#fff;padding:.75rem;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.08);margin-bottom:1rem}
+  #search{width:100%;padding:.7rem 1rem;border:2px solid #e0e0e0;border-radius:8px;font-size:1rem;outline:none;transition:border-color .2s}
+  #search:focus{border-color:#1a1a2e}
+  .filtri{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.5rem}
+  .filtri button{padding:.35rem .8rem;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;transition:all .2s}
+  .filtri button.attivo{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+  .filtri button:hover:not(.attivo){background:#e8e8e8}
+  .evento{background:#fff;border-radius:12px;padding:1rem;margin-bottom:.75rem;box-shadow:0 1px 4px rgba(0,0,0,.06);transition:box-shadow .2s}
+  .evento:hover{box-shadow:0 3px 12px rgba(0,0,0,.1)}
+  .evento.hidden{display:none}
+  .evento .data{font-size:.8rem;color:#e94560;font-weight:600;margin-bottom:.2rem}
+  .evento .titolo{font-size:1.05rem;font-weight:600;color:#1a1a2e;margin-bottom:.2rem}
+  .evento .luogo{font-size:.85rem;color:#888;margin-bottom:.3rem}
+  .evento .luogo::before{content:"📍 "}
+  .evento .desc{font-size:.9rem;color:#555}
+  .evento .etichette{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.5rem}
+  .evento .etichetta{font-size:.7rem;padding:.15rem .55rem;border-radius:10px;background:#eef2ff;color:#4f46e5}
+  .intestazione-comune{font-size:1.2rem;font-weight:700;color:#1a1a2e;margin:1.5rem 0 .75rem;padding-bottom:.3rem;border-bottom:2px solid #e94560}
+  .stats{text-align:center;font-size:.8rem;color:#999;margin-bottom:1rem}
+  #nessun-risultato{text-align:center;padding:2rem;color:#999;display:none}
+  footer{text-align:center;font-size:.75rem;color:#aaa;padding:2rem 0}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>📅 Eventi Roseto & Dintorni</h1>
+  <p class="subtitle">Eventi nel raggio di 25 km — aggiornato il <span id="aggiornato"></span></p>
+
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Cerca evento, luogo, data…" autocomplete="off">
+    <div class="filtri" id="filtri">
+      <button data-filtro="tutti" class="attivo">Tutti</button>
+      <button data-filtro="Roseto">Roseto</button>
+      <button data-filtro="Silvi">Silvi</button>
+      <button data-filtro="Giulianova">Giulianova</button>
+      <button data-filtro="Pineto">Pineto</button>
+      <button data-filtro="Tortoreto">Tortoreto</button>
+      <button data-filtro="Mosciano">Mosciano</button>
+    </div>
+  </div>
+
+  <div class="stats" id="stats"></div>
+  <div id="eventi"></div>
+  <div id="nessun-risultato">Nessun evento trovato 😕</div>
+  <footer>Generato automaticamente — <a href="https://github.com/xellos81/roseto-eventi">GitHub</a></footer>
+</div>
+
+<script>
+const eventi = [
+  {id:1,data:"15 Lug 2026",titolo:"Concerto di apertura – I Musici Lotariani",luogo:"Villa Comunale, Roseto degli Abruzzi",desc:"Concerto che apre la 30ª edizione di Roseto Opera Prima. Ingresso gratuito.",citta:"Roseto",tag:["Musica","Cultura"]},
+  {id:2,data:"15–18 Lug 2026",titolo:"Roseto Opera Prima – 30ª edizione",luogo:"Villa Comunale, Roseto degli Abruzzi",desc:"Rassegna culturale con proiezioni, incontri e spettacoli. Ore 21:00–23:00.",citta:"Roseto",tag:["Cultura","Cinema"]},
+  {id:3,data:"10 Lug – 6 Set 2026",titolo:"Villa in Arte",luogo:"Villa Comunale, Roseto degli Abruzzi",desc:"Mostra d'arte con grandi protagonisti dell'arte contemporanea.",citta:"Roseto",tag:["Cultura","Arte"]},
+  {id:4,data:"19 Lug 2026",titolo:"The Avengers – Spettacolo",luogo:"Piazza della Repubblica, Roseto degli Abruzzi",desc:"Spettacolo ispirato ai celebri supereroi. Ingresso gratuito, ore 21:00.",citta:"Roseto",tag:["Intrattenimento","Sport"]},
+  {id:5,data:"1 Lug – 6 Set 2026",titolo:"Bus Navetta Gratis",luogo:"Roseto degli Abruzzi",desc:"Navetta gratuita che collega mare, centro, stazione ferroviaria.",citta:"Roseto",tag:["Servizio"]},
+  {id:6,data:"21 Lug 2026",titolo:"Matteo Mancuso in concerto",luogo:"Portorose, Roseto degli Abruzzi",desc:"Abbazie Summer Festival. Biglietti su ciaotickets. Ore 21:30.",citta:"Roseto",tag:["Musica","Abbazie Summer Festival"]},
+  {id:7,data:"22 Lug 2026",titolo:"Billy Cobham – Time Machine",luogo:"Portorose, Roseto degli Abruzzi",desc:"Leggendario batterista jazz. Abbazie Summer Festival. Ore 21:30.",citta:"Roseto",tag:["Musica","Jazz","Abbazie Summer Festival"]},
+  {id:8,data:"22–26 Lug 2026",titolo:"17ª Sagra 'De lu Stennmass'",luogo:"Cologna Paese, Roseto degli Abruzzi",desc:"Sagra enogastronomica con sapori e tradizioni del territorio.",citta:"Roseto",tag:["Enogastronomia","Sagra"]},
+  {id:9,data:"24–25 Lug 2026",titolo:"Mons Pagus A.D. 1566 – Rievocazione Rinascimentale",luogo:"Borgo di Montepagano, Roseto degli Abruzzi",desc:"Rievocazione storica in costume. Ore 19:00.",citta:"Roseto",tag:["Cultura","Rievocazione"]},
+  {id:10,data:"17 Lug 2026",titolo:"Magia tra le Dune – Musica 80'/90'",luogo:"Le Dune, Silvi Marina",desc:"Serata musicale a tema. Ore 21:30.",citta:"Silvi",tag:["Musica"]},
+  {id:11,data:"17 Lug 2026",titolo:"La Lanterna Magica Film Fest",luogo:"Silvi Marina",desc:"Festival di cortometraggi e cinema all'aperto.",citta:"Silvi",tag:["Cinema","Cultura"]},
+  {id:12,data:"19 Lug 2026",titolo:"Concerto all'Alba sul Mare",luogo:"Silvi Marina",desc:"Concerto all'alba sulla spiaggia.",citta:"Silvi",tag:["Musica"]},
+  {id:13,data:"19 Lug 2026",titolo:"Concerto Note in Pineta 2.0",luogo:"Pineta del Pescatore, Silvi Marina",desc:"Concerto serale nella pineta. Ore 21:00.",citta:"Silvi",tag:["Musica"]},
+  {id:14,data:"14 Lug 2026",titolo:"Buozzi Summer Sound – Lucy Soul Band",luogo:"Piazza Buozzi, Giulianova",desc:"'A Soul Experience' – concerto soul. Ore 21:00.",citta:"Giulianova",tag:["Musica","Soul"]},
+  {id:15,data:"15–19 Lug 2026",titolo:"10ª Rievocazione della Trebbiatura",luogo:"Mosciano Sant'Angelo",desc:"Rievocazione storica con sagra enogastronomica.",citta:"Mosciano",tag:["Cultura","Enogastronomia","Rievocazione"]},
+  {id:16,data:"18 Lug 2026",titolo:"Poesia e Musica per una Bella Estate",luogo:"Chiesa Sant'Agnese, Pineto",desc:"Serata di poesia e musica. Ore 21:15.",citta:"Pineto",tag:["Cultura","Musica","Poesia"]},
+  {id:17,data:"18 Lug 2026",titolo:"Pineto Legge",luogo:"Pineto",desc:"Incontro con la scrittrice Beatrice.",citta:"Pineto",tag:["Cultura","Libri"]},
+  {id:18,data:"18 Lug 2026",titolo:"Power Mix RDS – Serata Disco",luogo:"Tortoreto",desc:"Serata dance con Power Mix RDS.",citta:"Tortoreto",tag:["Musica","Disco"]},
+  {id:19,data:"28 Lug – 14 Ago 2026",titolo:"Concerti Estate Giulianova",luogo:"Giulianova",desc:"Vari concerti in programma. Biglietti su TicketOne.",citta:"Giulianova",tag:["Musica"]},
+  {id:20,data:"23 Lug 2026",titolo:"MOONJUNE in concerto",luogo:"Teramo",desc:"Concerto rock/pop.",citta:"Teramo",tag:["Musica"]}
+];
+
+function renderizza(lista){
+  const container = document.getElementById('eventi');
+  if(!lista.length){document.getElementById('nessun-risultato').style.display='block';container.innerHTML='';return}
+  document.getElementById('nessun-risultato').style.display='none';
+  
+  const perComune = {};
+  lista.forEach(e => {
+    if(!perComune[e.citta]) perComune[e.citta] = [];
+    perComune[e.citta].push(e);
+  });
+  
+  let html = '';
+  for(const [citta, evs] of Object.entries(perComune)){
+    html += `<div class="intestazione-comune">📍 ${citta}</div>`;
+    evs.forEach(e => {
+      html += `<div class="evento">
+        <div class="data">${e.data}</div>
+        <div class="titolo">${e.titolo}</div>
+        <div class="luogo">${e.luogo}</div>
+        <div class="desc">${e.desc}</div>
+        <div class="etichette">${e.tag.map(t=>`<span class="etichetta">${t}</span>`).join('')}</div>
+      </div>`;
+    });
+  }
+  container.innerHTML = html;
+  document.getElementById('stats').textContent = `${lista.length} eventi trovati`;
+}
+
+function filtra(){
+  const q = document.getElementById('search').value.toLowerCase().trim();
+  const filtroCitta = document.querySelector('#filtri .attivo')?.dataset?.filtro || 'tutti';
+  
+  const filtrati = eventi.filter(e => {
+    if(filtroCitta !== 'tutti' && e.citta !== filtroCitta) return false;
+    if(!q) return true;
+    const testo = `${e.titolo} ${e.luogo} ${e.desc} ${e.data} ${e.tag.join(' ')}`.toLowerCase();
+    return testo.includes(q);
+  });
+  renderizza(filtrati);
+}
+
+document.getElementById('search').addEventListener('input', filtra);
+document.querySelectorAll('#filtri button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#filtri button').forEach(b => b.classList.remove('attivo'));
+    btn.classList.add('attivo');
+    filtra();
+  });
+});
+
+document.getElementById('aggiornato').textContent = new Date().toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'});
+renderizza(eventi);
+</script>
+</body>
+</html>
