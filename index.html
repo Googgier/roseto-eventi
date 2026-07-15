@@ -14,6 +14,18 @@
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
+<meta property="og:title" content="Eventi Roseto degli Abruzzi & Dintorni">
+<meta property="og:description" content="Eventi, sagre, concerti e manifestazioni nel raggio di 25 km da Roseto degli Abruzzi. Aggiornato quotidianamente.">
+<meta property="og:image" content="https://googgier.github.io/roseto-eventi/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="714">
+<meta property="og:url" content="https://googgier.github.io/roseto-eventi/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Eventi Roseto degli Abruzzi & Dintorni">
+<meta name="twitter:description" content="Eventi, sagre, concerti e manifestazioni nel raggio di 25 km da Roseto.">
+<meta name="twitter:image" content="https://googgier.github.io/roseto-eventi/og-image.png">
 <title>Eventi Roseto degli Abruzzi & Dintorni</title>
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
@@ -96,7 +108,11 @@
      FOOTER
      ============================ */
   footer{text-align:center;font-size:.75rem;color:var(--meta);padding:1rem 0}
-  .visit-counter{margin-top:.5rem;font-size:.85rem;color:var(--sub)}
+
+  /* ============================
+     CONTATORE VISITE
+     ============================ */
+  .visit-counter{text-align:center;font-size:.9rem;color:var(--sub);margin-bottom:.75rem;transition:opacity .3s}
   .visit-counter.loading{opacity:.5}
   .visit-counter .counter-spinner{display:inline-block;width:12px;height:12px;border:2px solid var(--sub);border-top-color:transparent;border-radius:50%;animation:spin .6s linear infinite;vertical-align:middle;margin-right:4px}
   @keyframes spin{to{transform:rotate(360deg)}}
@@ -150,9 +166,19 @@
 </style>
 </head>
 <body>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Eventi Roseto degli Abruzzi & Dintorni",
+  "url": "https://googgier.github.io/roseto-eventi/",
+  "description": "Eventi, sagre, concerti e manifestazioni nel raggio di 25 km da Roseto degli Abruzzi."
+}
+</script>
 <div class="container">
   <h1>📅 Eventi Roseto & Dintorni</h1>
   <p class="subtitle">Eventi nel raggio di 25 km — aggiornato il <span id="aggiornato"></span></p>
+  <div class="visit-counter" id="counterTop">👁️ <span id="visitCount">—</span> visite</div>
 
   <div class="search-bar">
     <input type="text" id="search" placeholder="Cerca evento, luogo, data…" autocomplete="off">
@@ -241,7 +267,6 @@
 
   <footer>
     Generato automaticamente — <a href="https://github.com/Googgier/roseto-eventi">GitHub</a>
-    <div class="visit-counter">👁️ <span id="visitCount">—</span> visite</div>
   </footer>
 </div>
 
