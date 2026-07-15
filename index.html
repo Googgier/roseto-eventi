@@ -2,7 +2,7 @@
 <html class="dark" lang="it">
 <head>
 <meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
 <meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme:light)">
 <meta name="theme-color" content="#121212" media="(prefers-color-scheme:dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -28,118 +28,125 @@
 <meta name="twitter:image" content="https://googgier.github.io/roseto-eventi/og-image.png">
 <title>Eventi Roseto degli Abruzzi & Dintorni</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 <script id="tailwind-config">
+try{
 tailwind.config = {
   darkMode: "class",
   theme: {
     extend: {
-      "colors": {
-        "error-container": "#93000a",
-        "outline": "#a68b82",
-        "inverse-on-surface": "#2a303f",
-        "on-error-container": "#ffdad6",
-        "secondary-fixed": "#61f9e9",
-        "surface-container-low": "#151b29",
-        "tertiary": "#ffb95a",
-        "on-background": "#dde2f6",
-        "primary-container": "#ff7f50",
-        "primary": "#ffb59c",
-        "outline-variant": "#57423b",
-        "on-tertiary-fixed-variant": "#643f00",
-        "on-tertiary-container": "#533300",
-        "on-secondary-fixed-variant": "#005049",
-        "on-error": "#690005",
-        "on-secondary-container": "#004c46",
-        "secondary-container": "#00c6b6",
-        "on-secondary-fixed": "#00201d",
-        "on-surface": "#dde2f6",
-        "on-tertiary-fixed": "#2a1800",
-        "inverse-surface": "#dde2f6",
-        "surface-tint": "#ffb59c",
-        "inverse-primary": "#a43c12",
-        "surface-container-high": "#242a39",
-        "surface-container": "#191f2e",
-        "on-secondary": "#003732",
-        "surface-variant": "#2f3544",
-        "tertiary-fixed": "#ffddb6",
-        "surface": "#0d1321",
-        "surface-container-lowest": "#080e1c",
-        "surface-bright": "#333948",
-        "primary-fixed-dim": "#ffb59c",
-        "background": "#0d1321",
+      colors: {
         "tertiary-fixed-dim": "#ffb95a",
-        "secondary": "#43e2d2",
-        "on-surface-variant": "#dec0b6",
-        "surface-container-highest": "#2f3544",
-        "surface-dim": "#0d1321",
-        "on-tertiary": "#462a00",
-        "primary-fixed": "#ffdbcf",
-        "error": "#ffb4ab",
-        "tertiary-container": "#dc952a",
-        "on-primary-fixed": "#380c00",
-        "secondary-fixed-dim": "#3adccc",
-        "on-primary-fixed-variant": "#822800",
+        "surface-container-low": "#151b29",
+        "on-surface": "#dde2f6",
+        "surface-container": "#191f2e",
+        "on-secondary-container": "#004c46",
         "on-primary-container": "#6c2000",
-        "on-primary": "#5c1a00"
+        "on-surface-variant": "#dec0b6",
+        "tertiary-fixed": "#ffddb6",
+        "surface-container-lowest": "#080e1c",
+        "surface-variant": "#2f3544",
+        "secondary-container": "#00c6b6",
+        "surface-dim": "#0d1321",
+        "on-secondary-fixed": "#00201d",
+        "surface-bright": "#333948",
+        "secondary-fixed": "#61f9e9",
+        "secondary-fixed-dim": "#3adccc",
+        "error-container": "#93000a",
+        "on-tertiary-container": "#533300",
+        "tertiary": "#ffb95a",
+        "background": "#0d1321",
+        "surface-container-high": "#242a39",
+        "on-secondary": "#003732",
+        "outline-variant": "#57423b",
+        "primary-fixed-dim": "#ffb59c",
+        "inverse-primary": "#a43c12",
+        "error": "#ffb4ab",
+        "on-tertiary-fixed-variant": "#643f00",
+        "surface-container-highest": "#2f3544",
+        "on-secondary-fixed-variant": "#005049",
+        "surface": "#0d1321",
+        "on-tertiary": "#462a00",
+        "inverse-on-surface": "#2a303f",
+        "on-primary-fixed-variant": "#822800",
+        "on-primary": "#5c1a00",
+        "on-tertiary-fixed": "#2a1800",
+        "on-background": "#dde2f6",
+        "primary": "#ffb59c",
+        "outline": "#a68b82",
+        "on-error-container": "#ffdad6",
+        "surface-tint": "#ffb59c",
+        "on-error": "#690005",
+        "tertiary-container": "#dc952a",
+        "primary-container": "#ff7f50",
+        "secondary": "#43e2d2",
+        "inverse-surface": "#dde2f6",
+        "primary-fixed": "#ffdbcf",
+        "on-primary-fixed": "#380c00"
       },
-      "borderRadius": {
-        "DEFAULT": "0.25rem",
-        "lg": "0.5rem",
-        "xl": "0.75rem",
-        "full": "9999px"
+      borderRadius: {
+        DEFAULT: "0.25rem",
+        lg: "0.5rem",
+        xl: "0.75rem",
+        full: "9999px"
       },
-      "spacing": {
-        "lg": "24px",
-        "xl": "40px",
-        "gutter": "16px",
-        "sm": "12px",
-        "md": "16px",
-        "base": "8px",
-        "container-margin": "20px",
-        "xs": "4px"
+      spacing: {
+        base: "8px",
+        xs: "4px",
+        sm: "12px",
+        md: "16px",
+        lg: "24px",
+        xl: "40px",
+        gutter: "16px",
+        "container-margin": "20px"
       },
-      "fontFamily": {
-        "headline-md": ["Montserrat"],
-        "headline-lg-mobile": ["Montserrat"],
-        "body-md": ["Inter"],
-        "headline-lg": ["Montserrat"],
-        "body-lg": ["Inter"],
-        "label-sm": ["Inter"],
+      fontFamily: {
         "display-lg": ["Montserrat"],
-        "label-md": ["Inter"]
+        "headline-lg": ["Montserrat"],
+        "headline-lg-mobile": ["Montserrat"],
+        "headline-md": ["Montserrat"],
+        "body-lg": ["Inter"],
+        "body-md": ["Inter"],
+        "label-md": ["Inter"],
+        "label-sm": ["Inter"]
       },
-      "fontSize": {
-        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
-        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-        "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400"}],
-        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+      fontSize: {
         "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+        "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}]
       }
     }
   }
 }
+}catch(_e){}
 </script>
 <style>
+/* ================================
+   GLASS PANEL UTILITY (V2 design)
+   ================================ */
+.glass-panel {
+  background: rgba(25, 31, 46, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.glass-panel-solid {
+  background: rgba(25, 31, 46, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
   vertical-align: middle;
 }
-.glass-card {
-  background: rgba(25, 31, 46, 0.6);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
 .hide-scrollbar::-webkit-scrollbar { display: none; }
 .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-.bottom-sheet {
-  transform: translateY(100%);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.bottom-sheet.open { transform: translateY(0); }
 body { min-height: max(884px, 100dvh); }
 
 /* ================================
@@ -148,7 +155,8 @@ body { min-height: max(884px, 100dvh); }
 .evento {
   background: rgba(25, 31, 46, 0.6);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 0.75rem;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -277,12 +285,13 @@ body { min-height: max(884px, 100dvh); }
 }
 
 /* ================================
-   NAVETTA SECTION — ristilizzata
+   NAVETTA SECTION
    ================================ */
 .navetta-section {
   background: rgba(25, 31, 46, 0.6);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 0.75rem;
   margin-bottom: 1.5rem;
   overflow: hidden;
@@ -340,7 +349,7 @@ body { min-height: max(884px, 100dvh); }
 .navetta-sub { font-size: 0.78rem; color: #dec0b6; margin: 0.25rem 0; }
 
 /* ================================
-   STATS, NESSUN RISULTATO, FILTRI
+   STATS, NESSUN RISULTATO
    ================================ */
 .stats {
   text-align: center;
@@ -368,6 +377,7 @@ body { min-height: max(884px, 100dvh); }
   padding: 0.5rem 2rem 0.5rem 0.5rem;
   background: rgba(13, 19, 33, 0.95);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.35s;
 }
@@ -417,7 +427,7 @@ body { min-height: max(884px, 100dvh); }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 /* ================================
-   FILTRI PILL
+   FILTRI PILL (V2 design)
    ================================ */
 .filtri {
   display: flex;
@@ -429,33 +439,72 @@ body { min-height: max(884px, 100dvh); }
 }
 .filtri button {
   flex-shrink: 0;
-  padding: 0.35rem 0.8rem;
+  padding: 0.45rem 1rem;
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: 9999px;
   background: rgba(25, 31, 46, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   transition: all 0.25s;
   color: #dec0b6;
   user-select: none;
   white-space: nowrap;
   font-family: Inter, sans-serif;
+  font-weight: 500;
 }
 .filtri button.attivo {
-  background: #ff7f50;
-  color: #380c00;
-  border-color: #ff7f50;
+  background: #43e2d2;
+  color: #003732;
+  border-color: #43e2d2;
   font-weight: 600;
-  box-shadow: 0 2px 12px rgba(255, 127, 80, 0.3);
+  box-shadow: 0 2px 12px rgba(67, 226, 210, 0.3);
 }
 .filtri button:hover:not(.attivo) {
   background: rgba(47, 53, 68, 0.5);
+  border-color: rgba(67, 226, 210, 0.4);
   transform: translateY(-1px);
 }
 
 /* ================================
-   RESPONSIVITÀ
+   CUSTOM SCROLLBAR
    ================================ */
+.custom-scrollbar::-webkit-scrollbar { height: 4px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255, 181, 156, 0.3); border-radius: 2px; }
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+#eventi {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 769px) {
+  header { height: 72px; padding-left: 32px; padding-right: 32px; }
+  header h1 { font-size: 1.5rem; }
+  main { padding-left: 32px; padding-right: 32px; padding-top: 100px; }
+  #search { padding: 14px 24px; font-size: 1rem; border-radius: 16px; }
+  .filtri { overflow-x: visible; flex-wrap: nowrap; gap: 0.6rem; }
+  .filtri button { font-size: 0.85rem; padding: 0.45rem 1rem; }
+  #eventi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  @media (min-width: 1024px) {
+    #eventi { grid-template-columns: repeat(3, 1fr); }
+  }
+  .evento a { padding: 1.25rem; }
+  .evento .titolo { font-size: 1.15rem; }
+  .intestazione-comune { font-size: 1.5rem; margin: 2rem 0 1rem; grid-column: 1 / -1; }
+  .stats { font-size: 0.9rem; margin-bottom: 1.5rem; }
+  .ad-banner { padding: 0.5rem 1rem; }
+}
+
 @media (max-width: 480px) {
   .evento .titolo { font-size: 0.95rem; }
   .evento a { padding: 0.75rem; }
@@ -467,85 +516,25 @@ body { min-height: max(884px, 100dvh); }
   body { padding-bottom: 130px; }
 }
 
-/* Mobile grid: single column (default) */
-#eventi {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-/* ================================
-   DESKTOP LAYOUT FIX (>768px)
-   ================================ */
+/* Bottom nav responsive */
 @media (min-width: 769px) {
-  header {
-    height: 72px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  header h1 {
-    font-size: 1.5rem;
-  }
-  main {
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 100px;
-  }
-  #search {
-    padding: 14px 24px;
-    font-size: 1rem;
-    border-radius: 16px;
-  }
-  .filtri {
-    overflow-x: visible;
-    flex-wrap: nowrap;
-    gap: 0.6rem;
-  }
-  .filtri button {
-    font-size: 0.85rem;
-    padding: 0.45rem 1rem;
-  }
-  /* Event grid: 2-3 columns on desktop */
-  #eventi {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-  @media (min-width: 1024px) {
-    #eventi {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  .evento a {
-    padding: 1.25rem;
-  }
-  .evento .titolo {
-    font-size: 1.15rem;
-  }
-  .intestazione-comune {
-    font-size: 1.5rem;
-    margin: 2rem 0 1rem;
-    grid-column: 1 / -1;
-  }
-  .stats {
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
-  }
   nav.fixed.bottom-0 {
     padding: 0.75rem 0;
     height: auto;
     gap: 1.5rem;
   }
-  nav.fixed.bottom-0 > div {
-    flex-direction: row;
-    gap: 0.5rem;
-  }
-  nav.fixed.bottom-0 span {
-    font-size: 0.85rem;
-  }
-  .ad-banner {
-    padding: 0.5rem 1rem;
-  }
+}
+
+/* Scroll indicator gradient for filter pills */
+.filtri::after {
+  content: '';
+  position: sticky;
+  right: 0;
+  width: 32px;
+  flex-shrink: 0;
+  background: linear-gradient(to right, transparent, #0d1321);
+  pointer-events: none;
+  margin-right: -32px;
 }
 </style>
 </head>
@@ -561,11 +550,13 @@ body { min-height: max(884px, 100dvh); }
 }
 </script>
 
-<!-- Top App Bar -->
-<header class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-3xl border-b border-white/10 shadow-sm flex justify-between items-center px-container-margin h-16">
-  <div class="flex items-center gap-base">
-    <span class="material-symbols-outlined text-primary" data-icon="beach_access">beach_access</span>
-    <h1 class="font-headline-md text-headline-md font-bold text-primary">Eventi Roseto &amp; Dintorni</h1>
+<!-- ================================
+     TOP APP BAR (V2 — Glassmorphism)
+     ================================ -->
+<header class="fixed top-0 w-full z-50 glass-panel border-b border-white/10 shadow-sm flex justify-between items-center px-container-margin h-16">
+  <div class="flex items-center gap-base active:scale-95 transition-transform">
+    <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL'1" data-icon="calendar_month">calendar_month</span>
+    <h1 class="font-headline-md text-headline-md font-bold text-primary">Roseto &amp; Dintorni</h1>
   </div>
   <div class="flex items-center gap-sm">
     <div class="hidden md:flex items-center bg-primary/10 px-sm py-xs rounded-full border border-primary/20">
@@ -577,7 +568,10 @@ body { min-height: max(884px, 100dvh); }
   </div>
 </header>
 
-<main class="pt-24 px-container-margin max-w-5xl mx-auto">
+<!-- ================================
+     MAIN CONTENT
+     ================================ -->
+<main class="pt-24 px-container-margin max-w-[1280px] mx-auto overflow-x-hidden">
 
   <!-- Mobile update badge -->
   <div class="md:hidden mb-md flex justify-center">
@@ -586,16 +580,16 @@ body { min-height: max(884px, 100dvh); }
     </span>
   </div>
 
-  <!-- Visite counter -->
+  <!-- Visite counter (in alto, sotto il titolo) -->
   <div class="visit-counter" id="counterTop">👁️ <span id="visitCount">—</span> visite</div>
 
-  <!-- Search Bar -->
+  <!-- Search Bar (V2 style) -->
   <div class="mb-lg">
     <input type="text" id="search" placeholder="Cerca evento, luogo, data…" autocomplete="off"
            class="w-full px-lg py-sm bg-surface-container border border-white/10 rounded-xl text-on-surface placeholder-on-surface-variant/60 outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all text-label-md">
   </div>
 
-  <!-- Filters (horizontal scroll pills) -->
+  <!-- Filters — horizontal scroll pills (V2 style) -->
   <section class="mb-lg overflow-x-auto hide-scrollbar -mx-container-margin px-container-margin">
     <div class="filtri" id="filtri">
       <button data-filtro="tutti" class="attivo">Tutti</button>
@@ -662,10 +656,12 @@ body { min-height: max(884px, 100dvh); }
 
 </main>
 
-<!-- Bottom Navigation Bar -->
-<nav class="fixed bottom-0 w-full z-50 bg-surface-container border-t border-surface-bright shadow-2xl flex justify-around items-center h-20 pb-safe">
+<!-- ================================
+     BOTTOM NAVIGATION (V2 — Glassmorphism)
+     ================================ -->
+<nav class="fixed bottom-0 w-full z-50 glass-panel border-t border-white/10 shadow-lg flex justify-around items-center h-20 pb-safe">
   <div class="flex flex-col items-center justify-center text-primary-container active:scale-90 transition-transform cursor-pointer">
-    <span class="material-symbols-outlined !text-[28px]" data-icon="event" style="font-variation-settings: 'FILL' 1;">event</span>
+    <span class="material-symbols-outlined !text-[28px]" data-icon="event" style="font-variation-settings:'FILL'1">event</span>
     <span class="font-label-md text-label-md font-bold">Eventi</span>
   </div>
   <div class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-90 transition-transform cursor-pointer">
@@ -682,7 +678,9 @@ body { min-height: max(884px, 100dvh); }
   </div>
 </nav>
 
-<!-- Footer -->
+<!-- ================================
+     FOOTER (V2 style)
+     ================================ -->
 <footer class="w-full py-xl bg-surface-container-lowest flex flex-col items-center gap-base mt-xl">
   <div class="flex items-center gap-lg">
     <a class="text-on-surface-variant hover:text-secondary transition-colors underline decoration-secondary font-label-sm text-label-sm" href="https://github.com/Googgier/roseto-eventi">GitHub</a>
@@ -693,9 +691,12 @@ body { min-height: max(884px, 100dvh); }
     <p class="text-on-surface font-bold font-label-sm text-label-sm">© 2025 Eventi Roseto &amp; Dintorni</p>
     <p class="text-on-surface-variant text-[10px] uppercase tracking-widest mt-xs">Visite: <span id="visitCountFooter"></span></p>
   </div>
+  <p class="text-on-surface-variant font-label-sm text-label-sm opacity-60">Made with ❤️ for the Adriatic Coast</p>
 </footer>
 
-<!-- BANNER PUBBLICITARIO GOOGLE ADSENSE -->
+<!-- ================================
+     AD BANNER
+     ================================ -->
 <div class="ad-banner" id="adBanner">
   <button class="ad-close" id="adClose" aria-label="Chiudi sponsor">✕</button>
   <div class="ad-label">Sponsor</div>
@@ -707,6 +708,9 @@ body { min-height: max(884px, 100dvh); }
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+<!-- ================================
+     JAVASCRIPT — PRESERVATO INTEGRALMENTE
+     ================================ -->
 <script>
 /* ============================================================
    DATI EVENTI — 27 eventi rinumerati 1-27
@@ -784,7 +788,7 @@ function renderizza(lista){
 
 function getIniziali(titolo) {
   return titolo
-    .replace(/['"]/g, '')
+    .replace(/['\"]/g, '')
     .split(/[\s––\-—]+/)
     .filter(w => w.length > 0 && !['di','del','della','degli','dei','il','la','le','gli','un','una','al','con','per'].includes(w.toLowerCase()))
     .slice(0, 3)
@@ -920,21 +924,17 @@ function popolaNavetta(){
     `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`
   ).join('');
 
-  // Route stops
   const routeEl = document.getElementById('navettaRoute');
   if(routeEl){
     routeEl.innerHTML = navettaStops.map(s => `<span class="stop">${s}</span>`).join('');
   }
 
-  // Valid text
   const validEl = document.getElementById('navettaValid');
   if(validEl) validEl.textContent = navettaConfig.valid;
 
-  // Note
   const noteEl = document.getElementById('navettaNote');
   if(noteEl) noteEl.innerHTML = navettaConfig.note;
 
-  // Mercato tables
   const andataTbody = document.getElementById('navettaMercatoAndata');
   if(andataTbody){
     andataTbody.innerHTML = navettaConfig.mercatoAndata.map(r =>
