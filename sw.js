@@ -1,9 +1,9 @@
-const CACHE = 'roseto-eventi-v2';
+const CACHE = 'roseto-eventi-v3';
 const ASSETS = [
   '/roseto-eventi/',
   '/roseto-eventi/index.html',
   '/roseto-eventi/manifest.json',
-  '/roseto-eventi/icon.svg'
+  '/roseto-eventi/favicon.svg'
 ];
 
 self.addEventListener('install', e => {

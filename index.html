@@ -344,7 +344,7 @@ function isOggi(dataStr){
     return dataEv && dataEv.getTime() === oggiTs;
   }
 
-  // Data singola "Luglio 2026" (solo mese) → mostra badge per tutto il mese
+  // Solo mese e anno: "Luglio 2026" → badge per tutto il mese
   m = dataStr.match(/^([A-Za-z]+)\s(\d{4})$/);
   if(m){
     const mese = meseNum(m[1]);
@@ -352,23 +352,7 @@ function isOggi(dataStr){
     return oggi.getMonth() === mese && oggi.getFullYear() === parseInt(m[2]);
   }
 
-  // Range: "10 Lug – 6 Set 2026"
-  m = dataStr.match(/^(\d{1,2})\s([A-Za-z]+)\s*[–-]\s*(\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);
-  if(m){
-    const inizio = parseDataIt(m[1], m[2], m[5]);
-    const fine = parseDataIt(m[3], m[4], m[5]);
-    return inizio && fine && oggiTs >= inizio.getTime() && oggiTs <= fine.getTime();
-  }
-
-  // Range con anno finale diverso: "28 Lug – 14 Ago 2026"
-  m = dataStr.match(/^(\d{1,2})\s([A-Za-z]+)\s*[–-]\s*(\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);
-  if(m){
-    const inizio = parseDataIt(m[1], m[2], m[5]);
-    const fine = parseDataIt(m[3], m[4], m[5]);
-    return inizio && fine && oggiTs >= inizio.getTime() && oggiTs <= fine.getTime();
-  }
-
-  // Range con due date complete: "15–19 Lug 2026"
+  // Range due date stesso mese: "15–19 Lug 2026"
   m = dataStr.match(/^(\d{1,2})[–-](\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);
   if(m){
     const inizio = parseDataIt(m[1], m[3], m[4]);
@@ -376,7 +360,7 @@ function isOggi(dataStr){
     return inizio && fine && oggiTs >= inizio.getTime() && oggiTs <= fine.getTime();
   }
 
-  // Range con date complete in mesi diversi: "15 Lug – 6 Set 2026"
+  // Range date in mesi diversi: "10 Lug – 6 Set 2026" o "28 Lug – 14 Ago 2026"
   m = dataStr.match(/^(\d{1,2})\s([A-Za-z]+)\s*[–-]\s*(\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);
   if(m){
     const inizio = parseDataIt(m[1], m[2], m[5]);
