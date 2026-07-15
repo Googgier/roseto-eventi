@@ -536,6 +536,39 @@ body { min-height: max(884px, 100dvh); }
   pointer-events: none;
   margin-right: -32px;
 }
+
+/* ================================
+   LIGHTBOX
+   ================================ */
+.lightbox {
+  position: fixed; top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: fadeIn 0.2s;
+}
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.lightbox-close {
+  position: absolute;
+  top: 1rem; right: 1.5rem;
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 </style>
 </head>
 <body class="bg-background text-on-background font-body-md min-h-screen pb-[180px]">
@@ -766,11 +799,11 @@ function renderizza(lista){
       const orarioHtml = e.orario ? `<div class="orario">🕐 ${e.orario}</div>` : '';
       const oggiBadge = isOggi(e.data) ? '<div class="badge-oggi">🔴 In corso</div>' : '';
       const imgHtml = e.img
-        ? `<img class="evento-img" src="${e.img}" alt="${e.titolo}" loading="lazy">`
+        ? `<img class="evento-img" src="${e.img}" alt="${e.titolo}" onclick="openLightbox(this.src, this.alt)" loading="lazy">`
         : `<div class="evento-img-placeholder">${getIniziali(e.titolo)}</div>`;
       html += `<div class="evento">
-        ${imgHtml}
         <a href="${e.fonte || '#'}" target="_blank" rel="noopener">
+          ${imgHtml}
           ${oggiBadge}
           <div class="data">${e.data}</div>
           ${orarioHtml}
@@ -784,6 +817,18 @@ function renderizza(lista){
   }
   container.innerHTML = html;
   document.getElementById('stats').textContent = `${lista.length} eventi trovati`;
+}
+
+function openLightbox(src, alt) {
+  const lb = document.createElement('div');
+  lb.className = 'lightbox';
+  lb.innerHTML = '<span class="lightbox-close">&times;</span><img class="lightbox-img" src="' + src + '" alt="' + alt + '">';
+  lb.addEventListener('click', function(e) {
+    if (e.target === lb || e.target.className === 'lightbox-close') {
+      lb.remove();
+    }
+  });
+  document.body.appendChild(lb);
 }
 
 function getIniziali(titolo) {
