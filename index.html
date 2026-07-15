@@ -562,28 +562,7 @@ body { min-height: max(884px, 100dvh); }
 <main class="pt-24 px-container-margin max-w-[1280px] mx-auto overflow-x-hidden">
 
 <!-- Mobile update badge & Visit counter -->
-<div class="md:hidden mb-md flex justify-center">
-  <span class="bg-primary/20 text-primary-fixed px-base py-xs rounded-lg text-label-sm font-bold border border-primary/30">
-    Aggiornato: <span id="aggiornato-mobile"></span>
-  </span>
-</div>
 <div class="visit-counter" id="counterTop">👁️ <span id="visitCount">—</span> visite</div>
-
-<!-- Hero Section: Animated & Asymmetric -->
-<section class="relative mb-xl h-[450px] md:h-[600px] flex items-end">
-
-<div class="relative z-10 w-full md:w-3/4 lg:w-1/2 p-lg glass-panel rounded-xl -mb-8 ml-0 md:ml-lg border-white/20">
-<span class="inline-block px-sm py-xs bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-full mb-base">EVENTO GOLD</span>
-<h2 class="font-display-lg text-[42px] leading-tight md:text-display-lg font-extrabold text-on-surface mb-base">Beach Party Sunset 2024</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mb-md">Il party più esclusivo della riviera adriatica. Musica, cocktail e il tramonto di Roseto degli Abruzzi.</p>
-<button class="bg-primary-container text-on-primary-container px-lg py-sm rounded-full font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all">Scopri di più</button>
-</div>
-<div class="hidden lg:block absolute top-0 -right-20 w-1/2 h-full -z-0 opacity-80 rotate-3">
-<div class="w-full h-full rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-<img class="w-full h-full object-cover" data-alt="An ultra-modern, high-contrast photograph of a luxury beach club lounge at sunset on the Italian coast. Warm orange and coral hues from the sun blend into deep navy blue sky. Professional architectural photography with sleek lines, polished surfaces, and atmospheric lighting that captures a premium, sophisticated nightlife vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmOb810sbJtwjSpXwEE-85rVOwCEzRs_eu6mSLSps_QYVX5PXHMhElmN5atoFVM2okB5vlSjkVhUVwLetemK2vCtvQMBiQbz6LFLfZwQlkyPmaxdNDr_b1GgKsNvp4DPVjjkxjPts_hLRokaoTkVCFO9v_9t8XCboH4tO2DIIYkqDmmKwKsiSiU7qdPAb_Xh0vQadO3-C1iR9B8W5r4ZMishSt8INOM0bBNEEX1HKdWjpERh35FxoM">
-</div>
-</div>
-</section>
 
 <!-- Search Bar -->
 <div class="mb-lg">
@@ -614,198 +593,48 @@ body { min-height: max(884px, 100dvh); }
 <!-- Nessun risultato -->
 <div id="nessun-risultato">Nessun evento trovato 😕</div>
 
-<!-- Main Bento Content Grid -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-lg mb-xl">
-<!-- Featured Card 1 (Vertical) -->
-<div class="md:col-span-4 h-[500px] relative rounded-2xl overflow-hidden group">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A vibrant, cinematic close-up of a gourmet seafood dish being served at an outdoor restaurant in Roseto degli Abruzzi. The lighting is warm and golden, typical of a summer evening. The scene is shot with a shallow depth of field, emphasizing the texture of the food and the elegant table setting. The aesthetic is sophisticated and high-end, evoking a sense of Adriatic luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4afCp_RwMdF5MOtZynV4tpN45WaCfnUbjoiFoxbKGyPaSd6GV5jGrop22GzhqwNFkYknOcqXfg0S5KtRni79_g8t8em5Ty-lnfbxIwhwXZYJ4wEKApKMe17dzTcMYH3HF8syOoSN-5kKAZGekYHFvrG25qcUHNX9WS6YUpeoaYzRblHMdEaMCYXWT2fanw1xLM09Y6LTybpVaRfKpkczzaOSsJMwRjKEGhFtNSQ-o5Dn4DLzwhPci">
-<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80"></div>
-<div class="absolute bottom-0 p-lg w-full">
-<div class="glass-panel p-md rounded-xl border-white/20">
-<span class="text-secondary font-label-sm text-label-sm uppercase tracking-widest block mb-xs">Food &amp; Wine</span>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Sagra del Mare d'Abruzzo</h3>
-<div class="flex items-center gap-xs text-on-surface-variant">
-<span class="material-symbols-outlined text-[18px]">location_on</span>
-<span class="font-label-sm text-label-sm">Porto di Giulianova</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Double Horizontal Cards -->
-<div class="md:col-span-8 flex flex-col gap-lg">
-<!-- Sponsor Banner Integrated -->
-<div class="w-full h-32 glass-panel rounded-2xl border-dashed border-white/20 flex items-center justify-between px-lg relative overflow-hidden">
-<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary to-transparent"></div>
-<div class="relative z-10">
-<p class="font-label-sm text-label-sm text-primary mb-xs font-bold">SPONSOR PRINCIPALE</p>
-<h4 class="font-headline-md text-headline-md text-on-surface">Adriatico Gin Experience</h4>
-</div>
-<button class="relative z-10 material-symbols-outlined p-md bg-white/5 rounded-full text-on-surface hover:bg-white/10">arrow_forward</button>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-lg h-full">
-<!-- Event 2 -->
-<div class="relative h-[340px] rounded-2xl overflow-hidden group shadow-lg">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-energy, wide-angle shot of a live concert on the beach at night. Silhouetted crowds raise their hands in front of a stage bathed in neon coral and turquoise laser lights. The atmosphere is electric and premium, capturing a modern summer festival vibe on the Adriatic coast. The visual style is crisp, with deep blacks and vibrant, glowing light effects." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhvBg-4joa_Fvev2x0Y3gKn22b2oTsLl_sU0U5TvqDpW6MNnm-i7VP6xwL6u0IVOZL5hqx1Z-VJ7TtJ9EH0nLGKgq49bgrpUiS98LidMin7XCirf8-LYMVIkm2d6w7N5cvOajC00IEoReltoqvuw9YLajamBmDK3A8Oaq4NczmdGj_TG56k4buaSQFGh1RBCvaXGPtZvGMne1J478ubIy7RzfEDGafqQzjSxk3SzWq8aZaYFvciOAH">
-<div class="absolute top-md right-md px-sm py-xs glass-panel rounded-lg text-primary font-bold">15 AGO</div>
-<div class="absolute inset-0 flex items-end p-md bg-gradient-to-t from-black/80 to-transparent">
-<div>
-<h3 class="font-headline-md text-on-surface">Concerti Sotto le Stelle</h3>
-<p class="font-label-sm text-on-surface-variant">Piazza della Repubblica</p>
-</div>
-</div>
-</div>
-<!-- Event 3 -->
-<div class="relative h-[340px] rounded-2xl overflow-hidden group shadow-lg">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A serene and artistic photograph of an outdoor morning yoga session on a wooden deck overlooking the calm Adriatic Sea. The morning light is soft, cool-toned, and ethereal. People are in graceful poses, creating a sense of wellness and luxury. The color palette consists of soft teals, whites, and the deep blue of the ocean. The mood is tranquil and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcpQyZSHXjyb4oIjlNdvPCfyZGycuR1GExw6FuPVt4YdqlDH1bf-fGGCUTrCM2PW-PY6Emh963M8DCR88rGzz8cnXnXUtTDghAmLXDjYGdI-SzaiksBnHGezF217FjRso_98lyiJv-ACh8EnLL9peJ_4QRMckmky8QTbOJzwpnhc8ySatejcO6DcjhRrOl8xr5arnWZxj1LYBRDDV-3Z8eHMtwgW5DlKB6svIxMdrivtzYepT1DRUY">
-<div class="absolute top-md right-md px-sm py-xs glass-panel rounded-lg text-secondary font-bold">OGNI DOM</div>
-<div class="absolute inset-0 flex items-end p-md bg-gradient-to-t from-black/80 to-transparent">
-<div>
-<h3 class="font-headline-md text-on-surface">Yoga al Risveglio</h3>
-<p class="font-label-sm text-on-surface-variant">Lungomare Centrale</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Asymmetric Text Callout -->
-<div class="md:col-span-12 py-xl relative">
-<div class="absolute -left-20 top-0 text-[120px] font-extrabold text-outline select-none pointer-events-none opacity-20 whitespace-nowrap">
-                    SUMMER NIGHTS ROSÉ
-                </div>
-<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-lg bg-surface-container/40 p-lg rounded-3xl border border-white/5 backdrop-blur-md">
-<div class="md:w-2/3">
-<h2 class="font-display-lg text-headline-lg md:text-display-lg text-on-surface mb-sm">Non perdere neanche un battito.</h2>
-<p class="font-body-lg text-on-surface-variant">Ricevi le notifiche in tempo reale sui migliori eventi, tavoli disponibili e shuttle per le discoteche della costa.</p>
-</div>
-<div class="flex gap-md">
-<button class="bg-secondary text-on-secondary px-lg py-md rounded-full font-label-md flex items-center gap-base active:scale-95 transition-all">
-<span class="material-symbols-outlined">notifications_active</span> Attiva Alert
-                        </button>
-</div>
-</div>
-</div>
-<!-- Horizontal Carousel Section -->
-<div class="md:col-span-12">
-<div class="flex justify-between items-center mb-md">
-<h2 class="font-headline-lg text-on-surface">Prossimi 7 Giorni</h2>
-<button class="text-primary font-label-md flex items-center gap-xs">Vedi Tutti <span class="material-symbols-outlined">trending_flat</span></button>
-</div>
-<div class="flex gap-lg overflow-x-auto pb-xl no-scrollbar custom-scrollbar">
-<!-- Day Card 1 -->
-<div class="flex-shrink-0 w-[280px] glass-panel p-lg rounded-2xl border-white/10 hover:border-primary transition-all">
-<p class="font-label-sm text-on-surface-variant mb-xs">Lunedì 12</p>
-<h4 class="font-headline-md text-on-surface mb-lg">Torneo di Padel Notturno</h4>
-<div class="flex -space-x-2">
-<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-[10px] text-on-primary font-bold border-2 border-surface">+12</div>
-</div>
-</div>
-<!-- Day Card 2 -->
-<div class="flex-shrink-0 w-[280px] glass-panel p-lg rounded-2xl border-white/10 hover:border-primary transition-all">
-<p class="font-label-sm text-on-surface-variant mb-xs">Martedì 13</p>
-<h4 class="font-headline-md text-on-surface mb-lg">Cinema sotto le Stelle: Film Noir</h4>
-<div class="flex -space-x-2">
-<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-[10px] text-on-secondary font-bold border-2 border-surface">+45</div>
-</div>
-</div>
-<!-- Day Card 3 -->
-<div class="flex-shrink-0 w-[280px] glass-panel p-lg rounded-2xl border-white/10 hover:border-primary transition-all">
-<p class="font-label-sm text-on-surface-variant mb-xs">Mercoledì 14</p>
-<h4 class="font-headline-md text-on-surface mb-lg">Degustazione Vini delle Colline</h4>
-<div class="flex -space-x-2">
-<div class="w-8 h-8 rounded-full bg-tertiary flex items-center justify-center text-[10px] text-on-tertiary font-bold border-2 border-surface">+89</div>
-</div>
-</div>
-<!-- Day Card 4 -->
-<div class="flex-shrink-0 w-[280px] glass-panel p-lg rounded-2xl border-white/10 hover:border-primary transition-all">
-<p class="font-label-sm text-on-surface-variant mb-xs">Giovedì 15</p>
-<h4 class="font-headline-md text-on-surface mb-lg">Gran Gala di Ferragosto</h4>
-<div class="flex -space-x-2">
-<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-[10px] text-on-primary font-bold border-2 border-surface">+250</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- ================================
-     SEZIONE NAVETTA GRATUITA
-     ================================ -->
+<!-- SEZIONE NAVETTA GRATUITA -->
 <div class="navetta-section">
-  <button class="navetta-toggle open" id="navettaToggle" onclick="toggleNavetta()">
+  <button class="navetta-toggle" id="navettaToggle" onclick="toggleNavetta()">
     <span>🚌 Orari Navetta Gratuita</span>
     <span class="arrow">▼</span>
   </button>
-  <div class="navetta-content open" id="navettaContent">
-    <div class="navetta-valid" id="navettaValid"></div>
-
+  <div class="navetta-content" id="navettaContent">
+    <div class="navetta-valid">🗓️ DAL 1° LUGLIO AL 6 SETTEMBRE 2026</div>
     <h3>📍 Percorso</h3>
-    <div class="navetta-route" id="navettaRoute"></div>
-
+    <div class="navetta-route" id="navettaStops"></div>
     <h3>🕐 Orario Giornaliero (tutti i giorni)</h3>
-    <div class="navetta-table-wrapper">
-      <table class="navetta-table" id="navettaTable">
-        <thead><tr><th>Fermata</th><th>17:00</th><th>18:00</th><th>21:30</th><th>23:30</th></tr></thead>
-        <tbody id="navettaTableBody"></tbody>
-      </table>
-    </div>
-
-    <div class="navetta-note" id="navettaNote"></div>
-
+    <div class="navetta-table-wrapper"><table class="navetta-table" id="navettaTable"><thead><tr><th>Fermata</th><th>17:00</th><th>18:00</th><th>21:30</th><th>23:30</th></tr></thead><tbody id="navettaTableBody"></tbody></table></div>
+    <div class="navetta-note">ℹ️ A richiesta: fermate a <strong>Belsito</strong> e in <strong>Viale Makarska</strong> (casa del Mar)</div>
     <details class="navetta-mercato">
       <summary>🛒 Martedì — Corsa Mercato (solo martedì)</summary>
       <div class="navetta-sub">Andata (da Lido d'Abruzzo → P.zza Marco Polo)</div>
-      <table class="navetta-table">
-        <thead><tr><th>Fermata</th><th>Orario</th></tr></thead>
-        <tbody id="navettaMercatoAndata"></tbody>
-      </table>
+      <table class="navetta-table"><thead><tr><th>Fermata</th><th>Orario</th></tr></thead><tbody>
+        <tr><td>Lido d'Abruzzo</td><td>09:00</td></tr><tr><td>Lungomare Trento (Via Emilia)</td><td>09:02</td></tr><tr><td>Lungomare Roma (Rotonda Nord)</td><td>09:04</td></tr><tr><td>Lungomare Roma (Rotonda Sud)</td><td>09:06</td></tr><tr><td>Club del Sole</td><td>09:08</td></tr><tr><td>P.zza Marco Polo</td><td>09:12</td></tr>
+      </tbody></table>
       <div class="navetta-sub">Ritorno (da P.zza Marco Polo → Lido d'Abruzzo)</div>
-      <table class="navetta-table">
-        <thead><tr><th>Fermata</th><th>Orario</th></tr></thead>
-        <tbody id="navettaMercatoRitorno"></tbody>
-      </table>
+      <table class="navetta-table"><thead><tr><th>Fermata</th><th>Orario</th></tr></thead><tbody>
+        <tr><td>P.zza Marco Polo</td><td>12:00</td></tr><tr><td>Club del Sole</td><td>12:04</td></tr><tr><td>Lungomare Roma (Rotonda Sud)</td><td>12:06</td></tr><tr><td>Lungomare Roma (Rotonda Nord)</td><td>12:08</td></tr><tr><td>Lungomare Trento (Via Emilia)</td><td>12:10</td></tr><tr><td>Lido d'Abruzzo</td><td>12:12</td></tr>
+      </tbody></table>
     </details>
   </div>
 </div>
 
 </main>
 
-<!-- Footer -->
-<footer class="w-full py-xl bg-surface-container-lowest flex flex-col items-center gap-base mt-xl">
-<div class="flex items-center gap-lg">
-  <a class="text-on-surface-variant hover:text-secondary transition-colors underline decoration-secondary font-label-sm text-label-sm" href="https://github.com/Googgier/roseto-eventi">GitHub</a>
-  <a class="text-on-surface-variant hover:text-secondary transition-colors underline decoration-secondary font-label-sm text-label-sm" href="#">Privacy</a>
-  <a class="text-on-surface-variant hover:text-secondary transition-colors underline decoration-secondary font-label-sm text-label-sm" href="#">Terms</a>
-</div>
-<div class="flex flex-col items-center">
-  <p class="text-on-surface font-bold font-label-sm text-label-sm">© 2025 Eventi Roseto &amp; Dintorni</p>
-  <p class="text-on-surface-variant text-[10px] uppercase tracking-widest mt-xs">Visite: <span id="visitCountFooter"></span></p>
-</div>
-<p class="text-on-surface-variant font-label-sm text-label-sm opacity-60">Made with ❤️ for the Adriatic Coast</p>
-</footer>
-
-<!-- BottomNavBar -->
-<nav class="fixed bottom-0 w-full z-50 glass-panel border-t border-white/10 shadow-lg flex justify-around items-center h-20 pb-safe">
-<!-- Events (Active) -->
-<a class="flex flex-col items-center justify-center text-primary-container font-bold active:scale-90 transition-transform" href="#">
-<span class="material-symbols-outlined active-glow" style="font-variation-settings: 'FILL' 1;">event</span>
-<span class="font-label-sm text-label-sm">Eventi</span>
-</a>
-<!-- Map -->
-<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-90 transition-transform" href="#">
-<span class="material-symbols-outlined">map</span>
-<span class="font-label-sm text-label-sm">Mappa</span>
-</a>
-<!-- Shuttle -->
-<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-90 transition-transform" href="#" onclick="toggleShuttle()">
-<span class="material-symbols-outlined">directions_bus</span>
-<span class="font-label-sm text-label-sm">Navette</span>
-</a>
-<!-- Saved -->
-<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-90 transition-transform" href="#">
-<span class="material-symbols-outlined">bookmark</span>
-<span class="font-label-sm text-label-sm">Salvati</span>
-</a>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-40 glass-panel-solid border-t border-white/10 flex justify-around items-center h-20 safe-bottom">
+  <a class="flex flex-col items-center gap-xs text-primary"><span class="material-symbols-outlined text-2xl" data-original-icon="event">event</span><span class="text-[10px] font-label-sm">Eventi</span></a>
+  <a class="flex flex-col items-center gap-xs text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined text-2xl" data-original-icon="map">map</span><span class="text-[10px] font-label-sm">Mappa</span></a>
+  <a class="flex flex-col items-center gap-xs text-on-surface-variant hover:text-primary" onclick="document.getElementById('navettaToggle')?.click()"><span class="material-symbols-outlined text-2xl" data-original-icon="directions_bus">directions_bus</span><span class="text-[10px] font-label-sm">Navette</span></a>
+  <a class="flex flex-col items-center gap-xs text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined text-2xl" data-original-icon="bookmark">bookmark</span><span class="text-[10px] font-label-sm">Salvati</span></a>
 </nav>
+
+<!-- Footer -->
+<footer class="text-center font-label-sm text-label-sm text-on-surface-variant py-lg max-w-[1280px] mx-auto">
+  <p>Generato automaticamente — <a href="https://github.com/Googgier/roseto-eventi" class="text-primary hover:underline">GitHub</a></p>
+  <p class="mt-xs opacity-60">Made with ❤️ for the Adriatic Coast</p>
+</footer>
 
 <!-- ================================
      AD BANNER
