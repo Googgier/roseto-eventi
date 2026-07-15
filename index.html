@@ -61,6 +61,29 @@
   body{padding-bottom:120px}
   footer{text-align:center;font-size:.75rem;color:var(--meta);padding:1rem 0}
   .visit-counter{margin-top:.5rem;font-size:.85rem;color:var(--sub)}
+  /* Navetta sezione */
+  .navetta-section{background:var(--card);border-radius:12px;margin-bottom:1.5rem;overflow:hidden;box-shadow:0 1px 4px var(--shadow)}
+  .navetta-toggle{width:100%;text-align:left;padding:1rem;border:none;background:var(--card);color:var(--title);font-size:1.15rem;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .2s}
+  .navetta-toggle:hover{background:var(--btn-hover)}
+  .navetta-toggle .arrow{transition:transform .3s;font-size:.9rem}
+  .navetta-toggle.open .arrow{transform:rotate(180deg)}
+  .navetta-content{padding:0 1rem 1rem;display:none}
+  .navetta-content.open{display:block}
+  .navetta-content h3{font-size:1rem;color:var(--title);margin:1rem 0 .5rem}
+  .navetta-valid{font-size:.8rem;color:var(--sub);margin-bottom:.75rem}
+  .navetta-route{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1rem}
+  .navetta-route .stop{font-size:.8rem;background:var(--tag-bg);color:var(--tag);padding:.2rem .55rem;border-radius:6px}
+  .navetta-route .stop::before{content:"➡ "}
+  .navetta-table{width:100%;border-collapse:collapse;font-size:.82rem;margin-bottom:1rem}
+  .navetta-table th{background:var(--title);color:#fff;padding:.5rem .4rem;text-align:center;font-weight:600}
+  .navetta-table td{padding:.4rem;border-bottom:1px solid var(--border);text-align:center}
+  .navetta-table tr td:first-child{text-align:left;font-weight:500}
+  .navetta-table tr:hover{background:var(--tag-bg)}
+  .navetta-note{font-size:.82rem;color:var(--meta);padding:.6rem;background:var(--tag-bg);border-radius:8px;margin-bottom:1rem}
+  .navetta-mercato{margin-top:.75rem}
+  .navetta-mercato summary{font-size:.9rem;font-weight:600;color:var(--tag);cursor:pointer;padding:.3rem 0}
+  .navetta-mercato summary:hover{opacity:.8}
+  .navetta-sub{font-size:.78rem;color:var(--meta);margin:.25rem 0}
 </style>
 </head>
 <body>
@@ -88,6 +111,71 @@
   <div id="eventi"></div>
   <div id="nessun-risultato">Nessun evento trovato 😕</div>
 
+  <!-- SEZIONE NAVETTA GRATUITA -->
+  <div class="navetta-section">
+    <button class="navetta-toggle" id="navettaToggle" onclick="toggleNavetta()">
+      <span>🚌 Orari Navetta Gratuita</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="navetta-content" id="navettaContent">
+      <div class="navetta-valid">🗓️ DAL 1° LUGLIO AL 6 SETTEMBRE 2026</div>
+
+      <h3>📍 Percorso</h3>
+      <div class="navetta-route">
+        <span class="stop">Stazione ferroviaria</span>
+        <span class="stop">Lungomare Trieste (Lunapark)</span>
+        <span class="stop">Club del Sole</span>
+        <span class="stop">Lungomare Roma (Rotonda Sud)</span>
+        <span class="stop">Lungomare Roma (Rotonda Nord)</span>
+        <span class="stop">Lido d'Abruzzo</span>
+        <span class="stop">Lungomare Trento (Via Emilia)</span>
+        <span class="stop">Cologna (Sottopassaggio)</span>
+        <span class="stop">Cologna (P.zza Redipuglia)</span>
+        <span class="stop">Montepagano (Municipio)</span>
+        <span class="stop">Campo a Mare (V.le America)</span>
+        <span class="stop">Campo a Mare (V.le Europa)</span>
+      </div>
+
+      <h3>🕐 Orario Giornaliero (tutti i giorni)</h3>
+      <div style="overflow-x:auto">
+      <table class="navetta-table" id="navettaTable">
+        <thead><tr><th>Fermata</th><th>17:00</th><th>18:00</th><th>21:30</th><th>23:30</th></tr></thead>
+        <tbody id="navettaTableBody"></tbody>
+      </table>
+      </div>
+
+      <div class="navetta-note">ℹ️ A richiesta: fermate a <strong>Belsito</strong> e in <strong>Viale Makarska</strong> (casa del Mar)</div>
+
+      <details class="navetta-mercato">
+        <summary>🛒 Martedì — Corsa Mercato (solo martedì)</summary>
+        <div class="navetta-sub">Andata (da Lido d'Abruzzo → P.zza Marco Polo)</div>
+        <table class="navetta-table">
+          <thead><tr><th>Fermata</th><th>Orario</th></tr></thead>
+          <tbody>
+            <tr><td>Lido d'Abruzzo</td><td>09:00</td></tr>
+            <tr><td>Lungomare Trento (Via Emilia)</td><td>09:02</td></tr>
+            <tr><td>Lungomare Roma (Rotonda Nord)</td><td>09:04</td></tr>
+            <tr><td>Lungomare Roma (Rotonda Sud)</td><td>09:06</td></tr>
+            <tr><td>Club del Sole</td><td>09:08</td></tr>
+            <tr><td>P.zza Marco Polo</td><td>09:12</td></tr>
+          </tbody>
+        </table>
+        <div class="navetta-sub">Ritorno (da P.zza Marco Polo → Lido d'Abruzzo)</div>
+        <table class="navetta-table">
+          <thead><tr><th>Fermata</th><th>Orario</th></tr></thead>
+          <tbody>
+            <tr><td>P.zza Marco Polo</td><td>12:00</td></tr>
+            <tr><td>Club del Sole</td><td>12:04</td></tr>
+            <tr><td>Lungomare Roma (Rotonda Sud)</td><td>12:06</td></tr>
+            <tr><td>Lungomare Roma (Rotonda Nord)</td><td>12:08</td></tr>
+            <tr><td>Lungomare Trento (Via Emilia)</td><td>12:10</td></tr>
+            <tr><td>Lido d'Abruzzo</td><td>12:12</td></tr>
+          </tbody>
+        </table>
+      </details>
+    </div>
+  </div>
+
   <footer>
     Generato automaticamente — <a href="https://github.com/Googgier/roseto-eventi">GitHub</a>
     <div class="visit-counter">👁️ <span id="visitCount">—</span> visite</div>
@@ -112,7 +200,7 @@ const eventi = [
   {id:2,data:"15–18 Lug 2026",orario:"21:00–23:00",titolo:"Roseto Opera Prima – 30ª edizione",luogo:"Villa Comunale, Roseto degli Abruzzi",desc:"Rassegna culturale con proiezioni, incontri e spettacoli.",citta:"Roseto",tag:["Cultura","Cinema"],fonte:"https://www.visitroseto.it/eventi/"},
   {id:3,data:"10 Lug – 6 Set 2026",orario:"Tutto il giorno",titolo:"Villa in Arte",luogo:"Villa Comunale, Roseto degli Abruzzi",desc:"Mostra d'arte con grandi protagonisti dell'arte contemporanea.",citta:"Roseto",tag:["Cultura","Arte"],fonte:"https://www.visitroseto.it/eventi/"},
   {id:4,data:"19 Lug 2026",orario:"21:00",titolo:"The Avengers – Spettacolo",luogo:"Piazza della Repubblica, Roseto degli Abruzzi",desc:"Spettacolo ispirato ai celebri supereroi. Ingresso gratuito.",citta:"Roseto",tag:["Intrattenimento","Sport"],fonte:"https://www.visitroseto.it/eventi/"},
-  {id:5,data:"1 Lug – 6 Set 2026",titolo:"Bus Navetta Gratis",luogo:"Roseto degli Abruzzi",desc:"Navetta gratuita che collega mare, centro, stazione ferroviaria.",citta:"Roseto",tag:["Servizio"],fonte:"https://www.visitroseto.it/eventi/"},
+
   {id:6,data:"21 Lug 2026",orario:"21:30",titolo:"Matteo Mancuso in concerto",luogo:"Portorose, Roseto degli Abruzzi",desc:"Abbazie Summer Festival. Biglietti su ciaotickets.",citta:"Roseto",tag:["Musica","Abbazie Summer Festival"],fonte:"https://concertidelleabbazie.it/programma/"},
   {id:7,data:"22 Lug 2026",orario:"21:30",titolo:"Billy Cobham – Time Machine",luogo:"Portorose, Roseto degli Abruzzi",desc:"Leggendario batterista jazz. Abbazie Summer Festival.",citta:"Roseto",tag:["Musica","Jazz","Abbazie Summer Festival"],fonte:"https://concertidelleabbazie.it/programma/"},
   {id:8,data:"22–26 Lug 2026",orario:"Dalle 19:00",titolo:"17ª Sagra 'De lu Stennmass'",luogo:"Cologna Paese, Roseto degli Abruzzi",desc:"Sagra enogastronomica con sapori e tradizioni del territorio.",citta:"Roseto",tag:["Enogastronomia","Sagra"],fonte:"https://www.visitroseto.it/eventi/"},
@@ -211,6 +299,39 @@ document.getElementById('adClose').addEventListener('click', () => {
   document.getElementById('adBanner').classList.add('closed');
   document.body.style.paddingBottom = '20px';
 });
+
+// === NAVETTA GRATUITA ===
+const navettaOrari = [
+  ["Stazione ferroviaria FS","17:00","18:00","21:30","23:30"],
+  ["Lungomare Trieste (Lunapark)","17:05","18:05","21:35","23:35"],
+  ["Club del Sole","17:06","18:06","21:36","23:36"],
+  ["Lungomare Roma (Rotonda Sud)","17:08","18:08","21:38","23:38"],
+  ["Lungomare Roma (Rotonda Nord)","17:10","18:10","21:40","23:40"],
+  ["Lido d'Abruzzo","17:12","18:12","21:42","23:42"],
+  ["Lungomare Trento (Via Emilia)","17:14","18:14","21:44","23:44"],
+  ["Cologna (Sottopassaggio)","--","18:20","--","23:50"],
+  ["Cologna (P.zza Redipuglia)","--","18:22","--","23:52"],
+  ["Montepagano (Municipio)","--","18:35","21:50","00:05"],
+  ["Campo a Mare (V.le America)","--","18:45","22:00","00:15"],
+  ["Campo a Mare (V.le Europa)","--","18:47","22:02","00:17"],
+  ["Rientro: Stazione FS","17:20","19:00","22:10","00:25"]
+];
+
+function popolaNavetta(){
+  const tbody = document.getElementById('navettaTableBody');
+  if(!tbody) return;
+  tbody.innerHTML = navettaOrari.map(r => 
+    `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`
+  ).join('');
+}
+popolaNavetta();
+
+function toggleNavetta(){
+  const btn = document.getElementById('navettaToggle');
+  const content = document.getElementById('navettaContent');
+  btn.classList.toggle('open');
+  content.classList.toggle('open');
+}
 </script>
 </body>
 </html>
