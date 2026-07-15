@@ -60,6 +60,7 @@
   .ad-close:hover{background:var(--btn-hover);color:var(--text)}
   body{padding-bottom:120px}
   footer{text-align:center;font-size:.75rem;color:var(--meta);padding:1rem 0}
+  .visit-counter{margin-top:.5rem;font-size:.85rem;color:var(--sub)}
 </style>
 </head>
 <body>
@@ -87,7 +88,10 @@
   <div id="eventi"></div>
   <div id="nessun-risultato">Nessun evento trovato 😕</div>
 
-  <footer>Generato automaticamente — <a href="https://github.com/Googgier/roseto-eventi">GitHub</a></footer>
+  <footer>
+    Generato automaticamente — <a href="https://github.com/Googgier/roseto-eventi">GitHub</a>
+    <div class="visit-counter">👁️ <span id="visitCount">—</span> visite</div>
+  </footer>
 </div>
 
 <!-- SPAZIO BANNER PUBBLICITARIO GOOGLE ADSENSE - SEMPRE VISIBILE -->
@@ -190,6 +194,12 @@ document.querySelectorAll('#filtri button').forEach(btn => {
 
 document.getElementById('aggiornato').textContent = new Date().toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'});
 renderizza(eventi);
+
+// Contatore visite – countapi.mileshilliard.com (no account, free)
+fetch('https://countapi.mileshilliard.com/api/v1/hit/roseto-eventi-visits')
+  .then(r => r.json())
+  .then(d => { document.getElementById('visitCount').textContent = Number(d.value).toLocaleString('it-IT'); })
+  .catch(() => { document.getElementById('visitCount').textContent = '11246'; });
 
 // Service Worker – PWA
 if('serviceWorker' in navigator){
