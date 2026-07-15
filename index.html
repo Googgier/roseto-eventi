@@ -802,8 +802,8 @@ function renderizza(lista){
         ? `<img class="evento-img" src="${e.img}" alt="${e.titolo}" onclick="openLightbox(this.src, this.alt)" loading="lazy">`
         : `<div class="evento-img-placeholder">${getIniziali(e.titolo)}</div>`;
       html += `<div class="evento">
+        ${imgHtml}
         <a href="${e.fonte || '#'}" target="_blank" rel="noopener">
-          ${imgHtml}
           ${oggiBadge}
           <div class="data">${e.data}</div>
           ${orarioHtml}
