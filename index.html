@@ -178,8 +178,9 @@ body{font-family:Inter,sans-serif;background:#0d1321;color:#dde2f6;min-height:10
   <p style="opacity:0.6;margin-top:4px">Made with &#x2764;&#xfe0f; for the Adriatic Coast</p>
 </div>
 <script>
-/* REGOLA: img = "" se NON si ha un'immagine UFFICIALE (locandina/poster reale).
-   Niente immagini stock/placeholder. Meglio gradiente con iniziali. */
+/* REGOLA: ogni evento DEVE avere img:"" se non si trova una LOCANDINA UFFICIALE.
+   Niente foto del luogo, niente foto stock. Solo locandina/poster reale o gradiente.
+   getIniziali() mostra max 2 parole nel placeholder. */
 const eventi=[
 {id:1,data:"10 Lug – 6 Set 2026",orario:"Tutto il giorno",titolo:"Villa in Arte",img:"images/img-1.jpg",luogo:"Villa Comunale, Roseto degli Abruzzi",desc:"Mostra d'arte contemporanea.",citta:"Roseto",tag:["Cultura","Arte"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
 {id:2,data:"12–19 Lug 2026",orario:"Vari orari",titolo:"Pescara Jazz 2026 – 54ª edizione",img:"",luogo:"Pescara",desc:"Festival internazionale di jazz.",citta:"Pescara",tag:["Musica","Jazz","Festival"],fonte:"https://www.ilpescara.it/eventi/",costo:"a pagamento"},
@@ -231,7 +232,7 @@ function renderizza(lista){
   c.innerHTML=html;
   document.getElementById('stats').textContent=lista.length+' eventi trovati';
 }
-function getIniziali(t){return t.replace(/['"]/g,'').split(/[\s–—‑-]+/).filter(function(w){return w.length>0&&!['di','del','della','degli','dei','il','la','le','gli','un','una','al','con','per'].includes(w.toLowerCase())}).slice(0,3).map(function(w){return w[0].toUpperCase()}).join('')}
+function getIniziali(t){return t.replace(/['"]/g,'').split(/[\s–—‑-]+/).filter(function(w){return w.length>0&&!['di','del','della','degli','dei','il','la','le','gli','un','una','al','con','per'].includes(w.toLowerCase())}).slice(0,2).map(function(w){return w[0].toUpperCase()}).join('')}
 function isOggi(s){
   var o=new Date();o.setHours(0,0,0,0);var ts=o.getTime(),m;
   m=s.match(/^(\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);if(m){var d=pd(m[1],m[2],m[3]);return d&&d.getTime()===ts}
