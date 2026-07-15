@@ -107,7 +107,7 @@ body{font-family:Inter,sans-serif;background:#0d1321;color:#dde2f6;min-height:10
 .badge-costo-gratis{background:rgba(0,198,182,0.2);color:#43e2d2;border:1px solid rgba(0,198,182,0.3)}
 .badge-costo-pagamento{background:rgba(255,181,156,0.2);color:#ffb59c;border:1px solid rgba(255,181,156,0.3)}
 .badge-costo-misto{background:rgba(166,139,130,0.2);color:#a68b82;border:1px solid rgba(166,139,130,0.3)}
-.badge-costo{position:absolute;bottom:65px;left:12px;z-index:5;padding:3px 8px;border-radius:6px;font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;pointer-events:none}
+.badge-costo{display:inline-block;padding:2px 8px;border-radius:6px;font-size:0.6rem;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-right:6px;vertical-align:middle}
 </style></head><body>
 <header class="glass" style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:0 20px;height:64px;border-bottom:1px solid rgba(255,255,255,0.08)">
   <div style="display:flex;align-items:center;gap:8px">
@@ -214,7 +214,7 @@ function renderizza(lista){
   document.getElementById('nessun-risultato').style.display='none';
   var top=lista[0],oggi=isOggi(top.data)?'<div class="oggi">🔴 In corso</div>':'';
   var ih=top.img&&top.img!=='N/A'?'<img src="'+top.img+'" alt="'+top.titolo+'">':'<div style="width:100%;height:100%;background:linear-gradient(135deg,#242a39,#2f3544);display:flex;align-items:center;justify-content:center;font-size:3rem;color:#ffb59c;font-weight:700;font-family:Montserrat">'+getIniziali(top.titolo)+'</div>';
-  h.innerHTML='<div class="hero-section">'+ih+'<div class="grad"></div>'+oggi+badgeCosto(top.costo)+'<div class="hero-content"><div class="gpanel"><span class="gold">'+top.tag[0]+'</span><h2>'+top.titolo+'</h2><p>'+top.desc+'</p><div class="meta">📅 '+top.data+' · 🕐 '+top.orario+' · '+top.luogo+'</div><a href="'+top.fonte+'" target="_blank" rel="noopener" style="position:absolute;right:0;bottom:0;left:0;height:45%;text-indent:-9999px;pointer-events:auto">Dettagli</a></div></div></div>';
+  h.innerHTML='<div class="hero-section">'+ih+'<div class="grad"></div>'+oggi+'<div class="hero-content"><div class="gpanel"><span class="badge-costo badge-costo-'+(top.costo==='gratis'?'gratis':top.costo==='a pagamento'?'pagamento':'misto')+'">'+(top.costo==='gratis'?'GRATIS':top.costo==='a pagamento'?'A PAGAMENTO':'MISTO')+'</span><span class="gold">'+top.tag[0]+'</span><h2>'+top.titolo+'</h2><p>'+top.desc+'</p><div class="meta">📅 '+top.data+' · 🕐 '+top.orario+' · '+top.luogo+'</div><a href="'+top.fonte+'" target="_blank" rel="noopener" style="position:absolute;right:0;bottom:0;left:0;height:45%;text-indent:-9999px;pointer-events:auto">Dettagli</a></div></div></div>';
   var m={};lista.forEach(function(e){if(!m[e.citta])m[e.citta]=[];m[e.citta].push(e);});
   var html='';
   for(var citta in m){
@@ -223,13 +223,12 @@ function renderizza(lista){
       var o=isOggi(e.data)?'<div class="oggi">🔴 In corso</div>':'';
       var bd='<div class="badge">'+e.data+'</div>';
       var im=e.img&&e.img!=='N/A'?'<img src="'+e.img+'" alt="'+e.titolo+'" loading="lazy">':'<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#242a39,#2f3544);color:#ffb59c;font-size:2rem;font-weight:700;font-family:Montserrat">'+getIniziali(e.titolo)+'</div>';
-      html+='<div class="card-evento">'+im+'<div class="grad"></div>'+o+bd+badgeCosto(e.costo)+'<div class="info"><div class="gpanel"><span class="cat">'+e.tag[0]+'</span><h3>'+e.titolo+'</h3><div class="luogo">'+e.luogo+'</div></div></div><a class="cover-link" href="'+e.fonte+'" target="_blank" rel="noopener">Dettagli</a></div>';
+      html+='<div class="card-evento">'+im+'<div class="grad"></div>'+o+bd+'<div class="info"><div class="gpanel"><span class="cat"><span class="badge-costo badge-costo-'+(e.costo==='gratis'?'gratis':e.costo==='a pagamento'?'pagamento':'misto')+'">'+(e.costo==='gratis'?'GRATIS':e.costo==='a pagamento'?'A PAGAMENTO':'MISTO')+'</span> '+e.tag[0]+'</span><h3>'+e.titolo+'</h3><div class="luogo">'+e.luogo+'</div></div></div><a class="cover-link" href="'+e.fonte+'" target="_blank" rel="noopener">Dettagli</a></div>';
     });
   }
   c.innerHTML=html;
   document.getElementById('stats').textContent=lista.length+' eventi trovati';
 }
-function badgeCosto(c){if(c==='gratis')return'<div class="badge-costo badge-costo-gratis">GRATIS</div>';if(c==='a pagamento')return'<div class="badge-costo badge-costo-pagamento">A PAGAMENTO</div>';if(c==='misto')return'<div class="badge-costo badge-costo-misto">MISTO</div>';return''}
 function getIniziali(t){return t.replace(/['"]/g,'').split(/[\s–—‑-]+/).filter(function(w){return w.length>0&&!['di','del','della','degli','dei','il','la','le','gli','un','una','al','con','per'].includes(w.toLowerCase())}).slice(0,3).map(function(w){return w[0].toUpperCase()}).join('')}
 function isOggi(s){
   var o=new Date();o.setHours(0,0,0,0);var ts=o.getTime(),m;
