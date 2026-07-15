@@ -27,104 +27,12 @@
 <meta name="twitter:description" content="Eventi, sagre, concerti e manifestazioni nel raggio di 25 km da Roseto.">
 <meta name="twitter:image" content="https://googgier.github.io/roseto-eventi/og-image.png">
 <title>Eventi Roseto degli Abruzzi & Dintorni</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-<script id="tailwind-config">
-try{
-tailwind.config = {
-  darkMode: "class",
-  theme: {
-    extend: {
-      colors: {
-        "tertiary-fixed-dim": "#ffb95a",
-        "surface-container-low": "#151b29",
-        "on-surface": "#dde2f6",
-        "surface-container": "#191f2e",
-        "on-secondary-container": "#004c46",
-        "on-primary-container": "#6c2000",
-        "on-surface-variant": "#dec0b6",
-        "tertiary-fixed": "#ffddb6",
-        "surface-container-lowest": "#080e1c",
-        "surface-variant": "#2f3544",
-        "secondary-container": "#00c6b6",
-        "surface-dim": "#0d1321",
-        "on-secondary-fixed": "#00201d",
-        "surface-bright": "#333948",
-        "secondary-fixed": "#61f9e9",
-        "secondary-fixed-dim": "#3adccc",
-        "error-container": "#93000a",
-        "on-tertiary-container": "#533300",
-        "tertiary": "#ffb95a",
-        "background": "#0d1321",
-        "surface-container-high": "#242a39",
-        "on-secondary": "#003732",
-        "outline-variant": "#57423b",
-        "primary-fixed-dim": "#ffb59c",
-        "inverse-primary": "#a43c12",
-        "error": "#ffb4ab",
-        "on-tertiary-fixed-variant": "#643f00",
-        "surface-container-highest": "#2f3544",
-        "on-secondary-fixed-variant": "#005049",
-        "surface": "#0d1321",
-        "on-tertiary": "#462a00",
-        "inverse-on-surface": "#2a303f",
-        "on-primary-fixed-variant": "#822800",
-        "on-primary": "#5c1a00",
-        "on-tertiary-fixed": "#2a1800",
-        "on-background": "#dde2f6",
-        "primary": "#ffb59c",
-        "outline": "#a68b82",
-        "on-error-container": "#ffdad6",
-        "surface-tint": "#ffb59c",
-        "on-error": "#690005",
-        "tertiary-container": "#dc952a",
-        "primary-container": "#ff7f50",
-        "secondary": "#43e2d2",
-        "inverse-surface": "#dde2f6",
-        "primary-fixed": "#ffdbcf",
-        "on-primary-fixed": "#380c00"
-      },
-      borderRadius: {
-        DEFAULT: "0.25rem",
-        lg: "0.5rem",
-        xl: "0.75rem",
-        full: "9999px"
-      },
-      spacing: {
-        base: "8px",
-        xs: "4px",
-        sm: "12px",
-        md: "16px",
-        lg: "24px",
-        xl: "40px",
-        gutter: "16px",
-        "container-margin": "20px"
-      },
-      fontFamily: {
-        "display-lg": ["Montserrat"],
-        "headline-lg": ["Montserrat"],
-        "headline-lg-mobile": ["Montserrat"],
-        "headline-md": ["Montserrat"],
-        "body-lg": ["Inter"],
-        "body-md": ["Inter"],
-        "label-md": ["Inter"],
-        "label-sm": ["Inter"]
-      },
-      fontSize: {
-        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
-        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-        "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400"}],
-        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}]
-      }
-    }
-  }
-}
-}catch(_e){}
+<script src="https://cdn.tailwindcss.com/3.4.17?plugins=forms@0.5.10,container-queries@0.1.1"></script>
+<script>
+tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface":"#0d1321","surface-dim":"#0d1321","surface-bright":"#333948","surface-container-lowest":"#080e1c","surface-container-low":"#151b29","surface-container":"#191f2e","surface-container-high":"#242a39","surface-container-highest":"#2f3544","on-surface":"#dde2f6","on-surface-variant":"#dec0b6","inverse-surface":"#dde2f6","inverse-on-surface":"#2a303f","outline":"#a68b82","outline-variant":"#57423b","surface-tint":"#ffb59c",primary:"#ffb59c","on-primary":"#5c1a00","primary-container":"#ff7f50","on-primary-container":"#6c2000","inverse-primary":"#a43c12",secondary:"#43e2d2","on-secondary":"#003732","secondary-container":"#00c6b6","on-secondary-container":"#004c46",tertiary:"#ffb95a","on-tertiary":"#462a00","tertiary-container":"#dc952a","on-tertiary-container":"#533300",error:"#ffb4ab","on-error":"#690005","error-container":"#93000a","on-error-container":"#ffdad6","primary-fixed":"#ffdbcf","primary-fixed-dim":"#ffb59c","on-primary-fixed":"#380c00","on-primary-fixed-variant":"#822800","secondary-fixed":"#61f9e9","secondary-fixed-dim":"#3adccc","on-secondary-fixed":"#00201d","on-secondary-fixed-variant":"#005049","tertiary-fixed":"#ffddb6","tertiary-fixed-dim":"#ffb95a","on-tertiary-fixed":"#2a1800","on-tertiary-fixed-variant":"#643f00",background:"#0d1321","on-background":"#dde2f6","surface-variant":"#2f3544"}},fontFamily:{display:["Montserrat"],headline:["Montserrat"],body:["Inter"]},fontSize:{"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"0.01em",fontWeight:"400"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0.05em",fontWeight:"600"}],"label-sm":["12px",{lineHeight:"16px",fontWeight:"500"}]},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{base:"8px",xs:"4px",sm:"12px",md:"16px",lg:"24px",xl:"40px",gutter:"16px","container-margin":"20px"}}}}
 </script>
 <style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 /* ================================
    GLASS PANEL UTILITY (V2 design)
    ================================ */
