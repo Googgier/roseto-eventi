@@ -12,78 +12,141 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <title>Eventi Roseto degli Abruzzi & Dintorni</title>
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
-  :root{--bg:#f5f5f5;--card:#fff;--text:#222;--title:#1a1a2e;--sub:#666;--desc:#555;--meta:#888;--border:#e0e0e0;--search-bg:#fff;--tag-bg:#eef2ff;--tag:#4f46e5;--btn-bg:#fff;--btn-border:#ddd;--btn-hover:#e8e8e8;--shadow:rgba(0,0,0,.06);--shadow-hover:rgba(0,0,0,.1)}
+
+  /* ============================
+     TEMA E VARIABILI
+     ============================ */
+  :root{--bg:#f5f5f5;--card:#fff;--text:#222;--title:#1a1a2e;--sub:#666;--desc:#555;--meta:#888;--border:#e0e0e0;--search-bg:#fff;--tag-bg:#eef2ff;--tag:#4f46e5;--btn-bg:#fff;--btn-border:#ddd;--btn-hover:#e8e8e8;--shadow:rgba(0,0,0,.06);--shadow-hover:rgba(0,0,0,.12);--accent:#e94560;--today-bg:#fff3cd;--today-border:#ffc107}
   @media(prefers-color-scheme:dark){
-    :root{--bg:#121212;--card:#1e1e1e;--text:#e4e4e4;--title:#f0f0f0;--sub:#aaa;--desc:#bbb;--meta:#999;--border:#333;--search-bg:#1e1e1e;--tag-bg:#1e293b;--tag:#93c5fd;--btn-bg:#2a2a2a;--btn-border:#444;--btn-hover:#3a3a3a;--shadow:rgba(0,0,0,.3);--shadow-hover:rgba(0,0,0,.4)}
+    :root{--bg:#121212;--card:#1e1e1e;--text:#e4e4e4;--title:#f0f0f0;--sub:#aaa;--desc:#bbb;--meta:#999;--border:#333;--search-bg:#1e1e1e;--tag-bg:#1e293b;--tag:#93c5fd;--btn-bg:#2a2a2a;--btn-border:#444;--btn-hover:#3a3a3a;--shadow:rgba(0,0,0,.3);--shadow-hover:rgba(0,0,0,.5);--today-bg:#2a2520;--today-border:#856404}
   }
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;transition:background .3s,color .3s}
+
+  /* ============================
+     LAYOUT BASE
+     ============================ */
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;transition:background .3s,color .3s;padding-bottom:140px}
   .container{max-width:960px;margin:0 auto;padding:1rem}
-  h1{font-size:1.5rem;margin-bottom:.25rem;color:var(--title)}
+
+  /* ============================
+     INTESTAZIONE
+     ============================ */
+  h1{font-size:1.6rem;margin-bottom:.25rem;color:var(--title);line-height:1.3}
   .subtitle{color:var(--sub);font-size:.9rem;margin-bottom:1rem}
-  .search-bar{position:sticky;top:0;z-index:10;background:var(--search-bg);padding:.75rem;border-radius:12px;box-shadow:0 2px 8px var(--shadow);margin-bottom:1rem;transition:background .3s}
-  #search{width:100%;padding:.7rem 1rem;border:2px solid var(--border);border-radius:8px;font-size:1rem;outline:none;transition:border-color .2s;background:var(--card);color:var(--text)}
-  #search:focus{border-color:var(--title)}
-  .filtri{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.5rem}
-  .filtri button{padding:.35rem .8rem;border:1px solid var(--btn-border);border-radius:20px;background:var(--btn-bg);cursor:pointer;font-size:.8rem;transition:all .2s;color:var(--text)}
-  .filtri button.attivo{background:var(--title);color:#fff;border-color:var(--title)}
-  .filtri button:hover:not(.attivo){background:var(--btn-hover)}
-  .evento{background:var(--card);border-radius:12px;padding:1rem;margin-bottom:.75rem;box-shadow:0 1px 4px var(--shadow);transition:box-shadow .2s,background .3s}
-  .evento:hover{box-shadow:0 3px 12px var(--shadow-hover)}
+
+  /* ============================
+     RICERCA E FILTRI
+     ============================ */
+  .search-bar{position:sticky;top:0;z-index:10;background:var(--search-bg);padding:.75rem;border-radius:12px;box-shadow:0 4px 16px var(--shadow),0 0 0 1px rgba(233,69,96,.08);margin-bottom:1rem;transition:box-shadow .3s,background .3s}
+  #search{width:100%;padding:.7rem 1rem;border:2px solid var(--border);border-radius:8px;font-size:1rem;outline:none;transition:border-color .2s,box-shadow .2s;background:var(--card);color:var(--text)}
+  #search:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(233,69,96,.15)}
+  .filtri{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.6rem}
+  .filtri button{padding:.35rem .8rem;border:1px solid var(--btn-border);border-radius:20px;background:var(--btn-bg);cursor:pointer;font-size:.8rem;transition:all .25s;color:var(--text);user-select:none}
+  .filtri button.attivo{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 2px 8px rgba(233,69,96,.3)}
+  .filtri button:hover:not(.attivo){background:var(--btn-hover);transform:translateY(-1px)}
+
+  /* ============================
+     CARD EVENTO
+     ============================ */
+  .evento{background:var(--card);border-radius:12px;padding:1rem;margin-bottom:.75rem;box-shadow:0 1px 4px var(--shadow);transition:box-shadow .3s,transform .2s,background .3s;position:relative;cursor:pointer}
+  .evento:hover{box-shadow:0 6px 20px var(--shadow-hover);transform:translateY(-2px)}
   .evento.hidden{display:none}
-  .evento{position:relative;cursor:pointer}
   .evento a{text-decoration:none;color:inherit;display:block}
-  .evento a::after{content:"🔗";position:absolute;top:.75rem;right:.75rem;font-size:.7rem;opacity:.4;transition:opacity .2s}
-  .evento:hover a::after{opacity:.8}
+  .evento a::after{content:"🔗";position:absolute;top:.75rem;right:.75rem;font-size:.7rem;opacity:.4;transition:opacity .3s}
+  .evento:hover a::after{opacity:.9}
   .evento .orario{display:inline-block;font-size:.75rem;color:var(--meta);background:var(--tag-bg);padding:.1rem .5rem;border-radius:6px;margin-bottom:.25rem}
-  .evento .data{font-size:.8rem;color:#e94560;font-weight:600;margin-bottom:.2rem}
+  .evento .data{font-size:.8rem;color:var(--accent);font-weight:600;margin-bottom:.2rem}
   .evento .titolo{font-size:1.05rem;font-weight:600;color:var(--title);margin-bottom:.2rem}
   .evento .luogo{font-size:.85rem;color:var(--meta);margin-bottom:.3rem}
   .evento .luogo::before{content:"📍 "}
   .evento .desc{font-size:.9rem;color:var(--desc)}
   .evento .etichette{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.5rem}
-  .evento .etichetta{font-size:.7rem;padding:.15rem .55rem;border-radius:10px;background:var(--tag-bg);color:var(--tag)}
-  .intestazione-comune{font-size:1.2rem;font-weight:700;color:var(--title);margin:1.5rem 0 .75rem;padding-bottom:.3rem;border-bottom:2px solid #e94560}
+  .evento .etichetta{font-size:.7rem;padding:.15rem .55rem;border-radius:10px;background:var(--tag-bg);color:var(--tag);transition:background .2s}
+  .evento .badge-oggi{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:.15rem .5rem;border-radius:6px;background:var(--today-bg);color:var(--today-border);border:1px solid var(--today-border);margin-bottom:.3rem;animation:pulse-badge 2s ease-in-out infinite}
+  @keyframes pulse-badge{0%,100%{opacity:1}50%{opacity:.65}}
+
+  /* ============================
+     INTESTAZIONE COMUNE
+     ============================ */
+  .intestazione-comune{font-size:1.3rem;font-weight:700;color:var(--title);margin:1.8rem 0 .75rem;padding-bottom:.35rem;border-bottom:2px solid var(--accent);letter-spacing:-.3px}
+
+  /* ============================
+     STATS E NESSUN RISULTATO
+     ============================ */
   .stats{text-align:center;font-size:.8rem;color:var(--meta);margin-bottom:1rem}
   #nessun-risultato{text-align:center;padding:2rem;color:var(--meta);display:none}
-  .ad-banner{position:fixed;bottom:0;left:0;right:0;z-index:100;text-align:center;padding:.5rem 2rem .5rem .5rem;background:var(--card);border-top:1px solid var(--border);box-shadow:0 -2px 8px var(--shadow);transition:background .3s,transform .3s}
+
+  /* ============================
+     BANNER PUBBLICITARIO
+     ============================ */
+  .ad-banner{position:fixed;bottom:0;left:0;right:0;z-index:100;text-align:center;padding:.5rem 2rem .5rem .5rem;background:var(--card);border-top:1px solid var(--border);box-shadow:0 -2px 8px var(--shadow);transition:background .3s,transform .35s}
   .ad-banner.closed{transform:translateY(100%)}
   .ad-banner .ad-label{font-size:.6rem;color:var(--meta);text-transform:uppercase;letter-spacing:1px;margin-bottom:.25rem}
   .ad-banner ins{display:inline-block}
   .ad-banner .adsbygoogle{max-width:100%;height:auto;min-height:70px}
   @media(max-width:768px){.ad-banner .adsbygoogle{width:100%;min-height:70px}}
-  .ad-close{position:absolute;top:.25rem;right:.5rem;background:none;border:none;font-size:1.1rem;cursor:pointer;color:var(--meta);padding:.2rem .35rem;line-height:1;border-radius:4px;transition:background .2s}
+  .ad-close{position:absolute;top:.25rem;right:.5rem;background:none;border:none;font-size:1.1rem;cursor:pointer;color:var(--meta);padding:.2rem .35rem;line-height:1;border-radius:4px;transition:background .2s,color .2s}
   .ad-close:hover{background:var(--btn-hover);color:var(--text)}
-  body{padding-bottom:120px}
+
+  /* ============================
+     FOOTER
+     ============================ */
   footer{text-align:center;font-size:.75rem;color:var(--meta);padding:1rem 0}
   .visit-counter{margin-top:.5rem;font-size:.85rem;color:var(--sub)}
-  /* Navetta sezione */
-  .navetta-section{background:var(--card);border-radius:12px;margin-bottom:1.5rem;overflow:hidden;box-shadow:0 1px 4px var(--shadow)}
+  .visit-counter.loading{opacity:.5}
+  .visit-counter .counter-spinner{display:inline-block;width:12px;height:12px;border:2px solid var(--sub);border-top-color:transparent;border-radius:50%;animation:spin .6s linear infinite;vertical-align:middle;margin-right:4px}
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  /* ============================
+     NAVETTA GRATUITA
+     ============================ */
+  .navetta-section{background:var(--card);border-radius:12px;margin-bottom:1.5rem;overflow:hidden;box-shadow:0 1px 4px var(--shadow);transition:box-shadow .3s}
+  .navetta-section:hover{box-shadow:0 4px 14px var(--shadow-hover)}
   .navetta-toggle{width:100%;text-align:left;padding:1rem;border:none;background:var(--card);color:var(--title);font-size:1.15rem;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .2s}
   .navetta-toggle:hover{background:var(--btn-hover)}
-  .navetta-toggle .arrow{transition:transform .3s;font-size:.9rem}
+  .navetta-toggle .arrow{transition:transform .35s;font-size:.9rem}
   .navetta-toggle.open .arrow{transform:rotate(180deg)}
   .navetta-content{padding:0 1rem 1rem;display:none}
   .navetta-content.open{display:block}
   .navetta-content h3{font-size:1rem;color:var(--title);margin:1rem 0 .5rem}
   .navetta-valid{font-size:.8rem;color:var(--sub);margin-bottom:.75rem}
   .navetta-route{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1rem}
-  .navetta-route .stop{font-size:.8rem;background:var(--tag-bg);color:var(--tag);padding:.2rem .55rem;border-radius:6px}
+  .navetta-route .stop{font-size:.8rem;background:var(--tag-bg);color:var(--tag);padding:.2rem .55rem;border-radius:6px;transition:background .2s}
+  .navetta-route .stop:hover{background:var(--btn-hover)}
   .navetta-route .stop::before{content:"➡ "}
-  .navetta-table{width:100%;border-collapse:collapse;font-size:.82rem;margin-bottom:1rem}
-  .navetta-table th{background:var(--title);color:#fff;padding:.5rem .4rem;text-align:center;font-weight:600}
-  .navetta-table td{padding:.4rem;border-bottom:1px solid var(--border);text-align:center}
-  .navetta-table tr td:first-child{text-align:left;font-weight:500}
+  .navetta-table-wrapper{overflow-x:auto;margin-bottom:1rem;-webkit-overflow-scrolling:touch}
+  .navetta-table{width:100%;border-collapse:collapse;font-size:.82rem;min-width:500px}
+  .navetta-table th{background:var(--title);color:#fff;padding:.5rem .4rem;text-align:center;font-weight:600;white-space:nowrap}
+  .navetta-table td{padding:.4rem;border-bottom:1px solid var(--border);text-align:center;white-space:nowrap}
+  .navetta-table tr td:first-child{text-align:left;font-weight:500;white-space:normal;min-width:130px}
   .navetta-table tr:hover{background:var(--tag-bg)}
   .navetta-note{font-size:.82rem;color:var(--meta);padding:.6rem;background:var(--tag-bg);border-radius:8px;margin-bottom:1rem}
   .navetta-mercato{margin-top:.75rem}
-  .navetta-mercato summary{font-size:.9rem;font-weight:600;color:var(--tag);cursor:pointer;padding:.3rem 0}
+  .navetta-mercato summary{font-size:.9rem;font-weight:600;color:var(--tag);cursor:pointer;padding:.3rem 0;transition:opacity .2s}
   .navetta-mercato summary:hover{opacity:.8}
   .navetta-sub{font-size:.78rem;color:var(--meta);margin:.25rem 0}
+
+  /* ============================
+     RESPONSIVITÀ MOBILE (< 480px)
+     ============================ */
+  @media(max-width:480px){
+    h1{font-size:1.25rem}
+    .evento .titolo{font-size:.95rem}
+    .evento{padding:.75rem}
+    .filtri{gap:.35rem}
+    .filtri button{font-size:.72rem;padding:.25rem .6rem}
+    .search-bar{padding:.5rem}
+    .intestazione-comune{font-size:1.1rem}
+    .navetta-route{gap:.25rem}
+    .navetta-route .stop{font-size:.72rem;padding:.15rem .4rem}
+    .navetta-table{font-size:.72rem;min-width:420px}
+    .navetta-table tr td:first-child{min-width:100px;font-size:.7rem}
+    body{padding-bottom:130px}
+  }
 </style>
 </head>
 <body>
@@ -113,11 +176,11 @@
 
   <!-- SEZIONE NAVETTA GRATUITA -->
   <div class="navetta-section">
-    <button class="navetta-toggle" id="navettaToggle" onclick="toggleNavetta()">
+    <button class="navetta-toggle open" id="navettaToggle" onclick="toggleNavetta()">
       <span>🚌 Orari Navetta Gratuita</span>
       <span class="arrow">▼</span>
     </button>
-    <div class="navetta-content" id="navettaContent">
+    <div class="navetta-content open" id="navettaContent">
       <div class="navetta-valid">🗓️ DAL 1° LUGLIO AL 6 SETTEMBRE 2026</div>
 
       <h3>📍 Percorso</h3>
@@ -137,7 +200,7 @@
       </div>
 
       <h3>🕐 Orario Giornaliero (tutti i giorni)</h3>
-      <div style="overflow-x:auto">
+      <div class="navetta-table-wrapper">
       <table class="navetta-table" id="navettaTable">
         <thead><tr><th>Fermata</th><th>17:00</th><th>18:00</th><th>21:30</th><th>23:30</th></tr></thead>
         <tbody id="navettaTableBody"></tbody>
@@ -228,24 +291,30 @@ const eventi = [
   {id:27, data:"Luglio 2026", orario:"Vari orari", titolo:"Eventi Estate 2026 – Cartellone completo", luogo:"San Benedetto del Tronto", desc:"Concerti, sagre e spettacoli. Programma sul sito del Comune.", citta:"San Benedetto", tag:["Musica","Cultura","Sagra"], fonte:"https://www.comune.sanbenedettodeltronto.ap.it/it/news/il-calendario-degli-eventi-dell-estate-2026"}
 ];
 
+/* ============================================================
+   FUNZIONE: RENDERIZZA — genera HTML delle card evento
+   ============================================================ */
 function renderizza(lista){
   const container = document.getElementById('eventi');
   if(!lista.length){document.getElementById('nessun-risultato').style.display='block';container.innerHTML='';return}
   document.getElementById('nessun-risultato').style.display='none';
-  
+
   const perComune = {};
   lista.forEach(e => {
     if(!perComune[e.citta]) perComune[e.citta] = [];
     perComune[e.citta].push(e);
   });
-  
+
   let html = '';
   for(const [citta, evs] of Object.entries(perComune)){
     html += `<div class="intestazione-comune">📍 ${citta}</div>`;
     evs.forEach(e => {
       const orarioHtml = e.orario ? `<div class="orario">🕐 ${e.orario}</div>` : '';
+      // Verifica se la data corrente cade nel range dell'evento
+      const oggiBadge = isOggi(e.data) ? '<div class="badge-oggi">🔴 In corso</div>' : '';
       html += `<div class="evento">
         <a href="${e.fonte || '#'}" target="_blank" rel="noopener">
+          ${oggiBadge}
           <div class="data">${e.data}</div>
           ${orarioHtml}
           <div class="titolo">${e.titolo}</div>
@@ -260,10 +329,84 @@ function renderizza(lista){
   document.getElementById('stats').textContent = `${lista.length} eventi trovati`;
 }
 
+/* ============================================================
+   FUNZIONE: isOggi — badge "In corso" per eventi che coprono oggi
+   ============================================================ */
+function isOggi(dataStr){
+  const oggi = new Date();
+  oggi.setHours(0,0,0,0);
+  const oggiTs = oggi.getTime();
+
+  // Data singola: "15 Lug 2026"
+  let m = dataStr.match(/^(\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);
+  if(m){
+    const dataEv = parseDataIt(m[1], m[2], m[3]);
+    return dataEv && dataEv.getTime() === oggiTs;
+  }
+
+  // Data singola "Luglio 2026" (solo mese) → mostra badge per tutto il mese
+  m = dataStr.match(/^([A-Za-z]+)\s(\d{4})$/);
+  if(m){
+    const mese = meseNum(m[1]);
+    if(mese === null) return false;
+    return oggi.getMonth() === mese && oggi.getFullYear() === parseInt(m[2]);
+  }
+
+  // Range: "10 Lug – 6 Set 2026"
+  m = dataStr.match(/^(\d{1,2})\s([A-Za-z]+)\s*[–-]\s*(\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);
+  if(m){
+    const inizio = parseDataIt(m[1], m[2], m[5]);
+    const fine = parseDataIt(m[3], m[4], m[5]);
+    return inizio && fine && oggiTs >= inizio.getTime() && oggiTs <= fine.getTime();
+  }
+
+  // Range con anno finale diverso: "28 Lug – 14 Ago 2026"
+  m = dataStr.match(/^(\d{1,2})\s([A-Za-z]+)\s*[–-]\s*(\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);
+  if(m){
+    const inizio = parseDataIt(m[1], m[2], m[5]);
+    const fine = parseDataIt(m[3], m[4], m[5]);
+    return inizio && fine && oggiTs >= inizio.getTime() && oggiTs <= fine.getTime();
+  }
+
+  // Range con due date complete: "15–19 Lug 2026"
+  m = dataStr.match(/^(\d{1,2})[–-](\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);
+  if(m){
+    const inizio = parseDataIt(m[1], m[3], m[4]);
+    const fine = parseDataIt(m[2], m[3], m[4]);
+    return inizio && fine && oggiTs >= inizio.getTime() && oggiTs <= fine.getTime();
+  }
+
+  // Range con date complete in mesi diversi: "15 Lug – 6 Set 2026"
+  m = dataStr.match(/^(\d{1,2})\s([A-Za-z]+)\s*[–-]\s*(\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);
+  if(m){
+    const inizio = parseDataIt(m[1], m[2], m[5]);
+    const fine = parseDataIt(m[3], m[4], m[5]);
+    return inizio && fine && oggiTs >= inizio.getTime() && oggiTs <= fine.getTime();
+  }
+
+  return false;
+}
+
+function meseNum(nome){
+  const map = {gen:0,feb:1,mar:2,apr:3,mag:4,giu:5,lug:6,ago:7,set:8,ott:9,nov:10,dic:11,
+    gennaio:0,febbraio:1,marzo:2,aprile:3,maggio:4,giugno:5,luglio:6,agosto:7,settembre:8,ottobre:9,novembre:10,dicembre:11};
+  const key = nome.toLowerCase().slice(0,3);
+  return map[key] !== undefined ? map[key] : null;
+}
+
+function parseDataIt(g,meseStr,anno){
+  const m = meseNum(meseStr);
+  if(m === null) return null;
+  return new Date(parseInt(anno), m, parseInt(g), 0, 0, 0, 0);
+}
+
+/* ============================================================
+   FUNZIONE: FILTRA — cerca per testo e comune
+   ============================================================ */
 function filtra(){
   const q = document.getElementById('search').value.toLowerCase().trim();
   const filtroCitta = document.querySelector('#filtri .attivo')?.dataset?.filtro || 'tutti';
-  
+
   const filtrati = eventi.filter(e => {
     if(filtroCitta !== 'tutti' && e.citta !== filtroCitta) return false;
     if(!q) return true;
@@ -273,6 +416,67 @@ function filtra(){
   renderizza(filtrati);
 }
 
+/* ============================================================
+   FUNZIONE: CONFIG NAVETTA — dati orari in un oggetto pulito
+   ============================================================ */
+const navettaConfig = {
+  valid: "🗓️ DAL 1° LUGLIO AL 6 SETTEMBRE 2026",
+  note: "ℹ️ A richiesta: fermate a Belsito e in Viale Makarska (casa del Mar)",
+  orari: [
+    ["Stazione ferroviaria FS","17:00","18:00","21:30","23:30"],
+    ["Lungomare Trieste (Lunapark)","17:05","18:05","21:35","23:35"],
+    ["Club del Sole","17:06","18:06","21:36","23:36"],
+    ["Lungomare Roma (Rotonda Sud)","17:08","18:08","21:38","23:38"],
+    ["Lungomare Roma (Rotonda Nord)","17:10","18:10","21:40","23:40"],
+    ["Lido d'Abruzzo","17:12","18:12","21:42","23:42"],
+    ["Lungomare Trento (Via Emilia)","17:14","18:14","21:44","23:44"],
+    ["Cologna (Sottopassaggio)","--","18:20","--","23:50"],
+    ["Cologna (P.zza Redipuglia)","--","18:22","--","23:52"],
+    ["Montepagano (Municipio)","--","18:35","21:50","00:05"],
+    ["Campo a Mare (V.le America)","--","18:45","22:00","00:15"],
+    ["Campo a Mare (V.le Europa)","--","18:47","22:02","00:17"],
+    ["Rientro: Stazione FS","17:20","19:00","22:10","00:25"]
+  ],
+  mercatoAndata: [
+    ["Lido d'Abruzzo","09:00"],
+    ["Lungomare Trento (Via Emilia)","09:02"],
+    ["Lungomare Roma (Rotonda Nord)","09:04"],
+    ["Lungomare Roma (Rotonda Sud)","09:06"],
+    ["Club del Sole","09:08"],
+    ["P.zza Marco Polo","09:12"]
+  ],
+  mercatoRitorno: [
+    ["P.zza Marco Polo","12:00"],
+    ["Club del Sole","12:04"],
+    ["Lungomare Roma (Rotonda Sud)","12:06"],
+    ["Lungomare Roma (Rotonda Nord)","12:08"],
+    ["Lungomare Trento (Via Emilia)","12:10"],
+    ["Lido d'Abruzzo","12:12"]
+  ]
+};
+
+/* ============================================================
+   NAVETTA: popola tabella e gestisce toggle
+   ============================================================ */
+function popolaNavetta(){
+  const tbody = document.getElementById('navettaTableBody');
+  if(!tbody) return;
+  tbody.innerHTML = navettaConfig.orari.map(r =>
+    `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`
+  ).join('');
+}
+popolaNavetta();
+
+function toggleNavetta(){
+  const btn = document.getElementById('navettaToggle');
+  const content = document.getElementById('navettaContent');
+  btn.classList.toggle('open');
+  content.classList.toggle('open');
+}
+
+/* ============================================================
+   INIZIALIZZAZIONE: event listeners e stato iniziale
+   ============================================================ */
 document.getElementById('search').addEventListener('input', filtra);
 document.querySelectorAll('#filtri button').forEach(btn => {
   btn.addEventListener('click', () => {
@@ -285,55 +489,40 @@ document.querySelectorAll('#filtri button').forEach(btn => {
 document.getElementById('aggiornato').textContent = new Date().toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'});
 renderizza(eventi);
 
-// Contatore visite – countapi.mileshilliard.com (no account, free)
+/* ============================================================
+   CONTATORE VISITE — countapi.mileshilliard.com con spinner
+   ============================================================ */
+const visitEl = document.getElementById('visitCount');
+const counterEl = document.querySelector('.visit-counter');
+counterEl.classList.add('loading');
+// Mostra spinner mentre carica
+visitEl.innerHTML = '<span class="counter-spinner"></span>';
+
 fetch('https://countapi.mileshilliard.com/api/v1/hit/roseto-eventi-visits')
   .then(r => r.json())
-  .then(d => { document.getElementById('visitCount').textContent = Number(d.value).toLocaleString('it-IT'); })
-  .catch(() => { document.getElementById('visitCount').textContent = Number(11246).toLocaleString('it-IT'); });
+  .then(d => {
+    visitEl.textContent = Number(d.value).toLocaleString('it-IT');
+    counterEl.classList.remove('loading');
+  })
+  .catch(() => {
+    visitEl.textContent = Number(11246).toLocaleString('it-IT');
+    counterEl.classList.remove('loading');
+  });
 
-// Service Worker – PWA
+/* ============================================================
+   SERVICE WORKER — PWA
+   ============================================================ */
 if('serviceWorker' in navigator){
   navigator.serviceWorker.register('sw.js').then(r => console.log('SW registrato', r.scope)).catch(e => console.log('SW errore', e));
 }
 
-// Chiudi banner sponsor
+/* ============================================================
+   CHIUDI BANNER SPONSOR
+   ============================================================ */
 document.getElementById('adClose').addEventListener('click', () => {
   document.getElementById('adBanner').classList.add('closed');
   document.body.style.paddingBottom = '20px';
 });
-
-// === NAVETTA GRATUITA ===
-const navettaOrari = [
-  ["Stazione ferroviaria FS","17:00","18:00","21:30","23:30"],
-  ["Lungomare Trieste (Lunapark)","17:05","18:05","21:35","23:35"],
-  ["Club del Sole","17:06","18:06","21:36","23:36"],
-  ["Lungomare Roma (Rotonda Sud)","17:08","18:08","21:38","23:38"],
-  ["Lungomare Roma (Rotonda Nord)","17:10","18:10","21:40","23:40"],
-  ["Lido d'Abruzzo","17:12","18:12","21:42","23:42"],
-  ["Lungomare Trento (Via Emilia)","17:14","18:14","21:44","23:44"],
-  ["Cologna (Sottopassaggio)","--","18:20","--","23:50"],
-  ["Cologna (P.zza Redipuglia)","--","18:22","--","23:52"],
-  ["Montepagano (Municipio)","--","18:35","21:50","00:05"],
-  ["Campo a Mare (V.le America)","--","18:45","22:00","00:15"],
-  ["Campo a Mare (V.le Europa)","--","18:47","22:02","00:17"],
-  ["Rientro: Stazione FS","17:20","19:00","22:10","00:25"]
-];
-
-function popolaNavetta(){
-  const tbody = document.getElementById('navettaTableBody');
-  if(!tbody) return;
-  tbody.innerHTML = navettaOrari.map(r => 
-    `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`
-  ).join('');
-}
-popolaNavetta();
-
-function toggleNavetta(){
-  const btn = document.getElementById('navettaToggle');
-  const content = document.getElementById('navettaContent');
-  btn.classList.toggle('open');
-  content.classList.toggle('open');
-}
 </script>
 </body>
 </html>
