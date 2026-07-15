@@ -1,38 +1,105 @@
-<!DOCTYPE html>
-<html class="dark" lang="it">
-<head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
-<meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme:light)">
-<meta name="theme-color" content="#121212" media="(prefers-color-scheme:dark)">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Eventi Roseto">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-<link rel="manifest" href="manifest.json">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="icon-192.png">
-<meta property="og:title" content="Eventi Roseto degli Abruzzi & Dintorni">
-<meta property="og:description" content="Eventi, sagre, concerti e manifestazioni nel raggio di 25 km da Roseto degli Abruzzi. Aggiornato quotidianamente.">
-<meta property="og:image" content="https://googgier.github.io/roseto-eventi/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="714">
-<meta property="og:url" content="https://googgier.github.io/roseto-eventi/">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="it_IT">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Eventi Roseto degli Abruzzi & Dintorni">
-<meta name="twitter:description" content="Eventi, sagre, concerti e manifestazioni nel raggio di 25 km da Roseto.">
-<meta name="twitter:image" content="https://googgier.github.io/roseto-eventi/og-image.png">
-<title>Eventi Roseto degli Abruzzi & Dintorni</title>
-<script src="https://cdn.tailwindcss.com/3.4.17?plugins=forms@0.5.10,container-queries@0.1.1"></script>
-<script>
-tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface":"#0d1321","surface-dim":"#0d1321","surface-bright":"#333948","surface-container-lowest":"#080e1c","surface-container-low":"#151b29","surface-container":"#191f2e","surface-container-high":"#242a39","surface-container-highest":"#2f3544","on-surface":"#dde2f6","on-surface-variant":"#dec0b6","inverse-surface":"#dde2f6","inverse-on-surface":"#2a303f","outline":"#a68b82","outline-variant":"#57423b","surface-tint":"#ffb59c",primary:"#ffb59c","on-primary":"#5c1a00","primary-container":"#ff7f50","on-primary-container":"#6c2000","inverse-primary":"#a43c12",secondary:"#43e2d2","on-secondary":"#003732","secondary-container":"#00c6b6","on-secondary-container":"#004c46",tertiary:"#ffb95a","on-tertiary":"#462a00","tertiary-container":"#dc952a","on-tertiary-container":"#533300",error:"#ffb4ab","on-error":"#690005","error-container":"#93000a","on-error-container":"#ffdad6","primary-fixed":"#ffdbcf","primary-fixed-dim":"#ffb59c","on-primary-fixed":"#380c00","on-primary-fixed-variant":"#822800","secondary-fixed":"#61f9e9","secondary-fixed-dim":"#3adccc","on-secondary-fixed":"#00201d","on-secondary-fixed-variant":"#005049","tertiary-fixed":"#ffddb6","tertiary-fixed-dim":"#ffb95a","on-tertiary-fixed":"#2a1800","on-tertiary-fixed-variant":"#643f00",background:"#0d1321","on-background":"#dde2f6","surface-variant":"#2f3544"}},fontFamily:{display:["Montserrat"],headline:["Montserrat"],body:["Inter"]},fontSize:{"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"0.01em",fontWeight:"400"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0.05em",fontWeight:"600"}],"label-sm":["12px",{lineHeight:"16px",fontWeight:"500"}]},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{base:"8px",xs:"4px",sm:"12px",md:"16px",lg:"24px",xl:"40px",gutter:"16px","container-margin":"20px"}}}}
-</script>
-<style>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<!DOCTYPE html><html lang="it" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme:light)"><meta name="theme-color" content="#121212" media="(prefers-color-scheme:dark)"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Eventi Roseto"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><link rel="manifest" href="manifest.json"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-192.png"><meta property="og:title" content="Eventi Roseto degli Abruzzi &amp; Dintorni"><meta property="og:description" content="Eventi, sagre, concerti e manifestazioni nel raggio di 25 km da Roseto degli Abruzzi. Aggiornato quotidianamente."><meta property="og:image" content="https://googgier.github.io/roseto-eventi/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="714"><meta property="og:url" content="https://googgier.github.io/roseto-eventi/"><meta property="og:type" content="website"><meta property="og:locale" content="it_IT"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Eventi Roseto degli Abruzzi &amp; Dintorni"><meta name="twitter:description" content="Eventi, sagre, concerti e manifestazioni nel raggio di 25 km da Roseto."><meta name="twitter:image" content="https://googgier.github.io/roseto-eventi/og-image.png"><title>Eventi Roseto degli Abruzzi &amp; Dintorni</title><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#ffb95a",
+                    "surface-container-low": "#151b29",
+                    "on-surface": "#dde2f6",
+                    "surface-container": "#191f2e",
+                    "on-secondary-container": "#004c46",
+                    "on-primary-container": "#6c2000",
+                    "on-surface-variant": "#dec0b6",
+                    "tertiary-fixed": "#ffddb6",
+                    "surface-container-lowest": "#080e1c",
+                    "surface-variant": "#2f3544",
+                    "secondary-container": "#00c6b6",
+                    "surface-dim": "#0d1321",
+                    "on-secondary-fixed": "#00201d",
+                    "surface-bright": "#333948",
+                    "secondary-fixed": "#61f9e9",
+                    "secondary-fixed-dim": "#3adccc",
+                    "error-container": "#93000a",
+                    "on-tertiary-container": "#533300",
+                    "tertiary": "#ffb95a",
+                    "background": "#0d1321",
+                    "surface-container-high": "#242a39",
+                    "on-secondary": "#003732",
+                    "outline-variant": "#57423b",
+                    "primary-fixed-dim": "#ffb59c",
+                    "inverse-primary": "#a43c12",
+                    "error": "#ffb4ab",
+                    "on-tertiary-fixed-variant": "#643f00",
+                    "surface-container-highest": "#2f3544",
+                    "on-secondary-fixed-variant": "#005049",
+                    "surface": "#0d1321",
+                    "on-tertiary": "#462a00",
+                    "inverse-on-surface": "#2a303f",
+                    "on-primary-fixed-variant": "#822800",
+                    "on-primary": "#5c1a00",
+                    "on-tertiary-fixed": "#2a1800",
+                    "on-background": "#dde2f6",
+                    "primary": "#ffb59c",
+                    "outline": "#a68b82",
+                    "on-error-container": "#ffdad6",
+                    "surface-tint": "#ffb59c",
+                    "on-error": "#690005",
+                    "tertiary-container": "#dc952a",
+                    "primary-container": "#ff7f50",
+                    "secondary": "#43e2d2",
+                    "inverse-surface": "#dde2f6",
+                    "primary-fixed": "#ffdbcf",
+                    "on-primary-fixed": "#380c00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "24px",
+                    "sm": "12px",
+                    "xs": "4px",
+                    "md": "16px",
+                    "gutter": "16px",
+                    "container-margin": "20px",
+                    "xl": "40px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "label-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "display-lg": ["Montserrat"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "headline-lg": ["Montserrat"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    }catch(_e){}</script><meta charset="utf-8"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Eventi Roseto degli Abruzzi &amp; Dintorni",
+  "url": "https://googgier.github.io/roseto-eventi/",
+  "description": "Eventi, sagre, concerti e manifestazioni nel raggio di 25 km da Roseto degli Abruzzi."
+}
+</script><style>
 /* ================================
    GLASS PANEL UTILITY (V2 design)
    ================================ */
@@ -57,7 +124,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface":"#0d1321","su
 body { min-height: max(884px, 100dvh); }
 
 /* ================================
-   STILI CARD EVENTO (generati da renderizza)
+   STILI CARD EVENTO
    ================================ */
 .evento {
   background: rgba(25, 31, 46, 0.6);
@@ -334,7 +401,7 @@ body { min-height: max(884px, 100dvh); }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 /* ================================
-   FILTRI PILL (V2 design)
+   FILTRI PILL
    ================================ */
 .filtri {
   display: flex;
@@ -380,6 +447,39 @@ body { min-height: max(884px, 100dvh); }
 .custom-scrollbar::-webkit-scrollbar { height: 4px; }
 .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
 .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255, 181, 156, 0.3); border-radius: 2px; }
+
+/* ================================
+   LIGHTBOX
+   ================================ */
+.lightbox {
+  position: fixed; top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: fadeIn 0.2s;
+}
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.lightbox-close {
+  position: absolute;
+  top: 1rem; right: 1.5rem;
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
 /* ================================
    RESPONSIVE
@@ -443,196 +543,269 @@ body { min-height: max(884px, 100dvh); }
   pointer-events: none;
   margin-right: -32px;
 }
+</style></head><body class="bg-background min-h-screen pb-32">
 
-/* ================================
-   LIGHTBOX
-   ================================ */
-.lightbox {
-  position: fixed; top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  background: rgba(0,0,0,0.9);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  animation: fadeIn 0.2s;
-}
-.lightbox-img {
-  max-width: 90vw;
-  max-height: 85vh;
-  object-fit: contain;
-  border-radius: 8px;
-}
-.lightbox-close {
-  position: absolute;
-  top: 1rem; right: 1.5rem;
-  font-size: 2.5rem;
-  color: #fff;
-  cursor: pointer;
-  line-height: 1;
-}
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-</style>
-</head>
-<body class="bg-background text-on-background font-body-md min-h-screen pb-[180px]">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Eventi Roseto degli Abruzzi & Dintorni",
-  "url": "https://googgier.github.io/roseto-eventi/",
-  "description": "Eventi, sagre, concerti e manifestazioni nel raggio di 25 km da Roseto degli Abruzzi."
-}
-</script>
-
-<!-- ================================
-     TOP APP BAR (V2 — Glassmorphism)
-     ================================ -->
+<!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 glass-panel border-b border-white/10 shadow-sm flex justify-between items-center px-container-margin h-16">
-  <div class="flex items-center gap-base active:scale-95 transition-transform">
-    <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL'1" data-icon="calendar_month">calendar_month</span>
-    <h1 class="font-headline-md text-headline-md font-bold text-primary">Roseto &amp; Dintorni</h1>
-  </div>
-  <div class="flex items-center gap-sm">
-    <div class="hidden md:flex items-center bg-primary/10 px-sm py-xs rounded-full border border-primary/20">
-      <span class="text-[10px] uppercase font-bold text-primary tracking-wider">Aggiornato: <span id="aggiornato"></span></span>
-    </div>
-    <button class="active:scale-95 transition-transform hover:opacity-80" aria-label="Notifiche">
-      <span class="material-symbols-outlined text-primary" data-icon="notifications">notifications</span>
-    </button>
-  </div>
+<div class="flex items-center gap-base active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;" data-original-icon="calendar_month">calendar_month</span>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">Roseto &amp; Dintorni</h1>
+</div>
+<div class="flex items-center gap-md">
+<div class="hidden md:flex items-center bg-primary/10 px-sm py-xs rounded-full border border-primary/20">
+  <span class="text-[10px] uppercase font-bold text-primary tracking-wider">Aggiornato: <span id="aggiornato"></span></span>
+</div>
+<button class="material-symbols-outlined text-on-surface-variant hover:opacity-80 transition-opacity">search</button>
+<button class="material-symbols-outlined text-primary hover:opacity-80 transition-opacity" data-original-icon="notifications">notifications</button>
+</div>
 </header>
-
-<!-- ================================
-     MAIN CONTENT
-     ================================ -->
 <main class="pt-24 px-container-margin max-w-[1280px] mx-auto overflow-x-hidden">
 
-  <!-- Mobile update badge -->
-  <div class="md:hidden mb-md flex justify-center">
-    <span class="bg-primary/20 text-primary-fixed px-base py-xs rounded-lg text-label-sm font-bold border border-primary/30">
-      Aggiornato: <span id="aggiornato-mobile"></span>
-    </span>
-  </div>
+<!-- Mobile update badge & Visit counter -->
+<div class="md:hidden mb-md flex justify-center">
+  <span class="bg-primary/20 text-primary-fixed px-base py-xs rounded-lg text-label-sm font-bold border border-primary/30">
+    Aggiornato: <span id="aggiornato-mobile"></span>
+  </span>
+</div>
+<div class="visit-counter" id="counterTop">👁️ <span id="visitCount">—</span> visite</div>
 
-  <!-- Visite counter (in alto, sotto il titolo) -->
-  <div class="visit-counter" id="counterTop">👁️ <span id="visitCount">—</span> visite</div>
+<!-- Hero Section: Animated & Asymmetric -->
+<section class="relative mb-xl h-[450px] md:h-[600px] flex items-end">
 
-  <!-- Search Bar (V2 style) -->
-  <div class="mb-lg">
-    <input type="text" id="search" placeholder="Cerca evento, luogo, data…" autocomplete="off"
-           class="w-full px-lg py-sm bg-surface-container border border-white/10 rounded-xl text-on-surface placeholder-on-surface-variant/60 outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all text-label-md">
-  </div>
+<div class="relative z-10 w-full md:w-3/4 lg:w-1/2 p-lg glass-panel rounded-xl -mb-8 ml-0 md:ml-lg border-white/20">
+<span class="inline-block px-sm py-xs bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-full mb-base">EVENTO GOLD</span>
+<h2 class="font-display-lg text-[42px] leading-tight md:text-display-lg font-extrabold text-on-surface mb-base">Beach Party Sunset 2024</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Il party più esclusivo della riviera adriatica. Musica, cocktail e il tramonto di Roseto degli Abruzzi.</p>
+<button class="bg-primary-container text-on-primary-container px-lg py-sm rounded-full font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all">Scopri di più</button>
+</div>
+<div class="hidden lg:block absolute top-0 -right-20 w-1/2 h-full -z-0 opacity-80 rotate-3">
+<div class="w-full h-full rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+<img class="w-full h-full object-cover" data-alt="An ultra-modern, high-contrast photograph of a luxury beach club lounge at sunset on the Italian coast. Warm orange and coral hues from the sun blend into deep navy blue sky. Professional architectural photography with sleek lines, polished surfaces, and atmospheric lighting that captures a premium, sophisticated nightlife vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmOb810sbJtwjSpXwEE-85rVOwCEzRs_eu6mSLSps_QYVX5PXHMhElmN5atoFVM2okB5vlSjkVhUVwLetemK2vCtvQMBiQbz6LFLfZwQlkyPmaxdNDr_b1GgKsNvp4DPVjjkxjPts_hLRokaoTkVCFO9v_9t8XCboH4tO2DIIYkqDmmKwKsiSiU7qdPAb_Xh0vQadO3-C1iR9B8W5r4ZMishSt8INOM0bBNEEX1HKdWjpERh35FxoM">
+</div>
+</div>
+</section>
 
-  <!-- Filters — horizontal scroll pills (V2 style) -->
-  <section class="mb-lg overflow-x-auto hide-scrollbar -mx-container-margin px-container-margin">
-    <div class="filtri" id="filtri">
-      <button data-filtro="tutti" class="attivo">Tutti</button>
-      <button data-filtro="Roseto">Roseto</button>
-      <button data-filtro="Silvi">Silvi</button>
-      <button data-filtro="Giulianova">Giulianova</button>
-      <button data-filtro="Pineto">Pineto</button>
-      <button data-filtro="Tortoreto">Tortoreto</button>
-      <button data-filtro="Mosciano">Mosciano</button>
-      <button data-filtro="Pescara">Pescara</button>
-      <button data-filtro="Teramo">Teramo</button>
-      <button data-filtro="San Benedetto">S.Benedetto</button>
+<!-- Search Bar -->
+<div class="mb-lg">
+  <input type="text" id="search" placeholder="Cerca evento, luogo, data…" autocomplete="off"
+         class="w-full px-lg py-sm bg-surface-container border border-white/10 rounded-xl text-on-surface placeholder-on-surface-variant/60 outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all text-label-md">
+</div>
+
+<!-- Category Chips / Filters -->
+<nav class="flex gap-base overflow-x-auto pb-lg no-scrollbar custom-scrollbar mb-xl" id="filtri">
+<button data-filtro="tutti" class="flex-shrink-0 px-lg py-sm bg-secondary text-on-secondary rounded-full font-label-md text-label-md transition-all active:scale-95 attivo">Tutti</button>
+<button data-filtro="Roseto" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">Roseto</button>
+<button data-filtro="Silvi" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">Silvi</button>
+<button data-filtro="Giulianova" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">Giulianova</button>
+<button data-filtro="Pineto" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">Pineto</button>
+<button data-filtro="Tortoreto" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">Tortoreto</button>
+<button data-filtro="Mosciano" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">Mosciano</button>
+<button data-filtro="Pescara" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">Pescara</button>
+<button data-filtro="Teramo" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">Teramo</button>
+<button data-filtro="San Benedetto" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">S.Benedetto</button>
+</nav>
+
+<!-- Stats -->
+<div class="stats" id="stats"></div>
+
+<!-- Event cards (generated by renderizza()) -->
+<section id="eventi"></section>
+
+<!-- Nessun risultato -->
+<div id="nessun-risultato">Nessun evento trovato 😕</div>
+
+<!-- Main Bento Content Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-lg mb-xl">
+<!-- Featured Card 1 (Vertical) -->
+<div class="md:col-span-4 h-[500px] relative rounded-2xl overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A vibrant, cinematic close-up of a gourmet seafood dish being served at an outdoor restaurant in Roseto degli Abruzzi. The lighting is warm and golden, typical of a summer evening. The scene is shot with a shallow depth of field, emphasizing the texture of the food and the elegant table setting. The aesthetic is sophisticated and high-end, evoking a sense of Adriatic luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4afCp_RwMdF5MOtZynV4tpN45WaCfnUbjoiFoxbKGyPaSd6GV5jGrop22GzhqwNFkYknOcqXfg0S5KtRni79_g8t8em5Ty-lnfbxIwhwXZYJ4wEKApKMe17dzTcMYH3HF8syOoSN-5kKAZGekYHFvrG25qcUHNX9WS6YUpeoaYzRblHMdEaMCYXWT2fanw1xLM09Y6LTybpVaRfKpkczzaOSsJMwRjKEGhFtNSQ-o5Dn4DLzwhPci">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 p-lg w-full">
+<div class="glass-panel p-md rounded-xl border-white/20">
+<span class="text-secondary font-label-sm text-label-sm uppercase tracking-widest block mb-xs">Food &amp; Wine</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Sagra del Mare d'Abruzzo</h3>
+<div class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span class="font-label-sm text-label-sm">Porto di Giulianova</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Double Horizontal Cards -->
+<div class="md:col-span-8 flex flex-col gap-lg">
+<!-- Sponsor Banner Integrated -->
+<div class="w-full h-32 glass-panel rounded-2xl border-dashed border-white/20 flex items-center justify-between px-lg relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary to-transparent"></div>
+<div class="relative z-10">
+<p class="font-label-sm text-label-sm text-primary mb-xs font-bold">SPONSOR PRINCIPALE</p>
+<h4 class="font-headline-md text-headline-md text-on-surface">Adriatico Gin Experience</h4>
+</div>
+<button class="relative z-10 material-symbols-outlined p-md bg-white/5 rounded-full text-on-surface hover:bg-white/10">arrow_forward</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-lg h-full">
+<!-- Event 2 -->
+<div class="relative h-[340px] rounded-2xl overflow-hidden group shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-energy, wide-angle shot of a live concert on the beach at night. Silhouetted crowds raise their hands in front of a stage bathed in neon coral and turquoise laser lights. The atmosphere is electric and premium, capturing a modern summer festival vibe on the Adriatic coast. The visual style is crisp, with deep blacks and vibrant, glowing light effects." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhvBg-4joa_Fvev2x0Y3gKn22b2oTsLl_sU0U5TvqDpW6MNnm-i7VP6xwL6u0IVOZL5hqx1Z-VJ7TtJ9EH0nLGKgq49bgrpUiS98LidMin7XCirf8-LYMVIkm2d6w7N5cvOajC00IEoReltoqvuw9YLajamBmDK3A8Oaq4NczmdGj_TG56k4buaSQFGh1RBCvaXGPtZvGMne1J478ubIy7RzfEDGafqQzjSxk3SzWq8aZaYFvciOAH">
+<div class="absolute top-md right-md px-sm py-xs glass-panel rounded-lg text-primary font-bold">15 AGO</div>
+<div class="absolute inset-0 flex items-end p-md bg-gradient-to-t from-black/80 to-transparent">
+<div>
+<h3 class="font-headline-md text-on-surface">Concerti Sotto le Stelle</h3>
+<p class="font-label-sm text-on-surface-variant">Piazza della Repubblica</p>
+</div>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="relative h-[340px] rounded-2xl overflow-hidden group shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A serene and artistic photograph of an outdoor morning yoga session on a wooden deck overlooking the calm Adriatic Sea. The morning light is soft, cool-toned, and ethereal. People are in graceful poses, creating a sense of wellness and luxury. The color palette consists of soft teals, whites, and the deep blue of the ocean. The mood is tranquil and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcpQyZSHXjyb4oIjlNdvPCfyZGycuR1GExw6FuPVt4YdqlDH1bf-fGGCUTrCM2PW-PY6Emh963M8DCR88rGzz8cnXnXUtTDghAmLXDjYGdI-SzaiksBnHGezF217FjRso_98lyiJv-ACh8EnLL9peJ_4QRMckmky8QTbOJzwpnhc8ySatejcO6DcjhRrOl8xr5arnWZxj1LYBRDDV-3Z8eHMtwgW5DlKB6svIxMdrivtzYepT1DRUY">
+<div class="absolute top-md right-md px-sm py-xs glass-panel rounded-lg text-secondary font-bold">OGNI DOM</div>
+<div class="absolute inset-0 flex items-end p-md bg-gradient-to-t from-black/80 to-transparent">
+<div>
+<h3 class="font-headline-md text-on-surface">Yoga al Risveglio</h3>
+<p class="font-label-sm text-on-surface-variant">Lungomare Centrale</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Asymmetric Text Callout -->
+<div class="md:col-span-12 py-xl relative">
+<div class="absolute -left-20 top-0 text-[120px] font-extrabold text-outline select-none pointer-events-none opacity-20 whitespace-nowrap">
+                    SUMMER NIGHTS ROSÉ
+                </div>
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-lg bg-surface-container/40 p-lg rounded-3xl border border-white/5 backdrop-blur-md">
+<div class="md:w-2/3">
+<h2 class="font-display-lg text-headline-lg md:text-display-lg text-on-surface mb-sm">Non perdere neanche un battito.</h2>
+<p class="font-body-lg text-on-surface-variant">Ricevi le notifiche in tempo reale sui migliori eventi, tavoli disponibili e shuttle per le discoteche della costa.</p>
+</div>
+<div class="flex gap-md">
+<button class="bg-secondary text-on-secondary px-lg py-md rounded-full font-label-md flex items-center gap-base active:scale-95 transition-all">
+<span class="material-symbols-outlined">notifications_active</span> Attiva Alert
+                        </button>
+</div>
+</div>
+</div>
+<!-- Horizontal Carousel Section -->
+<div class="md:col-span-12">
+<div class="flex justify-between items-center mb-md">
+<h2 class="font-headline-lg text-on-surface">Prossimi 7 Giorni</h2>
+<button class="text-primary font-label-md flex items-center gap-xs">Vedi Tutti <span class="material-symbols-outlined">trending_flat</span></button>
+</div>
+<div class="flex gap-lg overflow-x-auto pb-xl no-scrollbar custom-scrollbar">
+<!-- Day Card 1 -->
+<div class="flex-shrink-0 w-[280px] glass-panel p-lg rounded-2xl border-white/10 hover:border-primary transition-all">
+<p class="font-label-sm text-on-surface-variant mb-xs">Lunedì 12</p>
+<h4 class="font-headline-md text-on-surface mb-lg">Torneo di Padel Notturno</h4>
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-[10px] text-on-primary font-bold border-2 border-surface">+12</div>
+</div>
+</div>
+<!-- Day Card 2 -->
+<div class="flex-shrink-0 w-[280px] glass-panel p-lg rounded-2xl border-white/10 hover:border-primary transition-all">
+<p class="font-label-sm text-on-surface-variant mb-xs">Martedì 13</p>
+<h4 class="font-headline-md text-on-surface mb-lg">Cinema sotto le Stelle: Film Noir</h4>
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-[10px] text-on-secondary font-bold border-2 border-surface">+45</div>
+</div>
+</div>
+<!-- Day Card 3 -->
+<div class="flex-shrink-0 w-[280px] glass-panel p-lg rounded-2xl border-white/10 hover:border-primary transition-all">
+<p class="font-label-sm text-on-surface-variant mb-xs">Mercoledì 14</p>
+<h4 class="font-headline-md text-on-surface mb-lg">Degustazione Vini delle Colline</h4>
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-tertiary flex items-center justify-center text-[10px] text-on-tertiary font-bold border-2 border-surface">+89</div>
+</div>
+</div>
+<!-- Day Card 4 -->
+<div class="flex-shrink-0 w-[280px] glass-panel p-lg rounded-2xl border-white/10 hover:border-primary transition-all">
+<p class="font-label-sm text-on-surface-variant mb-xs">Giovedì 15</p>
+<h4 class="font-headline-md text-on-surface mb-lg">Gran Gala di Ferragosto</h4>
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-[10px] text-on-primary font-bold border-2 border-surface">+250</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================
+     SEZIONE NAVETTA GRATUITA
+     ================================ -->
+<div class="navetta-section">
+  <button class="navetta-toggle open" id="navettaToggle" onclick="toggleNavetta()">
+    <span>🚌 Orari Navetta Gratuita</span>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="navetta-content open" id="navettaContent">
+    <div class="navetta-valid" id="navettaValid"></div>
+
+    <h3>📍 Percorso</h3>
+    <div class="navetta-route" id="navettaRoute"></div>
+
+    <h3>🕐 Orario Giornaliero (tutti i giorni)</h3>
+    <div class="navetta-table-wrapper">
+      <table class="navetta-table" id="navettaTable">
+        <thead><tr><th>Fermata</th><th>17:00</th><th>18:00</th><th>21:30</th><th>23:30</th></tr></thead>
+        <tbody id="navettaTableBody"></tbody>
+      </table>
     </div>
-  </section>
 
-  <!-- Stats -->
-  <div class="stats" id="stats"></div>
+    <div class="navetta-note" id="navettaNote"></div>
 
-  <!-- Event cards (generated by renderizza()) -->
-  <section id="eventi"></section>
-
-  <!-- Nessun risultato -->
-  <div id="nessun-risultato">Nessun evento trovato 😕</div>
-
-  <!-- ================================
-       SEZIONE NAVETTA GRATUITA
-       ================================ -->
-  <div class="navetta-section">
-    <button class="navetta-toggle open" id="navettaToggle" onclick="toggleNavetta()">
-      <span>🚌 Orari Navetta Gratuita</span>
-      <span class="arrow">▼</span>
-    </button>
-    <div class="navetta-content open" id="navettaContent">
-      <div class="navetta-valid" id="navettaValid"></div>
-
-      <h3>📍 Percorso</h3>
-      <div class="navetta-route" id="navettaRoute"></div>
-
-      <h3>🕐 Orario Giornaliero (tutti i giorni)</h3>
-      <div class="navetta-table-wrapper">
-        <table class="navetta-table" id="navettaTable">
-          <thead><tr><th>Fermata</th><th>17:00</th><th>18:00</th><th>21:30</th><th>23:30</th></tr></thead>
-          <tbody id="navettaTableBody"></tbody>
-        </table>
-      </div>
-
-      <div class="navetta-note" id="navettaNote"></div>
-
-      <details class="navetta-mercato">
-        <summary>🛒 Martedì — Corsa Mercato (solo martedì)</summary>
-        <div class="navetta-sub">Andata (da Lido d'Abruzzo → P.zza Marco Polo)</div>
-        <table class="navetta-table">
-          <thead><tr><th>Fermata</th><th>Orario</th></tr></thead>
-          <tbody id="navettaMercatoAndata"></tbody>
-        </table>
-        <div class="navetta-sub">Ritorno (da P.zza Marco Polo → Lido d'Abruzzo)</div>
-        <table class="navetta-table">
-          <thead><tr><th>Fermata</th><th>Orario</th></tr></thead>
-          <tbody id="navettaMercatoRitorno"></tbody>
-        </table>
-      </details>
-    </div>
+    <details class="navetta-mercato">
+      <summary>🛒 Martedì — Corsa Mercato (solo martedì)</summary>
+      <div class="navetta-sub">Andata (da Lido d'Abruzzo → P.zza Marco Polo)</div>
+      <table class="navetta-table">
+        <thead><tr><th>Fermata</th><th>Orario</th></tr></thead>
+        <tbody id="navettaMercatoAndata"></tbody>
+      </table>
+      <div class="navetta-sub">Ritorno (da P.zza Marco Polo → Lido d'Abruzzo)</div>
+      <table class="navetta-table">
+        <thead><tr><th>Fermata</th><th>Orario</th></tr></thead>
+        <tbody id="navettaMercatoRitorno"></tbody>
+      </table>
+    </details>
   </div>
+</div>
 
 </main>
 
-<!-- ================================
-     BOTTOM NAVIGATION (V2 — Glassmorphism)
-     ================================ -->
-<nav class="fixed bottom-0 w-full z-50 glass-panel border-t border-white/10 shadow-lg flex justify-around items-center h-20 pb-safe">
-  <div class="flex flex-col items-center justify-center text-primary-container active:scale-90 transition-transform cursor-pointer">
-    <span class="material-symbols-outlined !text-[28px]" data-icon="event" style="font-variation-settings:'FILL'1">event</span>
-    <span class="font-label-md text-label-md font-bold">Eventi</span>
-  </div>
-  <div class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-90 transition-transform cursor-pointer">
-    <span class="material-symbols-outlined !text-[28px]" data-icon="map">map</span>
-    <span class="font-label-md text-label-md font-bold">Mappa</span>
-  </div>
-  <div class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-90 transition-transform cursor-pointer" onclick="toggleShuttle()">
-    <span class="material-symbols-outlined !text-[28px]" data-icon="directions_bus">directions_bus</span>
-    <span class="font-label-md text-label-md font-bold">Navette</span>
-  </div>
-  <div class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-90 transition-transform cursor-pointer">
-    <span class="material-symbols-outlined !text-[28px]" data-icon="bookmark">bookmark</span>
-    <span class="font-label-md text-label-md font-bold">Salvati</span>
-  </div>
-</nav>
-
-<!-- ================================
-     FOOTER (V2 style)
-     ================================ -->
+<!-- Footer -->
 <footer class="w-full py-xl bg-surface-container-lowest flex flex-col items-center gap-base mt-xl">
-  <div class="flex items-center gap-lg">
-    <a class="text-on-surface-variant hover:text-secondary transition-colors underline decoration-secondary font-label-sm text-label-sm" href="https://github.com/Googgier/roseto-eventi">GitHub</a>
-    <a class="text-on-surface-variant hover:text-secondary transition-colors underline decoration-secondary font-label-sm text-label-sm" href="#">Privacy</a>
-    <a class="text-on-surface-variant hover:text-secondary transition-colors underline decoration-secondary font-label-sm text-label-sm" href="#">Terms</a>
-  </div>
-  <div class="flex flex-col items-center">
-    <p class="text-on-surface font-bold font-label-sm text-label-sm">© 2025 Eventi Roseto &amp; Dintorni</p>
-    <p class="text-on-surface-variant text-[10px] uppercase tracking-widest mt-xs">Visite: <span id="visitCountFooter"></span></p>
-  </div>
-  <p class="text-on-surface-variant font-label-sm text-label-sm opacity-60">Made with ❤️ for the Adriatic Coast</p>
+<div class="flex items-center gap-lg">
+  <a class="text-on-surface-variant hover:text-secondary transition-colors underline decoration-secondary font-label-sm text-label-sm" href="https://github.com/Googgier/roseto-eventi">GitHub</a>
+  <a class="text-on-surface-variant hover:text-secondary transition-colors underline decoration-secondary font-label-sm text-label-sm" href="#">Privacy</a>
+  <a class="text-on-surface-variant hover:text-secondary transition-colors underline decoration-secondary font-label-sm text-label-sm" href="#">Terms</a>
+</div>
+<div class="flex flex-col items-center">
+  <p class="text-on-surface font-bold font-label-sm text-label-sm">© 2025 Eventi Roseto &amp; Dintorni</p>
+  <p class="text-on-surface-variant text-[10px] uppercase tracking-widest mt-xs">Visite: <span id="visitCountFooter"></span></p>
+</div>
+<p class="text-on-surface-variant font-label-sm text-label-sm opacity-60">Made with ❤️ for the Adriatic Coast</p>
 </footer>
+
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 glass-panel border-t border-white/10 shadow-lg flex justify-around items-center h-20 pb-safe">
+<!-- Events (Active) -->
+<a class="flex flex-col items-center justify-center text-primary-container font-bold active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined active-glow" style="font-variation-settings: 'FILL' 1;">event</span>
+<span class="font-label-sm text-label-sm">Eventi</span>
+</a>
+<!-- Map -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="font-label-sm text-label-sm">Mappa</span>
+</a>
+<!-- Shuttle -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-90 transition-transform" href="#" onclick="toggleShuttle()">
+<span class="material-symbols-outlined">directions_bus</span>
+<span class="font-label-sm text-label-sm">Navette</span>
+</a>
+<!-- Saved -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="font-label-sm text-label-sm">Salvati</span>
+</a>
+</nav>
 
 <!-- ================================
      AD BANNER
@@ -648,41 +821,70 @@ body { min-height: max(884px, 100dvh); }
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-<!-- ================================
-     JAVASCRIPT — PRESERVATO INTEGRALMENTE
-     ================================ -->
+<script>
+        // Simple micro-interactions
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.style.transform = 'scale(0.95)';
+            });
+            el.addEventListener('mouseup', () => {
+                el.style.transform = '';
+            });
+        });
+
+        // Sticky Header Effect
+        let lastScroll = 0;
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll <= 0) {
+                header.classList.remove('shadow-lg');
+                return;
+            }
+            if (currentScroll > lastScroll) {
+                // Scroll down
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                // Scroll up
+                header.style.transform = 'translateY(0)';
+                header.classList.add('shadow-lg');
+            }
+            lastScroll = currentScroll;
+        });
+</script>
+
 <script>
 /* ============================================================
    DATI EVENTI — 27 eventi rinumerati 1-27
    ============================================================ */
 const eventi = [
   {id:1, data:"10 Lug – 6 Set 2026", orario:"Tutto il giorno", titolo:"Villa in Arte", img:"images/img-1.jpg", luogo:"Villa Comunale, Roseto degli Abruzzi", desc:"Mostra d'arte con grandi protagonisti dell'arte contemporanea.", citta:"Roseto", tag:["Cultura","Arte"], fonte:"https://www.visitroseto.it/eventi/"},
-  {id:2, data:"12–19 Lug 2026", orario:"Vari orari", titolo:"Pescara Jazz 2026 – 54ª edizione", img:"images/img-2.jpg", luogo:"Pescara", desc:"Festival internazionale di jazz. Concerti in varie location.", citta:"Pescara", tag:["Musica","Jazz","Festival"], fonte:"https://www.ilpescara.it/eventi/"},
+  {id:2, data:"12–19 Lug 2026", orario:"Vari orari", titolo:"Pescara Jazz 2026 – 54\u00aa edizione", img:"images/img-2.jpg", luogo:"Pescara", desc:"Festival internazionale di jazz. Concerti in varie location.", citta:"Pescara", tag:["Musica","Jazz","Festival"], fonte:"https://www.ilpescara.it/eventi/"},
   {id:3, data:"13–19 Lug 2026", orario:"Vari orari", titolo:"Festival 'Il Fiume e la Memoria' – XXIV ed.", img:"images/img-3.jpg", luogo:"Centro storico e lungofiume, Pescara", desc:"Grandi storie, musica e teatro.", citta:"Pescara", tag:["Cultura","Musica","Teatro"], fonte:"https://www.comune.pescara.it/"},
   {id:4, data:"14 Lug 2026", orario:"18:00", titolo:"Camminata al tramonto alla Sentina", img:"images/img-4.jpg", luogo:"Riserva Sentina, San Benedetto del Tronto", desc:"Passeggiata guidata al tramonto nella Riserva Naturale.", citta:"San Benedetto", tag:["Natura","Sport"], fonte:"https://turismo.comunesbt.it/eventi/mese/2026-07/"},
   {id:5, data:"14 Lug 2026", orario:"21:00", titolo:"Buozzi Summer Sound – Lucy Soul Band", img:"images/img-5.jpg", luogo:"Piazza Buozzi, Giulianova", desc:"'A Soul Experience' – concerto soul.", citta:"Giulianova", tag:["Musica","Soul"], fonte:"https://www.visitgiulianova.com/eventi.php"},
-  {id:6, data:"15 Lug 2026", orario:"21:00", titolo:"Concerto di apertura – I Musici Lotariani", img:"images/img-6.jpg", luogo:"Villa Comunale, Roseto degli Abruzzi", desc:"Concerto che apre la 30ª edizione di Roseto Opera Prima. Ingresso gratuito.", citta:"Roseto", tag:["Musica","Cultura"], fonte:"https://www.visitroseto.it/eventi/"},
+  {id:6, data:"15 Lug 2026", orario:"21:00", titolo:"Concerto di apertura – I Musici Lotariani", img:"images/img-6.jpg", luogo:"Villa Comunale, Roseto degli Abruzzi", desc:"Concerto che apre la 30\u00aa edizione di Roseto Opera Prima. Ingresso gratuito.", citta:"Roseto", tag:["Musica","Cultura"], fonte:"https://www.visitroseto.it/eventi/"},
   {id:7, data:"15 Lug 2026", orario:"21:00", titolo:"Emma – Live 2026", img:"images/img-7.jpg", luogo:"Pescara", desc:"Concerto di Emma. Biglietti su TicketOne.", citta:"Pescara", tag:["Musica","Concerto"], fonte:"https://www.ticketone.it/city/pescara-1938/concerti-55/"},
-  {id:8, data:"15–18 Lug 2026", orario:"21:00–23:00", titolo:"Roseto Opera Prima – 30ª edizione", img:"images/img-8.jpg", luogo:"Villa Comunale, Roseto degli Abruzzi", desc:"Rassegna culturale con proiezioni, incontri e spettacoli.", citta:"Roseto", tag:["Cultura","Cinema"], fonte:"https://www.visitroseto.it/eventi/"},
-  {id:9, data:"15–19 Lug 2026", orario:"Tutto il giorno", titolo:"10ª Rievocazione della Trebbiatura", img:"images/img-9.jpg", luogo:"Mosciano Sant'Angelo", desc:"Rievocazione storica con sagra enogastronomica.", citta:"Mosciano", tag:["Cultura","Enogastronomia","Rievocazione"], fonte:"https://trovasagre.com/sagre/abruzzo/luglio-2026"},
-  {id:10, data:"16 Lug 2026", orario:"19:30", titolo:"Note al Tramonto – concerti al Molo Sud", img:"images/img-10.jpg", luogo:"Molo Sud, San Benedetto del Tronto", desc:"Concerti al tramonto sul molo.", citta:"San Benedetto", tag:["Musica","Cultura"], fonte:"https://turismo.comunesbt.it/eventi/mese/2026-07/"},
-  {id:11, data:"17 Lug 2026", orario:"21:30", titolo:"Magia tra le Dune – Musica 80'/90'", img:"images/img-11.jpg", luogo:"Le Dune, Silvi Marina", desc:"Serata musicale a tema.", citta:"Silvi", tag:["Musica"], fonte:"https://www.visitsilvi.it/eventi-e-manifestazioni/61.html"},
+  {id:8, data:"15\u201318 Lug 2026", orario:"21:00\u201323:00", titolo:"Roseto Opera Prima 30\u00aa edizione", img:"images/img-8.jpg", luogo:"Villa Comunale, Roseto degli Abruzzi", desc:"Rassegna culturale con proiezioni, incontri e spettacoli.", citta:"Roseto", tag:["Cultura","Cinema"], fonte:"https://www.visitroseto.it/eventi/"},
+  {id:9, data:"15\u201319 Lug 2026", orario:"Tutto il giorno", titolo:"10\u00aa Rievocazione della Trebbiatura", img:"images/img-9.jpg", luogo:"Mosciano Sant'Angelo", desc:"Rievocazione storica con sagra enogastronomica.", citta:"Mosciano", tag:["Cultura","Enogastronomia","Rievocazione"], fonte:"https://trovasagre.com/sagre/abruzzo/luglio-2026"},
+  {id:10, data:"16 Lug 2026", orario:"19:30", titolo:"Note al Tramonto \u2013 concerti al Molo Sud", img:"images/img-10.jpg", luogo:"Molo Sud, San Benedetto del Tronto", desc:"Concerti al tramonto sul molo.", citta:"San Benedetto", tag:["Musica","Cultura"], fonte:"https://turismo.comunesbt.it/eventi/mese/2026-07/"},
+  {id:11, data:"17 Lug 2026", orario:"21:30", titolo:"Magia tra le Dune \u2013 Musica 80'/90'", img:"images/img-11.jpg", luogo:"Le Dune, Silvi Marina", desc:"Serata musicale a tema.", citta:"Silvi", tag:["Musica"], fonte:"https://www.visitsilvi.it/eventi-e-manifestazioni/61.html"},
   {id:12, data:"17 Lug 2026", orario:"Serale", titolo:"La Lanterna Magica Film Fest", img:"images/img-12.jpg", luogo:"Silvi Marina", desc:"Festival di cortometraggi e cinema all'aperto.", citta:"Silvi", tag:["Cinema","Cultura"], fonte:"https://www.visitsilvi.it/eventi-e-manifestazioni/61.html"},
-  {id:13, data:"17–19 Lug 2026", orario:"Dalle 18:00", titolo:"Gin & Tonic Festival", img:"images/img-13.jpg", luogo:"Arena dei Fiori, Montesilvano (PE)", desc:"Degustazioni, dj set e gin shop.", citta:"Pescara", tag:["Enogastronomia","Musica"], fonte:"https://www.ilpescara.it/eventi/"},
+  {id:13, data:"17\u201319 Lug 2026", orario:"Dalle 18:00", titolo:"Gin & Tonic Festival", img:"images/img-13.jpg", luogo:"Arena dei Fiori, Montesilvano (PE)", desc:"Degustazioni, dj set e gin shop.", citta:"Pescara", tag:["Enogastronomia","Musica"], fonte:"https://www.ilpescara.it/eventi/"},
   {id:14, data:"18 Lug 2026", orario:"21:15", titolo:"Poesia e Musica per una Bella Estate", img:"images/img-14.jpg", luogo:"Chiesa Sant'Agnese, Pineto", desc:"Serata di poesia e musica.", citta:"Pineto", tag:["Cultura","Musica","Poesia"], fonte:"https://www.visitpineto.it/wp-content/uploads/2022/01/eventi-pineto-summer-2026.pdf"},
   {id:15, data:"18 Lug 2026", orario:"Da definire", titolo:"Pineto Legge", img:"images/img-15.jpg", luogo:"Pineto", desc:"Incontro con la scrittrice Beatrice.", citta:"Pineto", tag:["Cultura","Libri"], fonte:"https://www.visitpineto.it/"},
-  {id:16, data:"18 Lug 2026", orario:"Serale", titolo:"Power Mix RDS – Serata Disco", img:"images/img-16.jpg", luogo:"Tortoreto", desc:"Serata dance con Power Mix RDS.", citta:"Tortoreto", tag:["Musica","Disco"], fonte:"https://www.vivitortoreto.it/resources/VIVITORTORETO-estate-2026.pdf"},
-  {id:17, data:"19 Lug 2026", orario:"21:00", titolo:"The Avengers – Spettacolo", img:"images/img-17.jpg", luogo:"Piazza della Repubblica, Roseto degli Abruzzi", desc:"Spettacolo ispirato ai celebri supereroi. Ingresso gratuito.", citta:"Roseto", tag:["Intrattenimento","Sport"], fonte:"https://www.visitroseto.it/eventi/"},
+  {id:16, data:"18 Lug 2026", orario:"Serale", titolo:"Power Mix RDS \u2013 Serata Disco", img:"images/img-16.jpg", luogo:"Tortoreto", desc:"Serata dance con Power Mix RDS.", citta:"Tortoreto", tag:["Musica","Disco"], fonte:"https://www.vivitortoreto.it/resources/VIVITORTORETO-estate-2026.pdf"},
+  {id:17, data:"19 Lug 2026", orario:"21:00", titolo:"The Avengers \u2013 Spettacolo", img:"images/img-17.jpg", luogo:"Piazza della Repubblica, Roseto degli Abruzzi", desc:"Spettacolo ispirato ai celebri supereroi. Ingresso gratuito.", citta:"Roseto", tag:["Intrattenimento","Sport"], fonte:"https://www.visitroseto.it/eventi/"},
   {id:18, data:"19 Lug 2026", orario:"All'alba", titolo:"Concerto all'Alba sul Mare", img:"images/img-18.jpg", luogo:"Silvi Marina", desc:"Concerto all'alba sulla spiaggia.", citta:"Silvi", tag:["Musica"], fonte:"https://www.visitsilvi.it/eventi-e-manifestazioni/61.html"},
   {id:19, data:"19 Lug 2026", orario:"21:00", titolo:"Concerto Note in Pineta 2.0", img:"images/img-19.jpg", luogo:"Pineta del Pescatore, Silvi Marina", desc:"Concerto serale nella pineta.", citta:"Silvi", tag:["Musica"], fonte:"https://www.visitsilvi.it/eventi-e-manifestazioni/61.html"},
   {id:20, data:"21 Lug 2026", orario:"21:30", titolo:"Matteo Mancuso in concerto", img:"images/img-20.jpg", luogo:"Portorose, Roseto degli Abruzzi", desc:"Abbazie Summer Festival. Biglietti su ciaotickets.", citta:"Roseto", tag:["Musica","Abbazie Summer Festival"], fonte:"https://concertidelleabbazie.it/programma/"},
-  {id:21, data:"22 Lug 2026", orario:"21:30", titolo:"Billy Cobham – Time Machine", img:"images/img-21.jpg", luogo:"Portorose, Roseto degli Abruzzi", desc:"Leggendario batterista jazz. Abbazie Summer Festival.", citta:"Roseto", tag:["Musica","Jazz","Abbazie Summer Festival"], fonte:"https://concertidelleabbazie.it/programma/"},
-  {id:22, data:"22 Lug 2026", orario:"21:00", titolo:"Marche Manouche – Dario Napoli Trio", img:"images/img-22.jpg", luogo:"San Benedetto del Tronto", desc:"Jazz Manouche moderno.", citta:"San Benedetto", tag:["Musica","Jazz"], fonte:"https://www.nonsoloeventimarche.it/dettaglio.php?id=marche-manouche---san-benedetto-del-tronto"},
-  {id:23, data:"22–26 Lug 2026", orario:"Dalle 19:00", titolo:"17ª Sagra 'De lu Stennmass'", img:"images/img-23.jpg", luogo:"Cologna Paese, Roseto degli Abruzzi", desc:"Sagra enogastronomica con sapori e tradizioni del territorio.", citta:"Roseto", tag:["Enogastronomia","Sagra"], fonte:"https://www.visitroseto.it/eventi/"},
+  {id:21, data:"22 Lug 2026", orario:"21:30", titolo:"Billy Cobham \u2013 Time Machine", img:"images/img-21.jpg", luogo:"Portorose, Roseto degli Abruzzi", desc:"Leggendario batterista jazz. Abbazie Summer Festival.", citta:"Roseto", tag:["Musica","Jazz","Abbazie Summer Festival"], fonte:"https://concertidelleabbazie.it/programma/"},
+  {id:22, data:"22 Lug 2026", orario:"21:00", titolo:"Marche Manouche \u2013 Dario Napoli Trio", img:"images/img-22.jpg", luogo:"San Benedetto del Tronto", desc:"Jazz Manouche moderno.", citta:"San Benedetto", tag:["Musica","Jazz"], fonte:"https://www.nonsoloeventimarche.it/dettaglio.php?id=marche-manouche---san-benedetto-del-tronto"},
+  {id:23, data:"22\u201326 Lug 2026", orario:"Dalle 19:00", titolo:"17\u00aa Sagra 'De lu Stennmass'", img:"images/img-23.jpg", luogo:"Cologna Paese, Roseto degli Abruzzi", desc:"Sagra enogastronomica con sapori e tradizioni del territorio.", citta:"Roseto", tag:["Enogastronomia","Sagra"], fonte:"https://www.visitroseto.it/eventi/"},
   {id:24, data:"23 Lug 2026", orario:"20:00", titolo:"MOONJUNE in concerto", img:"images/img-24.jpg", luogo:"Teramo", desc:"Concerto rock/pop.", citta:"Teramo", tag:["Musica"], fonte:"https://www.rockol.it/concerti-teramo-p-nxad4vo9d0o"},
-  {id:25, data:"24–25 Lug 2026", orario:"19:00", titolo:"Mons Pagus A.D. 1566 – Rievocazione Rinascimentale", img:"images/img-25.jpg", luogo:"Borgo di Montepagano, Roseto degli Abruzzi", desc:"Rievocazione storica in costume.", citta:"Roseto", tag:["Cultura","Rievocazione"], fonte:"https://www.visitroseto.it/eventi/"},
-  {id:26, data:"28 Lug – 14 Ago 2026", orario:"Vari orari", titolo:"Concerti Estate Giulianova", img:"images/img-26.jpg", luogo:"Giulianova", desc:"Vari concerti in programma. Biglietti su TicketOne.", citta:"Giulianova", tag:["Musica"], fonte:"https://www.ticketone.it/cityd/giulianova-1317/concerti-55/"},
-  {id:27, data:"Luglio 2026", orario:"Vari orari", titolo:"Eventi Estate 2026 – Cartellone completo", img:"images/img-27.jpg", luogo:"San Benedetto del Tronto", desc:"Concerti, sagre e spettacoli. Programma sul sito del Comune.", citta:"San Benedetto", tag:["Musica","Cultura","Sagra"], fonte:"https://www.comune.sanbenedettodeltronto.ap.it/it/news/il-calendario-degli-eventi-dell-estate-2026"}
+  {id:25, data:"24\u201325 Lug 2026", orario:"19:00", titolo:"Mons Pagus A.D. 1566 \u2013 Rievocazione Rinascimentale", img:"images/img-25.jpg", luogo:"Borgo di Montepagano, Roseto degli Abruzzi", desc:"Rievocazione storica in costume.", citta:"Roseto", tag:["Cultura","Rievocazione"], fonte:"https://www.visitroseto.it/eventi/"},
+  {id:26, data:"28 Lug \u2013 14 Ago 2026", orario:"Vari orari", titolo:"Concerti Estate Giulianova", img:"images/img-26.jpg", luogo:"Giulianova", desc:"Vari concerti in programma. Biglietti su TicketOne.", citta:"Giulianova", tag:["Musica"], fonte:"https://www.ticketone.it/cityd/giulianova-1317/concerti-55/"},
+  {id:27, data:"Luglio 2026", orario:"Vari orari", titolo:"Eventi Estate 2026 \u2013 Cartellone completo", img:"images/img-27.jpg", luogo:"San Benedetto del Tronto", desc:"Concerti, sagre e spettacoli. Programma sul sito del Comune.", citta:"San Benedetto", tag:["Musica","Cultura","Sagra"], fonte:"https://www.comune.sanbenedettodeltronto.ap.it/it/news/il-calendario-degli-eventi-dell-estate-2026"}
 ];
 
 /* ============================================================
@@ -701,10 +903,10 @@ function renderizza(lista){
 
   let html = '';
   for(const [citta, evs] of Object.entries(perComune)){
-    html += `<div class="intestazione-comune">📍 ${citta}</div>`;
+    html += `<div class="intestazione-comune">\ud83d\udccd ${citta}</div>`;
     evs.forEach(e => {
-      const orarioHtml = e.orario ? `<div class="orario">🕐 ${e.orario}</div>` : '';
-      const oggiBadge = isOggi(e.data) ? '<div class="badge-oggi">🔴 In corso</div>' : '';
+      const orarioHtml = e.orario ? `<div class="orario">\ud83d\udd50 ${e.orario}</div>` : '';
+      const oggiBadge = isOggi(e.data) ? '<div class="badge-oggi">\ud83d\udd34 In corso</div>' : '';
       const imgHtml = e.img
         ? `<img class="evento-img" src="${e.img}" alt="${e.titolo}" onclick="openLightbox(this.src, this.alt)" loading="lazy">`
         : `<div class="evento-img-placeholder">${getIniziali(e.titolo)}</div>`;
@@ -741,7 +943,7 @@ function openLightbox(src, alt) {
 function getIniziali(titolo) {
   return titolo
     .replace(/['\"]/g, '')
-    .split(/[\s––\-—]+/)
+    .split(/[\s\u2013\u2014-]+/)
     .filter(w => w.length > 0 && !['di','del','della','degli','dei','il','la','le','gli','un','una','al','con','per'].includes(w.toLowerCase()))
     .slice(0, 3)
     .map(w => w[0].toUpperCase())
@@ -819,8 +1021,8 @@ function filtra(){
    NAVETTA
    ============================================================ */
 const navettaConfig = {
-  valid: "🗓️ DAL 1° LUGLIO AL 6 SETTEMBRE 2026",
-  note: "ℹ️ A richiesta: fermate a Belsito e in Viale Makarska (casa del Mar)",
+  valid: "\ud83d\uddf3\ufe0f DAL 1\u00b0 LUGLIO AL 6 SETTEMBRE 2026",
+  note: "\u2139\ufe0f A richiesta: fermate a Belsito e in Viale Makarska (casa del Mar)",
   orari: [
     ["Stazione ferroviaria FS","17:00","18:00","21:30","23:30"],
     ["Lungomare Trieste (Lunapark)","17:05","18:05","21:35","23:35"],
@@ -966,6 +1168,11 @@ document.getElementById('adClose').addEventListener('click', () => {
   document.getElementById('adBanner').classList.add('closed');
   document.body.style.paddingBottom = '20px';
 });
+
+function toggleShuttle() {
+  const navetta = document.getElementById('navettaToggle');
+  if (navetta) { navetta.click(); navetta.scrollIntoView({behavior:'smooth'}); }
+}
 </script>
-</body>
-</html>
+
+</body></html>
