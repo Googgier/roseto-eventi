@@ -1,1007 +1,263 @@
-<!DOCTYPE html><html lang="it" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme:light)"><meta name="theme-color" content="#121212" media="(prefers-color-scheme:dark)"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Eventi Roseto"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><link rel="manifest" href="manifest.json"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-192.png"><meta property="og:title" content="Eventi Roseto degli Abruzzi &amp; Dintorni"><meta property="og:description" content="Eventi, sagre, concerti e manifestazioni nel raggio di 25 km da Roseto degli Abruzzi. Aggiornato quotidianamente."><meta property="og:image" content="https://googgier.github.io/roseto-eventi/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="714"><meta property="og:url" content="https://googgier.github.io/roseto-eventi/"><meta property="og:type" content="website"><meta property="og:locale" content="it_IT"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Eventi Roseto degli Abruzzi &amp; Dintorni"><meta name="twitter:description" content="Eventi, sagre, concerti e manifestazioni nel raggio di 25 km da Roseto."><meta name="twitter:image" content="https://googgier.github.io/roseto-eventi/og-image.png"><title>Eventi Roseto degli Abruzzi &amp; Dintorni</title><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "tertiary-fixed-dim": "#ffb95a",
-                    "surface-container-low": "#151b29",
-                    "on-surface": "#dde2f6",
-                    "surface-container": "#191f2e",
-                    "on-secondary-container": "#004c46",
-                    "on-primary-container": "#6c2000",
-                    "on-surface-variant": "#dec0b6",
-                    "tertiary-fixed": "#ffddb6",
-                    "surface-container-lowest": "#080e1c",
-                    "surface-variant": "#2f3544",
-                    "secondary-container": "#00c6b6",
-                    "surface-dim": "#0d1321",
-                    "on-secondary-fixed": "#00201d",
-                    "surface-bright": "#333948",
-                    "secondary-fixed": "#61f9e9",
-                    "secondary-fixed-dim": "#3adccc",
-                    "error-container": "#93000a",
-                    "on-tertiary-container": "#533300",
-                    "tertiary": "#ffb95a",
-                    "background": "#0d1321",
-                    "surface-container-high": "#242a39",
-                    "on-secondary": "#003732",
-                    "outline-variant": "#57423b",
-                    "primary-fixed-dim": "#ffb59c",
-                    "inverse-primary": "#a43c12",
-                    "error": "#ffb4ab",
-                    "on-tertiary-fixed-variant": "#643f00",
-                    "surface-container-highest": "#2f3544",
-                    "on-secondary-fixed-variant": "#005049",
-                    "surface": "#0d1321",
-                    "on-tertiary": "#462a00",
-                    "inverse-on-surface": "#2a303f",
-                    "on-primary-fixed-variant": "#822800",
-                    "on-primary": "#5c1a00",
-                    "on-tertiary-fixed": "#2a1800",
-                    "on-background": "#dde2f6",
-                    "primary": "#ffb59c",
-                    "outline": "#a68b82",
-                    "on-error-container": "#ffdad6",
-                    "surface-tint": "#ffb59c",
-                    "on-error": "#690005",
-                    "tertiary-container": "#dc952a",
-                    "primary-container": "#ff7f50",
-                    "secondary": "#43e2d2",
-                    "inverse-surface": "#dde2f6",
-                    "primary-fixed": "#ffdbcf",
-                    "on-primary-fixed": "#380c00"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "spacing": {
-                    "lg": "24px",
-                    "sm": "12px",
-                    "xs": "4px",
-                    "md": "16px",
-                    "gutter": "16px",
-                    "container-margin": "20px",
-                    "xl": "40px",
-                    "base": "8px"
-            },
-            "fontFamily": {
-                    "label-sm": ["Inter"],
-                    "label-md": ["Inter"],
-                    "body-lg": ["Inter"],
-                    "display-lg": ["Montserrat"],
-                    "headline-lg-mobile": ["Montserrat"],
-                    "headline-md": ["Montserrat"],
-                    "headline-lg": ["Montserrat"],
-                    "body-md": ["Inter"]
-            },
-            "fontSize": {
-                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
-                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                    "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400"}],
-                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
-                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
-            }
-          },
-        },
-      }
-    }catch(_e){}</script><meta charset="utf-8"><script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Eventi Roseto degli Abruzzi &amp; Dintorni",
-  "url": "https://googgier.github.io/roseto-eventi/",
-  "description": "Eventi, sagre, concerti e manifestazioni nel raggio di 25 km da Roseto degli Abruzzi."
-}
-</script><style>
-/* ================================
-   GLASS PANEL UTILITY (V2 design)
-   ================================ */
-.glass-panel {
-  background: rgba(25, 31, 46, 0.6);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-.glass-panel-solid {
-  background: rgba(25, 31, 46, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-.material-symbols-outlined {
-  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-  vertical-align: middle;
-}
-.hide-scrollbar::-webkit-scrollbar { display: none; }
-.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-body { min-height: max(884px, 100dvh); }
-
-/* ================================
-   STILI CARD EVENTO
-   ================================ */
-.evento {
-  background: rgba(25, 31, 46, 0.6);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 0.75rem;
-  overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-  position: relative;
-}
-.evento:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(255, 181, 156, 0.12);
-}
-.evento a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  padding: 1rem;
-}
-.evento a::after {
-  content: "🔗";
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  font-size: 0.7rem;
-  opacity: 0.4;
-  transition: opacity 0.3s;
-}
-.evento:hover a::after { opacity: 0.9; }
-.evento .badge-oggi {
-  display: inline-block;
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  padding: 0.15rem 0.5rem;
-  border-radius: 6px;
-  background: rgba(255, 185, 90, 0.2);
-  color: #ffb95a;
-  border: 1px solid rgba(255, 185, 90, 0.4);
-  margin-bottom: 0.3rem;
-  animation: pulse-badge 2s ease-in-out infinite;
-}
-@keyframes pulse-badge {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.65; }
-}
-.evento .data {
-  font-size: 0.8rem;
-  color: #43e2d2;
-  font-weight: 600;
-  margin-bottom: 0.2rem;
-}
-.evento .orario {
-  display: inline-block;
-  font-size: 0.75rem;
-  color: #a68b82;
-  background: rgba(47, 53, 68, 0.6);
-  padding: 0.1rem 0.5rem;
-  border-radius: 6px;
-  margin-bottom: 0.25rem;
-}
-.evento .titolo {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: #ffb59c;
-  margin-bottom: 0.2rem;
-  font-family: Montserrat, sans-serif;
-}
-.evento .luogo {
-  font-size: 0.85rem;
-  color: #dec0b6;
-  margin-bottom: 0.3rem;
-}
-.evento .luogo::before { content: "📍 "; }
-.evento .desc {
-  font-size: 0.9rem;
-  color: #dde2f6;
-  line-height: 1.5;
-}
-.evento .etichette {
-  display: flex;
-  gap: 0.35rem;
-  flex-wrap: wrap;
-  margin-top: 0.5rem;
-}
-.evento .etichetta {
-  font-size: 0.7rem;
-  padding: 0.15rem 0.55rem;
-  border-radius: 9999px;
-  background: rgba(67, 226, 210, 0.1);
-  color: #43e2d2;
-  border: 1px solid rgba(67, 226, 210, 0.2);
-}
-
-/* ================================
-   IMMAGINI EVENTO
-   ================================ */
-.evento-img {
-  width: 100%;
-  max-height: 180px;
-  object-fit: cover;
-  border-radius: 0.75rem 0.75rem 0 0;
-  display: block;
-}
-.evento-img-placeholder {
-  width: 100%;
-  max-height: 180px;
-  height: 140px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #242a39, #2f3544);
-  color: #ffb59c;
-  font-size: 2.2rem;
-  font-weight: 700;
-  font-family: Montserrat, sans-serif;
-  border-radius: 0.75rem 0.75rem 0 0;
-}
-.intestazione-comune {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #ffb59c;
-  margin: 1.8rem 0 0.75rem;
-  padding-bottom: 0.35rem;
-  border-bottom: 2px solid rgba(255, 181, 156, 0.3);
-  letter-spacing: -0.3px;
-  font-family: Montserrat, sans-serif;
-}
-
-/* ================================
-   NAVETTA SECTION
-   ================================ */
-.navetta-section {
-  background: rgba(25, 31, 46, 0.6);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 0.75rem;
-  margin-bottom: 1.5rem;
-  overflow: hidden;
-}
-.navetta-toggle {
-  width: 100%;
-  text-align: left;
-  padding: 1rem;
-  border: none;
-  background: transparent;
-  color: #dde2f6;
-  font-size: 1.15rem;
-  font-weight: 700;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background 0.2s;
-  font-family: Montserrat, sans-serif;
-}
-.navetta-toggle:hover { background: rgba(255,255,255,0.05); }
-.navetta-toggle .arrow { transition: transform 0.35s; font-size: 0.9rem; color: #43e2d2; }
-.navetta-toggle.open .arrow { transform: rotate(180deg); }
-.navetta-content { padding: 0 1rem 1rem; display: none; }
-.navetta-content.open { display: block; }
-.navetta-content h3 { font-size: 1rem; color: #43e2d2; margin: 1rem 0 0.5rem; font-family: Montserrat, sans-serif; }
-.navetta-valid { font-size: 0.8rem; color: #dec0b6; margin-bottom: 0.75rem; }
-.navetta-route { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1rem; }
-.navetta-route .stop {
-  font-size: 0.8rem;
-  background: rgba(67, 226, 210, 0.1);
-  color: #43e2d2;
-  padding: 0.2rem 0.55rem;
-  border-radius: 6px;
-  border: 1px solid rgba(67, 226, 210, 0.2);
-}
-.navetta-route .stop::before { content: "➡ "; }
-.navetta-table-wrapper { overflow-x: auto; margin-bottom: 1rem; -webkit-overflow-scrolling: touch; }
-.navetta-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 500px; }
-.navetta-table th {
-  background: #242a39;
-  color: #43e2d2;
-  padding: 0.5rem 0.4rem;
-  text-align: center;
-  font-weight: 600;
-  white-space: nowrap;
-  font-family: Montserrat, sans-serif;
-}
-.navetta-table td { padding: 0.4rem; border-bottom: 1px solid rgba(255,255,255,0.05); text-align: center; white-space: nowrap; color: #dde2f6; }
-.navetta-table tr td:first-child { text-align: left; font-weight: 500; white-space: normal; min-width: 130px; color: #dec0b6; }
-.navetta-table tr:hover { background: rgba(47, 53, 68, 0.3); }
-.navetta-note { font-size: 0.82rem; color: #dec0b6; padding: 0.6rem; background: rgba(47, 53, 68, 0.3); border-radius: 8px; margin-bottom: 1rem; }
-.navetta-mercato { margin-top: 0.75rem; }
-.navetta-mercato summary { font-size: 0.9rem; font-weight: 600; color: #43e2d2; cursor: pointer; padding: 0.3rem 0; }
-.navetta-sub { font-size: 0.78rem; color: #dec0b6; margin: 0.25rem 0; }
-
-/* ================================
-   STATS, NESSUN RISULTATO
-   ================================ */
-.stats {
-  text-align: center;
-  font-size: 0.8rem;
-  color: #dec0b6;
-  margin-bottom: 1rem;
-}
-#nessun-risultato {
-  text-align: center;
-  padding: 2rem;
-  color: #dec0b6;
-  display: none;
-}
-
-/* ================================
-   BANNER PUBBLICITARIO
-   ================================ */
-.ad-banner {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  text-align: center;
-  padding: 0.5rem 2rem 0.5rem 0.5rem;
-  background: rgba(13, 19, 33, 0.95);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.35s;
-}
-.ad-banner.closed { transform: translateY(100%); }
-.ad-banner .ad-label { font-size: 0.6rem; color: #a68b82; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.25rem; }
-.ad-banner ins { display: inline-block; }
-.ad-banner .adsbygoogle { max-width: 100%; height: auto; min-height: 70px; }
-@media (max-width: 768px) { .ad-banner .adsbygoogle { width: 100%; min-height: 70px; } }
-.ad-close {
-  position: absolute;
-  top: 0.25rem;
-  right: 0.5rem;
-  background: none;
-  border: none;
-  font-size: 1.1rem;
-  cursor: pointer;
-  color: #a68b82;
-  padding: 0.2rem 0.35rem;
-  line-height: 1;
-  border-radius: 4px;
-  transition: background 0.2s, color 0.2s;
-}
-.ad-close:hover { background: rgba(255,255,255,0.1); color: #dde2f6; }
-
-/* ================================
-   CONTATORE VISITE
-   ================================ */
-.visit-counter {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #dec0b6;
-  margin-bottom: 0.75rem;
-  transition: opacity 0.3s;
-}
-.visit-counter.loading { opacity: 0.5; }
-.visit-counter .counter-spinner {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #dec0b6;
-  border-top-color: transparent;
-  border-radius: 50%;
-  animation: spin 0.6s linear infinite;
-  vertical-align: middle;
-  margin-right: 4px;
-}
-@keyframes spin { to { transform: rotate(360deg); } }
-
-/* ================================
-   FILTRI PILL
-   ================================ */
-.filtri {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 4px;
-}
-.filtri button {
-  flex-shrink: 0;
-  padding: 0.45rem 1rem;
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 9999px;
-  background: rgba(25, 31, 46, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  cursor: pointer;
-  font-size: 0.82rem;
-  transition: all 0.25s;
-  color: #dec0b6;
-  user-select: none;
-  white-space: nowrap;
-  font-family: Inter, sans-serif;
-  font-weight: 500;
-}
-.filtri button.attivo {
-  background: #43e2d2;
-  color: #003732;
-  border-color: #43e2d2;
-  font-weight: 600;
-  box-shadow: 0 2px 12px rgba(67, 226, 210, 0.3);
-}
-.filtri button:hover:not(.attivo) {
-  background: rgba(47, 53, 68, 0.5);
-  border-color: rgba(67, 226, 210, 0.4);
-  transform: translateY(-1px);
-}
-
-/* ================================
-   CUSTOM SCROLLBAR
-   ================================ */
-.custom-scrollbar::-webkit-scrollbar { height: 4px; }
-.custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
-.custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255, 181, 156, 0.3); border-radius: 2px; }
-
-/* ================================
-   LIGHTBOX
-   ================================ */
-.lightbox {
-  position: fixed; top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  background: rgba(0,0,0,0.9);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  animation: fadeIn 0.2s;
-}
-.lightbox-img {
-  max-width: 90vw;
-  max-height: 85vh;
-  object-fit: contain;
-  border-radius: 8px;
-}
-.lightbox-close {
-  position: absolute;
-  top: 1rem; right: 1.5rem;
-  font-size: 2.5rem;
-  color: #fff;
-  cursor: pointer;
-  line-height: 1;
-}
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* ================================
-   RESPONSIVE
-   ================================ */
-#eventi {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-@media (min-width: 769px) {
-  header { height: 72px; padding-left: 32px; padding-right: 32px; }
-  header h1 { font-size: 1.5rem; }
-  main { padding-left: 32px; padding-right: 32px; padding-top: 100px; }
-  #search { padding: 14px 24px; font-size: 1rem; border-radius: 16px; }
-  .filtri { overflow-x: visible; flex-wrap: nowrap; gap: 0.6rem; }
-  .filtri button { font-size: 0.85rem; padding: 0.45rem 1rem; }
-  #eventi {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-  @media (min-width: 1024px) {
-    #eventi { grid-template-columns: repeat(3, 1fr); }
-  }
-  .evento a { padding: 1.25rem; }
-  .evento .titolo { font-size: 1.15rem; }
-  .intestazione-comune { font-size: 1.5rem; margin: 2rem 0 1rem; grid-column: 1 / -1; }
-  .stats { font-size: 0.9rem; margin-bottom: 1.5rem; }
-  .ad-banner { padding: 0.5rem 1rem; }
-}
-
-@media (max-width: 480px) {
-  .evento .titolo { font-size: 0.95rem; }
-  .evento a { padding: 0.75rem; }
-  .filtri { gap: 0.35rem; }
-  .filtri button { font-size: 0.72rem; padding: 0.25rem 0.6rem; }
-  .navetta-table { font-size: 0.72rem; min-width: 420px; }
-  .navetta-table tr td:first-child { min-width: 100px; font-size: 0.7rem; }
-  .intestazione-comune { font-size: 1.1rem; }
-  body { padding-bottom: 130px; }
-}
-
-/* Bottom nav responsive */
-@media (min-width: 769px) {
-  nav.fixed.bottom-0 {
-    padding: 0.75rem 0;
-    height: auto;
-    gap: 1.5rem;
-  }
-}
-
-/* Scroll indicator gradient for filter pills */
-.filtri::after {
-  content: '';
-  position: sticky;
-  right: 0;
-  width: 32px;
-  flex-shrink: 0;
-  background: linear-gradient(to right, transparent, #0d1321);
-  pointer-events: none;
-  margin-right: -32px;
-}
-</style></head><body class="bg-background min-h-screen pb-32">
-
-<!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 glass-panel border-b border-white/10 shadow-sm flex justify-between items-center px-container-margin h-16">
-<div class="flex items-center gap-base active:scale-95 transition-transform">
-<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;" data-original-icon="calendar_month">calendar_month</span>
-<h1 class="font-headline-md text-headline-md font-bold text-primary">Roseto &amp; Dintorni</h1>
-</div>
-<div class="flex items-center gap-md">
-<div class="hidden md:flex items-center bg-primary/10 px-sm py-xs rounded-full border border-primary/20">
-  <span class="text-[10px] uppercase font-bold text-primary tracking-wider">Aggiornato: <span id="aggiornato"></span></span>
-</div>
-<button class="material-symbols-outlined text-on-surface-variant hover:opacity-80 transition-opacity">search</button>
-<button class="material-symbols-outlined text-primary hover:opacity-80 transition-opacity" data-original-icon="notifications">notifications</button>
-</div>
-</header>
-<main class="pt-24 px-container-margin max-w-[1280px] mx-auto overflow-x-hidden">
-
-<!-- Mobile update badge & Visit counter -->
-<div class="visit-counter" id="counterTop">👁️ <span id="visitCount">—</span> visite</div>
-
-<!-- Search Bar -->
-<div class="mb-lg">
-  <input type="text" id="search" placeholder="Cerca evento, luogo, data…" autocomplete="off"
-         class="w-full px-lg py-sm bg-surface-container border border-white/10 rounded-xl text-on-surface placeholder-on-surface-variant/60 outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all text-label-md">
-</div>
-
-<!-- Category Chips / Filters -->
-<nav class="flex gap-base overflow-x-auto pb-lg no-scrollbar custom-scrollbar mb-xl" id="filtri">
-<button data-filtro="tutti" class="flex-shrink-0 px-lg py-sm bg-secondary text-on-secondary rounded-full font-label-md text-label-md transition-all active:scale-95 attivo">Tutti</button>
-<button data-filtro="Roseto" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">Roseto</button>
-<button data-filtro="Silvi" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">Silvi</button>
-<button data-filtro="Giulianova" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">Giulianova</button>
-<button data-filtro="Pineto" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">Pineto</button>
-<button data-filtro="Tortoreto" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">Tortoreto</button>
-<button data-filtro="Mosciano" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">Mosciano</button>
-<button data-filtro="Pescara" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">Pescara</button>
-<button data-filtro="Teramo" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">Teramo</button>
-<button data-filtro="San Benedetto" class="flex-shrink-0 px-lg py-sm glass-panel text-on-surface-variant rounded-full font-label-md text-label-md hover:border-secondary transition-all active:scale-95">S.Benedetto</button>
-</nav>
-
-<!-- Stats -->
-<div class="stats" id="stats"></div>
-
-<!-- Event cards (generated by renderizza()) -->
-<section id="eventi"></section>
-
-<!-- Nessun risultato -->
-<div id="nessun-risultato">Nessun evento trovato 😕</div>
-
-<!-- SEZIONE NAVETTA GRATUITA -->
-<div class="navetta-section">
-  <button class="navetta-toggle" id="navettaToggle" onclick="toggleNavetta()">
-    <span>🚌 Orari Navetta Gratuita</span>
-    <span class="arrow">▼</span>
-  </button>
-  <div class="navetta-content" id="navettaContent">
-    <div class="navetta-valid">🗓️ DAL 1° LUGLIO AL 6 SETTEMBRE 2026</div>
-    <h3>📍 Percorso</h3>
-    <div class="navetta-route" id="navettaStops"></div>
-    <h3>🕐 Orario Giornaliero (tutti i giorni)</h3>
-    <div class="navetta-table-wrapper"><table class="navetta-table" id="navettaTable"><thead><tr><th>Fermata</th><th>17:00</th><th>18:00</th><th>21:30</th><th>23:30</th></tr></thead><tbody id="navettaTableBody"></tbody></table></div>
-    <div class="navetta-note">ℹ️ A richiesta: fermate a <strong>Belsito</strong> e in <strong>Viale Makarska</strong> (casa del Mar)</div>
-    <details class="navetta-mercato">
-      <summary>🛒 Martedì — Corsa Mercato (solo martedì)</summary>
-      <div class="navetta-sub">Andata (da Lido d'Abruzzo → P.zza Marco Polo)</div>
-      <table class="navetta-table"><thead><tr><th>Fermata</th><th>Orario</th></tr></thead><tbody>
-        <tr><td>Lido d'Abruzzo</td><td>09:00</td></tr><tr><td>Lungomare Trento (Via Emilia)</td><td>09:02</td></tr><tr><td>Lungomare Roma (Rotonda Nord)</td><td>09:04</td></tr><tr><td>Lungomare Roma (Rotonda Sud)</td><td>09:06</td></tr><tr><td>Club del Sole</td><td>09:08</td></tr><tr><td>P.zza Marco Polo</td><td>09:12</td></tr>
-      </tbody></table>
-      <div class="navetta-sub">Ritorno (da P.zza Marco Polo → Lido d'Abruzzo)</div>
-      <table class="navetta-table"><thead><tr><th>Fermata</th><th>Orario</th></tr></thead><tbody>
-        <tr><td>P.zza Marco Polo</td><td>12:00</td></tr><tr><td>Club del Sole</td><td>12:04</td></tr><tr><td>Lungomare Roma (Rotonda Sud)</td><td>12:06</td></tr><tr><td>Lungomare Roma (Rotonda Nord)</td><td>12:08</td></tr><tr><td>Lungomare Trento (Via Emilia)</td><td>12:10</td></tr><tr><td>Lido d'Abruzzo</td><td>12:12</td></tr>
-      </tbody></table>
-    </details>
+<!DOCTYPE html><html lang="it" class="dark"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme:light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme:dark)">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta property="og:title" content="Eventi Roseto degli Abruzzi &amp; Dintorni">
+<meta property="og:description" content="Eventi, sagre, concerti e manifestazioni nel raggio di 25 km da Roseto degli Abruzzi.">
+<meta property="og:image" content="https://googgier.github.io/roseto-eventi/og-image.png">
+<meta property="og:url" content="https://googgier.github.io/roseto-eventi/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<title>Eventi Roseto degli Abruzzi &amp; Dintorni</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>try{
+tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-fixed-dim":"#ffb95a","surface-container-low":"#151b29","on-surface":"#dde2f6","surface-container":"#191f2e","on-secondary-container":"#004c46","on-primary-container":"#6c2000","on-surface-variant":"#dec0b6","tertiary-fixed":"#ffddb6","surface-container-lowest":"#080e1c","surface-variant":"#2f3544","secondary-container":"#00c6b6","surface-dim":"#0d1321","on-secondary-fixed":"#00201d","surface-bright":"#333948","secondary-fixed":"#61f9e9","secondary-fixed-dim":"#3adccc","error-container":"#93000a","on-tertiary-container":"#533300","tertiary":"#ffb95a","background":"#0d1321","surface-container-high":"#242a39","on-secondary":"#003732","outline-variant":"#57423b","primary-fixed-dim":"#ffb59c","inverse-primary":"#a43c12","error":"#ffb4ab","on-tertiary-fixed-variant":"#643f00","surface-container-highest":"#2f3544","on-secondary-fixed-variant":"#005049","surface":"#0d1321","on-tertiary":"#462a00","inverse-on-surface":"#2a303f","on-primary-fixed-variant":"#822800","on-primary":"#5c1a00","on-tertiary-fixed":"#2a1800","on-background":"#dde2f6","primary":"#ffb59c","outline":"#a68b82","on-error-container":"#ffdad6","surface-tint":"#ffb59c","on-error":"#690005","tertiary-container":"#dc952a","primary-container":"#ff7f50","secondary":"#43e2d2","inverse-surface":"#dde2f6","primary-fixed":"#ffdbcf","on-primary-fixed":"#380c00"},fontFamily:{"label-sm":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"display-lg":["Montserrat"],"headline-md":["Montserrat"],"headline-lg":["Montserrat"],"body-md":["Inter"]},fontSize:{"label-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0.05em",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"0.01em",fontWeight:"400"}],"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg-mobile":["28px",{lineHeight:"34px",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}]}}}}catch(_e){}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Eventi Roseto degli Abruzzi &amp; Dintorni","url":"https://googgier.github.io/roseto-eventi/"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,sans-serif;background:#0d1321;color:#dde2f6;min-height:100dvh;padding-bottom:100px}
+.glass{background:rgba(25,31,46,0.65);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08)}
+.glass-solid{background:rgba(25,31,46,0.85);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08)}
+.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;vertical-align:middle}
+.hide-scrollbar::-webkit-scrollbar{display:none}.hide-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
+.custom-scrollbar::-webkit-scrollbar{height:4px}
+.custom-scrollbar::-webkit-scrollbar-track{background:transparent}
+.custom-scrollbar::-webkit-scrollbar-thumb{background:rgba(255,181,156,0.3);border-radius:2px}
+.card-evento{position:relative;border-radius:1rem;overflow:hidden;cursor:pointer;background:#191f2e;min-height:280px;transition:transform 0.3s,box-shadow 0.3s}
+.card-evento:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(255,181,156,0.1)}
+.card-evento img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s;position:absolute;inset:0}
+.card-evento:hover img{transform:scale(1.08)}
+.card-evento .grad{position:absolute;inset:0;background:linear-gradient(to top,#0d1321 0%,rgba(13,19,33,0.4) 50%,transparent 100%);z-index:1}
+.card-evento .badge{position:absolute;top:12px;right:12px;z-index:3;padding:4px 12px;background:rgba(25,31,46,0.7);backdrop-filter:blur(12px);border-radius:8px;font-size:0.75rem;font-weight:700;color:#43e2d2;font-family:Montserrat,sans-serif;border:1px solid rgba(67,226,210,0.2)}
+.card-evento .oggi{position:absolute;top:12px;left:12px;z-index:3;padding:4px 10px;background:rgba(255,185,90,0.2);border:1px solid rgba(255,185,90,0.4);border-radius:8px;font-size:0.65rem;font-weight:700;text-transform:uppercase;color:#ffb95a;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.6}}
+.card-evento .info{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:1rem}
+.card-evento .info .gpanel{background:rgba(25,31,46,0.65);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.08);border-radius:0.75rem;padding:0.75rem}
+.card-evento .info .cat{font-size:0.7rem;color:#43e2d2;text-transform:uppercase;letter-spacing:0.1em;font-weight:600;display:block;margin-bottom:2px}
+.card-evento .info h3{font-family:Montserrat,sans-serif;font-size:1rem;font-weight:600;color:#dde2f6;margin-bottom:2px}
+.card-evento .info .luogo{font-size:0.8rem;color:#dec0b6}
+.card-evento .info .luogo::before{content:"📍 "}
+.card-evento a.cover-link{position:absolute;inset:0;z-index:4;text-indent:-9999px}
+.hero-section{position:relative;height:450px;border-radius:1rem;overflow:hidden;margin-bottom:1.5rem}
+.hero-section img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.hero-section .grad{position:absolute;inset:0;background:linear-gradient(to top,#0d1321 0%,rgba(13,19,33,0.3) 60%,transparent 100%);z-index:1}
+.hero-content{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:1.5rem}
+.hero-content .gpanel{background:rgba(25,31,46,0.7);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.12);border-radius:1rem;padding:1.25rem}
+.hero-content .gold{display:inline-block;padding:2px 10px;background:#00c6b6;color:#004c46;border-radius:9999px;font-size:0.7rem;font-weight:700;text-transform:uppercase;margin-bottom:6px}
+.hero-content h2{font-family:Montserrat,sans-serif;font-size:1.6rem;font-weight:800;color:#dde2f6;margin-bottom:4px;line-height:1.2}
+.hero-content p{font-size:0.9rem;color:#dec0b6;margin-bottom:8px}
+.hero-content .meta{font-size:0.8rem;color:#43e2d2}
+#gabbia{display:grid;grid-template-columns:1fr;gap:1rem}
+@media(min-width:640px){#gabbia{grid-template-columns:repeat(2,1fr)}.hero-section{height:500px}.hero-content h2{font-size:2rem}}
+@media(min-width:1024px){#gabbia{grid-template-columns:repeat(3,1fr)}.hero-section{height:520px}.hero-content{padding:2rem}.hero-content .gpanel{width:60%}.hero-content h2{font-size:2.2rem}}
+.intestazione-comune{grid-column:1/-1;font-family:Montserrat,sans-serif;font-size:1.2rem;font-weight:700;color:#ffb59c;padding-bottom:4px;border-bottom:2px solid rgba(255,181,156,0.15);margin-top:0.5rem}
+.stats{text-align:center;font-size:0.8rem;color:#a68b82;margin-bottom:0.75rem}
+#nessun-risultato{text-align:center;padding:2rem;color:#a68b82;display:none}
+.visit-counter{text-align:center;font-size:0.8rem;color:#a68b82;margin-bottom:0.5rem}
+#filtri{display:flex;gap:0.5rem;overflow-x:auto;padding-bottom:0.5rem;margin-bottom:1rem}
+#filtri button{flex-shrink:0;padding:0.4rem 1rem;border-radius:9999px;border:1px solid rgba(255,255,255,0.1);background:rgba(25,31,46,0.6);backdrop-filter:blur(12px);font-size:0.8rem;color:#dec0b6;cursor:pointer;transition:all 0.2s;font-family:Inter;font-weight:500;white-space:nowrap}
+#filtri button.attivo{background:#43e2d2;color:#003732;border-color:#43e2d2;font-weight:600}
+#filtri button:hover:not(.attivo){background:rgba(47,53,68,0.5);border-color:rgba(67,226,210,0.3)}
+#search{width:100%;padding:0.7rem 1rem;border-radius:0.75rem;border:1px solid rgba(255,255,255,0.1);background:#191f2e;color:#dde2f6;font-size:0.9rem;outline:none;transition:border 0.2s;margin-bottom:0.75rem}
+#search:focus{border-color:#43e2d2}#search::placeholder{color:#a68b82}
+.navetta-section{background:rgba(25,31,46,0.6);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08);border-radius:0.75rem;margin-bottom:1.5rem;overflow:hidden}
+.navetta-toggle{width:100%;text-align:left;padding:1rem;border:none;background:transparent;color:#dde2f6;font-size:1rem;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-family:Montserrat,sans-serif}
+.navetta-toggle:hover{background:rgba(255,255,255,0.03)}
+.navetta-toggle .arrow{transition:transform 0.35s;color:#43e2d2}
+.navetta-toggle.open .arrow{transform:rotate(180deg)}
+.navetta-content{padding:0 1rem 1rem;display:none}
+.navetta-content.open{display:block}
+.navetta-content h3{font-size:0.9rem;color:#43e2d2;margin:0.75rem 0 0.4rem;font-family:Montserrat,sans-serif}
+.navetta-valid{font-size:0.75rem;color:#a68b82;margin-bottom:0.5rem}
+.navetta-route{display:flex;flex-wrap:wrap;gap:0.3rem;margin-bottom:0.75rem}
+.navetta-route .stop{font-size:0.75rem;background:rgba(67,226,210,0.1);color:#43e2d2;padding:0.15rem 0.5rem;border-radius:6px;border:1px solid rgba(67,226,210,0.2)}
+.navetta-route .stop::before{content:"➡ "}
+.navetta-table-wrapper{overflow-x:auto;margin-bottom:0.75rem}
+.navetta-table{width:100%;border-collapse:collapse;font-size:0.78rem;min-width:480px}
+.navetta-table th{background:#242a39;color:#43e2d2;padding:0.4rem;text-align:center;font-weight:600;font-size:0.75rem}
+.navetta-table td{padding:0.35rem;border-bottom:1px solid rgba(255,255,255,0.04);text-align:center;color:#dde2f6}
+.navetta-table tr td:first-child{text-align:left;font-weight:500;color:#dec0b6;min-width:110px}
+.navetta-note{font-size:0.78rem;color:#a68b82;padding:0.5rem;background:rgba(47,53,68,0.3);border-radius:8px;margin-bottom:0.75rem}
+.navetta-mercado{margin-top:0.5rem}.navetta-mercado summary{font-size:0.85rem;font-weight:600;color:#43e2d2;cursor:pointer;padding:0.2rem 0}
+.navetta-sub{font-size:0.75rem;color:#a68b82;margin:0.2rem 0}
+.ad-banner{position:fixed;bottom:0;left:0;right:0;z-index:100;text-align:center;padding:0.4rem 2rem 0.4rem 0.5rem;background:rgba(13,19,33,0.96);backdrop-filter:blur(20px);border-top:1px solid rgba(255,255,255,0.1);transition:transform 0.35s}
+.ad-banner.closed{transform:translateY(100%)}
+.ad-banner .ad-label{font-size:0.55rem;color:#a68b82;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.15rem}
+.ad-close{position:absolute;top:0.2rem;right:0.4rem;background:none;border:none;font-size:1rem;cursor:pointer;color:#a68b82;padding:0.15rem 0.3rem;line-height:1;border-radius:4px}
+.ad-close:hover{background:rgba(255,255,255,0.1);color:#dde2f6}
+.ad-placeholder{display:inline-flex;align-items:center;justify-content:center;width:728px;max-width:100%;height:70px;background:rgba(255,255,255,0.03);border:1px dashed rgba(255,255,255,0.1);border-radius:0.5rem;font-size:0.7rem;color:#a68b82}
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;z-index:50;display:flex;justify-content:space-around;align-items:center;height:72px;background:rgba(25,31,46,0.85);backdrop-filter:blur(20px);border-top:1px solid rgba(255,255,255,0.08)}
+.bottom-nav a{display:flex;flex-direction:column;align-items:center;gap:2px;color:#a68b82;text-decoration:none;font-size:0.65rem;transition:color 0.2s}
+.bottom-nav a:hover,.bottom-nav a.attivo{color:#43e2d2}
+.bottom-nav a span.material-symbols-outlined{font-size:1.5rem}
+.footer{text-align:center;padding:1rem;font-size:0.75rem;color:#a68b82}
+.footer a{color:#ffb59c;text-decoration:underline}
+.lightbox{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.9);z-index:9999;display:flex;align-items:center;justify-content:center;cursor:pointer;animation:fadeIn 0.2s}
+.lightbox-img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:8px}
+.lightbox-close{position:absolute;top:1rem;right:1.5rem;font-size:2.5rem;color:#fff;cursor:pointer;line-height:1}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+</style></head><body>
+<header class="glass" style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:0 20px;height:64px;border-bottom:1px solid rgba(255,255,255,0.08)">
+  <div style="display:flex;align-items:center;gap:8px">
+    <span class="material-symbols-outlined" style="color:#ff7f50;font-variation-settings:'FILL'1">calendar_month</span>
+    <span style="font-family:Montserrat;font-size:1.2rem;font-weight:700;color:#ffb59c">Roseto &amp; Dintorni</span>
   </div>
-</div>
-
+  <div style="display:flex;align-items:center;gap:12px">
+    <span style="font-size:0.7rem;color:#a68b82" id="updateDesktop">Aggiornato: <span id="aggiornato"></span></span>
+  </div>
+</header>
+<main style="max-width:1280px;margin:0 auto;padding:80px 16px 0">
+  <div class="visit-counter" id="counterTop">👁️ <span id="visitCount">—</span> visite</div>
+  <input type="text" id="search" placeholder="Cerca evento, luogo, data…" autocomplete="off">
+  <nav id="filtri">
+    <button data-filtro="tutti" class="attivo">Tutti</button>
+    <button data-filtro="Roseto">Roseto</button>
+    <button data-filtro="Silvi">Silvi</button>
+    <button data-filtro="Giulianova">Giulianova</button>
+    <button data-filtro="Pineto">Pineto</button>
+    <button data-filtro="Tortoreto">Tortoreto</button>
+    <button data-filtro="Mosciano">Mosciano</button>
+    <button data-filtro="Pescara">Pescara</button>
+    <button data-filtro="Teramo">Teramo</button>
+    <button data-filtro="San Benedetto">S.Benedetto</button>
+  </nav>
+  <div class="stats" id="stats"></div>
+  <div id="hero-container"></div>
+  <div id="gabbia"></div>
+  <div id="nessun-risultato">Nessun evento trovato &#x1f615;</div>
+  <!-- NAVETTA -->
+  <div class="navetta-section">
+    <button class="navetta-toggle" id="navettaToggle" onclick="toggleNavetta()">
+      <span>&#x1f68c; Orari Navetta Gratuita</span>
+      <span class="arrow">&#x25bc;</span>
+    </button>
+    <div class="navetta-content" id="navettaContent">
+      <div class="navetta-valid" id="navettaValid"></div>
+      <h3>&#x1f4cd; Percorso</h3>
+      <div class="navetta-route" id="navettaRoute"></div>
+      <h3>&#x1f550; Orario Giornaliero</h3>
+      <div class="navetta-table-wrapper"><table class="navetta-table"><thead><tr><th>Fermata</th><th>17:00</th><th>18:00</th><th>21:30</th><th>23:30</th></tr></thead><tbody id="navettaTableBody"></tbody></table></div>
+      <div class="navetta-note" id="navettaNote"></div>
+      <details class="navetta-mercado"><summary>&#x1f6d2; Martedì — Corsa Mercato</summary>
+        <div class="navetta-sub">Andata (Lido d'Abruzzo → P.zza Marco Polo)</div>
+        <table class="navetta-table"><thead><tr><th>Fermata</th><th>Orario</th></tr></thead><tbody id="navettaMercatoAndata"></tbody></table>
+        <div class="navetta-sub">Ritorno (P.zza Marco Polo → Lido d'Abruzzo)</div>
+        <table class="navetta-table"><thead><tr><th>Fermata</th><th>Orario</th></tr></thead><tbody id="navettaMercatoRitorno"></tbody></table>
+      </details>
+    </div>
+  </div>
 </main>
-
-<!-- Bottom Navigation Bar -->
-<nav class="fixed bottom-0 w-full z-40 glass-panel-solid border-t border-white/10 flex justify-around items-center h-20 safe-bottom">
-  <a class="flex flex-col items-center gap-xs text-primary"><span class="material-symbols-outlined text-2xl" data-original-icon="event">event</span><span class="text-[10px] font-label-sm">Eventi</span></a>
-  <a class="flex flex-col items-center gap-xs text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined text-2xl" data-original-icon="map">map</span><span class="text-[10px] font-label-sm">Mappa</span></a>
-  <a class="flex flex-col items-center gap-xs text-on-surface-variant hover:text-primary" onclick="document.getElementById('navettaToggle')?.click()"><span class="material-symbols-outlined text-2xl" data-original-icon="directions_bus">directions_bus</span><span class="text-[10px] font-label-sm">Navette</span></a>
-  <a class="flex flex-col items-center gap-xs text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined text-2xl" data-original-icon="bookmark">bookmark</span><span class="text-[10px] font-label-sm">Salvati</span></a>
+<nav class="bottom-nav">
+  <a href="#" class="attivo"><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1">event</span>Eventi</a>
+  <a href="#" onclick="document.getElementById('navettaToggle')?.click();return false"><span class="material-symbols-outlined">directions_bus</span>Navetta</a>
+  <a href="#"><span class="material-symbols-outlined">map</span>Mappa</a>
+  <a href="#"><span class="material-symbols-outlined">bookmark</span>Salvati</a>
 </nav>
-
-<!-- Footer -->
-<footer class="text-center font-label-sm text-label-sm text-on-surface-variant py-lg max-w-[1280px] mx-auto">
-  <p>Generato automaticamente — <a href="https://github.com/Googgier/roseto-eventi" class="text-primary hover:underline">GitHub</a></p>
-  <p class="mt-xs opacity-60">Made with ❤️ for the Adriatic Coast</p>
-</footer>
-
-<!-- ================================
-     AD BANNER
-     ================================ -->
-<div class="ad-banner" id="adBanner">
-  <button class="ad-close" id="adClose" aria-label="Chiudi sponsor">✕</button>
-  <div class="ad-label">Sponsor</div>
-  <ins class="adsbygoogle"
-       style="display:inline-block;width:728px;height:90px"
-       data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-       data-ad-slot="XXXXXXXXXX"></ins>
+<div class="footer">
+  <p>Generato automaticamente — <a href="https://github.com/Googgier/roseto-eventi">GitHub</a></p>
+  <p style="opacity:0.6;margin-top:4px">Made with &#x2764;&#xfe0f; for the Adriatic Coast</p>
 </div>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
+<div class="ad-banner" id="adBanner">
+  <button class="ad-close" id="adClose" aria-label="Chiudi sponsor">&times;</button>
+  <div class="ad-label">Sponsor</div>
+  <div class="ad-placeholder">&#x1f4b0; Spazio pubblicitario disponibile</div>
+</div>
 <script>
-        // Simple micro-interactions
-        document.querySelectorAll('a, button').forEach(el => {
-            el.addEventListener('mousedown', () => {
-                el.style.transform = 'scale(0.95)';
-            });
-            el.addEventListener('mouseup', () => {
-                el.style.transform = '';
-            });
-        });
-
-        // Sticky Header Effect
-        let lastScroll = 0;
-        const header = document.querySelector('header');
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-            if (currentScroll <= 0) {
-                header.classList.remove('shadow-lg');
-                return;
-            }
-            if (currentScroll > lastScroll) {
-                // Scroll down
-                header.style.transform = 'translateY(-100%)';
-            } else {
-                // Scroll up
-                header.style.transform = 'translateY(0)';
-                header.classList.add('shadow-lg');
-            }
-            lastScroll = currentScroll;
-        });
-</script>
-
-<script>
-/* ============================================================
-   DATI EVENTI — 27 eventi rinumerati 1-27
-   ============================================================ */
-const eventi = [
-  {id:1, data:"10 Lug – 6 Set 2026", orario:"Tutto il giorno", titolo:"Villa in Arte", img:"images/img-1.jpg", luogo:"Villa Comunale, Roseto degli Abruzzi", desc:"Mostra d'arte con grandi protagonisti dell'arte contemporanea.", citta:"Roseto", tag:["Cultura","Arte"], fonte:"https://www.visitroseto.it/eventi/"},
-  {id:2, data:"12–19 Lug 2026", orario:"Vari orari", titolo:"Pescara Jazz 2026 – 54\u00aa edizione", img:"images/img-2.jpg", luogo:"Pescara", desc:"Festival internazionale di jazz. Concerti in varie location.", citta:"Pescara", tag:["Musica","Jazz","Festival"], fonte:"https://www.ilpescara.it/eventi/"},
-  {id:3, data:"13–19 Lug 2026", orario:"Vari orari", titolo:"Festival 'Il Fiume e la Memoria' – XXIV ed.", img:"images/img-3.jpg", luogo:"Centro storico e lungofiume, Pescara", desc:"Grandi storie, musica e teatro.", citta:"Pescara", tag:["Cultura","Musica","Teatro"], fonte:"https://www.comune.pescara.it/"},
-  {id:4, data:"14 Lug 2026", orario:"18:00", titolo:"Camminata al tramonto alla Sentina", img:"images/img-4.jpg", luogo:"Riserva Sentina, San Benedetto del Tronto", desc:"Passeggiata guidata al tramonto nella Riserva Naturale.", citta:"San Benedetto", tag:["Natura","Sport"], fonte:"https://turismo.comunesbt.it/eventi/mese/2026-07/"},
-  {id:5, data:"14 Lug 2026", orario:"21:00", titolo:"Buozzi Summer Sound – Lucy Soul Band", img:"images/img-5.jpg", luogo:"Piazza Buozzi, Giulianova", desc:"'A Soul Experience' – concerto soul.", citta:"Giulianova", tag:["Musica","Soul"], fonte:"https://www.visitgiulianova.com/eventi.php"},
-  {id:6, data:"15 Lug 2026", orario:"21:00", titolo:"Concerto di apertura – I Musici Lotariani", img:"images/img-6.jpg", luogo:"Villa Comunale, Roseto degli Abruzzi", desc:"Concerto che apre la 30\u00aa edizione di Roseto Opera Prima. Ingresso gratuito.", citta:"Roseto", tag:["Musica","Cultura"], fonte:"https://www.visitroseto.it/eventi/"},
-  {id:7, data:"15 Lug 2026", orario:"21:00", titolo:"Emma – Live 2026", img:"images/img-7.jpg", luogo:"Pescara", desc:"Concerto di Emma. Biglietti su TicketOne.", citta:"Pescara", tag:["Musica","Concerto"], fonte:"https://www.ticketone.it/city/pescara-1938/concerti-55/"},
-  {id:8, data:"15\u201318 Lug 2026", orario:"21:00\u201323:00", titolo:"Roseto Opera Prima 30\u00aa edizione", img:"images/img-8.jpg", luogo:"Villa Comunale, Roseto degli Abruzzi", desc:"Rassegna culturale con proiezioni, incontri e spettacoli.", citta:"Roseto", tag:["Cultura","Cinema"], fonte:"https://www.visitroseto.it/eventi/"},
-  {id:9, data:"15\u201319 Lug 2026", orario:"Tutto il giorno", titolo:"10\u00aa Rievocazione della Trebbiatura", img:"images/img-9.jpg", luogo:"Mosciano Sant'Angelo", desc:"Rievocazione storica con sagra enogastronomica.", citta:"Mosciano", tag:["Cultura","Enogastronomia","Rievocazione"], fonte:"https://trovasagre.com/sagre/abruzzo/luglio-2026"},
-  {id:10, data:"16 Lug 2026", orario:"19:30", titolo:"Note al Tramonto \u2013 concerti al Molo Sud", img:"images/img-10.jpg", luogo:"Molo Sud, San Benedetto del Tronto", desc:"Concerti al tramonto sul molo.", citta:"San Benedetto", tag:["Musica","Cultura"], fonte:"https://turismo.comunesbt.it/eventi/mese/2026-07/"},
-  {id:11, data:"17 Lug 2026", orario:"21:30", titolo:"Magia tra le Dune \u2013 Musica 80'/90'", img:"images/img-11.jpg", luogo:"Le Dune, Silvi Marina", desc:"Serata musicale a tema.", citta:"Silvi", tag:["Musica"], fonte:"https://www.visitsilvi.it/eventi-e-manifestazioni/61.html"},
-  {id:12, data:"17 Lug 2026", orario:"Serale", titolo:"La Lanterna Magica Film Fest", img:"images/img-12.jpg", luogo:"Silvi Marina", desc:"Festival di cortometraggi e cinema all'aperto.", citta:"Silvi", tag:["Cinema","Cultura"], fonte:"https://www.visitsilvi.it/eventi-e-manifestazioni/61.html"},
-  {id:13, data:"17\u201319 Lug 2026", orario:"Dalle 18:00", titolo:"Gin & Tonic Festival", img:"images/img-13.jpg", luogo:"Arena dei Fiori, Montesilvano (PE)", desc:"Degustazioni, dj set e gin shop.", citta:"Pescara", tag:["Enogastronomia","Musica"], fonte:"https://www.ilpescara.it/eventi/"},
-  {id:14, data:"18 Lug 2026", orario:"21:15", titolo:"Poesia e Musica per una Bella Estate", img:"images/img-14.jpg", luogo:"Chiesa Sant'Agnese, Pineto", desc:"Serata di poesia e musica.", citta:"Pineto", tag:["Cultura","Musica","Poesia"], fonte:"https://www.visitpineto.it/wp-content/uploads/2022/01/eventi-pineto-summer-2026.pdf"},
-  {id:15, data:"18 Lug 2026", orario:"Da definire", titolo:"Pineto Legge", img:"images/img-15.jpg", luogo:"Pineto", desc:"Incontro con la scrittrice Beatrice.", citta:"Pineto", tag:["Cultura","Libri"], fonte:"https://www.visitpineto.it/"},
-  {id:16, data:"18 Lug 2026", orario:"Serale", titolo:"Power Mix RDS \u2013 Serata Disco", img:"images/img-16.jpg", luogo:"Tortoreto", desc:"Serata dance con Power Mix RDS.", citta:"Tortoreto", tag:["Musica","Disco"], fonte:"https://www.vivitortoreto.it/resources/VIVITORTORETO-estate-2026.pdf"},
-  {id:17, data:"19 Lug 2026", orario:"21:00", titolo:"The Avengers \u2013 Spettacolo", img:"images/img-17.jpg", luogo:"Piazza della Repubblica, Roseto degli Abruzzi", desc:"Spettacolo ispirato ai celebri supereroi. Ingresso gratuito.", citta:"Roseto", tag:["Intrattenimento","Sport"], fonte:"https://www.visitroseto.it/eventi/"},
-  {id:18, data:"19 Lug 2026", orario:"All'alba", titolo:"Concerto all'Alba sul Mare", img:"images/img-18.jpg", luogo:"Silvi Marina", desc:"Concerto all'alba sulla spiaggia.", citta:"Silvi", tag:["Musica"], fonte:"https://www.visitsilvi.it/eventi-e-manifestazioni/61.html"},
-  {id:19, data:"19 Lug 2026", orario:"21:00", titolo:"Concerto Note in Pineta 2.0", img:"images/img-19.jpg", luogo:"Pineta del Pescatore, Silvi Marina", desc:"Concerto serale nella pineta.", citta:"Silvi", tag:["Musica"], fonte:"https://www.visitsilvi.it/eventi-e-manifestazioni/61.html"},
-  {id:20, data:"21 Lug 2026", orario:"21:30", titolo:"Matteo Mancuso in concerto", img:"images/img-20.jpg", luogo:"Portorose, Roseto degli Abruzzi", desc:"Abbazie Summer Festival. Biglietti su ciaotickets.", citta:"Roseto", tag:["Musica","Abbazie Summer Festival"], fonte:"https://concertidelleabbazie.it/programma/"},
-  {id:21, data:"22 Lug 2026", orario:"21:30", titolo:"Billy Cobham \u2013 Time Machine", img:"images/img-21.jpg", luogo:"Portorose, Roseto degli Abruzzi", desc:"Leggendario batterista jazz. Abbazie Summer Festival.", citta:"Roseto", tag:["Musica","Jazz","Abbazie Summer Festival"], fonte:"https://concertidelleabbazie.it/programma/"},
-  {id:22, data:"22 Lug 2026", orario:"21:00", titolo:"Marche Manouche \u2013 Dario Napoli Trio", img:"images/img-22.jpg", luogo:"San Benedetto del Tronto", desc:"Jazz Manouche moderno.", citta:"San Benedetto", tag:["Musica","Jazz"], fonte:"https://www.nonsoloeventimarche.it/dettaglio.php?id=marche-manouche---san-benedetto-del-tronto"},
-  {id:23, data:"22\u201326 Lug 2026", orario:"Dalle 19:00", titolo:"17\u00aa Sagra 'De lu Stennmass'", img:"images/img-23.jpg", luogo:"Cologna Paese, Roseto degli Abruzzi", desc:"Sagra enogastronomica con sapori e tradizioni del territorio.", citta:"Roseto", tag:["Enogastronomia","Sagra"], fonte:"https://www.visitroseto.it/eventi/"},
-  {id:24, data:"23 Lug 2026", orario:"20:00", titolo:"MOONJUNE in concerto", img:"images/img-24.jpg", luogo:"Teramo", desc:"Concerto rock/pop.", citta:"Teramo", tag:["Musica"], fonte:"https://www.rockol.it/concerti-teramo-p-nxad4vo9d0o"},
-  {id:25, data:"24\u201325 Lug 2026", orario:"19:00", titolo:"Mons Pagus A.D. 1566 \u2013 Rievocazione Rinascimentale", img:"images/img-25.jpg", luogo:"Borgo di Montepagano, Roseto degli Abruzzi", desc:"Rievocazione storica in costume.", citta:"Roseto", tag:["Cultura","Rievocazione"], fonte:"https://www.visitroseto.it/eventi/"},
-  {id:26, data:"28 Lug \u2013 14 Ago 2026", orario:"Vari orari", titolo:"Concerti Estate Giulianova", img:"images/img-26.jpg", luogo:"Giulianova", desc:"Vari concerti in programma. Biglietti su TicketOne.", citta:"Giulianova", tag:["Musica"], fonte:"https://www.ticketone.it/cityd/giulianova-1317/concerti-55/"},
-  {id:27, data:"Luglio 2026", orario:"Vari orari", titolo:"Eventi Estate 2026 \u2013 Cartellone completo", img:"images/img-27.jpg", luogo:"San Benedetto del Tronto", desc:"Concerti, sagre e spettacoli. Programma sul sito del Comune.", citta:"San Benedetto", tag:["Musica","Cultura","Sagra"], fonte:"https://www.comune.sanbenedettodeltronto.ap.it/it/news/il-calendario-degli-eventi-dell-estate-2026"}
+const eventi=[
+{id:1,data:"10 Lug – 6 Set 2026",orario:"Tutto il giorno",titolo:"Villa in Arte",img:"images/img-1.jpg",luogo:"Villa Comunale, Roseto degli Abruzzi",desc:"Mostra d'arte contemporanea.",citta:"Roseto",tag:["Cultura","Arte"],fonte:"https://www.visitroseto.it/eventi/"},
+{id:2,data:"12–19 Lug 2026",orario:"Vari orari",titolo:"Pescara Jazz 2026 – 54ª edizione",img:"images/img-2.jpg",luogo:"Pescara",desc:"Festival internazionale di jazz.",citta:"Pescara",tag:["Musica","Jazz","Festival"],fonte:"https://www.ilpescara.it/eventi/"},
+{id:3,data:"13–19 Lug 2026",orario:"Vari orari",titolo:"Festival 'Il Fiume e la Memoria' – XXIV ed.",img:"images/img-3.jpg",luogo:"Centro storico, Pescara",desc:"Grandi storie, musica e teatro.",citta:"Pescara",tag:["Cultura","Musica","Teatro"],fonte:"https://www.comune.pescara.it/"},
+{id:4,data:"14 Lug 2026",orario:"18:00",titolo:"Camminata al tramonto alla Sentina",img:"images/img-4.jpg",luogo:"Riserva Sentina, San Benedetto del Tronto",desc:"Passeggiata guidata al tramonto nella Riserva.",citta:"San Benedetto",tag:["Natura","Sport"],fonte:"https://turismo.comunesbt.it/eventi/mese/2026-07/"},
+{id:5,data:"14 Lug 2026",orario:"21:00",titolo:"Buozzi Summer Sound – Lucy Soul Band",img:"images/img-5.jpg",luogo:"Piazza Buozzi, Giulianova",desc:"'A Soul Experience' – concerto soul.",citta:"Giulianova",tag:["Musica","Soul"],fonte:"https://www.visitgiulianova.com/eventi.php"},
+{id:6,data:"15 Lug 2026",orario:"21:00",titolo:"Concerto di apertura – I Musici Lotariani",img:"images/img-6.jpg",luogo:"Villa Comunale, Roseto",desc:"Apre la 30ª edizione di Roseto Opera Prima. Ingresso gratuito.",citta:"Roseto",tag:["Musica","Cultura"],fonte:"https://www.visitroseto.it/eventi/"},
+{id:7,data:"15 Lug 2026",orario:"21:00",titolo:"Emma – Live 2026",img:"images/img-7.jpg",luogo:"Pescara",desc:"Concerto di Emma. Biglietti su TicketOne.",citta:"Pescara",tag:["Musica","Concerto"],fonte:"https://www.ticketone.it/city/pescara-1938/concerti-55/"},
+{id:8,data:"15–18 Lug 2026",orario:"21:00–23:00",titolo:"Roseto Opera Prima 30ª edizione",img:"images/img-8.jpg",luogo:"Villa Comunale, Roseto",desc:"Rassegna culturale con proiezioni e incontri.",citta:"Roseto",tag:["Cultura","Cinema"],fonte:"https://www.visitroseto.it/eventi/"},
+{id:9,data:"15–19 Lug 2026",orario:"Tutto il giorno",titolo:"10ª Rievocazione della Trebbiatura",img:"images/img-9.jpg",luogo:"Mosciano Sant'Angelo",desc:"Rievocazione storica con sagra enogastronomica.",citta:"Mosciano",tag:["Cultura","Enogastronomia","Rievocazione"],fonte:"https://trovasagre.com/sagre/abruzzo/luglio-2026"},
+{id:10,data:"16 Lug 2026",orario:"19:30",titolo:"Note al Tramonto – concerti al Molo Sud",img:"images/img-10.jpg",luogo:"Molo Sud, San Benedetto del Tronto",desc:"Concerti al tramonto sul molo.",citta:"San Benedetto",tag:["Musica","Cultura"],fonte:"https://turismo.comunesbt.it/eventi/mese/2026-07/"},
+{id:11,data:"17 Lug 2026",orario:"21:30",titolo:"Magia tra le Dune – Musica 80'/90'",img:"images/img-11.jpg",luogo:"Le Dune, Silvi Marina",desc:"Serata musicale a tema.",citta:"Silvi",tag:["Musica"],fonte:"https://www.visitsilvi.it/eventi-e-manifestazioni/61.html"},
+{id:12,data:"17 Lug 2026",orario:"Serale",titolo:"La Lanterna Magica Film Fest",img:"images/img-12.jpg",luogo:"Silvi Marina",desc:"Festival di cortometraggi e cinema all'aperto.",citta:"Silvi",tag:["Cinema","Cultura"],fonte:"https://www.visitsilvi.it/eventi-e-manifestazioni/61.html"},
+{id:13,data:"17–19 Lug 2026",orario:"Dalle 18:00",titolo:"Gin &amp; Tonic Festival",img:"images/img-13.jpg",luogo:"Arena dei Fiori, Montesilvano (PE)",desc:"Degustazioni, dj set e gin shop.",citta:"Pescara",tag:["Enogastronomia","Musica"],fonte:"https://www.ilpescara.it/eventi/"},
+{id:14,data:"18 Lug 2026",orario:"21:15",titolo:"Poesia e Musica per una Bella Estate",img:"images/img-14.jpg",luogo:"Chiesa Sant'Agnese, Pineto",desc:"Serata di poesia e musica.",citta:"Pineto",tag:["Cultura","Musica","Poesia"],fonte:"https://www.visitpineto.it/wp-content/uploads/2022/01/eventi-pineto-summer-2026.pdf"},
+{id:15,data:"18 Lug 2026",orario:"Da definire",titolo:"Pineto Legge",img:"images/img-15.jpg",luogo:"Pineto",desc:"Incontro con la scrittrice Beatrice.",citta:"Pineto",tag:["Cultura","Libri"],fonte:"https://www.visitpineto.it/"},
+{id:16,data:"18 Lug 2026",orario:"Serale",titolo:"Power Mix RDS – Serata Disco",img:"images/img-16.jpg",luogo:"Tortoreto",desc:"Serata dance con Power Mix RDS.",citta:"Tortoreto",tag:["Musica","Disco"],fonte:"https://www.vivitortoreto.it/"},
+{id:17,data:"19 Lug 2026",orario:"21:00",titolo:"The Avengers – Spettacolo",img:"images/img-17.jpg",luogo:"Piazza della Repubblica, Roseto",desc:"Spettacolo ispirato ai supereroi. Ingresso gratuito.",citta:"Roseto",tag:["Intrattenimento","Sport"],fonte:"https://www.visitroseto.it/eventi/"},
+{id:18,data:"19 Lug 2026",orario:"All'alba",titolo:"Concerto all'Alba sul Mare",img:"images/img-18.jpg",luogo:"Silvi Marina",desc:"Concerto all'alba sulla spiaggia.",citta:"Silvi",tag:["Musica"],fonte:"https://www.visitsilvi.it/eventi-e-manifestazioni/61.html"},
+{id:19,data:"19 Lug 2026",orario:"21:00",titolo:"Concerto Note in Pineta 2.0",img:"images/img-19.jpg",luogo:"Pineta del Pescatore, Silvi Marina",desc:"Concerto serale nella pineta.",citta:"Silvi",tag:["Musica"],fonte:"https://www.visitsilvi.it/eventi-e-manifestazioni/61.html"},
+{id:20,data:"21 Lug 2026",orario:"21:30",titolo:"Matteo Mancuso in concerto",img:"images/img-20.jpg",luogo:"Portorose, Roseto",desc:"Abbazie Summer Festival.",citta:"Roseto",tag:["Musica","Abbazie Summer Festival"],fonte:"https://concertidelleabbazie.it/programma/"},
+{id:21,data:"22 Lug 2026",orario:"21:30",titolo:"Billy Cobham – Time Machine",img:"images/img-21.jpg",luogo:"Portorose, Roseto",desc:"Leggendario batterista jazz.",citta:"Roseto",tag:["Musica","Jazz","Abbazie Summer Festival"],fonte:"https://concertidelleabbazie.it/programma/"},
+{id:22,data:"22 Lug 2026",orario:"21:00",titolo:"Marche Manouche – Dario Napoli Trio",img:"images/img-22.jpg",luogo:"San Benedetto del Tronto",desc:"Jazz Manouche moderno.",citta:"San Benedetto",tag:["Musica","Jazz"],fonte:"https://www.nonsoloeventimarche.it/"},
+{id:23,data:"22–26 Lug 2026",orario:"Dalle 19:00",titolo:"17ª Sagra 'De lu Stennmass'",img:"images/img-23.jpg",luogo:"Cologna Paese, Roseto",desc:"Sagra enogastronomica tradizionale.",citta:"Roseto",tag:["Enogastronomia","Sagra"],fonte:"https://www.visitroseto.it/eventi/"},
+{id:24,data:"23 Lug 2026",orario:"20:00",titolo:"MOONJUNE in concerto",img:"images/img-24.jpg",luogo:"Teramo",desc:"Concerto rock/pop.",citta:"Teramo",tag:["Musica"],fonte:"https://www.rockol.it/"},
+{id:25,data:"24–25 Lug 2026",orario:"19:00",titolo:"Mons Pagus A.D. 1566 – Rievocazione",img:"images/img-25.jpg",luogo:"Borgo di Montepagano, Roseto",desc:"Rievocazione storica in costume.",citta:"Roseto",tag:["Cultura","Rievocazione"],fonte:"https://www.visitroseto.it/eventi/"},
+{id:26,data:"28 Lug – 14 Ago 2026",orario:"Vari orari",titolo:"Concerti Estate Giulianova",img:"images/img-26.jpg",luogo:"Giulianova",desc:"Vari concerti in programma.",citta:"Giulianova",tag:["Musica"],fonte:"https://www.ticketone.it/"},
+{id:27,data:"Luglio 2026",orario:"Vari orari",titolo:"Eventi Estate 2026",img:"images/img-27.jpg",luogo:"San Benedetto del Tronto",desc:"Concerti, sagre e spettacoli.",citta:"San Benedetto",tag:["Musica","Cultura","Sagra"],fonte:"https://www.comune.sanbenedettodeltronto.ap.it/"}
 ];
 
-/* ============================================================
-   FUNZIONE: RENDERIZZA — genera HTML delle card evento
-   ============================================================ */
 function renderizza(lista){
-  const container = document.getElementById('eventi');
-  if(!lista.length){document.getElementById('nessun-risultato').style.display='block';container.innerHTML='';return}
+  var c=document.getElementById('gabbia'),h=document.getElementById('hero-container');
+  if(!lista.length){document.getElementById('nessun-risultato').style.display='block';c.innerHTML='';h.innerHTML='';return}
   document.getElementById('nessun-risultato').style.display='none';
-
-  const perComune = {};
-  lista.forEach(e => {
-    if(!perComune[e.citta]) perComune[e.citta] = [];
-    perComune[e.citta].push(e);
-  });
-
-  let html = '';
-  for(const [citta, evs] of Object.entries(perComune)){
-    html += `<div class="intestazione-comune">\ud83d\udccd ${citta}</div>`;
-    evs.forEach(e => {
-      const orarioHtml = e.orario ? `<div class="orario">\ud83d\udd50 ${e.orario}</div>` : '';
-      const oggiBadge = isOggi(e.data) ? '<div class="badge-oggi">\ud83d\udd34 In corso</div>' : '';
-      const imgHtml = e.img
-        ? `<img class="evento-img" src="${e.img}" alt="${e.titolo}" onclick="openLightbox(this.src, this.alt)" loading="lazy">`
-        : `<div class="evento-img-placeholder">${getIniziali(e.titolo)}</div>`;
-      html += `<div class="evento">
-        ${imgHtml}
-        <a href="${e.fonte || '#'}" target="_blank" rel="noopener">
-          ${oggiBadge}
-          <div class="data">${e.data}</div>
-          ${orarioHtml}
-          <div class="titolo">${e.titolo}</div>
-          <div class="luogo">${e.luogo}</div>
-          <div class="desc">${e.desc}</div>
-          <div class="etichette">${e.tag.map(t=>`<span class="etichetta">${t}</span>`).join('')}</div>
-        </a>
-      </div>`;
+  var top=lista[0],oggi=isOggi(top.data)?'<div class="oggi">🔴 In corso</div>':'';
+  var ih=top.img&&top.img!=='N/A'?'<img src="'+top.img+'" alt="'+top.titolo+'" onclick="openLightbox(\''+top.img+'\',\''+top.titolo.replace(/'/g,"\\'")+'\')">':'<div style="width:100%;height:100%;background:linear-gradient(135deg,#242a39,#2f3544);display:flex;align-items:center;justify-content:center;font-size:3rem;color:#ffb59c;font-weight:700;font-family:Montserrat">'+getIniziali(top.titolo)+'</div>';
+  h.innerHTML='<div class="hero-section">'+ih+'<div class="grad"></div>'+oggi+'<div class="hero-content"><div class="gpanel"><span class="gold">'+top.tag[0]+'</span><h2>'+top.titolo+'</h2><p>'+top.desc+'</p><div class="meta">📅 '+top.data+' · 🕐 '+top.orario+' · '+top.luogo+'</div><a href="'+top.fonte+'" target="_blank" rel="noopener" style="position:absolute;inset:0;text-indent:-9999px">Dettagli</a></div></div></div>';
+  var m={};lista.forEach(function(e){if(!m[e.citta])m[e.citta]=[];m[e.citta].push(e);});
+  var html='';
+  for(var citta in m){
+    html+='<div class="intestazione-comune">📍 '+citta+'</div>';
+    m[citta].forEach(function(e){
+      var o=isOggi(e.data)?'<div class="oggi">🔴 In corso</div>':'';
+      var bd='<div class="badge">'+e.data+'</div>';
+      var im=e.img&&e.img!=='N/A'?'<img src="'+e.img+'" alt="'+e.titolo+'" onclick="openLightbox(\''+e.img+'\',\''+e.titolo.replace(/'/g,"\\'")+'\')" loading="lazy">':'<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#242a39,#2f3544);color:#ffb59c;font-size:2rem;font-weight:700;font-family:Montserrat">'+getIniziali(e.titolo)+'</div>';
+      html+='<div class="card-evento">'+im+'<div class="grad"></div>'+o+bd+'<div class="info"><div class="gpanel"><span class="cat">'+e.tag[0]+'</span><h3>'+e.titolo+'</h3><div class="luogo">'+e.luogo+'</div></div></div><a class="cover-link" href="'+e.fonte+'" target="_blank" rel="noopener">Dettagli</a></div>';
     });
   }
-  container.innerHTML = html;
-  document.getElementById('stats').textContent = `${lista.length} eventi trovati`;
+  c.innerHTML=html;
+  document.getElementById('stats').textContent=lista.length+' eventi trovati';
 }
-
-function openLightbox(src, alt) {
-  const lb = document.createElement('div');
-  lb.className = 'lightbox';
-  lb.innerHTML = '<span class="lightbox-close">&times;</span><img class="lightbox-img" src="' + src + '" alt="' + alt + '">';
-  lb.addEventListener('click', function(e) {
-    if (e.target === lb || e.target.className === 'lightbox-close') {
-      lb.remove();
-    }
-  });
-  document.body.appendChild(lb);
-}
-
-function getIniziali(titolo) {
-  return titolo
-    .replace(/['\"]/g, '')
-    .split(/[\s\u2013\u2014-]+/)
-    .filter(w => w.length > 0 && !['di','del','della','degli','dei','il','la','le','gli','un','una','al','con','per'].includes(w.toLowerCase()))
-    .slice(0, 3)
-    .map(w => w[0].toUpperCase())
-    .join('');
-}
-
-/* ============================================================
-   FUNZIONE: isOggi — badge "In corso" per eventi che coprono oggi
-   ============================================================ */
-function isOggi(dataStr){
-  const oggi = new Date();
-  oggi.setHours(0,0,0,0);
-  const oggiTs = oggi.getTime();
-
-  let m = dataStr.match(/^(\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);
-  if(m){
-    const dataEv = parseDataIt(m[1], m[2], m[3]);
-    return dataEv && dataEv.getTime() === oggiTs;
-  }
-
-  m = dataStr.match(/^([A-Za-z]+)\s(\d{4})$/);
-  if(m){
-    const mese = meseNum(m[1]);
-    if(mese === null) return false;
-    return oggi.getMonth() === mese && oggi.getFullYear() === parseInt(m[2]);
-  }
-
-  m = dataStr.match(/^(\d{1,2})[–-](\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);
-  if(m){
-    const inizio = parseDataIt(m[1], m[3], m[4]);
-    const fine = parseDataIt(m[2], m[3], m[4]);
-    return inizio && fine && oggiTs >= inizio.getTime() && oggiTs <= fine.getTime();
-  }
-
-  m = dataStr.match(/^(\d{1,2})\s([A-Za-z]+)\s*[–-]\s*(\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);
-  if(m){
-    const inizio = parseDataIt(m[1], m[2], m[5]);
-    const fine = parseDataIt(m[3], m[4], m[5]);
-    return inizio && fine && oggiTs >= inizio.getTime() && oggiTs <= fine.getTime();
-  }
-
+function getIniziali(t){return t.replace(/['"]/g,'').split(/[\s–—‑-]+/).filter(function(w){return w.length>0&&!['di','del','della','degli','dei','il','la','le','gli','un','una','al','con','per'].includes(w.toLowerCase())}).slice(0,3).map(function(w){return w[0].toUpperCase()}).join('')}
+function isOggi(s){
+  var o=new Date();o.setHours(0,0,0,0);var ts=o.getTime(),m;
+  m=s.match(/^(\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);if(m){var d=pd(m[1],m[2],m[3]);return d&&d.getTime()===ts}
+  m=s.match(/^(\d{1,2})[–-](\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);if(m){var s2=pd(m[1],m[3],m[4]),e2=pd(m[2],m[3],m[4]);return s2&&e2&&ts>=s2.getTime()&&ts<=e2.getTime()}
+  m=s.match(/^(\d{1,2})\s([A-Za-z]+)\s*[–-]\s*(\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);if(m){var s3=pd(m[1],m[2],m[5]),e3=pd(m[3],m[4],m[5]);return s3&&e3&&ts>=s3.getTime()&&ts<=e3.getTime()}
   return false;
 }
-
-function meseNum(nome){
-  const map = {gen:0,feb:1,mar:2,apr:3,mag:4,giu:5,lug:6,ago:7,set:8,ott:9,nov:10,dic:11,
-    gennaio:0,febbraio:1,marzo:2,aprile:3,maggio:4,giugno:5,luglio:6,agosto:7,settembre:8,ottobre:9,novembre:10,dicembre:11};
-  const key = nome.toLowerCase().slice(0,3);
-  return map[key] !== undefined ? map[key] : null;
-}
-
-function parseDataIt(g,meseStr,anno){
-  const m = meseNum(meseStr);
-  if(m === null) return null;
-  return new Date(parseInt(anno), m, parseInt(g), 0, 0, 0, 0);
-}
-
-/* ============================================================
-   FUNZIONE: FILTRA — cerca per testo e comune
-   ============================================================ */
+function mn(n){var map={gen:0,feb:1,mar:2,apr:3,mag:4,giu:5,lug:6,ago:7,set:8,ott:9,nov:10,dic:11,gennaio:0,febbraio:1,marzo:2,aprile:3,maggio:4,giugno:5,luglio:6,agosto:7,settembre:8,ottobre:9,novembre:10,dicembre:11};return map[n.toLowerCase().slice(0,3)]!==undefined?map[n.toLowerCase().slice(0,3)]:null}
+function pd(g,m,a){var mm=mn(m);return mm===null?null:new Date(parseInt(a),mm,parseInt(g),0,0,0,0)}
 function filtra(){
-  const q = document.getElementById('search').value.toLowerCase().trim();
-  const filtroCitta = document.querySelector('#filtri .attivo')?.dataset?.filtro || 'tutti';
-
-  const filtrati = eventi.filter(e => {
-    if(filtroCitta !== 'tutti' && e.citta !== filtroCitta) return false;
-    if(!q) return true;
-    const testo = `${e.titolo} ${e.luogo} ${e.desc} ${e.data} ${e.tag.join(' ')}`.toLowerCase();
-    return testo.includes(q);
-  });
-  renderizza(filtrati);
+  var q=document.getElementById('search').value.toLowerCase().trim(),a=document.querySelector('#filtri .attivo'),fc=a?a.dataset.filtro:'tutti';
+  var f=eventi.filter(function(e){if(fc!=='tutti'&&e.citta!==fc)return false;if(!q)return true;return(e.titolo+' '+e.luogo+' '+e.desc+' '+e.data+' '+e.tag.join(' ')).toLowerCase().includes(q)});
+  renderizza(f);
 }
-
-/* ============================================================
-   NAVETTA
-   ============================================================ */
-const navettaConfig = {
-  valid: "\ud83d\uddf3\ufe0f DAL 1\u00b0 LUGLIO AL 6 SETTEMBRE 2026",
-  note: "\u2139\ufe0f A richiesta: fermate a Belsito e in Viale Makarska (casa del Mar)",
-  orari: [
-    ["Stazione ferroviaria FS","17:00","18:00","21:30","23:30"],
-    ["Lungomare Trieste (Lunapark)","17:05","18:05","21:35","23:35"],
-    ["Club del Sole","17:06","18:06","21:36","23:36"],
-    ["Lungomare Roma (Rotonda Sud)","17:08","18:08","21:38","23:38"],
-    ["Lungomare Roma (Rotonda Nord)","17:10","18:10","21:40","23:40"],
-    ["Lido d'Abruzzo","17:12","18:12","21:42","23:42"],
-    ["Lungomare Trento (Via Emilia)","17:14","18:14","21:44","23:44"],
-    ["Cologna (Sottopassaggio)","--","18:20","--","23:50"],
-    ["Cologna (P.zza Redipuglia)","--","18:22","--","23:52"],
-    ["Montepagano (Municipio)","--","18:35","21:50","00:05"],
-    ["Campo a Mare (V.le America)","--","18:45","22:00","00:15"],
-    ["Campo a Mare (V.le Europa)","--","18:47","22:02","00:17"],
-    ["Rientro: Stazione FS","17:20","19:00","22:10","00:25"]
-  ],
-  mercatoAndata: [
-    ["Lido d'Abruzzo","09:00"],
-    ["Lungomare Trento (Via Emilia)","09:02"],
-    ["Lungomare Roma (Rotonda Nord)","09:04"],
-    ["Lungomare Roma (Rotonda Sud)","09:06"],
-    ["Club del Sole","09:08"],
-    ["P.zza Marco Polo","09:12"]
-  ],
-  mercatoRitorno: [
-    ["P.zza Marco Polo","12:00"],
-    ["Club del Sole","12:04"],
-    ["Lungomare Roma (Rotonda Sud)","12:06"],
-    ["Lungomare Roma (Rotonda Nord)","12:08"],
-    ["Lungomare Trento (Via Emilia)","12:10"],
-    ["Lido d'Abruzzo","12:12"]
-  ]
-};
-
-const navettaStops = [
-  "Stazione ferroviaria",
-  "Lungomare Trieste (Lunapark)",
-  "Club del Sole",
-  "Lungomare Roma (Rotonda Sud)",
-  "Lungomare Roma (Rotonda Nord)",
-  "Lido d'Abruzzo",
-  "Lungomare Trento (Via Emilia)",
-  "Cologna (Sottopassaggio)",
-  "Cologna (P.zza Redipuglia)",
-  "Montepagano (Municipio)",
-  "Campo a Mare (V.le America)",
-  "Campo a Mare (V.le Europa)"
-];
-
+var navettaConfig={orari:[["Stazione ferroviaria FS","17:00","18:00","21:30","23:30"],["Lungomare Trieste (Lunapark)","17:05","18:05","21:35","23:35"],["Club del Sole","17:06","18:06","21:36","23:36"],["Lungomare Roma (Rotonda Sud)","17:08","18:08","21:38","23:38"],["Lungomare Roma (Rotonda Nord)","17:10","18:10","21:40","23:40"],["Lido d'Abruzzo","17:12","18:12","21:42","23:42"],["Lungomare Trento (Via Emilia)","17:14","18:14","21:44","23:44"],["Cologna (Sottopassaggio)","--","18:20","--","23:50"],["Cologna (P.zza Redipuglia)","--","18:22","--","23:52"],["Montepagano (Municipio)","--","18:35","21:50","00:05"],["Campo a Mare (V.le America)","--","18:45","22:00","00:15"],["Campo a Mare (V.le Europa)","--","18:47","22:02","00:17"],["Rientro: Stazione FS","17:20","19:00","22:10","00:25"]],mercatoAndata:[["Lido d'Abruzzo","09:00"],["Lungomare Trento (Via Emilia)","09:02"],["Lungomare Roma (Rotonda Nord)","09:04"],["Lungomare Roma (Rotonda Sud)","09:06"],["Club del Sole","09:08"],["P.zza Marco Polo","09:12"]],mercatoRitorno:[["P.zza Marco Polo","12:00"],["Club del Sole","12:04"],["Lungomare Roma (Rotonda Sud)","12:06"],["Lungomare Roma (Rotonda Nord)","12:08"],["Lungomare Trento (Via Emilia)","12:10"],["Lido d'Abruzzo","12:12"]]};
+var navettaStops=["Stazione ferroviaria","Lungomare Trieste (Lunapark)","Club del Sole","Lungomare Roma (Rotonda Sud)","Lungomare Roma (Rotonda Nord)","Lido d'Abruzzo","Lungomare Trento (Via Emilia)","Cologna (Sottopassaggio)","Cologna (P.zza Redipuglia)","Montepagano (Municipio)","Campo a Mare (V.le America)","Campo a Mare (V.le Europa)"];
 function popolaNavetta(){
-  const tbody = document.getElementById('navettaTableBody');
-  if(!tbody) return;
-  tbody.innerHTML = navettaConfig.orari.map(r =>
-    `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`
-  ).join('');
-
-  const routeEl = document.getElementById('navettaRoute');
-  if(routeEl){
-    routeEl.innerHTML = navettaStops.map(s => `<span class="stop">${s}</span>`).join('');
-  }
-
-  const validEl = document.getElementById('navettaValid');
-  if(validEl) validEl.textContent = navettaConfig.valid;
-
-  const noteEl = document.getElementById('navettaNote');
-  if(noteEl) noteEl.innerHTML = navettaConfig.note;
-
-  const andataTbody = document.getElementById('navettaMercatoAndata');
-  if(andataTbody){
-    andataTbody.innerHTML = navettaConfig.mercatoAndata.map(r =>
-      `<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`
-    ).join('');
-  }
-  const ritornoTbody = document.getElementById('navettaMercatoRitorno');
-  if(ritornoTbody){
-    ritornoTbody.innerHTML = navettaConfig.mercatoRitorno.map(r =>
-      `<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`
-    ).join('');
-  }
+  var tb=document.getElementById('navettaTableBody');if(tb)tb.innerHTML=navettaConfig.orari.map(function(r){return'<tr><td>'+r[0]+'</td><td>'+r[1]+'</td><td>'+r[2]+'</td><td>'+r[3]+'</td><td>'+r[4]+'</td></tr>'}).join('');
+  var rt=document.getElementById('navettaRoute');if(rt)rt.innerHTML=navettaStops.map(function(s){return'<span class="stop">'+s+'</span>'}).join('');
+  document.getElementById('navettaValid').textContent='🗓️ DAL 1° LUGLIO AL 6 SETTEMBRE 2026';
+  document.getElementById('navettaNote').innerHTML='ℹ️ A richiesta: fermate a <strong>Belsito</strong> e in <strong>Viale Makarska</strong>';
+  ['navettaMercatoAndata','navettaMercatoRitorno'].forEach(function(id,i){var el=document.getElementById(id);if(el)el.innerHTML=(i===0?navettaConfig.mercatoAndata:navettaConfig.mercatoRitorno).map(function(r){return'<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>'}).join('');});
 }
 popolaNavetta();
-
-function toggleNavetta(){
-  const btn = document.getElementById('navettaToggle');
-  const content = document.getElementById('navettaContent');
-  btn.classList.toggle('open');
-  content.classList.toggle('open');
-}
-
-/* ============================================================
-   INIZIALIZZAZIONE
-   ============================================================ */
-document.getElementById('search').addEventListener('input', filtra);
-document.querySelectorAll('#filtri button').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('#filtri button').forEach(b => b.classList.remove('attivo'));
-    btn.classList.add('attivo');
-    filtra();
-  });
-});
-
-const oggiStr = new Date().toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'});
-document.getElementById('aggiornato').textContent = oggiStr;
-const mobileEl = document.getElementById('aggiornato-mobile');
-if(mobileEl) mobileEl.textContent = oggiStr;
+function toggleNavetta(){document.getElementById('navettaToggle').classList.toggle('open');document.getElementById('navettaContent').classList.toggle('open')}
+function openLightbox(s,a){var lb=document.createElement('div');lb.className='lightbox';lb.innerHTML='<span class="lightbox-close">&times;</span><img class="lightbox-img" src="'+s+'" alt="'+a+'">';lb.addEventListener('click',function(e){if(e.target===lb||e.target.className==='lightbox-close')lb.remove()});document.body.appendChild(lb)}
+document.getElementById('search').addEventListener('input',filtra);
+document.querySelectorAll('#filtri button').forEach(function(btn){btn.addEventListener('click',function(){document.querySelectorAll('#filtri button').forEach(function(b){b.classList.remove('attivo')});btn.classList.add('attivo');filtra()})});
+document.getElementById('aggiornato').textContent=new Date().toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'});
 renderizza(eventi);
-
-/* ============================================================
-   CONTATORE VISITE
-   ============================================================ */
-const visitEl = document.getElementById('visitCount');
-const counterEl = document.querySelector('.visit-counter');
-counterEl.classList.add('loading');
-visitEl.innerHTML = '<span class="counter-spinner"></span>';
-
-fetch('https://countapi.mileshilliard.com/api/v1/hit/roseto-eventi-visits')
-  .then(r => r.json())
-  .then(d => {
-    const v = Number(d.value).toLocaleString('it-IT');
-    visitEl.textContent = v;
-    const f = document.getElementById('visitCountFooter');
-    if(f) f.textContent = v;
-    counterEl.classList.remove('loading');
-  })
-  .catch(() => {
-    const v = Number(11246).toLocaleString('it-IT');
-    visitEl.textContent = v;
-    const f = document.getElementById('visitCountFooter');
-    if(f) f.textContent = v;
-    counterEl.classList.remove('loading');
-  });
-
-/* ============================================================
-   SERVICE WORKER — PWA
-   ============================================================ */
-if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('sw.js').then(r => console.log('SW registrato', r.scope)).catch(e => console.log('SW errore', e));
-}
-
-/* ============================================================
-   CHIUDI BANNER SPONSOR
-   ============================================================ */
-document.getElementById('adClose').addEventListener('click', () => {
-  document.getElementById('adBanner').classList.add('closed');
-  document.body.style.paddingBottom = '20px';
-});
-
-function toggleShuttle() {
-  const navetta = document.getElementById('navettaToggle');
-  if (navetta) { navetta.click(); navetta.scrollIntoView({behavior:'smooth'}); }
-}
+var ve=document.getElementById('visitCount'),ce=document.querySelector('.visit-counter');ce.classList.add('loading');ve.innerHTML='<span style="display:inline-block;width:12px;height:12px;border:2px solid #a68b82;border-top-color:transparent;border-radius:50%;animation:spin 0.6s linear infinite;vertical-align:middle;margin-right:4px"></span>';
+fetch('https://countapi.mileshilliard.com/api/v1/hit/roseto-eventi-visits').then(function(r){return r.json()}).then(function(d){ve.textContent=Number(d.value).toLocaleString('it-IT');ce.classList.remove('loading')})['catch'](function(){ve.textContent=Number(11246).toLocaleString('it-IT');ce.classList.remove('loading')});
+if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js')['catch'](function(){});
+document.getElementById('adClose').addEventListener('click',function(){document.getElementById('adBanner').classList.add('closed');document.body.style.paddingBottom='100px'});
+var st=document.createElement('style');st.textContent='@keyframes spin{to{transform:rotate(360deg)}}';document.head.appendChild(st);
 </script>
-
 </body></html>
