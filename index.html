@@ -47,6 +47,11 @@ body{font-family:Inter,sans-serif;background:#0d1321;color:#dde2f6;min-height:10
 .card-evento .info .luogo{font-size:0.8rem;color:#dec0b6}
 .card-evento .info .luogo::before{content:"📍 "}
 .card-evento a.cover-link{position:absolute;bottom:0;left:0;right:0;height:40%;z-index:4;text-indent:-9999px}
+/* fix lightbox: immagine sotto il click */
+.card-evento img, .hero-section img{pointer-events:auto!important;z-index:0}
+.card-evento .grad, .card-evento .badge, .card-evento .oggi, .card-evento .info,
+.hero-section .grad{pointer-events:none!important}
+.card-evento a.cover-link{pointer-events:auto!important}
 .hero-section{position:relative;height:450px;border-radius:1rem;overflow:hidden;margin-bottom:1.5rem}
 .hero-section img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
 .hero-section .grad{position:absolute;inset:0;background:linear-gradient(to top,#0d1321 0%,rgba(13,19,33,0.3) 60%,transparent 100%);z-index:1}
@@ -205,7 +210,7 @@ function renderizza(lista){
   document.getElementById('nessun-risultato').style.display='none';
   var top=lista[0],oggi=isOggi(top.data)?'<div class="oggi">🔴 In corso</div>':'';
   var ih=top.img&&top.img!=='N/A'?'<img src="'+top.img+'" alt="'+top.titolo+'">':'<div style="width:100%;height:100%;background:linear-gradient(135deg,#242a39,#2f3544);display:flex;align-items:center;justify-content:center;font-size:3rem;color:#ffb59c;font-weight:700;font-family:Montserrat">'+getIniziali(top.titolo)+'</div>';
-  h.innerHTML='<div class="hero-section">'+ih+'<div class="grad"></div>'+oggi+'<div class="hero-content"><div class="gpanel"><span class="gold">'+top.tag[0]+'</span><h2>'+top.titolo+'</h2><p>'+top.desc+'</p><div class="meta">📅 '+top.data+' · 🕐 '+top.orario+' · '+top.luogo+'</div><a href="'+top.fonte+'" target="_blank" rel="noopener" style="position:absolute;right:0;bottom:0;left:0;height:45%;text-indent:-9999px">Dettagli</a></div></div></div>';
+  h.innerHTML='<div class="hero-section">'+ih+'<div class="grad"></div>'+oggi+'<div class="hero-content"><div class="gpanel"><span class="gold">'+top.tag[0]+'</span><h2>'+top.titolo+'</h2><p>'+top.desc+'</p><div class="meta">📅 '+top.data+' · 🕐 '+top.orario+' · '+top.luogo+'</div><a href="'+top.fonte+'" target="_blank" rel="noopener" style="position:absolute;right:0;bottom:0;left:0;height:45%;text-indent:-9999px;pointer-events:auto">Dettagli</a></div></div></div>';
   var m={};lista.forEach(function(e){if(!m[e.citta])m[e.citta]=[];m[e.citta].push(e);});
   var html='';
   for(var citta in m){
