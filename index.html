@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="it">
+<html class="dark" lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme:light)">
 <meta name="theme-color" content="#121212" media="(prefers-color-scheme:dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -27,145 +27,424 @@
 <meta name="twitter:description" content="Eventi, sagre, concerti e manifestazioni nel raggio di 25 km da Roseto.">
 <meta name="twitter:image" content="https://googgier.github.io/roseto-eventi/og-image.png">
 <title>Eventi Roseto degli Abruzzi & Dintorni</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "error-container": "#93000a",
+        "outline": "#a68b82",
+        "inverse-on-surface": "#2a303f",
+        "on-error-container": "#ffdad6",
+        "secondary-fixed": "#61f9e9",
+        "surface-container-low": "#151b29",
+        "tertiary": "#ffb95a",
+        "on-background": "#dde2f6",
+        "primary-container": "#ff7f50",
+        "primary": "#ffb59c",
+        "outline-variant": "#57423b",
+        "on-tertiary-fixed-variant": "#643f00",
+        "on-tertiary-container": "#533300",
+        "on-secondary-fixed-variant": "#005049",
+        "on-error": "#690005",
+        "on-secondary-container": "#004c46",
+        "secondary-container": "#00c6b6",
+        "on-secondary-fixed": "#00201d",
+        "on-surface": "#dde2f6",
+        "on-tertiary-fixed": "#2a1800",
+        "inverse-surface": "#dde2f6",
+        "surface-tint": "#ffb59c",
+        "inverse-primary": "#a43c12",
+        "surface-container-high": "#242a39",
+        "surface-container": "#191f2e",
+        "on-secondary": "#003732",
+        "surface-variant": "#2f3544",
+        "tertiary-fixed": "#ffddb6",
+        "surface": "#0d1321",
+        "surface-container-lowest": "#080e1c",
+        "surface-bright": "#333948",
+        "primary-fixed-dim": "#ffb59c",
+        "background": "#0d1321",
+        "tertiary-fixed-dim": "#ffb95a",
+        "secondary": "#43e2d2",
+        "on-surface-variant": "#dec0b6",
+        "surface-container-highest": "#2f3544",
+        "surface-dim": "#0d1321",
+        "on-tertiary": "#462a00",
+        "primary-fixed": "#ffdbcf",
+        "error": "#ffb4ab",
+        "tertiary-container": "#dc952a",
+        "on-primary-fixed": "#380c00",
+        "secondary-fixed-dim": "#3adccc",
+        "on-primary-fixed-variant": "#822800",
+        "on-primary-container": "#6c2000",
+        "on-primary": "#5c1a00"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "lg": "24px",
+        "xl": "40px",
+        "gutter": "16px",
+        "sm": "12px",
+        "md": "16px",
+        "base": "8px",
+        "container-margin": "20px",
+        "xs": "4px"
+      },
+      "fontFamily": {
+        "headline-md": ["Montserrat"],
+        "headline-lg-mobile": ["Montserrat"],
+        "body-md": ["Inter"],
+        "headline-lg": ["Montserrat"],
+        "body-lg": ["Inter"],
+        "label-sm": ["Inter"],
+        "display-lg": ["Montserrat"],
+        "label-md": ["Inter"]
+      },
+      "fontSize": {
+        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+      }
+    }
+  }
+}
+</script>
 <style>
-  *{box-sizing:border-box;margin:0;padding:0}
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+.glass-card {
+  background: rgba(25, 31, 46, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.bottom-sheet {
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.bottom-sheet.open { transform: translateY(0); }
+body { min-height: max(884px, 100dvh); }
 
-  /* ============================
-     TEMA E VARIABILI
-     ============================ */
-  :root{--bg:#f5f5f5;--card:#fff;--text:#222;--title:#1a1a2e;--sub:#666;--desc:#555;--meta:#888;--border:#e0e0e0;--search-bg:#fff;--tag-bg:#eef2ff;--tag:#4f46e5;--btn-bg:#fff;--btn-border:#ddd;--btn-hover:#e8e8e8;--shadow:rgba(0,0,0,.06);--shadow-hover:rgba(0,0,0,.12);--accent:#e94560;--today-bg:#fff3cd;--today-border:#ffc107}
-  @media(prefers-color-scheme:dark){
-    :root{--bg:#121212;--card:#1e1e1e;--text:#e4e4e4;--title:#f0f0f0;--sub:#aaa;--desc:#bbb;--meta:#999;--border:#333;--search-bg:#1e1e1e;--tag-bg:#1e293b;--tag:#93c5fd;--btn-bg:#2a2a2a;--btn-border:#444;--btn-hover:#3a3a3a;--shadow:rgba(0,0,0,.3);--shadow-hover:rgba(0,0,0,.5);--today-bg:#2a2520;--today-border:#856404}
-  }
+/* ================================
+   STILI CARD EVENTO (generati da renderizza)
+   ================================ */
+.evento {
+  background: rgba(25, 31, 46, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+.evento:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(255, 181, 156, 0.12);
+}
+.evento a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 1rem;
+}
+.evento a::after {
+  content: "🔗";
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 0.7rem;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+.evento:hover a::after { opacity: 0.9; }
+.evento .badge-oggi {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  background: rgba(255, 185, 90, 0.2);
+  color: #ffb95a;
+  border: 1px solid rgba(255, 185, 90, 0.4);
+  margin-bottom: 0.3rem;
+  animation: pulse-badge 2s ease-in-out infinite;
+}
+@keyframes pulse-badge {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+.evento .data {
+  font-size: 0.8rem;
+  color: #43e2d2;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.evento .orario {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #a68b82;
+  background: rgba(47, 53, 68, 0.6);
+  padding: 0.1rem 0.5rem;
+  border-radius: 6px;
+  margin-bottom: 0.25rem;
+}
+.evento .titolo {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffb59c;
+  margin-bottom: 0.2rem;
+  font-family: Montserrat, sans-serif;
+}
+.evento .luogo {
+  font-size: 0.85rem;
+  color: #dec0b6;
+  margin-bottom: 0.3rem;
+}
+.evento .luogo::before { content: "📍 "; }
+.evento .desc {
+  font-size: 0.9rem;
+  color: #dde2f6;
+  line-height: 1.5;
+}
+.evento .etichette {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+.evento .etichetta {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 9999px;
+  background: rgba(67, 226, 210, 0.1);
+  color: #43e2d2;
+  border: 1px solid rgba(67, 226, 210, 0.2);
+}
+.intestazione-comune {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffb59c;
+  margin: 1.8rem 0 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid rgba(255, 181, 156, 0.3);
+  letter-spacing: -0.3px;
+  font-family: Montserrat, sans-serif;
+}
 
-  /* ============================
-     LAYOUT BASE
-     ============================ */
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;transition:background .3s,color .3s;padding-bottom:140px}
-  .container{max-width:960px;margin:0 auto;padding:1rem}
+/* ================================
+   NAVETTA SECTION — ristilizzata
+   ================================ */
+.navetta-section {
+  background: rgba(25, 31, 46, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+.navetta-toggle {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  border: none;
+  background: transparent;
+  color: #dde2f6;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+  font-family: Montserrat, sans-serif;
+}
+.navetta-toggle:hover { background: rgba(255,255,255,0.05); }
+.navetta-toggle .arrow { transition: transform 0.35s; font-size: 0.9rem; color: #43e2d2; }
+.navetta-toggle.open .arrow { transform: rotate(180deg); }
+.navetta-content { padding: 0 1rem 1rem; display: none; }
+.navetta-content.open { display: block; }
+.navetta-content h3 { font-size: 1rem; color: #43e2d2; margin: 1rem 0 0.5rem; font-family: Montserrat, sans-serif; }
+.navetta-valid { font-size: 0.8rem; color: #dec0b6; margin-bottom: 0.75rem; }
+.navetta-route { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1rem; }
+.navetta-route .stop {
+  font-size: 0.8rem;
+  background: rgba(67, 226, 210, 0.1);
+  color: #43e2d2;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid rgba(67, 226, 210, 0.2);
+}
+.navetta-route .stop::before { content: "➡ "; }
+.navetta-table-wrapper { overflow-x: auto; margin-bottom: 1rem; -webkit-overflow-scrolling: touch; }
+.navetta-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 500px; }
+.navetta-table th {
+  background: #242a39;
+  color: #43e2d2;
+  padding: 0.5rem 0.4rem;
+  text-align: center;
+  font-weight: 600;
+  white-space: nowrap;
+  font-family: Montserrat, sans-serif;
+}
+.navetta-table td { padding: 0.4rem; border-bottom: 1px solid rgba(255,255,255,0.05); text-align: center; white-space: nowrap; color: #dde2f6; }
+.navetta-table tr td:first-child { text-align: left; font-weight: 500; white-space: normal; min-width: 130px; color: #dec0b6; }
+.navetta-table tr:hover { background: rgba(47, 53, 68, 0.3); }
+.navetta-note { font-size: 0.82rem; color: #dec0b6; padding: 0.6rem; background: rgba(47, 53, 68, 0.3); border-radius: 8px; margin-bottom: 1rem; }
+.navetta-mercato { margin-top: 0.75rem; }
+.navetta-mercato summary { font-size: 0.9rem; font-weight: 600; color: #43e2d2; cursor: pointer; padding: 0.3rem 0; }
+.navetta-sub { font-size: 0.78rem; color: #dec0b6; margin: 0.25rem 0; }
 
-  /* ============================
-     INTESTAZIONE
-     ============================ */
-  h1{font-size:1.6rem;margin-bottom:.25rem;color:var(--title);line-height:1.3}
-  .subtitle{color:var(--sub);font-size:.9rem;margin-bottom:1rem}
+/* ================================
+   STATS, NESSUN RISULTATO, FILTRI
+   ================================ */
+.stats {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #dec0b6;
+  margin-bottom: 1rem;
+}
+#nessun-risultato {
+  text-align: center;
+  padding: 2rem;
+  color: #dec0b6;
+  display: none;
+}
 
-  /* ============================
-     RICERCA E FILTRI
-     ============================ */
-  .search-bar{position:sticky;top:0;z-index:10;background:var(--search-bg);padding:.75rem;border-radius:12px;box-shadow:0 4px 16px var(--shadow),0 0 0 1px rgba(233,69,96,.08);margin-bottom:1rem;transition:box-shadow .3s,background .3s}
-  #search{width:100%;padding:.7rem 1rem;border:2px solid var(--border);border-radius:8px;font-size:1rem;outline:none;transition:border-color .2s,box-shadow .2s;background:var(--card);color:var(--text)}
-  #search:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(233,69,96,.15)}
-  .filtri{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.6rem}
-  .filtri button{padding:.35rem .8rem;border:1px solid var(--btn-border);border-radius:20px;background:var(--btn-bg);cursor:pointer;font-size:.8rem;transition:all .25s;color:var(--text);user-select:none}
-  .filtri button.attivo{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 2px 8px rgba(233,69,96,.3)}
-  .filtri button:hover:not(.attivo){background:var(--btn-hover);transform:translateY(-1px)}
+/* ================================
+   BANNER PUBBLICITARIO
+   ================================ */
+.ad-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  background: rgba(13, 19, 33, 0.95);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.35s;
+}
+.ad-banner.closed { transform: translateY(100%); }
+.ad-banner .ad-label { font-size: 0.6rem; color: #a68b82; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.25rem; }
+.ad-banner ins { display: inline-block; }
+.ad-banner .adsbygoogle { max-width: 100%; height: auto; min-height: 70px; }
+@media (max-width: 768px) { .ad-banner .adsbygoogle { width: 100%; min-height: 70px; } }
+.ad-close {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #a68b82;
+  padding: 0.2rem 0.35rem;
+  line-height: 1;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+.ad-close:hover { background: rgba(255,255,255,0.1); color: #dde2f6; }
 
-  /* ============================
-     CARD EVENTO
-     ============================ */
-  .evento{background:var(--card);border-radius:12px;padding:1rem;margin-bottom:.75rem;box-shadow:0 1px 4px var(--shadow);transition:box-shadow .3s,transform .2s,background .3s;position:relative;cursor:pointer}
-  .evento:hover{box-shadow:0 6px 20px var(--shadow-hover);transform:translateY(-2px)}
-  .evento.hidden{display:none}
-  .evento a{text-decoration:none;color:inherit;display:block}
-  .evento a::after{content:"🔗";position:absolute;top:.75rem;right:.75rem;font-size:.7rem;opacity:.4;transition:opacity .3s}
-  .evento:hover a::after{opacity:.9}
-  .evento .orario{display:inline-block;font-size:.75rem;color:var(--meta);background:var(--tag-bg);padding:.1rem .5rem;border-radius:6px;margin-bottom:.25rem}
-  .evento .data{font-size:.8rem;color:var(--accent);font-weight:600;margin-bottom:.2rem}
-  .evento .titolo{font-size:1.05rem;font-weight:600;color:var(--title);margin-bottom:.2rem}
-  .evento .luogo{font-size:.85rem;color:var(--meta);margin-bottom:.3rem}
-  .evento .luogo::before{content:"📍 "}
-  .evento .desc{font-size:.9rem;color:var(--desc)}
-  .evento .etichette{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.5rem}
-  .evento .etichetta{font-size:.7rem;padding:.15rem .55rem;border-radius:10px;background:var(--tag-bg);color:var(--tag);transition:background .2s}
-  .evento .badge-oggi{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:.15rem .5rem;border-radius:6px;background:var(--today-bg);color:var(--today-border);border:1px solid var(--today-border);margin-bottom:.3rem;animation:pulse-badge 2s ease-in-out infinite}
-  @keyframes pulse-badge{0%,100%{opacity:1}50%{opacity:.65}}
+/* ================================
+   CONTATORE VISITE
+   ================================ */
+.visit-counter {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #dec0b6;
+  margin-bottom: 0.75rem;
+  transition: opacity 0.3s;
+}
+.visit-counter.loading { opacity: 0.5; }
+.visit-counter .counter-spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #dec0b6;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
 
-  /* ============================
-     INTESTAZIONE COMUNE
-     ============================ */
-  .intestazione-comune{font-size:1.3rem;font-weight:700;color:var(--title);margin:1.8rem 0 .75rem;padding-bottom:.35rem;border-bottom:2px solid var(--accent);letter-spacing:-.3px}
+/* ================================
+   FILTRI PILL
+   ================================ */
+.filtri {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 4px;
+}
+.filtri button {
+  flex-shrink: 0;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 9999px;
+  background: rgba(25, 31, 46, 0.6);
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.25s;
+  color: #dec0b6;
+  user-select: none;
+  white-space: nowrap;
+  font-family: Inter, sans-serif;
+}
+.filtri button.attivo {
+  background: #ff7f50;
+  color: #380c00;
+  border-color: #ff7f50;
+  font-weight: 600;
+  box-shadow: 0 2px 12px rgba(255, 127, 80, 0.3);
+}
+.filtri button:hover:not(.attivo) {
+  background: rgba(47, 53, 68, 0.5);
+  transform: translateY(-1px);
+}
 
-  /* ============================
-     STATS E NESSUN RISULTATO
-     ============================ */
-  .stats{text-align:center;font-size:.8rem;color:var(--meta);margin-bottom:1rem}
-  #nessun-risultato{text-align:center;padding:2rem;color:var(--meta);display:none}
-
-  /* ============================
-     BANNER PUBBLICITARIO
-     ============================ */
-  .ad-banner{position:fixed;bottom:0;left:0;right:0;z-index:100;text-align:center;padding:.5rem 2rem .5rem .5rem;background:var(--card);border-top:1px solid var(--border);box-shadow:0 -2px 8px var(--shadow);transition:background .3s,transform .35s}
-  .ad-banner.closed{transform:translateY(100%)}
-  .ad-banner .ad-label{font-size:.6rem;color:var(--meta);text-transform:uppercase;letter-spacing:1px;margin-bottom:.25rem}
-  .ad-banner ins{display:inline-block}
-  .ad-banner .adsbygoogle{max-width:100%;height:auto;min-height:70px}
-  @media(max-width:768px){.ad-banner .adsbygoogle{width:100%;min-height:70px}}
-  .ad-close{position:absolute;top:.25rem;right:.5rem;background:none;border:none;font-size:1.1rem;cursor:pointer;color:var(--meta);padding:.2rem .35rem;line-height:1;border-radius:4px;transition:background .2s,color .2s}
-  .ad-close:hover{background:var(--btn-hover);color:var(--text)}
-
-  /* ============================
-     FOOTER
-     ============================ */
-  footer{text-align:center;font-size:.75rem;color:var(--meta);padding:1rem 0}
-
-  /* ============================
-     CONTATORE VISITE
-     ============================ */
-  .visit-counter{text-align:center;font-size:.9rem;color:var(--sub);margin-bottom:.75rem;transition:opacity .3s}
-  .visit-counter.loading{opacity:.5}
-  .visit-counter .counter-spinner{display:inline-block;width:12px;height:12px;border:2px solid var(--sub);border-top-color:transparent;border-radius:50%;animation:spin .6s linear infinite;vertical-align:middle;margin-right:4px}
-  @keyframes spin{to{transform:rotate(360deg)}}
-
-  /* ============================
-     NAVETTA GRATUITA
-     ============================ */
-  .navetta-section{background:var(--card);border-radius:12px;margin-bottom:1.5rem;overflow:hidden;box-shadow:0 1px 4px var(--shadow);transition:box-shadow .3s}
-  .navetta-section:hover{box-shadow:0 4px 14px var(--shadow-hover)}
-  .navetta-toggle{width:100%;text-align:left;padding:1rem;border:none;background:var(--card);color:var(--title);font-size:1.15rem;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .2s}
-  .navetta-toggle:hover{background:var(--btn-hover)}
-  .navetta-toggle .arrow{transition:transform .35s;font-size:.9rem}
-  .navetta-toggle.open .arrow{transform:rotate(180deg)}
-  .navetta-content{padding:0 1rem 1rem;display:none}
-  .navetta-content.open{display:block}
-  .navetta-content h3{font-size:1rem;color:var(--title);margin:1rem 0 .5rem}
-  .navetta-valid{font-size:.8rem;color:var(--sub);margin-bottom:.75rem}
-  .navetta-route{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1rem}
-  .navetta-route .stop{font-size:.8rem;background:var(--tag-bg);color:var(--tag);padding:.2rem .55rem;border-radius:6px;transition:background .2s}
-  .navetta-route .stop:hover{background:var(--btn-hover)}
-  .navetta-route .stop::before{content:"➡ "}
-  .navetta-table-wrapper{overflow-x:auto;margin-bottom:1rem;-webkit-overflow-scrolling:touch}
-  .navetta-table{width:100%;border-collapse:collapse;font-size:.82rem;min-width:500px}
-  .navetta-table th{background:var(--title);color:#fff;padding:.5rem .4rem;text-align:center;font-weight:600;white-space:nowrap}
-  .navetta-table td{padding:.4rem;border-bottom:1px solid var(--border);text-align:center;white-space:nowrap}
-  .navetta-table tr td:first-child{text-align:left;font-weight:500;white-space:normal;min-width:130px}
-  .navetta-table tr:hover{background:var(--tag-bg)}
-  .navetta-note{font-size:.82rem;color:var(--meta);padding:.6rem;background:var(--tag-bg);border-radius:8px;margin-bottom:1rem}
-  .navetta-mercato{margin-top:.75rem}
-  .navetta-mercato summary{font-size:.9rem;font-weight:600;color:var(--tag);cursor:pointer;padding:.3rem 0;transition:opacity .2s}
-  .navetta-mercato summary:hover{opacity:.8}
-  .navetta-sub{font-size:.78rem;color:var(--meta);margin:.25rem 0}
-
-  /* ============================
-     RESPONSIVITÀ MOBILE (< 480px)
-     ============================ */
-  @media(max-width:480px){
-    h1{font-size:1.25rem}
-    .evento .titolo{font-size:.95rem}
-    .evento{padding:.75rem}
-    .filtri{gap:.35rem}
-    .filtri button{font-size:.72rem;padding:.25rem .6rem}
-    .search-bar{padding:.5rem}
-    .intestazione-comune{font-size:1.1rem}
-    .navetta-route{gap:.25rem}
-    .navetta-route .stop{font-size:.72rem;padding:.15rem .4rem}
-    .navetta-table{font-size:.72rem;min-width:420px}
-    .navetta-table tr td:first-child{min-width:100px;font-size:.7rem}
-    body{padding-bottom:130px}
-  }
+/* ================================
+   RESPONSIVITÀ
+   ================================ */
+@media (max-width: 480px) {
+  .evento .titolo { font-size: 0.95rem; }
+  .evento a { padding: 0.75rem; }
+  .filtri { gap: 0.35rem; }
+  .filtri button { font-size: 0.72rem; padding: 0.25rem 0.6rem; }
+  .navetta-table { font-size: 0.72rem; min-width: 420px; }
+  .navetta-table tr td:first-child { min-width: 100px; font-size: 0.7rem; }
+  .intestazione-comune { font-size: 1.1rem; }
+  body { padding-bottom: 130px; }
+}
 </style>
 </head>
-<body>
+<body class="bg-background text-on-background font-body-md min-h-screen pb-[180px]">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -175,13 +454,43 @@
   "description": "Eventi, sagre, concerti e manifestazioni nel raggio di 25 km da Roseto degli Abruzzi."
 }
 </script>
-<div class="container">
-  <h1>📅 Eventi Roseto & Dintorni</h1>
-  <p class="subtitle">Eventi nel raggio di 25 km — aggiornato il <span id="aggiornato"></span></p>
+
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-3xl border-b border-white/10 shadow-sm flex justify-between items-center px-container-margin h-16">
+  <div class="flex items-center gap-base">
+    <span class="material-symbols-outlined text-primary" data-icon="beach_access">beach_access</span>
+    <h1 class="font-headline-md text-headline-md font-bold text-primary">Eventi Roseto &amp; Dintorni</h1>
+  </div>
+  <div class="flex items-center gap-sm">
+    <div class="hidden md:flex items-center bg-primary/10 px-sm py-xs rounded-full border border-primary/20">
+      <span class="text-[10px] uppercase font-bold text-primary tracking-wider">Aggiornato: <span id="aggiornato"></span></span>
+    </div>
+    <button class="active:scale-95 transition-transform hover:opacity-80" aria-label="Notifiche">
+      <span class="material-symbols-outlined text-primary" data-icon="notifications">notifications</span>
+    </button>
+  </div>
+</header>
+
+<main class="pt-24 px-container-margin max-w-5xl mx-auto">
+
+  <!-- Mobile update badge -->
+  <div class="md:hidden mb-md flex justify-center">
+    <span class="bg-primary/20 text-primary-fixed px-base py-xs rounded-lg text-label-sm font-bold border border-primary/30">
+      Aggiornato: <span id="aggiornato-mobile"></span>
+    </span>
+  </div>
+
+  <!-- Visite counter -->
   <div class="visit-counter" id="counterTop">👁️ <span id="visitCount">—</span> visite</div>
 
-  <div class="search-bar">
-    <input type="text" id="search" placeholder="Cerca evento, luogo, data…" autocomplete="off">
+  <!-- Search Bar -->
+  <div class="mb-lg">
+    <input type="text" id="search" placeholder="Cerca evento, luogo, data…" autocomplete="off"
+           class="w-full px-lg py-sm bg-surface-container border border-white/10 rounded-xl text-on-surface placeholder-on-surface-variant/60 outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all text-label-md">
+  </div>
+
+  <!-- Filters (horizontal scroll pills) -->
+  <section class="mb-lg overflow-x-auto hide-scrollbar -mx-container-margin px-container-margin">
     <div class="filtri" id="filtri">
       <button data-filtro="tutti" class="attivo">Tutti</button>
       <button data-filtro="Roseto">Roseto</button>
@@ -194,83 +503,93 @@
       <button data-filtro="Teramo">Teramo</button>
       <button data-filtro="San Benedetto">S.Benedetto</button>
     </div>
-  </div>
+  </section>
 
+  <!-- Stats -->
   <div class="stats" id="stats"></div>
-  <div id="eventi"></div>
+
+  <!-- Event cards (generated by renderizza()) -->
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg" id="eventi"></section>
+
+  <!-- Nessun risultato -->
   <div id="nessun-risultato">Nessun evento trovato 😕</div>
 
-  <!-- SEZIONE NAVETTA GRATUITA -->
+  <!-- ================================
+       SEZIONE NAVETTA GRATUITA
+       ================================ -->
   <div class="navetta-section">
     <button class="navetta-toggle open" id="navettaToggle" onclick="toggleNavetta()">
       <span>🚌 Orari Navetta Gratuita</span>
       <span class="arrow">▼</span>
     </button>
     <div class="navetta-content open" id="navettaContent">
-      <div class="navetta-valid">🗓️ DAL 1° LUGLIO AL 6 SETTEMBRE 2026</div>
+      <div class="navetta-valid" id="navettaValid"></div>
 
       <h3>📍 Percorso</h3>
-      <div class="navetta-route">
-        <span class="stop">Stazione ferroviaria</span>
-        <span class="stop">Lungomare Trieste (Lunapark)</span>
-        <span class="stop">Club del Sole</span>
-        <span class="stop">Lungomare Roma (Rotonda Sud)</span>
-        <span class="stop">Lungomare Roma (Rotonda Nord)</span>
-        <span class="stop">Lido d'Abruzzo</span>
-        <span class="stop">Lungomare Trento (Via Emilia)</span>
-        <span class="stop">Cologna (Sottopassaggio)</span>
-        <span class="stop">Cologna (P.zza Redipuglia)</span>
-        <span class="stop">Montepagano (Municipio)</span>
-        <span class="stop">Campo a Mare (V.le America)</span>
-        <span class="stop">Campo a Mare (V.le Europa)</span>
-      </div>
+      <div class="navetta-route" id="navettaRoute"></div>
 
       <h3>🕐 Orario Giornaliero (tutti i giorni)</h3>
       <div class="navetta-table-wrapper">
-      <table class="navetta-table" id="navettaTable">
-        <thead><tr><th>Fermata</th><th>17:00</th><th>18:00</th><th>21:30</th><th>23:30</th></tr></thead>
-        <tbody id="navettaTableBody"></tbody>
-      </table>
+        <table class="navetta-table" id="navettaTable">
+          <thead><tr><th>Fermata</th><th>17:00</th><th>18:00</th><th>21:30</th><th>23:30</th></tr></thead>
+          <tbody id="navettaTableBody"></tbody>
+        </table>
       </div>
 
-      <div class="navetta-note">ℹ️ A richiesta: fermate a <strong>Belsito</strong> e in <strong>Viale Makarska</strong> (casa del Mar)</div>
+      <div class="navetta-note" id="navettaNote"></div>
 
       <details class="navetta-mercato">
         <summary>🛒 Martedì — Corsa Mercato (solo martedì)</summary>
         <div class="navetta-sub">Andata (da Lido d'Abruzzo → P.zza Marco Polo)</div>
         <table class="navetta-table">
           <thead><tr><th>Fermata</th><th>Orario</th></tr></thead>
-          <tbody>
-            <tr><td>Lido d'Abruzzo</td><td>09:00</td></tr>
-            <tr><td>Lungomare Trento (Via Emilia)</td><td>09:02</td></tr>
-            <tr><td>Lungomare Roma (Rotonda Nord)</td><td>09:04</td></tr>
-            <tr><td>Lungomare Roma (Rotonda Sud)</td><td>09:06</td></tr>
-            <tr><td>Club del Sole</td><td>09:08</td></tr>
-            <tr><td>P.zza Marco Polo</td><td>09:12</td></tr>
-          </tbody>
+          <tbody id="navettaMercatoAndata"></tbody>
         </table>
         <div class="navetta-sub">Ritorno (da P.zza Marco Polo → Lido d'Abruzzo)</div>
         <table class="navetta-table">
           <thead><tr><th>Fermata</th><th>Orario</th></tr></thead>
-          <tbody>
-            <tr><td>P.zza Marco Polo</td><td>12:00</td></tr>
-            <tr><td>Club del Sole</td><td>12:04</td></tr>
-            <tr><td>Lungomare Roma (Rotonda Sud)</td><td>12:06</td></tr>
-            <tr><td>Lungomare Roma (Rotonda Nord)</td><td>12:08</td></tr>
-            <tr><td>Lungomare Trento (Via Emilia)</td><td>12:10</td></tr>
-            <tr><td>Lido d'Abruzzo</td><td>12:12</td></tr>
-          </tbody>
+          <tbody id="navettaMercatoRitorno"></tbody>
         </table>
       </details>
     </div>
   </div>
 
-  <footer>
-    Generato automaticamente — <a href="https://github.com/Googgier/roseto-eventi">GitHub</a>
-  </footer>
-</div>
+</main>
 
-<!-- SPAZIO BANNER PUBBLICITARIO GOOGLE ADSENSE - SEMPRE VISIBILE -->
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-50 bg-surface-container border-t border-surface-bright shadow-2xl flex justify-around items-center h-20 pb-safe">
+  <div class="flex flex-col items-center justify-center text-primary-container active:scale-90 transition-transform cursor-pointer">
+    <span class="material-symbols-outlined !text-[28px]" data-icon="event" style="font-variation-settings: 'FILL' 1;">event</span>
+    <span class="font-label-md text-label-md font-bold">Eventi</span>
+  </div>
+  <div class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-90 transition-transform cursor-pointer">
+    <span class="material-symbols-outlined !text-[28px]" data-icon="map">map</span>
+    <span class="font-label-md text-label-md font-bold">Mappa</span>
+  </div>
+  <div class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-90 transition-transform cursor-pointer" onclick="toggleShuttle()">
+    <span class="material-symbols-outlined !text-[28px]" data-icon="directions_bus">directions_bus</span>
+    <span class="font-label-md text-label-md font-bold">Navette</span>
+  </div>
+  <div class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-90 transition-transform cursor-pointer">
+    <span class="material-symbols-outlined !text-[28px]" data-icon="bookmark">bookmark</span>
+    <span class="font-label-md text-label-md font-bold">Salvati</span>
+  </div>
+</nav>
+
+<!-- Footer -->
+<footer class="w-full py-xl bg-surface-container-lowest flex flex-col items-center gap-base mt-xl">
+  <div class="flex items-center gap-lg">
+    <a class="text-on-surface-variant hover:text-secondary transition-colors underline decoration-secondary font-label-sm text-label-sm" href="https://github.com/Googgier/roseto-eventi">GitHub</a>
+    <a class="text-on-surface-variant hover:text-secondary transition-colors underline decoration-secondary font-label-sm text-label-sm" href="#">Privacy</a>
+    <a class="text-on-surface-variant hover:text-secondary transition-colors underline decoration-secondary font-label-sm text-label-sm" href="#">Terms</a>
+  </div>
+  <div class="flex flex-col items-center">
+    <p class="text-on-surface font-bold font-label-sm text-label-sm">© 2025 Eventi Roseto &amp; Dintorni</p>
+    <p class="text-on-surface-variant text-[10px] uppercase tracking-widest mt-xs">Visite: <span id="visitCountFooter"></span></p>
+  </div>
+</footer>
+
+<!-- BANNER PUBBLICITARIO GOOGLE ADSENSE -->
 <div class="ad-banner" id="adBanner">
   <button class="ad-close" id="adClose" aria-label="Chiudi sponsor">✕</button>
   <div class="ad-label">Sponsor</div>
@@ -335,7 +654,6 @@ function renderizza(lista){
     html += `<div class="intestazione-comune">📍 ${citta}</div>`;
     evs.forEach(e => {
       const orarioHtml = e.orario ? `<div class="orario">🕐 ${e.orario}</div>` : '';
-      // Verifica se la data corrente cade nel range dell'evento
       const oggiBadge = isOggi(e.data) ? '<div class="badge-oggi">🔴 In corso</div>' : '';
       html += `<div class="evento">
         <a href="${e.fonte || '#'}" target="_blank" rel="noopener">
@@ -362,14 +680,12 @@ function isOggi(dataStr){
   oggi.setHours(0,0,0,0);
   const oggiTs = oggi.getTime();
 
-  // Data singola: "15 Lug 2026"
   let m = dataStr.match(/^(\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);
   if(m){
     const dataEv = parseDataIt(m[1], m[2], m[3]);
     return dataEv && dataEv.getTime() === oggiTs;
   }
 
-  // Solo mese e anno: "Luglio 2026" → badge per tutto il mese
   m = dataStr.match(/^([A-Za-z]+)\s(\d{4})$/);
   if(m){
     const mese = meseNum(m[1]);
@@ -377,7 +693,6 @@ function isOggi(dataStr){
     return oggi.getMonth() === mese && oggi.getFullYear() === parseInt(m[2]);
   }
 
-  // Range due date stesso mese: "15–19 Lug 2026"
   m = dataStr.match(/^(\d{1,2})[–-](\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);
   if(m){
     const inizio = parseDataIt(m[1], m[3], m[4]);
@@ -385,7 +700,6 @@ function isOggi(dataStr){
     return inizio && fine && oggiTs >= inizio.getTime() && oggiTs <= fine.getTime();
   }
 
-  // Range date in mesi diversi: "10 Lug – 6 Set 2026" o "28 Lug – 14 Ago 2026"
   m = dataStr.match(/^(\d{1,2})\s([A-Za-z]+)\s*[–-]\s*(\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);
   if(m){
     const inizio = parseDataIt(m[1], m[2], m[5]);
@@ -426,7 +740,7 @@ function filtra(){
 }
 
 /* ============================================================
-   FUNZIONE: CONFIG NAVETTA — dati orari in un oggetto pulito
+   NAVETTA
    ============================================================ */
 const navettaConfig = {
   valid: "🗓️ DAL 1° LUGLIO AL 6 SETTEMBRE 2026",
@@ -464,15 +778,55 @@ const navettaConfig = {
   ]
 };
 
-/* ============================================================
-   NAVETTA: popola tabella e gestisce toggle
-   ============================================================ */
+const navettaStops = [
+  "Stazione ferroviaria",
+  "Lungomare Trieste (Lunapark)",
+  "Club del Sole",
+  "Lungomare Roma (Rotonda Sud)",
+  "Lungomare Roma (Rotonda Nord)",
+  "Lido d'Abruzzo",
+  "Lungomare Trento (Via Emilia)",
+  "Cologna (Sottopassaggio)",
+  "Cologna (P.zza Redipuglia)",
+  "Montepagano (Municipio)",
+  "Campo a Mare (V.le America)",
+  "Campo a Mare (V.le Europa)"
+];
+
 function popolaNavetta(){
   const tbody = document.getElementById('navettaTableBody');
   if(!tbody) return;
   tbody.innerHTML = navettaConfig.orari.map(r =>
     `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`
   ).join('');
+
+  // Route stops
+  const routeEl = document.getElementById('navettaRoute');
+  if(routeEl){
+    routeEl.innerHTML = navettaStops.map(s => `<span class="stop">${s}</span>`).join('');
+  }
+
+  // Valid text
+  const validEl = document.getElementById('navettaValid');
+  if(validEl) validEl.textContent = navettaConfig.valid;
+
+  // Note
+  const noteEl = document.getElementById('navettaNote');
+  if(noteEl) noteEl.innerHTML = navettaConfig.note;
+
+  // Mercato tables
+  const andataTbody = document.getElementById('navettaMercatoAndata');
+  if(andataTbody){
+    andataTbody.innerHTML = navettaConfig.mercatoAndata.map(r =>
+      `<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`
+    ).join('');
+  }
+  const ritornoTbody = document.getElementById('navettaMercatoRitorno');
+  if(ritornoTbody){
+    ritornoTbody.innerHTML = navettaConfig.mercatoRitorno.map(r =>
+      `<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`
+    ).join('');
+  }
 }
 popolaNavetta();
 
@@ -484,7 +838,7 @@ function toggleNavetta(){
 }
 
 /* ============================================================
-   INIZIALIZZAZIONE: event listeners e stato iniziale
+   INIZIALIZZAZIONE
    ============================================================ */
 document.getElementById('search').addEventListener('input', filtra);
 document.querySelectorAll('#filtri button').forEach(btn => {
@@ -495,26 +849,34 @@ document.querySelectorAll('#filtri button').forEach(btn => {
   });
 });
 
-document.getElementById('aggiornato').textContent = new Date().toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'});
+const oggiStr = new Date().toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'});
+document.getElementById('aggiornato').textContent = oggiStr;
+const mobileEl = document.getElementById('aggiornato-mobile');
+if(mobileEl) mobileEl.textContent = oggiStr;
 renderizza(eventi);
 
 /* ============================================================
-   CONTATORE VISITE — countapi.mileshilliard.com con spinner
+   CONTATORE VISITE
    ============================================================ */
 const visitEl = document.getElementById('visitCount');
 const counterEl = document.querySelector('.visit-counter');
 counterEl.classList.add('loading');
-// Mostra spinner mentre carica
 visitEl.innerHTML = '<span class="counter-spinner"></span>';
 
 fetch('https://countapi.mileshilliard.com/api/v1/hit/roseto-eventi-visits')
   .then(r => r.json())
   .then(d => {
-    visitEl.textContent = Number(d.value).toLocaleString('it-IT');
+    const v = Number(d.value).toLocaleString('it-IT');
+    visitEl.textContent = v;
+    const f = document.getElementById('visitCountFooter');
+    if(f) f.textContent = v;
     counterEl.classList.remove('loading');
   })
   .catch(() => {
-    visitEl.textContent = Number(11246).toLocaleString('it-IT');
+    const v = Number(11246).toLocaleString('it-IT');
+    visitEl.textContent = v;
+    const f = document.getElementById('visitCountFooter');
+    if(f) f.textContent = v;
     counterEl.classList.remove('loading');
   });
 
