@@ -24,7 +24,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-fixed-dim":"#
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Eventi Roseto degli Abruzzi &amp; Dintorni","url":"https://googgier.github.io/roseto-eventi/"}</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Inter,sans-serif;background:#0d1321;color:#dde2f6;min-height:100dvh;padding-bottom:100px}
+body{font-family:Inter,sans-serif;background:#0d1321;color:#dde2f6;min-height:100dvh;padding-bottom:80px}
 .glass{background:rgba(25,31,46,0.65);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08)}
 .glass-solid{background:rgba(25,31,46,0.85);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08)}
 .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;vertical-align:middle}
@@ -32,7 +32,7 @@ body{font-family:Inter,sans-serif;background:#0d1321;color:#dde2f6;min-height:10
 .custom-scrollbar::-webkit-scrollbar{height:4px}
 .custom-scrollbar::-webkit-scrollbar-track{background:transparent}
 .custom-scrollbar::-webkit-scrollbar-thumb{background:rgba(255,181,156,0.3);border-radius:2px}
-.card-evento{position:relative;border-radius:1rem;overflow:hidden;cursor:pointer;background:#191f2e;min-height:280px;transition:transform 0.3s,box-shadow 0.3s}
+.card-evento{position:relative;border-radius:1rem;overflow:hidden;cursor:pointer;background:#191f2e;min-height:320px;aspect-ratio:3/4;transition:transform 0.3s,box-shadow 0.3s}
 .card-evento:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(255,181,156,0.1)}
 .card-evento img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s;position:absolute;inset:0}
 .card-evento:hover img{transform:scale(1.08)}
@@ -57,7 +57,7 @@ body{font-family:Inter,sans-serif;background:#0d1321;color:#dde2f6;min-height:10
 .hero-content p{font-size:0.9rem;color:#dec0b6;margin-bottom:8px}
 .hero-content .meta{font-size:0.8rem;color:#43e2d2}
 #gabbia{display:grid;grid-template-columns:1fr;gap:1rem}
-@media(min-width:640px){#gabbia{grid-template-columns:repeat(2,1fr)}.hero-section{height:500px}.hero-content h2{font-size:2rem}}
+@media(min-width:640px){#gabbia{grid-template-columns:repeat(2,1fr)}.card-evento{aspect-ratio:4/5}.hero-section{height:500px}.hero-content h2{font-size:2rem}}
 @media(min-width:1024px){#gabbia{grid-template-columns:repeat(3,1fr)}.hero-section{height:520px}.hero-content{padding:2rem}.hero-content .gpanel{width:60%}.hero-content h2{font-size:2.2rem}}
 .intestazione-comune{grid-column:1/-1;font-family:Montserrat,sans-serif;font-size:1.2rem;font-weight:700;color:#ffb59c;padding-bottom:4px;border-bottom:2px solid rgba(255,181,156,0.15);margin-top:0.5rem}
 .stats{text-align:center;font-size:0.8rem;color:#a68b82;margin-bottom:0.75rem}
@@ -89,12 +89,6 @@ body{font-family:Inter,sans-serif;background:#0d1321;color:#dde2f6;min-height:10
 .navetta-note{font-size:0.78rem;color:#a68b82;padding:0.5rem;background:rgba(47,53,68,0.3);border-radius:8px;margin-bottom:0.75rem}
 .navetta-mercado{margin-top:0.5rem}.navetta-mercado summary{font-size:0.85rem;font-weight:600;color:#43e2d2;cursor:pointer;padding:0.2rem 0}
 .navetta-sub{font-size:0.75rem;color:#a68b82;margin:0.2rem 0}
-.ad-banner{position:fixed;bottom:0;left:0;right:0;z-index:100;text-align:center;padding:0.4rem 2rem 0.4rem 0.5rem;background:rgba(13,19,33,0.96);backdrop-filter:blur(20px);border-top:1px solid rgba(255,255,255,0.1);transition:transform 0.35s}
-.ad-banner.closed{transform:translateY(100%)}
-.ad-banner .ad-label{font-size:0.55rem;color:#a68b82;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.15rem}
-.ad-close{position:absolute;top:0.2rem;right:0.4rem;background:none;border:none;font-size:1rem;cursor:pointer;color:#a68b82;padding:0.15rem 0.3rem;line-height:1;border-radius:4px}
-.ad-close:hover{background:rgba(255,255,255,0.1);color:#dde2f6}
-.ad-placeholder{display:inline-flex;align-items:center;justify-content:center;width:728px;max-width:100%;height:70px;background:rgba(255,255,255,0.03);border:1px dashed rgba(255,255,255,0.1);border-radius:0.5rem;font-size:0.7rem;color:#a68b82}
 .bottom-nav{position:fixed;bottom:0;left:0;right:0;z-index:50;display:flex;justify-content:space-around;align-items:center;height:72px;background:rgba(25,31,46,0.85);backdrop-filter:blur(20px);border-top:1px solid rgba(255,255,255,0.08)}
 .bottom-nav a{display:flex;flex-direction:column;align-items:center;gap:2px;color:#a68b82;text-decoration:none;font-size:0.65rem;transition:color 0.2s}
 .bottom-nav a:hover,.bottom-nav a.attivo{color:#43e2d2}
@@ -132,6 +126,14 @@ body{font-family:Inter,sans-serif;background:#0d1321;color:#dde2f6;min-height:10
   </nav>
   <div class="stats" id="stats"></div>
   <div id="hero-container"></div>
+  <div class="w-full glass rounded-2xl border-dashed border-white/20 flex items-center justify-between px-lg relative overflow-hidden" style="height:120px;margin-bottom:1rem">
+    <div class="absolute inset-0 opacity-10" style="background:radial-gradient(circle at center, #ffb59c, transparent)"></div>
+    <div class="relative" style="z-index:1">
+      <p style="font-size:0.75rem;color:#ffb59c;font-weight:700;margin-bottom:4px;text-transform:uppercase;letter-spacing:1px">SPONSOR PRINCIPALE</p>
+      <h4 style="font-family:Montserrat;font-size:1.2rem;font-weight:700;color:#dde2f6">Adriatico Gin Experience</h4>
+    </div>
+    <button class="material-symbols-outlined" style="background:rgba(255,255,255,0.05);border-radius:50%;padding:0.5rem;color:#dde2f6;cursor:pointer" onclick="this.parentElement.remove()">&times;</button>
+  </div>
   <div id="gabbia"></div>
   <div id="nessun-risultato">Nessun evento trovato &#x1f615;</div>
   <!-- NAVETTA -->
@@ -165,11 +167,6 @@ body{font-family:Inter,sans-serif;background:#0d1321;color:#dde2f6;min-height:10
 <div class="footer">
   <p>Generato automaticamente — <a href="https://github.com/Googgier/roseto-eventi">GitHub</a></p>
   <p style="opacity:0.6;margin-top:4px">Made with &#x2764;&#xfe0f; for the Adriatic Coast</p>
-</div>
-<div class="ad-banner" id="adBanner">
-  <button class="ad-close" id="adClose" aria-label="Chiudi sponsor">&times;</button>
-  <div class="ad-label">Sponsor</div>
-  <div class="ad-placeholder">&#x1f4b0; Spazio pubblicitario disponibile</div>
 </div>
 <script>
 const eventi=[
@@ -207,7 +204,7 @@ function renderizza(lista){
   if(!lista.length){document.getElementById('nessun-risultato').style.display='block';c.innerHTML='';h.innerHTML='';return}
   document.getElementById('nessun-risultato').style.display='none';
   var top=lista[0],oggi=isOggi(top.data)?'<div class="oggi">🔴 In corso</div>':'';
-  var ih=top.img&&top.img!=='N/A'?'<img src="'+top.img+'" alt="'+top.titolo+'" onclick="openLightbox(\''+top.img+'\',\''+top.titolo.replace(/'/g,"\\'")+'\')">':'<div style="width:100%;height:100%;background:linear-gradient(135deg,#242a39,#2f3544);display:flex;align-items:center;justify-content:center;font-size:3rem;color:#ffb59c;font-weight:700;font-family:Montserrat">'+getIniziali(top.titolo)+'</div>';
+  var ih=top.img&&top.img!=='N/A'?'<img src="'+top.img+'" alt="'+top.titolo+'">':'<div style="width:100%;height:100%;background:linear-gradient(135deg,#242a39,#2f3544);display:flex;align-items:center;justify-content:center;font-size:3rem;color:#ffb59c;font-weight:700;font-family:Montserrat">'+getIniziali(top.titolo)+'</div>';
   h.innerHTML='<div class="hero-section">'+ih+'<div class="grad"></div>'+oggi+'<div class="hero-content"><div class="gpanel"><span class="gold">'+top.tag[0]+'</span><h2>'+top.titolo+'</h2><p>'+top.desc+'</p><div class="meta">📅 '+top.data+' · 🕐 '+top.orario+' · '+top.luogo+'</div><a href="'+top.fonte+'" target="_blank" rel="noopener" style="position:absolute;inset:0;text-indent:-9999px">Dettagli</a></div></div></div>';
   var m={};lista.forEach(function(e){if(!m[e.citta])m[e.citta]=[];m[e.citta].push(e);});
   var html='';
@@ -216,7 +213,7 @@ function renderizza(lista){
     m[citta].forEach(function(e){
       var o=isOggi(e.data)?'<div class="oggi">🔴 In corso</div>':'';
       var bd='<div class="badge">'+e.data+'</div>';
-      var im=e.img&&e.img!=='N/A'?'<img src="'+e.img+'" alt="'+e.titolo+'" onclick="openLightbox(\''+e.img+'\',\''+e.titolo.replace(/'/g,"\\'")+'\')" loading="lazy">':'<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#242a39,#2f3544);color:#ffb59c;font-size:2rem;font-weight:700;font-family:Montserrat">'+getIniziali(e.titolo)+'</div>';
+      var im=e.img&&e.img!=='N/A'?'<img src="'+e.img+'" alt="'+e.titolo+'" loading="lazy">':'<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#242a39,#2f3544);color:#ffb59c;font-size:2rem;font-weight:700;font-family:Montserrat">'+getIniziali(e.titolo)+'</div>';
       html+='<div class="card-evento">'+im+'<div class="grad"></div>'+o+bd+'<div class="info"><div class="gpanel"><span class="cat">'+e.tag[0]+'</span><h3>'+e.titolo+'</h3><div class="luogo">'+e.luogo+'</div></div></div><a class="cover-link" href="'+e.fonte+'" target="_blank" rel="noopener">Dettagli</a></div>';
     });
   }
@@ -257,7 +254,7 @@ renderizza(eventi);
 var ve=document.getElementById('visitCount'),ce=document.querySelector('.visit-counter');ce.classList.add('loading');ve.innerHTML='<span style="display:inline-block;width:12px;height:12px;border:2px solid #a68b82;border-top-color:transparent;border-radius:50%;animation:spin 0.6s linear infinite;vertical-align:middle;margin-right:4px"></span>';
 fetch('https://countapi.mileshilliard.com/api/v1/hit/roseto-eventi-visits').then(function(r){return r.json()}).then(function(d){ve.textContent=Number(d.value).toLocaleString('it-IT');ce.classList.remove('loading')})['catch'](function(){ve.textContent=Number(11246).toLocaleString('it-IT');ce.classList.remove('loading')});
 if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js')['catch'](function(){});
-document.getElementById('adClose').addEventListener('click',function(){document.getElementById('adBanner').classList.add('closed');document.body.style.paddingBottom='100px'});
+document.addEventListener('click',function(e){var t=e.target;if(t.tagName==='IMG'&&(t.closest('.card-evento')||t.closest('.hero-section'))){openLightbox(t.src,t.alt)}});
 var st=document.createElement('style');st.textContent='@keyframes spin{to{transform:rotate(360deg)}}';document.head.appendChild(st);
 </script>
 </body></html>
