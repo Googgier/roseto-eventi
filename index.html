@@ -50,12 +50,13 @@
   .intestazione-comune{font-size:1.2rem;font-weight:700;color:var(--title);margin:1.5rem 0 .75rem;padding-bottom:.3rem;border-bottom:2px solid #e94560}
   .stats{text-align:center;font-size:.8rem;color:var(--meta);margin-bottom:1rem}
   #nessun-risultato{text-align:center;padding:2rem;color:var(--meta);display:none}
-  .ad-banner{text-align:center;padding:1.5rem 1rem;margin:1.5rem 0;min-height:90px;background:var(--card);border-radius:12px;box-shadow:0 1px 4px var(--shadow);transition:background .3s;overflow:hidden}
-  .ad-banner .ad-label{font-size:.65rem;color:var(--meta);text-transform:uppercase;letter-spacing:1px;margin-bottom:.5rem}
-  .ad-banner ins{display:block}
-  .ad-banner .adsbygoogle{max-width:100%;height:auto;min-height:90px}
-  @media(max-width:768px){.ad-banner .adsbygoogle{width:100%;min-height:90px}}
-  footer{text-align:center;font-size:.75rem;color:var(--meta);padding:1rem 0 2rem}
+  .ad-banner{position:fixed;bottom:0;left:0;right:0;z-index:100;text-align:center;padding:.5rem;background:var(--card);border-top:1px solid var(--border);box-shadow:0 -2px 8px var(--shadow);transition:background .3s}
+  .ad-banner .ad-label{font-size:.6rem;color:var(--meta);text-transform:uppercase;letter-spacing:1px;margin-bottom:.25rem}
+  .ad-banner ins{display:inline-block}
+  .ad-banner .adsbygoogle{max-width:100%;height:auto;min-height:70px}
+  @media(max-width:768px){.ad-banner .adsbygoogle{width:100%;min-height:70px}}
+  body{padding-bottom:120px}
+  footer{text-align:center;font-size:.75rem;color:var(--meta);padding:1rem 0}
 </style>
 </head>
 <body>
@@ -83,16 +84,16 @@
   <div id="eventi"></div>
   <div id="nessun-risultato">Nessun evento trovato 😕</div>
 
-  <!-- SPAZIO BANNER PUBBLICITARIO GOOGLE ADSENSE -->
-  <div class="ad-banner">
-    <div class="ad-label">Sponsor</div>
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:728px;height:90px"
-         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-         data-ad-slot="XXXXXXXXXX"></ins>
-  </div>
+  <footer>Generato automaticamente — <a href="https://github.com/Googgier/roseto-eventi">GitHub</a></footer>
+</div>
 
-  <footer>Generato automaticamente — <a href="https://github.com/xellos81/roseto-eventi">GitHub</a></footer>
+<!-- SPAZIO BANNER PUBBLICITARIO GOOGLE ADSENSE - SEMPRE VISIBILE -->
+<div class="ad-banner">
+  <div class="ad-label">Sponsor</div>
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+       data-ad-slot="XXXXXXXXXX"></ins>
 </div>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
