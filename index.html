@@ -50,11 +50,14 @@
   .intestazione-comune{font-size:1.2rem;font-weight:700;color:var(--title);margin:1.5rem 0 .75rem;padding-bottom:.3rem;border-bottom:2px solid #e94560}
   .stats{text-align:center;font-size:.8rem;color:var(--meta);margin-bottom:1rem}
   #nessun-risultato{text-align:center;padding:2rem;color:var(--meta);display:none}
-  .ad-banner{position:fixed;bottom:0;left:0;right:0;z-index:100;text-align:center;padding:.5rem;background:var(--card);border-top:1px solid var(--border);box-shadow:0 -2px 8px var(--shadow);transition:background .3s}
+  .ad-banner{position:fixed;bottom:0;left:0;right:0;z-index:100;text-align:center;padding:.5rem 2rem .5rem .5rem;background:var(--card);border-top:1px solid var(--border);box-shadow:0 -2px 8px var(--shadow);transition:background .3s,transform .3s}
+  .ad-banner.closed{transform:translateY(100%)}
   .ad-banner .ad-label{font-size:.6rem;color:var(--meta);text-transform:uppercase;letter-spacing:1px;margin-bottom:.25rem}
   .ad-banner ins{display:inline-block}
   .ad-banner .adsbygoogle{max-width:100%;height:auto;min-height:70px}
   @media(max-width:768px){.ad-banner .adsbygoogle{width:100%;min-height:70px}}
+  .ad-close{position:absolute;top:.25rem;right:.5rem;background:none;border:none;font-size:1.1rem;cursor:pointer;color:var(--meta);padding:.2rem .35rem;line-height:1;border-radius:4px;transition:background .2s}
+  .ad-close:hover{background:var(--btn-hover);color:var(--text)}
   body{padding-bottom:120px}
   footer{text-align:center;font-size:.75rem;color:var(--meta);padding:1rem 0}
 </style>
@@ -88,7 +91,8 @@
 </div>
 
 <!-- SPAZIO BANNER PUBBLICITARIO GOOGLE ADSENSE - SEMPRE VISIBILE -->
-<div class="ad-banner">
+<div class="ad-banner" id="adBanner">
+  <button class="ad-close" id="adClose" aria-label="Chiudi sponsor">✕</button>
   <div class="ad-label">Sponsor</div>
   <ins class="adsbygoogle"
        style="display:inline-block;width:728px;height:90px"
@@ -191,6 +195,12 @@ renderizza(eventi);
 if('serviceWorker' in navigator){
   navigator.serviceWorker.register('sw.js').then(r => console.log('SW registrato', r.scope)).catch(e => console.log('SW errore', e));
 }
+
+// Chiudi banner sponsor
+document.getElementById('adClose').addEventListener('click', () => {
+  document.getElementById('adBanner').classList.add('closed');
+  document.body.style.paddingBottom = '20px';
+});
 </script>
 </body>
 </html>
