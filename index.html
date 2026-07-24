@@ -108,40 +108,123 @@ body{font-family:Inter,sans-serif;background:#0d1321;color:#dde2f6;min-height:10
 .badge-costo-pagamento{background:rgba(255,181,156,0.2);color:#ffb59c;border:1px solid rgba(255,181,156,0.3)}
 .badge-costo-misto{background:rgba(166,139,130,0.2);color:#a68b82;border:1px solid rgba(166,139,130,0.3)}
 .badge-costo{display:inline-block;padding:2px 8px;border-radius:6px;font-size:0.6rem;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-right:6px;vertical-align:middle}
+/* ADRIATIC AFTERGLOW — redesign 2026 */
+:root{--night:#06111f;--deep:#0a1b2d;--panel:#10263a;--panel-2:#153149;--foam:#effcff;--mist:#9cb5c4;--aqua:#59f1d5;--aqua-deep:#21bfae;--coral:#ff806b;--sun:#ffd277;--line:rgba(164,224,229,.14);--shadow:0 24px 70px rgba(0,4,12,.42)}
+html{scroll-behavior:smooth;background:var(--night)}
+body{font-family:Inter,sans-serif;background:radial-gradient(circle at 8% 4%,rgba(28,153,164,.18),transparent 30rem),radial-gradient(circle at 92% 18%,rgba(255,128,107,.12),transparent 25rem),linear-gradient(180deg,#071726 0%,var(--night) 55%,#04101b 100%);color:var(--foam);padding-bottom:112px;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.24;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(to bottom,#000,transparent 80%)}
+.site-header{position:sticky;top:0;z-index:50;height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(18px,4vw,56px);background:rgba(6,17,31,.72);backdrop-filter:blur(24px) saturate(140%);-webkit-backdrop-filter:blur(24px) saturate(140%);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--foam)}
+.brand-mark{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;color:#06251f;background:linear-gradient(135deg,var(--aqua),#a9ffea);box-shadow:0 10px 30px rgba(89,241,213,.22);transform:rotate(-3deg)}
+.brand-mark .material-symbols-outlined{font-variation-settings:'FILL' 1,'wght' 500}
+.brand-copy{display:flex;flex-direction:column;line-height:1}.brand-copy strong{font-family:Montserrat,sans-serif;font-size:clamp(.95rem,2vw,1.1rem);letter-spacing:-.03em}.brand-copy small{color:var(--mist);font-size:.61rem;letter-spacing:.18em;text-transform:uppercase;margin-top:5px}
+.header-meta{display:flex;align-items:center;gap:8px;color:var(--mist);font-size:.72rem}.live-dot{width:7px;height:7px;background:var(--aqua);border-radius:50%;box-shadow:0 0 0 5px rgba(89,241,213,.1);animation:pulse 2s ease-in-out infinite}
+.page-shell{width:min(1240px,calc(100% - 32px));margin:0 auto;padding-top:34px}
+.intro-bar{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:26px}
+.eyebrow{display:flex;align-items:center;gap:8px;color:var(--aqua);font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+.eyebrow:before{content:"";width:28px;height:1px;background:currentColor}
+.page-title{font-family:Montserrat,sans-serif;font-size:clamp(1.9rem,4vw,3.8rem);line-height:.98;letter-spacing:-.055em;margin-top:10px;max-width:780px}
+.page-title em{font-style:normal;color:var(--aqua)}
+.visit-counter{display:flex;align-items:center;gap:8px;padding:10px 14px;margin:0;border:1px solid var(--line);border-radius:999px;background:rgba(16,38,58,.56);color:var(--mist);white-space:nowrap}
+.discover-panel{position:relative;z-index:8;padding:14px;border:1px solid var(--line);background:rgba(11,30,47,.74);backdrop-filter:blur(20px);border-radius:24px;box-shadow:0 20px 60px rgba(0,4,12,.22);margin-bottom:24px}
+.search-wrap{position:relative}.search-wrap .material-symbols-outlined{position:absolute;left:17px;top:50%;transform:translateY(-50%);color:var(--aqua);font-size:22px}
+#search{height:54px;margin:0;padding:0 18px 0 50px;border:1px solid transparent;border-radius:15px;background:rgba(3,15,26,.66);color:var(--foam);font-size:.94rem}
+#search:focus{border-color:rgba(89,241,213,.55);box-shadow:0 0 0 4px rgba(89,241,213,.08)}
+#search::placeholder{color:#718c9d}
+#filtri{gap:8px;margin:12px 0 0;padding:0 1px 1px}
+#filtri button{padding:9px 15px;border-color:var(--line);background:rgba(255,255,255,.025);color:var(--mist);font-size:.76rem}
+#filtri button.attivo{color:#06251f;background:var(--aqua);border-color:var(--aqua);box-shadow:0 7px 22px rgba(89,241,213,.16)}
+#filtri button:hover:not(.attivo){color:var(--foam);background:rgba(255,255,255,.06);border-color:rgba(89,241,213,.3)}
+.stats{text-align:left;color:var(--mist);font-size:.78rem;margin:0 0 14px 4px}
+.hero-section{height:min(65vh,640px);min-height:470px;border-radius:32px;margin-bottom:30px;border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow);isolation:isolate}
+.hero-section:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(5,14,25,.8),transparent 72%),linear-gradient(0deg,rgba(4,13,23,.92),transparent 65%)}
+.hero-section img{transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.hero-section:hover img{transform:scale(1.025)}
+.hero-section .grad{background:radial-gradient(circle at 80% 10%,rgba(89,241,213,.15),transparent 35%);z-index:2}
+.hero-content{padding:clamp(22px,5vw,58px);z-index:3;max-width:800px}
+.hero-content .gpanel{width:auto!important;max-width:680px;padding:0;background:transparent;border:0;backdrop-filter:none}
+.hero-content .gold{padding:7px 11px;background:rgba(89,241,213,.14);border:1px solid rgba(89,241,213,.28);color:var(--aqua);letter-spacing:.12em}
+.hero-content h2{font-size:clamp(2rem,5vw,4.4rem);line-height:.96;letter-spacing:-.055em;margin:14px 0 13px;text-wrap:balance}
+.hero-content p{font-size:clamp(.88rem,2vw,1.05rem);line-height:1.55;color:#c1d4dc;max-width:620px}
+.hero-content .meta{color:var(--foam);font-size:.82rem;margin-top:15px;line-height:1.6}
+.hero-section .oggi{top:24px;left:24px}
+.sponsor-card{height:112px;margin:0 0 30px;position:relative;overflow:hidden;border:1px solid var(--line);border-radius:22px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,4vw,38px);background:linear-gradient(110deg,rgba(16,38,58,.9),rgba(20,52,67,.7))}
+.sponsor-card:before{content:"";position:absolute;width:220px;height:220px;right:10%;border:1px solid rgba(255,210,119,.2);border-radius:50%;box-shadow:0 0 0 35px rgba(255,210,119,.025),0 0 0 70px rgba(255,210,119,.018)}
+.sponsor-label{color:var(--sun);font-size:.65rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;margin-bottom:5px}.sponsor-card h4{font-family:Montserrat,sans-serif;font-size:clamp(1rem,2.5vw,1.35rem)}
+.sponsor-close{position:relative;width:36px;height:36px;border:1px solid var(--line);border-radius:50%;background:rgba(255,255,255,.04);color:var(--mist);cursor:pointer;transition:.25s}.sponsor-close:hover{color:var(--foam);border-color:rgba(255,255,255,.3);transform:rotate(90deg)}
+#gabbia{grid-template-columns:1fr;gap:18px}
+.intestazione-comune{margin:22px 0 2px;padding:0 0 10px;border-bottom:1px solid var(--line);font-family:Inter,sans-serif;color:var(--aqua);font-size:.75rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.card-evento{min-height:410px;aspect-ratio:4/5;border-radius:24px;border:1px solid rgba(255,255,255,.1);background:var(--panel);box-shadow:0 16px 45px rgba(0,4,12,.22);transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .45s}
+.card-evento:hover{transform:translateY(-8px);border-color:rgba(89,241,213,.28);box-shadow:0 28px 65px rgba(0,4,12,.4)}
+.card-evento img{transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.card-evento:hover img{transform:scale(1.055)}
+.card-evento .grad{background:linear-gradient(to top,rgba(4,15,25,.98) 0%,rgba(5,18,30,.62) 44%,rgba(5,18,30,.05) 78%)}
+.card-evento .badge{top:15px;right:15px;padding:7px 10px;border-radius:10px;background:rgba(4,15,25,.72);border:1px solid rgba(255,255,255,.13);color:var(--foam);font-family:Inter,sans-serif;font-size:.68rem;backdrop-filter:blur(14px)}
+.card-evento .oggi{top:15px;left:15px;padding:7px 10px;border-radius:10px;background:rgba(255,128,107,.18);border-color:rgba(255,128,107,.4);color:#ffb0a2}
+.card-evento .info{padding:16px}.card-evento .info .gpanel{padding:0;background:transparent;border:0;backdrop-filter:none}
+.card-evento .info .cat{color:var(--aqua);font-size:.66rem;letter-spacing:.13em;margin-bottom:9px}
+.card-evento .info h3{font-size:clamp(1.05rem,2vw,1.25rem);line-height:1.18;letter-spacing:-.025em;margin-bottom:9px}
+.card-evento .info .luogo{font-size:.76rem;color:var(--mist);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card-evento .info .luogo:before{content:"";display:inline-block;width:5px;height:5px;margin:0 8px 1px 0;border-radius:50%;background:var(--coral)}
+.card-evento a.cover-link{height:55%}
+.badge-costo{padding:4px 7px;border-radius:7px;font-size:.54rem;letter-spacing:.08em}
+.badge-costo-gratis{background:rgba(89,241,213,.13);color:var(--aqua);border-color:rgba(89,241,213,.27)}
+.badge-costo-pagamento{background:rgba(255,128,107,.13);color:#ff9b89;border-color:rgba(255,128,107,.27)}
+.badge-costo-misto{background:rgba(255,210,119,.13);color:var(--sun);border-color:rgba(255,210,119,.27)}
+#nessun-risultato{padding:70px 20px;border:1px dashed var(--line);border-radius:24px;color:var(--mist);background:rgba(16,38,58,.3)}
+.navetta-section{margin:38px 0 0;border-color:var(--line);border-radius:24px;background:rgba(16,38,58,.58);box-shadow:0 18px 50px rgba(0,4,12,.18)}
+.navetta-toggle{padding:20px 22px;color:var(--foam);font-size:.95rem}.navetta-toggle .arrow,.navetta-content h3,.navetta-mercado summary{color:var(--aqua)}
+.navetta-content{padding:0 22px 22px}.navetta-valid,.navetta-sub{color:var(--mist)}
+.navetta-route .stop{background:rgba(89,241,213,.08);color:#b9fff1;border-color:rgba(89,241,213,.16)}
+.navetta-table th{background:#0c2235;color:var(--aqua)}.navetta-table td{color:var(--foam);border-color:var(--line)}.navetta-table tr td:first-child{color:#c1d4dc}.navetta-note{color:var(--mist);background:rgba(255,255,255,.035)}
+.footer{padding:44px 20px 12px;color:#6f8999}.footer a{color:var(--aqua);text-underline-offset:3px}
+.bottom-nav{left:50%;right:auto;bottom:max(16px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(460px,calc(100% - 24px));height:72px;padding:7px;border:1px solid rgba(255,255,255,.13);border-radius:24px;background:rgba(9,25,40,.88);backdrop-filter:blur(24px) saturate(150%);-webkit-backdrop-filter:blur(24px) saturate(150%);box-shadow:0 18px 60px rgba(0,3,10,.55)}
+.bottom-nav a{flex:1;height:100%;justify-content:center;border-radius:17px;color:#7893a3;font-size:.61rem;font-weight:700;letter-spacing:.02em;cursor:pointer}
+.bottom-nav a span.material-symbols-outlined{font-size:1.35rem}.bottom-nav a:hover{color:var(--foam)}
+.bottom-nav a.attivo{color:#06251f;background:linear-gradient(135deg,var(--aqua),#a8ffeb);box-shadow:0 9px 24px rgba(89,241,213,.18)}
+body.archivio .archive-only-title{display:inline}body:not(.archivio) .archive-only-title{display:none}
+body.archivio .main-only{display:none!important}
+.lightbox{background:rgba(1,7,12,.94);backdrop-filter:blur(12px)}.lightbox-img{border-radius:18px;box-shadow:var(--shadow)}
+@media(min-width:640px){#gabbia{grid-template-columns:repeat(2,1fr)}.page-shell{width:min(1240px,calc(100% - 48px))}.discover-panel{padding:16px}.card-evento{aspect-ratio:4/5}.hero-section{height:min(66vh,640px)}}
+@media(min-width:1024px){#gabbia{grid-template-columns:repeat(3,1fr);gap:22px}.discover-panel{display:grid;grid-template-columns:minmax(280px,.8fr) 1.7fr;align-items:center;gap:14px}.discover-panel #filtri{margin:0}.card-evento{min-height:440px}.hero-content{padding:58px}}
+@media(max-width:639px){.site-header{height:68px}.brand-copy small,.header-meta .update-label{display:none}.page-shell{padding-top:24px}.intro-bar{align-items:flex-end}.page-title{font-size:2rem}.visit-counter{padding:8px 10px;font-size:.69rem}.hero-section{min-height:510px;border-radius:25px}.hero-content{padding:22px}.hero-content h2{font-size:2.1rem}.hero-content .meta{font-size:.75rem}.sponsor-card{height:96px}.card-evento{min-height:420px}.bottom-nav{height:68px}.footer{padding-bottom:4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style></head><body>
-<header class="glass" style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:0 20px;height:64px;border-bottom:1px solid rgba(255,255,255,0.08)">
-  <div style="display:flex;align-items:center;gap:8px">
-    <span class="material-symbols-outlined" style="color:#ff7f50;font-variation-settings:'FILL'1">calendar_month</span>
-    <span style="font-family:Montserrat;font-size:1.2rem;font-weight:700;color:#ffb59c">Roseto &amp; Dintorni</span>
-  </div>
-  <div style="display:flex;align-items:center;gap:12px">
-    <span style="font-size:0.7rem;color:#a68b82" id="updateDesktop">Aggiornato: <span id="aggiornato"></span></span>
-  </div>
+<header class="site-header">
+  <a class="brand" href="#" onclick="cambiaVista(false);return false" aria-label="Roseto e Dintorni, eventi">
+    <span class="brand-mark"><span class="material-symbols-outlined">waves</span></span>
+    <span class="brand-copy"><strong>Roseto &amp; Dintorni</strong><small>Adriatic summer guide</small></span>
+  </a>
+  <div class="header-meta"><span class="live-dot"></span><span class="update-label">Aggiornato </span><span id="aggiornato"></span></div>
 </header>
-<main style="max-width:1280px;margin:0 auto;padding:80px 16px 0">
-  <div class="visit-counter" id="counterTop">👁️ <span id="visitCount">—</span> visite</div>
-  <input type="text" id="search" placeholder="Cerca evento, luogo, data…" autocomplete="off">
-  <nav id="filtri">
-    <button data-filtro="tutti" class="attivo">Tutti</button>
-    <button data-filtro="Roseto">Roseto</button>
-    <button data-filtro="Silvi">Silvi</button>
-    <button data-filtro="Giulianova">Giulianova</button>
-    <button data-filtro="Pineto">Pineto</button>
-    <button data-filtro="Tortoreto">Tortoreto</button>
-    <button data-filtro="Mosciano">Mosciano</button>
-    <button data-filtro="Pescara">Pescara</button>
-    <button data-filtro="Teramo">Teramo</button>
-    <button data-filtro="San Benedetto">S.Benedetto</button>
-  </nav>
+<main class="page-shell">
+  <section class="intro-bar">
+    <div><div class="eyebrow"><span class="main-only">Estate 2026</span><span class="archive-only-title">Memorie d'estate</span></div><h1 class="page-title"><span class="main-only">La costa si accende<br><em>dopo il tramonto.</em></span><span class="archive-only-title">L’archivio delle<br><em>notti passate.</em></span></h1></div>
+    <div class="visit-counter" id="counterTop"><span class="material-symbols-outlined">visibility</span><span id="visitCount">—</span> visite</div>
+  </section>
+  <section class="discover-panel" aria-label="Cerca e filtra gli eventi">
+    <div class="search-wrap"><span class="material-symbols-outlined">search</span><input type="text" id="search" placeholder="Cerca evento, luogo, data…" autocomplete="off" aria-label="Cerca eventi"></div>
+    <nav id="filtri" class="hide-scrollbar" aria-label="Filtra per città">
+      <button data-filtro="tutti" class="attivo">Tutti</button>
+      <button data-filtro="Roseto">Roseto</button>
+      <button data-filtro="Silvi">Silvi</button>
+      <button data-filtro="Giulianova">Giulianova</button>
+      <button data-filtro="Pineto">Pineto</button>
+      <button data-filtro="Tortoreto">Tortoreto</button>
+      <button data-filtro="Mosciano">Mosciano</button>
+      <button data-filtro="Pescara">Pescara</button>
+      <button data-filtro="Teramo">Teramo</button>
+      <button data-filtro="San Benedetto">S.Benedetto</button>
+    </nav>
+  </section>
   <div class="stats" id="stats"></div>
   <div id="hero-container"></div>
-  <div class="w-full glass rounded-2xl border-dashed border-white/20 flex items-center justify-between px-lg relative overflow-hidden" style="height:120px;margin-bottom:1rem">
-    <div class="absolute inset-0 opacity-10" style="background:radial-gradient(circle at center, #ffb59c, transparent)"></div>
-    <div class="relative" style="z-index:1">
-      <p style="font-size:0.75rem;color:#ffb59c;font-weight:700;margin-bottom:4px;text-transform:uppercase;letter-spacing:1px">SPONSOR PRINCIPALE</p>
-      <h4 style="font-family:Montserrat;font-size:1.2rem;font-weight:700;color:#dde2f6">Adriatico Gin Experience</h4>
+  <div class="sponsor-card main-only">
+    <div style="position:relative;z-index:1">
+      <p class="sponsor-label">Partner dell'estate</p>
+      <h4>Adriatico Gin Experience</h4>
     </div>
-    <button class="material-symbols-outlined" style="background:rgba(255,255,255,0.05);border-radius:50%;padding:0.5rem;color:#dde2f6;cursor:pointer" onclick="this.parentElement.remove()">&times;</button>
+    <button class="sponsor-close" onclick="this.parentElement.remove()" aria-label="Chiudi sponsor">&times;</button>
   </div>
   <div id="gabbia"></div>
   <div id="nessun-risultato">Nessun evento trovato &#x1f615;</div>
@@ -168,10 +251,9 @@ body{font-family:Inter,sans-serif;background:#0d1321;color:#dde2f6;min-height:10
   </div>
 </main>
 <nav class="bottom-nav">
-  <a href="#" class="attivo"><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1">event</span>Eventi</a>
-  <a href="#" onclick="document.getElementById('navettaToggle')?.click();return false"><span class="material-symbols-outlined">directions_bus</span>Navetta</a>
-  <a href="#"><span class="material-symbols-outlined">map</span>Mappa</a>
-  <a href="#"><span class="material-symbols-outlined">bookmark</span>Salvati</a>
+  <a href="#" id="navEventi" class="attivo" onclick="cambiaVista(false);return false"><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1">celebration</span>Eventi</a>
+  <a href="#" onclick="document.getElementById('navettaToggle')?.click();document.getElementById('navettaToggle')?.scrollIntoView({behavior:'smooth',block:'center'});return false"><span class="material-symbols-outlined">directions_bus</span>Navetta</a>
+  <a href="#" id="navArchivio" onclick="cambiaVista(true);return false"><span class="material-symbols-outlined">history</span>Archivio</a>
 </nav>
 <div class="footer">
   <p>Generato automaticamente — <a href="https://github.com/Googgier/roseto-eventi">GitHub</a></p>
@@ -210,22 +292,20 @@ function renderizza(lista){
   var c=document.getElementById('gabbia'),h=document.getElementById('hero-container');
   if(!lista.length){document.getElementById('nessun-risultato').style.display='block';c.innerHTML='';h.innerHTML='';return}
   document.getElementById('nessun-risultato').style.display='none';
-  var top=lista[0],oggi=isOggi(top.data)?'<div class="oggi">🔴 In corso</div>':'';
-  var ih=top.img&&top.img!=='N/A'?'<img src="'+top.img+'" alt="'+top.titolo+'">':'<div style="width:100%;height:100%;background:linear-gradient(135deg,#242a39,#2f3544);display:flex;align-items:center;justify-content:center;font-size:3rem;color:#ffb59c;font-weight:700;font-family:Montserrat">'+getIniziali(top.titolo)+'</div>';
-  h.innerHTML='<div class="hero-section">'+ih+'<div class="grad"></div>'+oggi+'<div class="hero-content"><div class="gpanel"><span class="badge-costo badge-costo-'+(top.costo==='gratis'?'gratis':top.costo==='a pagamento'?'pagamento':'misto')+'">'+(top.costo==='gratis'?'GRATIS':top.costo==='a pagamento'?'A PAGAMENTO':'MISTO')+'</span><span class="gold">'+top.tag[0]+'</span><h2>'+top.titolo+'</h2><p>'+top.desc+'</p><div class="meta">📅 '+top.data+' · 🕐 '+top.orario+' · '+top.luogo+'</div><a href="'+top.fonte+'" target="_blank" rel="noopener" style="position:absolute;right:0;bottom:0;left:0;height:45%;text-indent:-9999px;pointer-events:auto">Dettagli</a></div></div></div>';
-  var m={};lista.forEach(function(e){if(!m[e.citta])m[e.citta]=[];m[e.citta].push(e);});
+  if(!vistaArchivio){
+    var top=lista[0],oggi=isOggi(top.data)?'<div class="oggi">● In corso</div>':'';
+    var ih=top.img&&top.img!=='N/A'?'<img src="'+top.img+'" alt="'+top.titolo+'">':'<div style="width:100%;height:100%;background:linear-gradient(135deg,#0b2638,#184354);display:flex;align-items:center;justify-content:center;font-size:4rem;color:#59f1d5;font-weight:800;font-family:Montserrat">'+getIniziali(top.titolo)+'</div>';
+    h.innerHTML='<div class="hero-section">'+ih+'<div class="grad"></div>'+oggi+'<div class="hero-content"><div class="gpanel"><span class="badge-costo badge-costo-'+(top.costo==='gratis'?'gratis':top.costo==='a pagamento'?'pagamento':'misto')+'">'+(top.costo==='gratis'?'GRATIS':top.costo==='a pagamento'?'A PAGAMENTO':'MISTO')+'</span><span class="gold">'+top.tag[0]+'</span><h2>'+top.titolo+'</h2><p>'+top.desc+'</p><div class="meta">📅 '+top.data+' &nbsp;·&nbsp; 🕐 '+top.orario+' &nbsp;·&nbsp; '+top.luogo+'</div><a href="'+top.fonte+'" target="_blank" rel="noopener" aria-label="Apri i dettagli di '+top.titolo+'" style="position:absolute;right:0;bottom:0;left:0;height:45%;text-indent:-9999px;pointer-events:auto">Dettagli</a></div></div></div>';
+  }else h.innerHTML='';
   var html='';
-  for(var citta in m){
-    html+='<div class="intestazione-comune">📍 '+citta+'</div>';
-    m[citta].forEach(function(e){
-      var o=isOggi(e.data)?'<div class="oggi">🔴 In corso</div>':'';
+  lista.forEach(function(e){
+      var o=isOggi(e.data)?'<div class="oggi">● In corso</div>':'';
       var bd='<div class="badge">'+e.data+'</div>';
-      var im=e.img&&e.img!=='N/A'?'<img src="'+e.img+'" alt="'+e.titolo+'" loading="lazy">':'<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#242a39,#2f3544);color:#ffb59c;font-size:2rem;font-weight:700;font-family:Montserrat">'+getIniziali(e.titolo)+'</div>';
-      html+='<div class="card-evento">'+im+'<div class="grad"></div>'+o+bd+'<div class="info"><div class="gpanel"><span class="cat"><span class="badge-costo badge-costo-'+(e.costo==='gratis'?'gratis':e.costo==='a pagamento'?'pagamento':'misto')+'">'+(e.costo==='gratis'?'GRATIS':e.costo==='a pagamento'?'A PAGAMENTO':'MISTO')+'</span> '+e.tag[0]+'</span><h3>'+e.titolo+'</h3><div class="luogo">'+e.luogo+'</div></div></div><a class="cover-link" href="'+e.fonte+'" target="_blank" rel="noopener">Dettagli</a></div>';
-    });
-  }
+      var im=e.img&&e.img!=='N/A'?'<img src="'+e.img+'" alt="'+e.titolo+'" loading="lazy">':'<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 80% 10%,rgba(89,241,213,.15),transparent 45%),linear-gradient(135deg,#0b2638,#153c50);color:#59f1d5;font-size:2.5rem;font-weight:800;font-family:Montserrat">'+getIniziali(e.titolo)+'</div>';
+      html+='<article class="card-evento">'+im+'<div class="grad"></div>'+o+bd+'<div class="info"><div class="gpanel"><span class="cat"><span class="badge-costo badge-costo-'+(e.costo==='gratis'?'gratis':e.costo==='a pagamento'?'pagamento':'misto')+'">'+(e.costo==='gratis'?'GRATIS':e.costo==='a pagamento'?'A PAGAMENTO':'MISTO')+'</span> '+e.citta+' · '+e.tag[0]+'</span><h3>'+e.titolo+'</h3><div class="luogo">'+e.luogo+'</div></div></div><a class="cover-link" href="'+e.fonte+'" target="_blank" rel="noopener" aria-label="Apri i dettagli di '+e.titolo+'">Dettagli</a></article>';
+  });
   c.innerHTML=html;
-  document.getElementById('stats').textContent=lista.length+' eventi trovati';
+  document.getElementById('stats').textContent=lista.length+(lista.length===1?' evento ':' eventi ')+(vistaArchivio?'in archivio':'da vivere');
 }
 function getIniziali(t){return t.replace(/['"]/g,'').split(/[\s–—‑-]+/).filter(function(w){return w.length>0&&!['di','del','della','degli','dei','il','la','le','gli','un','una','al','con','per'].includes(w.toLowerCase())}).slice(0,2).map(function(w){return w[0].toUpperCase()}).join('')}
 function isOggi(s){
@@ -237,9 +317,34 @@ function isOggi(s){
 }
 function mn(n){var map={gen:0,feb:1,mar:2,apr:3,mag:4,giu:5,lug:6,ago:7,set:8,ott:9,nov:10,dic:11,gennaio:0,febbraio:1,marzo:2,aprile:3,maggio:4,giugno:5,luglio:6,agosto:7,settembre:8,ottobre:9,novembre:10,dicembre:11};return map[n.toLowerCase().slice(0,3)]!==undefined?map[n.toLowerCase().slice(0,3)]:null}
 function pd(g,m,a){var mm=mn(m);return mm===null?null:new Date(parseInt(a),mm,parseInt(g),0,0,0,0)}
+var vistaArchivio=false;
+function intervalloData(s){
+  var m,inizio,fine;
+  m=s.match(/^(\d{1,2})\s+([A-Za-zÀ-ÿ]+)\s+(\d{4})$/);
+  if(m){inizio=pd(m[1],m[2],m[3]);fine=inizio?new Date(inizio):null;return{inizio:inizio,fine:fine}}
+  m=s.match(/^(\d{1,2})[–-](\d{1,2})\s+([A-Za-zÀ-ÿ]+)\s+(\d{4})$/);
+  if(m){return{inizio:pd(m[1],m[3],m[4]),fine:pd(m[2],m[3],m[4])}}
+  m=s.match(/^(\d{1,2})\s+([A-Za-zÀ-ÿ]+)\s*[–-]\s*(\d{1,2})\s+([A-Za-zÀ-ÿ]+)\s+(\d{4})$/);
+  if(m){return{inizio:pd(m[1],m[2],m[5]),fine:pd(m[3],m[4],m[5])}}
+  m=s.match(/^([A-Za-zÀ-ÿ]+)[–-]([A-Za-zÀ-ÿ]+)\s+(\d{4})$/);
+  if(m){var mi=mn(m[1]),mf=mn(m[2]);if(mi!==null&&mf!==null){inizio=new Date(parseInt(m[3]),mi,1);fine=new Date(parseInt(m[3]),mf+1,0);return{inizio:inizio,fine:fine}}}
+  return{inizio:null,fine:null};
+}
+function eventoPassato(e){var r=intervalloData(e.data),oggi=new Date();oggi.setHours(0,0,0,0);return !!(r.fine&&r.fine.getTime()<oggi.getTime())}
+function dataOrdinamento(e){var r=intervalloData(e.data);return r.inizio?r.inizio.getTime():Number.MAX_SAFE_INTEGER}
+function cambiaVista(archivio){
+  vistaArchivio=!!archivio;
+  document.body.classList.toggle('archivio',vistaArchivio);
+  document.getElementById('navEventi').classList.toggle('attivo',!vistaArchivio);
+  document.getElementById('navArchivio').classList.toggle('attivo',vistaArchivio);
+  document.getElementById('search').placeholder=vistaArchivio?'Cerca nell’archivio…':'Cerca evento, luogo, data…';
+  window.scrollTo({top:0,behavior:'smooth'});
+  filtra();
+}
 function filtra(){
   var q=document.getElementById('search').value.toLowerCase().trim(),a=document.querySelector('#filtri .attivo'),fc=a?a.dataset.filtro:'tutti';
-  var f=eventi.filter(function(e){if(fc!=='tutti'&&e.citta!==fc)return false;if(!q)return true;return(e.titolo+' '+e.luogo+' '+e.desc+' '+e.data+' '+e.tag.join(' ')).toLowerCase().includes(q)});
+  var f=eventi.filter(function(e){if(eventoPassato(e)!==vistaArchivio)return false;if(fc!=='tutti'&&e.citta!==fc)return false;if(!q)return true;return(e.titolo+' '+e.luogo+' '+e.desc+' '+e.data+' '+e.tag.join(' ')).toLowerCase().includes(q)});
+  f.sort(function(x,y){return vistaArchivio?dataOrdinamento(y)-dataOrdinamento(x):dataOrdinamento(x)-dataOrdinamento(y)});
   renderizza(f);
 }
 var navettaConfig={orari:[["Stazione ferroviaria FS","17:00","18:00","21:30","23:30"],["Lungomare Trieste (Lunapark)","17:05","18:05","21:35","23:35"],["Club del Sole","17:06","18:06","21:36","23:36"],["Lungomare Roma (Rotonda Sud)","17:08","18:08","21:38","23:38"],["Lungomare Roma (Rotonda Nord)","17:10","18:10","21:40","23:40"],["Lido d'Abruzzo","17:12","18:12","21:42","23:42"],["Lungomare Trento (Via Emilia)","17:14","18:14","21:44","23:44"],["Cologna (Sottopassaggio)","--","18:20","--","23:50"],["Cologna (P.zza Redipuglia)","--","18:22","--","23:52"],["Montepagano (Municipio)","--","18:35","21:50","00:05"],["Campo a Mare (V.le America)","--","18:45","22:00","00:15"],["Campo a Mare (V.le Europa)","--","18:47","22:02","00:17"],["Rientro: Stazione FS","17:20","19:00","22:10","00:25"]],mercatoAndata:[["Lido d'Abruzzo","09:00"],["Lungomare Trento (Via Emilia)","09:02"],["Lungomare Roma (Rotonda Nord)","09:04"],["Lungomare Roma (Rotonda Sud)","09:06"],["Club del Sole","09:08"],["P.zza Marco Polo","09:12"]],mercatoRitorno:[["P.zza Marco Polo","12:00"],["Club del Sole","12:04"],["Lungomare Roma (Rotonda Sud)","12:06"],["Lungomare Roma (Rotonda Nord)","12:08"],["Lungomare Trento (Via Emilia)","12:10"],["Lido d'Abruzzo","12:12"]]};
@@ -256,8 +361,8 @@ function toggleNavetta(){document.getElementById('navettaToggle').classList.togg
 function openLightbox(s,a){var lb=document.createElement('div');lb.className='lightbox';lb.innerHTML='<span class="lightbox-close">&times;</span><img class="lightbox-img" src="'+s+'" alt="'+a+'">';lb.addEventListener('click',function(e){if(e.target===lb||e.target.className==='lightbox-close')lb.remove()});document.body.appendChild(lb)}
 document.getElementById('search').addEventListener('input',filtra);
 document.querySelectorAll('#filtri button').forEach(function(btn){btn.addEventListener('click',function(){document.querySelectorAll('#filtri button').forEach(function(b){b.classList.remove('attivo')});btn.classList.add('attivo');filtra()})});
-document.getElementById('aggiornato').textContent=new Date().toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'});
-renderizza(eventi);
+document.getElementById('aggiornato').textContent=new Date().toLocaleDateString('it-IT',{day:'numeric',month:'short'});
+filtra();
 var ve=document.getElementById('visitCount'),ce=document.querySelector('.visit-counter');ce.classList.add('loading');ve.innerHTML='<span style="display:inline-block;width:12px;height:12px;border:2px solid #a68b82;border-top-color:transparent;border-radius:50%;animation:spin 0.6s linear infinite;vertical-align:middle;margin-right:4px"></span>';
 fetch('https://countapi.mileshilliard.com/api/v1/hit/roseto-eventi-visits').then(function(r){return r.json()}).then(function(d){ve.textContent=Number(d.value).toLocaleString('it-IT');ce.classList.remove('loading')})['catch'](function(){ve.textContent=Number(11246).toLocaleString('it-IT');ce.classList.remove('loading')});
 if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js')['catch'](function(){});
