@@ -237,11 +237,6 @@ body.archivio .main-only{display:none!important}
     </div>
     <button class="sponsor-close" onclick="this.parentElement.remove()" aria-label="Chiudi sponsor">&times;</button>
   </div>
-  <div class="banner-ad main-only" style="margin-bottom:22px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(110deg,rgba(20,52,67,.7),rgba(16,38,58,.9));border:1px solid var(--line);border-radius:18px;position:relative;overflow:hidden">
-    <div style="position:relative;z-index:1"><p style="font-size:.7rem;color:var(--sun);font-weight:800;letter-spacing:.15em;text-transform:uppercase;margin-bottom:3px">Sponsor</p><p style="color:var(--foam);font-weight:600;font-size:.9rem">Scopri le migliori esperienze <br>sulla costa adriatica</p></div>
-    <a href="#" style="position:relative;z-index:1;flex-shrink:0;padding:10px 20px;border-radius:12px;background:var(--aqua);color:#06251f;font-weight:700;font-size:.8rem;text-decoration:none">Scopri</a>
-    <button class="sponsor-close" onclick="this.parentElement.remove()" style="position:absolute;top:8px;right:8px" aria-label="Chiudi">&times;</button>
-  </div>
   <div id="gabbia"></div>
   <div id="nessun-risultato">Nessun evento trovato &#x1f615;</div>
   <!-- NAVETTA -->
@@ -395,15 +390,16 @@ document.addEventListener('click',function(e){var t=e.target;if(t.tagName==='IMG
 var st=document.createElement('style');st.textContent='@keyframes spin{to{transform:rotate(360deg)}}';document.head.appendChild(st);
 /* scroll reveal */
 var _r;
-(function(){var e=document.querySelectorAll('.hero-section,.sponsor-card,.banner-ad,.navetta-section,.discover-panel');e.forEach(function(el,i){el.classList.add('reveal');el.style.transitionDelay=(i*0.07)+'s'});_r=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');_r.unobserve(e.target)}})},{rootMargin:'0px 0px -50px 0px'});e.forEach(function(el){_r.observe(el)})})();
+(function(){var e=document.querySelectorAll('.hero-section,.sponsor-card,.navetta-section,.discover-panel');e.forEach(function(el,i){el.classList.add('reveal');el.style.transitionDelay=(i*0.07)+'s'});_r=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');_r.unobserve(e.target)}})},{rootMargin:'0px 0px -50px 0px'});e.forEach(function(el){_r.observe(el)})})();
 /* reveal for cards added dynamically */
 var _origRender=renderizza;renderizza=function(l){_origRender(l);[].slice.call(document.querySelectorAll('#gabbia .card-evento')).forEach(function(el,i){el.classList.add('reveal');el.style.transitionDelay=(i*0.05)+'s';_r.observe(el)})};
 /* interstitial ad */
-(function(){var k='roseto-interstitial-dismissed',o=document.getElementById('interstitialAd'),c=document.getElementById('interstitialClose');if(o&&!sessionStorage.getItem(k)){setTimeout(function(){o.classList.add('active');setTimeout(function(){c&&c.classList.add('show')},4000)},5500);c&&(c.onclick=function(){o.classList.remove('active');sessionStorage.setItem(k,'1')});o.onclick=function(e){e.target===o&&(o.classList.remove('active'),sessionStorage.setItem(k,'1'))}}})();
+(function(){var k='roseto-interstitial-dismissed',o=document.getElementById('interstitialAd'),c=document.getElementById('interstitialClose'),t=document.getElementById('interstitialTimer');if(o&&!sessionStorage.getItem(k)){setTimeout(function(){o.classList.add('active');var n=4;t&&(t.textContent='Chiudi tra '+n);var i=setInterval(function(){n--;if(n>0)t&&(t.textContent='Chiudi tra '+n);else{clearInterval(i);t&&(t.textContent='');c&&c.classList.add('show')}},1000)},4000);c&&(c.onclick=function(){o.classList.remove('active');sessionStorage.setItem(k,'1')});o.onclick=function(e){e.target===o&&(o.classList.remove('active'),sessionStorage.setItem(k,'1'))}}})();
 </script>
 <div class="interstitial-overlay" id="interstitialAd" role="dialog" aria-modal="true" aria-label="Annuncio">
   <div class="interstitial-card">
     <button class="interstitial-close" id="interstitialClose" aria-label="Chiudi">&times;</button>
+    <span id="interstitialTimer" style="position:absolute;bottom:16px;left:0;right:0;text-align:center;font-size:.75rem;color:var(--mist);font-weight:600"></span>
     <span style="display:inline-block;font-size:3rem;margin-bottom:12px">🏖️</span>
     <h3>La tua estate sulla costa</h3>
     <p>Scopri tutte le esperienze imperdibili dell'Adriatico. Eventi, sagre, concerti e molto altro.</p>
