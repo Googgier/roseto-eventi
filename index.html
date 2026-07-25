@@ -201,15 +201,6 @@ body.archivio .main-only{display:none!important}
 .interstitial-close.show{display:flex}
 .interstitial-close:hover{color:var(--foam);border-color:rgba(255,255,255,.3);transform:rotate(90deg)}
 </head><body>
-<div class="interstitial-overlay" id="interstitialAd" role="dialog" aria-modal="true" aria-label="Annuncio">
-  <div class="interstitial-card">
-    <button class="interstitial-close" id="interstitialClose" aria-label="Chiudi">&times;</button>
-    <span style="display:inline-block;font-size:3rem;margin-bottom:12px">🏖️</span>
-    <h3>La tua estate sulla costa</h3>
-    <p>Scopri tutte le esperienze imperdibili dell'Adriatico. Eventi, sagre, concerti e molto altro.</p>
-    <a href="https://googgier.github.io/roseto-eventi/" class="btn-ad">Esplora ora</a>
-  </div>
-</div>
 <header class="site-header">
   <a class="brand" href="#" onclick="cambiaVista(false);return false" aria-label="Roseto e Dintorni, eventi">
     <span class="brand-mark"><span class="material-symbols-outlined">waves</span></span>
@@ -410,4 +401,13 @@ var _origRender=renderizza;renderizza=function(l){_origRender(l);[].slice.call(d
 /* interstitial ad */
 (function(){var k='roseto-interstitial-dismissed',o=document.getElementById('interstitialAd'),c=document.getElementById('interstitialClose');if(o&&!sessionStorage.getItem(k)){setTimeout(function(){o.classList.add('active');setTimeout(function(){c&&c.classList.add('show')},4000)},5500);c&&(c.onclick=function(){o.classList.remove('active');sessionStorage.setItem(k,'1')});o.onclick=function(e){e.target===o&&(o.classList.remove('active'),sessionStorage.setItem(k,'1'))}}})();
 </script>
+<div class="interstitial-overlay" id="interstitialAd" role="dialog" aria-modal="true" aria-label="Annuncio">
+  <div class="interstitial-card">
+    <button class="interstitial-close" id="interstitialClose" aria-label="Chiudi">&times;</button>
+    <span style="display:inline-block;font-size:3rem;margin-bottom:12px">🏖️</span>
+    <h3>La tua estate sulla costa</h3>
+    <p>Scopri tutte le esperienze imperdibili dell'Adriatico. Eventi, sagre, concerti e molto altro.</p>
+    <a href="https://googgier.github.io/roseto-eventi/" class="btn-ad">Esplora ora</a>
+  </div>
+</div>
 </body></html>
