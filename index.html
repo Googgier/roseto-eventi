@@ -190,8 +190,8 @@ body.archivio .main-only{display:none!important}
 @media(max-width:639px){.site-header{height:68px}.brand-copy small,.header-meta .update-label{display:none}.page-shell{padding-top:24px}.intro-bar{align-items:flex-end}.page-title{font-size:2rem}.visit-counter{padding:8px 10px;font-size:.69rem}.hero-section{min-height:510px;border-radius:25px}.hero-content{padding:22px}.hero-content h2{font-size:2.1rem}.hero-content .meta{font-size:.75rem}.sponsor-card{height:96px}.card-evento{min-height:420px}.bottom-nav{height:68px}.footer{padding-bottom:4px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .55s cubic-bezier(.2,.8,.2,1),transform .55s cubic-bezier(.2,.8,.2,1)}.reveal.revealed{opacity:1;transform:translateY(0)}
-.interstitial-overlay{position:fixed;inset:0;z-index:9998;background:rgba(1,7,12,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .5s}
-.interstitial-overlay.active{opacity:1;pointer-events:auto}
+.interstitial-overlay{position:fixed;inset:0;z-index:10000;background:rgba(1,7,12,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .5s,visibility 0s linear .5s}
+.interstitial-overlay.active{opacity:1;visibility:visible;pointer-events:auto;transition-delay:0s}
 .interstitial-card{background:linear-gradient(145deg,#0c2235,#153149);border:1px solid var(--line);border-radius:28px;padding:2rem;max-width:380px;width:90%;text-align:center;box-shadow:0 30px 80px rgba(0,4,12,.6);position:relative}
 .interstitial-card h3{font-family:Montserrat,sans-serif;font-size:1.4rem;color:var(--foam);margin-bottom:8px}
 .interstitial-card p{font-size:.88rem;color:var(--mist);margin-bottom:18px;line-height:1.5}
@@ -393,8 +393,6 @@ var _r;
 (function(){var e=document.querySelectorAll('.hero-section,.sponsor-card,.navetta-section,.discover-panel');e.forEach(function(el,i){el.classList.add('reveal');el.style.transitionDelay=(i*0.07)+'s'});_r=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');_r.unobserve(e.target)}})},{rootMargin:'0px 0px -50px 0px'});e.forEach(function(el){_r.observe(el)})})();
 /* reveal for cards added dynamically */
 var _origRender=renderizza;renderizza=function(l){_origRender(l);[].slice.call(document.querySelectorAll('#gabbia .card-evento')).forEach(function(el,i){el.classList.add('reveal');el.style.transitionDelay=(i*0.05)+'s';_r.observe(el)})};
-/* interstitial ad */
-(function(){var k='roseto-interstitial-dismissed',o=document.getElementById('interstitialAd'),c=document.getElementById('interstitialClose'),t=document.getElementById('interstitialTimer');if(o&&!sessionStorage.getItem(k)){setTimeout(function(){o.classList.add('active');var n=4;t&&(t.textContent='Chiudi tra '+n);var i=setInterval(function(){n--;if(n>0)t&&(t.textContent='Chiudi tra '+n);else{clearInterval(i);t&&(t.textContent='');c&&c.classList.add('show')}},1000)},4000);c&&(c.onclick=function(){o.classList.remove('active');sessionStorage.setItem(k,'1')});o.onclick=function(e){e.target===o&&(o.classList.remove('active'),sessionStorage.setItem(k,'1'))}}})();
 </script>
 <div class="interstitial-overlay" id="interstitialAd" role="dialog" aria-modal="true" aria-label="Annuncio">
   <div class="interstitial-card">
@@ -403,7 +401,44 @@ var _origRender=renderizza;renderizza=function(l){_origRender(l);[].slice.call(d
     <span style="display:inline-block;font-size:3rem;margin-bottom:12px">🏖️</span>
     <h3>La tua estate sulla costa</h3>
     <p>Scopri tutte le esperienze imperdibili dell'Adriatico. Eventi, sagre, concerti e molto altro.</p>
-    <a href="https://googgier.github.io/roseto-eventi/" class="btn-ad">Esplora ora</a>
+    <a href="#gabbia" class="btn-ad" id="interstitialCta">Esplora ora</a>
   </div>
 </div>
+<script>
+/* interstitial ad: il markup deve esistere prima dell'inizializzazione */
+(function(){
+  var k='roseto-interstitial-dismissed';
+  var o=document.getElementById('interstitialAd');
+  var c=document.getElementById('interstitialClose');
+  var t=document.getElementById('interstitialTimer');
+  var a=document.getElementById('interstitialCta');
+  if(!o||!c||!t||!a||sessionStorage.getItem(k))return;
+
+  function dismiss(){
+    o.classList.remove('active');
+    sessionStorage.setItem(k,'1');
+  }
+
+  setTimeout(function(){
+    o.classList.add('active');
+    var n=4;
+    t.textContent='Chiudi tra '+n;
+    var i=setInterval(function(){
+      n--;
+      if(n>0)t.textContent='Chiudi tra '+n;
+      else{
+        clearInterval(i);
+        t.textContent='';
+        c.classList.add('show');
+      }
+    },1000);
+  },4000);
+
+  c.addEventListener('click',dismiss);
+  a.addEventListener('click',dismiss);
+  o.addEventListener('click',function(e){
+    if(e.target===o&&c.classList.contains('show'))dismiss();
+  });
+})();
+</script>
 </body></html>
