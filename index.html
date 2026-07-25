@@ -403,9 +403,10 @@ if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js')['catch'
 document.addEventListener('click',function(e){var t=e.target;if(t.tagName==='IMG'&&(t.closest('.card-evento')||t.closest('.hero-section'))){openLightbox(t.src,t.alt)}});
 var st=document.createElement('style');st.textContent='@keyframes spin{to{transform:rotate(360deg)}}';document.head.appendChild(st);
 /* scroll reveal */
-(function(){var e=document.querySelectorAll('.hero-section,.sponsor-card,.banner-ad,.navetta-section,.discover-panel');e.forEach(function(el,i){el.classList.add('reveal');el.style.transitionDelay=(i*0.07)+'s'});var r=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');r.unobserve(e.target)}})},{rootMargin:'0px 0px -50px 0px'});e.forEach(function(el){r.observe(el)})})();
+var _r;
+(function(){var e=document.querySelectorAll('.hero-section,.sponsor-card,.banner-ad,.navetta-section,.discover-panel');e.forEach(function(el,i){el.classList.add('reveal');el.style.transitionDelay=(i*0.07)+'s'});_r=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');_r.unobserve(e.target)}})},{rootMargin:'0px 0px -50px 0px'});e.forEach(function(el){_r.observe(el)})})();
 /* reveal for cards added dynamically */
-var _origRender=renderizza;renderizza=function(l){_origRender(l);[].slice.call(document.querySelectorAll('#gabbia .card-evento')).forEach(function(el,i){el.classList.add('reveal');el.style.transitionDelay=(i*0.05)+'s';r.observe(el)})};var r=r||null;
+var _origRender=renderizza;renderizza=function(l){_origRender(l);[].slice.call(document.querySelectorAll('#gabbia .card-evento')).forEach(function(el,i){el.classList.add('reveal');el.style.transitionDelay=(i*0.05)+'s';_r.observe(el)})};
 /* interstitial ad */
 (function(){var k='roseto-interstitial-dismissed',o=document.getElementById('interstitialAd'),c=document.getElementById('interstitialClose');if(o&&!sessionStorage.getItem(k)){setTimeout(function(){o.classList.add('active');setTimeout(function(){c&&c.classList.add('show')},4000)},5500);c&&(c.onclick=function(){o.classList.remove('active');sessionStorage.setItem(k,'1')});o.onclick=function(e){e.target===o&&(o.classList.remove('active'),sessionStorage.setItem(k,'1'))}}})();
 </script>
