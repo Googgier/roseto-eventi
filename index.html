@@ -189,7 +189,27 @@ body.archivio .main-only{display:none!important}
 @media(min-width:1024px){#gabbia{grid-template-columns:repeat(3,1fr);gap:22px}.discover-panel{display:grid;grid-template-columns:minmax(280px,.8fr) 1.7fr;align-items:center;gap:14px}.discover-panel #filtri{margin:0}.card-evento{min-height:440px}.hero-content{padding:58px}}
 @media(max-width:639px){.site-header{height:68px}.brand-copy small,.header-meta .update-label{display:none}.page-shell{padding-top:24px}.intro-bar{align-items:flex-end}.page-title{font-size:2rem}.visit-counter{padding:8px 10px;font-size:.69rem}.hero-section{min-height:510px;border-radius:25px}.hero-content{padding:22px}.hero-content h2{font-size:2.1rem}.hero-content .meta{font-size:.75rem}.sponsor-card{height:96px}.card-evento{min-height:420px}.bottom-nav{height:68px}.footer{padding-bottom:4px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
-</style></head><body>
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .55s cubic-bezier(.2,.8,.2,1),transform .55s cubic-bezier(.2,.8,.2,1)}.reveal.revealed{opacity:1;transform:translateY(0)}
+.interstitial-overlay{position:fixed;inset:0;z-index:9998;background:rgba(1,7,12,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .5s}
+.interstitial-overlay.active{opacity:1;pointer-events:auto}
+.interstitial-card{background:linear-gradient(145deg,#0c2235,#153149);border:1px solid var(--line);border-radius:28px;padding:2rem;max-width:380px;width:90%;text-align:center;box-shadow:0 30px 80px rgba(0,4,12,.6);position:relative}
+.interstitial-card h3{font-family:Montserrat,sans-serif;font-size:1.4rem;color:var(--foam);margin-bottom:8px}
+.interstitial-card p{font-size:.88rem;color:var(--mist);margin-bottom:18px;line-height:1.5}
+.interstitial-card .btn-ad{display:inline-block;padding:14px 32px;border-radius:14px;background:var(--aqua);color:#06251f;font-weight:700;text-decoration:none;font-size:.95rem;transition:transform .25s}
+.interstitial-card .btn-ad:hover{transform:scale(1.05);box-shadow:0 10px 30px rgba(89,241,213,.25)}
+.interstitial-close{position:absolute;top:12px;right:12px;width:36px;height:36px;border:1px solid var(--line);border-radius:50%;background:rgba(255,255,255,.06);color:var(--mist);cursor:pointer;font-size:1.1rem;display:none;align-items:center;justify-content:center;transition:.3s;z-index:1}
+.interstitial-close.show{display:flex}
+.interstitial-close:hover{color:var(--foam);border-color:rgba(255,255,255,.3);transform:rotate(90deg)}
+</head><body>
+<div class="interstitial-overlay" id="interstitialAd" role="dialog" aria-modal="true" aria-label="Annuncio">
+  <div class="interstitial-card">
+    <button class="interstitial-close" id="interstitialClose" aria-label="Chiudi">&times;</button>
+    <span style="display:inline-block;font-size:3rem;margin-bottom:12px">🏖️</span>
+    <h3>La tua estate sulla costa</h3>
+    <p>Scopri tutte le esperienze imperdibili dell'Adriatico. Eventi, sagre, concerti e molto altro.</p>
+    <a href="https://googgier.github.io/roseto-eventi/" class="btn-ad">Esplora ora</a>
+  </div>
+</div>
 <header class="site-header">
   <a class="brand" href="#" onclick="cambiaVista(false);return false" aria-label="Roseto e Dintorni, eventi">
     <span class="brand-mark"><span class="material-symbols-outlined">waves</span></span>
@@ -225,6 +245,11 @@ body.archivio .main-only{display:none!important}
       <h4>Adriatico Gin Experience</h4>
     </div>
     <button class="sponsor-close" onclick="this.parentElement.remove()" aria-label="Chiudi sponsor">&times;</button>
+  </div>
+  <div class="banner-ad main-only" style="margin-bottom:22px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(110deg,rgba(20,52,67,.7),rgba(16,38,58,.9));border:1px solid var(--line);border-radius:18px;position:relative;overflow:hidden">
+    <div style="position:relative;z-index:1"><p style="font-size:.7rem;color:var(--sun);font-weight:800;letter-spacing:.15em;text-transform:uppercase;margin-bottom:3px">Sponsor</p><p style="color:var(--foam);font-weight:600;font-size:.9rem">Scopri le migliori esperienze <br>sulla costa adriatica</p></div>
+    <a href="#" style="position:relative;z-index:1;flex-shrink:0;padding:10px 20px;border-radius:12px;background:var(--aqua);color:#06251f;font-weight:700;font-size:.8rem;text-decoration:none">Scopri</a>
+    <button class="sponsor-close" onclick="this.parentElement.remove()" style="position:absolute;top:8px;right:8px" aria-label="Chiudi">&times;</button>
   </div>
   <div id="gabbia"></div>
   <div id="nessun-risultato">Nessun evento trovato &#x1f615;</div>
@@ -377,5 +402,11 @@ fetch('https://countapi.mileshilliard.com/api/v1/hit/roseto-eventi-visits').then
 if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js')['catch'](function(){});
 document.addEventListener('click',function(e){var t=e.target;if(t.tagName==='IMG'&&(t.closest('.card-evento')||t.closest('.hero-section'))){openLightbox(t.src,t.alt)}});
 var st=document.createElement('style');st.textContent='@keyframes spin{to{transform:rotate(360deg)}}';document.head.appendChild(st);
+/* scroll reveal */
+(function(){var e=document.querySelectorAll('.hero-section,.sponsor-card,.banner-ad,.navetta-section,.discover-panel');e.forEach(function(el,i){el.classList.add('reveal');el.style.transitionDelay=(i*0.07)+'s'});var r=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');r.unobserve(e.target)}})},{rootMargin:'0px 0px -50px 0px'});e.forEach(function(el){r.observe(el)})})();
+/* reveal for cards added dynamically */
+var _origRender=renderizza;renderizza=function(l){_origRender(l);[].slice.call(document.querySelectorAll('#gabbia .card-evento')).forEach(function(el,i){el.classList.add('reveal');el.style.transitionDelay=(i*0.05)+'s';r.observe(el)})};var r=r||null;
+/* interstitial ad */
+(function(){var k='roseto-interstitial-dismissed',o=document.getElementById('interstitialAd'),c=document.getElementById('interstitialClose');if(o&&!sessionStorage.getItem(k)){setTimeout(function(){o.classList.add('active');setTimeout(function(){c&&c.classList.add('show')},4000)},5500);c&&(c.onclick=function(){o.classList.remove('active');sessionStorage.setItem(k,'1')});o.onclick=function(e){e.target===o&&(o.classList.remove('active'),sessionStorage.setItem(k,'1'))}}})();
 </script>
 </body></html>
