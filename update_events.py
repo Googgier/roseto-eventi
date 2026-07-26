@@ -1,75 +1,72 @@
 #!/usr/bin/env python3
-"""
-Aggiorna la pagina eventi di Roseto e dintorni.
-Cerca nuovi eventi online e rigenera index.html con i dati aggiornati.
-"""
-import json, os, subprocess, sys, re
-from datetime import datetime, date
+"""Legge, valida e aggiorna esclusivamente data/events.json."""
 
-REPO_DIR = os.path.expanduser("~/ai-projects/roseto-eventi")
+import argparse
+import json
+from datetime import date
+from pathlib import Path
 
-def cerca_eventi():
-    """Cerca eventi online – da lanciare via Hermes cron con strumenti web."""
-    return None  # Hermes l'agent chiama web_search, non questo script standalone
+REPO_DIR = Path(__file__).resolve().parent
+EVENTS_PATH = REPO_DIR / "data" / "events.json"
+REQUIRED_FIELDS = {
+    "id", "startDate", "endDate", "displayDate", "time", "title", "venue",
+    "city", "description", "tags", "sourceUrl", "price", "image", "updatedAt",
+}
+VALID_PRICES = {"gratis", "a pagamento", "misto"}
 
-def eventi_default():
-    """Eventi base di luglio 2026 – lo script di aggiornamento Hermes li sovrascrive."""
-    return [
-        {"data":"15 Lug 2026","titolo":"Concerto di apertura – I Musici Lotariani","luogo":"Villa Comunale, Roseto","desc":"Apre la 30ª edizione Roseto Opera Prima.","citta":"Roseto"},
-        {"data":"15–18 Lug 2026","titolo":"Roseto Opera Prima – 30ª edizione","luogo":"Villa Comunale, Roseto","desc":"Rassegna culturale. Ore 21-23.","citta":"Roseto"},
-        {"data":"19 Lug 2026","titolo":"The Avengers – Spettacolo","luogo":"Piazza Repubblica, Roseto","desc":"Supereroi dal vivo. Ore 21.","citta":"Roseto"},
-        {"data":"14 Lug 2026","titolo":"Buozzi Summer Sound","luogo":"Piazza Buozzi, Giulianova","desc":"Lucy Soul Band. Ore 21.","citta":"Giulianova"},
-        {"data":"17 Lug 2026","titolo":"Magia tra le Dune","luogo":"Le Dune, Silvi Marina","desc":"Musica 80'/90'. Ore 21:30.","citta":"Silvi"},
-        {"data":"21 Lug 2026","titolo":"Matteo Mancuso","luogo":"Portorose, Roseto","desc":"Abbazie Summer Festival.","citta":"Roseto"},
-        {"data":"22 Lug 2026","titolo":"Billy Cobham – Time Machine","luogo":"Portorose, Roseto","desc":"Abbazie Summer Festival.","citta":"Roseto"},
-        {"data":"22–26 Lug 2026","titolo":"Sagra De lu Stennmass","luogo":"Cologna Paese, Roseto","desc":"17ª edizione. Enogastronomia.","citta":"Roseto"},
-    ]
 
-def leggi_eventi_html(path):
-    """Estrae la lista eventi dall'HTML esistente."""
-    with open(path) as f:
-        html = f.read()
-    # Cerca il blocco JS con const eventi = [...]
-    m = re.search(r'const eventi\s*=\s*(\[[\s\S]*?\]);', html)
-    if m:
-        try:
-            return json.loads(m.group(1))
-        except:
-            return None
-    return None
+def read_events(path=EVENTS_PATH):
+    with path.open(encoding="utf-8") as handle:
+        events = json.load(handle)
+    validate_events(events)
+    return events
 
-def scrivi_html(path, eventi_list):
-    """Riscrive index.html con eventi aggiornati."""
-    with open(path) as f:
-        html = f.read()
-    
-    # Sostituisci l'array eventi
-    eventi_json = json.dumps(eventi_list, indent=2, ensure_ascii=False)
-    nuovo = re.sub(
-        r'const eventi\s*=\s*(\[[\s\S]*?\]);',
-        f'const eventi = {eventi_json};',
-        html
+
+def validate_events(events):
+    if not isinstance(events, list):
+        raise ValueError("Il file deve contenere un array JSON")
+    ids = set()
+    for index, event in enumerate(events):
+        missing = REQUIRED_FIELDS - event.keys()
+        if missing:
+            raise ValueError(f"Evento {index}: campi mancanti: {sorted(missing)}")
+        if event["id"] in ids:
+            raise ValueError(f"ID duplicato: {event['id']}")
+        ids.add(event["id"])
+        start = date.fromisoformat(event["startDate"])
+        end = date.fromisoformat(event["endDate"])
+        date.fromisoformat(event["updatedAt"])
+        if end < start:
+            raise ValueError(f"Evento {event['id']}: endDate precede startDate")
+        if event["price"] not in VALID_PRICES:
+            raise ValueError(f"Evento {event['id']}: price non valido")
+        if not isinstance(event["tags"], list) or not event["tags"]:
+            raise ValueError(f"Evento {event['id']}: tags deve essere un array non vuoto")
+
+
+def write_events(events, path=EVENTS_PATH):
+    validate_events(events)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as handle:
+        json.dump(events, handle, ensure_ascii=False, indent=2)
+        handle.write("\n")
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--write",
+        metavar="FILE",
+        type=Path,
+        help="Sostituisce data/events.json con gli eventi contenuti nel file indicato",
     )
-    
-    # Aggiorna la data
-    oggi = datetime.now().strftime("%d/%m/%Y")
-    nuovo = re.sub(
-        r'aggiornato il <span id="aggiornato"></span>',
-        f'aggiornato il <span id="aggiornato">{oggi}</span>',
-        nuovo
-    )
-    
-    with open(path, 'w') as f:
-        f.write(nuovo)
-    return True
+    args = parser.parse_args()
+    if args.write:
+        with args.write.open(encoding="utf-8") as handle:
+            write_events(json.load(handle))
+    events = read_events()
+    print(f"{len(events)} eventi validi in {EVENTS_PATH}")
+
 
 if __name__ == "__main__":
-    path = os.path.join(REPO_DIR, "index.html")
-    print(f"📅 Eventi Roseto – aggiornamento {datetime.now().isoformat()}")
-    
-    # Per uso standalone di test: stampa gli eventi correnti
-    ev = leggi_eventi_html(path)
-    if ev:
-        print(f"Eventi trovati nell'HTML: {len(ev)}")
-    else:
-        print("Nessun evento letto dall'HTML")
+    main()

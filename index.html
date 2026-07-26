@@ -274,84 +274,33 @@ body.archivio .main-only{display:none!important}
 /* REGOLA: ogni evento DEVE avere img:"" se non si trova una LOCANDINA UFFICIALE.
    Niente foto del luogo, niente foto stock. Solo locandina/poster reale o gradiente.
    getIniziali() mostra max 2 parole nel placeholder. */
-const eventi=[
-{id:1,data:"10 Lug – 6 Set 2026",orario:"Tutto il giorno",titolo:"Villa in Arte",img:"images/img-1.jpg",luogo:"Villa Comunale, Roseto degli Abruzzi",desc:"Mostra d'arte contemporanea. Protagonisti dell'arte nella Villa Comunale.",citta:"Roseto",tag:["Cultura","Arte"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
-{id:7,data:"2 Ago 2026",orario:"21:00",titolo:"Emma – Live 2026",img:"images/img-7.jpg",luogo:"Porto Turistico, Pescara",desc:"Concerto di Emma Marrone. Biglietti su TicketOne.",citta:"Pescara",tag:["Musica","Concerto"],fonte:"https://www.ticketone.it/event/emma-live-2026-porto-turistico-21119965/",costo:"a pagamento"},
-{id:20,data:"21 Lug 2026",orario:"21:30",titolo:"Matteo Mancuso in concerto",img:"images/img-20.jpg",luogo:"Portorose, Roseto",desc:"Abbazie Summer Festival 2026. Chitarrista di talento internazionale.",citta:"Roseto",tag:["Musica","Abbazie Summer Festival"],fonte:"https://concertidelleabbazie.it/programma/",costo:"a pagamento"},
-{id:21,data:"22 Lug 2026",orario:"21:30",titolo:"Billy Cobham – Time Machine",img:"images/img-21.jpg",luogo:"Portorose, Roseto",desc:"Leggendario percussionista jazz di fama internazionale. Abbazie Summer Festival.",citta:"Roseto",tag:["Musica","Jazz","Abbazie Summer Festival"],fonte:"https://concertidelleabbazie.it/programma/",costo:"a pagamento"},
-{id:22,data:"22 Lug 2026",orario:"21:00",titolo:"Marche Manouche – Dario Napoli Trio",img:"images/img-22.jpg",luogo:"San Benedetto del Tronto",desc:"Jazz Manouche moderno.",citta:"San Benedetto",tag:["Musica","Jazz"],fonte:"https://www.nonsoloeventimarche.it/",costo:"gratis"},
-{id:23,data:"22–26 Lug 2026",orario:"Dalle 19:00",titolo:"17ª Sagra 'De lu Stennmass'",img:"images/img-23.jpg",luogo:"Cologna Paese, Roseto",desc:"Sagra enogastronomica tradizionale. Specialità locali e atmosfera di festa.",citta:"Roseto",tag:["Enogastronomia","Sagra"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
-{id:24,data:"23 Lug 2026",orario:"20:00",titolo:"4° MoonJune Festival – Eclectic Music",img:"images/img-24.jpg",luogo:"Teramo",desc:"Festival di musica eclettica. MoonJune Records 25 anni. Soft Machine, Gong, Osanna, Steve Hillage e molti altri.",citta:"Teramo",tag:["Musica","Festival"],fonte:"https://www.moonjunefest.com/",costo:"a pagamento"},
-{id:25,data:"24–25 Lug 2026",orario:"19:00",titolo:"Mons Pagus A.D. 1566 – Rievocazione",img:"images/img-25.jpg",luogo:"Borgo di Montepagano, Roseto",desc:"9ª edizione della rievocazione storica rinascimentale. Taverne, musica e spettacoli nel borgo.",citta:"Roseto",tag:["Cultura","Rievocazione","Enogastronomia"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
-{id:26,data:"28 Lug – 14 Ago 2026",orario:"Vari orari",titolo:"Concerti Estate Giulianova",img:"",luogo:"Giulianova",desc:"Vari concerti in programma. Info su visitgiulianova.com.",citta:"Giulianova",tag:["Musica"],fonte:"https://www.visitgiulianova.com/eventi.php",costo:"a pagamento"},
-{id:27,data:"Luglio–Settembre 2026",orario:"Vari orari",titolo:"Eventi Estate SBT 2026",img:"images/img-27.jpg",luogo:"San Benedetto del Tronto",desc:"Concerti, sagre e spettacoli lungo tutta l'estate.",citta:"San Benedetto",tag:["Musica","Cultura","Sagra"],fonte:"https://www.comune.sanbenedettodeltronto.ap.it/",costo:"misto"},
-{id:28,data:"24 Lug 2026",orario:"21:30",titolo:"C'era una volta... Morricone e Leone",img:"images/img-28.jpg",luogo:"Piazza Ponno, Roseto",desc:"Omaggio al sodalizio artistico tra Ennio Morricone e Sergio Leone. Musica e immagini.",citta:"Roseto",tag:["Musica","Cultura","Spettacolo"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
-{id:29,data:"25 Lug 2026",orario:"21:00",titolo:"Che s'è benedette sti badante – Commedia",img:"images/img-29.jpg",luogo:"Voltarrosto, Roseto",desc:"Commedia teatrale dialettale. Serata di teatro popolare.",citta:"Roseto",tag:["Cultura","Teatro"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
-{id:30,data:"26 Lug 2026",orario:"21:15",titolo:"Roseto d'aMare – Gran Galà Lirico",img:"images/img-30.jpg",luogo:"Piazza del Municipio, Montepagano",desc:"Orchestra 'Duchi d'Acquaviva'. Sara Fulvi (soprano), Giacomo Leone (tenore), Vittorio Del Monte (basso-baritono).",citta:"Roseto",tag:["Musica","Classica"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
-{id:31,data:"31 Lug – 2 Ago 2026",orario:"19:00–23:00",titolo:"Baccano – Mostra dei Vini 54ª ed.",img:"images/img-37.jpg",luogo:"Roseto degli Abruzzi",desc:"Mostra enogastronomica dei vini locali. Degustazioni e stand gastronomici.",citta:"Roseto",tag:["Enogastronomia","Cultura"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
-{id:32,data:"1 Ago 2026",orario:"21:00",titolo:"I Cani – Transumare nello spazio",img:"images/img-31.jpg",luogo:"Stadio Fonte dell'Olmo, Roseto",desc:"Concerto della band romana. Biglietti su Xceed.me.",citta:"Roseto",tag:["Musica","Concerto"],fonte:"https://www.visitroseto.it/eventi/",costo:"a pagamento"},
-{id:33,data:"5 Ago 2026",orario:"21:00",titolo:"Tiromancino in concerto",img:"images/img-32.jpg",luogo:"Roseto degli Abruzzi",desc:"Emozioni in Musica. Federico Zampaglione porta la poesia dei Tiromancino. Biglietti su TicketOne.",citta:"Roseto",tag:["Musica","Concerto"],fonte:"https://www.visitroseto.it/eventi/",costo:"a pagamento"},
-{id:34,data:"9 Ago 2026",orario:"21:15",titolo:"Roseto d'aMare – Morricone Western",img:"images/img-33.jpg",luogo:"Piazza G. Rossa, Cologna Paese",desc:"Morricone Western Orchestra. Direttore Nataliya Gonchak. Omaggio a Ennio Morricone.",citta:"Roseto",tag:["Musica","Classica"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
-{id:35,data:"13 Ago 2026",orario:"21:15",titolo:"Roseto d'aMare – Tango di Piazzolla",img:"images/img-34.jpg",luogo:"Roseto degli Abruzzi",desc:"Il Tango di Astor Piazzolla con il Gianni Iorio Quartet.",citta:"Roseto",tag:["Musica","Jazz","Classica"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
-{id:36,data:"19–22 Ago 2026",orario:"18:00–23:45",titolo:"Transumare Fest 2026",img:"images/img-35.jpg",luogo:"Roseto degli Abruzzi",desc:"Festival multidisciplinare: musica, arte e cultura. Tre giorni di eventi. Biglietti su Xceed.me.",citta:"Roseto",tag:["Musica","Festival","Cultura"],fonte:"https://www.transumarefest.com/",costo:"a pagamento"},
-{id:37,data:"29 Ago 2026",orario:"21:00",titolo:"Francesca Michielin – concerto gratuito",img:"images/img-36.jpg",luogo:"Roseto degli Abruzzi",desc:"Concerto gratuito della cantautrice per la chiusura dell'estate rosetana.",citta:"Roseto",tag:["Musica","Concerto"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
-{id:38,data:"24 Lug 2026",orario:"18:30",titolo:"Art in Act 2026",img:"",luogo:"Villa Paris (via Marcacci 1), Roseto",desc:"Inaugurazione mostra d'arte collettiva.",citta:"Roseto",tag:["Cultura","Arte"],fonte:"https://www.rosetoproloco.it/index.php/eventi",costo:"gratis"},
-{id:39,data:"24 Giu – 2 Set 2026",orario:"18:30 (mercoledì)",titolo:"I Mercoledì della Cultura",img:"",luogo:"Villa Comunale, Roseto",desc:"Rassegna culturale settimanale. Libri, incontri e presentazioni ogni mercoledì.",citta:"Roseto",tag:["Cultura","Libri"],fonte:"https://www.rosetoproloco.it/index.php/eventi",costo:"gratis"},
-{id:40,data:"25 Lug 2026",orario:"11:00",titolo:"Giornata Mondiale della Prevenzione dell'Annegamento",img:"images/img-40.jpg",luogo:"Lido Celommi, Roseto",desc:"Mattinata dedicata alla sicurezza in mare e alla prevenzione degli incidenti balneari. Bandiera Blu.",citta:"Roseto",tag:["Sport","Cultura"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
-{id:41,data:"29 Lug – 2 Ago 2026",orario:"19:30",titolo:"Roseto West Fest 2026",img:"images/img-41.jpg",luogo:"Chiesa di Santa Teresa di Calcutta, Roseto",desc:"Cinque serate all'insegna di enogastronomia, musica e intrattenimento per tutta la famiglia.",citta:"Roseto",tag:["Enogastronomia","Musica"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
-{id:42,data:"6 Ago 2026",orario:"21:00",titolo:"Emozioni in Musica – Serena Brancale",img:"images/img-42.jpg",luogo:"Stadio Fonte dell'Olmo, Roseto",desc:"Concerto di Serena Brancale. Funk, jazz e ironia sul palco di Emozioni in Musica. Biglietti su TicketOne.",citta:"Roseto",tag:["Musica","Concerto"],fonte:"https://www.visitroseto.it/eventi/",costo:"a pagamento"},
-{id:43,data:"7–8 Ago 2026",orario:"17:00",titolo:"3° Palio delle Contrade – Roseto Senza Frontiere",img:"",luogo:"Montepagano, Roseto",desc:"Due giornate di festa nel borgo storico di Montepagano tra giochi, spettacoli, gastronomia e divertimento per tutta la famiglia.",citta:"Roseto",tag:["Cultura","Enogastronomia"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
-{id:44,data:"7 Ago 2026",orario:"21:00",titolo:"Emozioni in Musica – Levante in concerto",img:"images/img-44.jpg",luogo:"Stadio Fonte dell'Olmo, Roseto",desc:"Concerto di Levante. Biglietti su TicketOne.",citta:"Roseto",tag:["Musica","Concerto"],fonte:"https://www.visitroseto.it/eventi/",costo:"a pagamento"},
-{id:45,data:"14–17 Ago 2026",orario:"21:00",titolo:"Eventi d'Amare 2026",img:"",luogo:"Piazza Pineta Centrale, Roseto",desc:"Quattro serate di musica dal vivo: 14/8 Le Ombre, 15/8 Tributo Gianna Nannini, 16/8 Straisland (Dire Straits Tribute), 17/8 gran finale. Spettacolo pirotecnico Ferragosto.",citta:"Roseto",tag:["Musica","Spettacolo"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
-{id:46,data:"16 Ago 2026",orario:"21:00",titolo:"Straisland – The Finest Dire Straits Tribute",img:"",luogo:"Piazza Pineta Centrale, Roseto",desc:"Tributo ai Dire Straits: Sultans of Swing, Money for Nothing, Brothers in Arms.",citta:"Roseto",tag:["Musica","Spettacolo"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
-{id:47,data:"23 Ago 2026",orario:"21:30",titolo:"Giuliano Palma in concerto",img:"",luogo:"Piazza Redipuglia, Cologna Spiaggia, Roseto",desc:"Concerto di Giuliano Palma, una delle voci più amate della scena italiana.",citta:"Roseto",tag:["Musica","Concerto"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"},
-{id:48,data:"5 Set 2026",orario:"21:00",titolo:"Roseto d'aMare – Glem Clarinet Quartet",img:"images/img-47.jpg",luogo:"Villa Comunale, Roseto",desc:"(JAZZ) Glem Clarinet Quartet. Giuseppe Federico Paci, Maurizio Croci, Edoardo Mancini, Lorenzo Poli.",citta:"Roseto",tag:["Musica","Jazz"],fonte:"https://www.visitroseto.it/eventi/",costo:"gratis"}
-];
+var eventi=[];
 
 function renderizza(lista){
   var c=document.getElementById('gabbia'),h=document.getElementById('hero-container');
   if(!lista.length){document.getElementById('nessun-risultato').style.display='block';c.innerHTML='';h.innerHTML='';return}
   document.getElementById('nessun-risultato').style.display='none';
   if(!vistaArchivio){
-    var top=lista[0],oggi=isOggi(top.data)?'<div class="oggi">● In corso</div>':'';
-    var ih=top.img&&top.img!=='N/A'?'<img src="'+top.img+'" alt="'+top.titolo+'">':'<div style="width:100%;height:100%;background:linear-gradient(135deg,#0b2638,#184354);display:flex;align-items:center;justify-content:center;font-size:4rem;color:#59f1d5;font-weight:800;font-family:Montserrat">'+getIniziali(top.titolo)+'</div>';
-    h.innerHTML='<div class="hero-section">'+ih+'<div class="grad"></div>'+oggi+'<div class="hero-content"><div class="gpanel"><span class="badge-costo badge-costo-'+(top.costo==='gratis'?'gratis':top.costo==='a pagamento'?'pagamento':'misto')+'">'+(top.costo==='gratis'?'GRATIS':top.costo==='a pagamento'?'A PAGAMENTO':'MISTO')+'</span><span class="gold">'+top.tag[0]+'</span><h2>'+top.titolo+'</h2><p>'+top.desc+'</p><div class="meta">📅 '+top.data+' &nbsp;·&nbsp; 🕐 '+top.orario+' &nbsp;·&nbsp; '+top.luogo+'</div><a href="'+top.fonte+'" target="_blank" rel="noopener" aria-label="Apri i dettagli di '+top.titolo+'" style="position:absolute;right:0;bottom:0;left:0;height:45%;text-indent:-9999px;pointer-events:auto">Dettagli</a></div></div></div>';
+    var top=lista[0],oggi=isOggi(top)?'<div class="oggi">● In corso</div>':'';
+    var ih=top.image&&top.image!=='N/A'?'<img src="'+top.image+'" alt="'+top.title+'">':'<div style="width:100%;height:100%;background:linear-gradient(135deg,#0b2638,#184354);display:flex;align-items:center;justify-content:center;font-size:4rem;color:#59f1d5;font-weight:800;font-family:Montserrat">'+getIniziali(top.title)+'</div>';
+    h.innerHTML='<div class="hero-section">'+ih+'<div class="grad"></div>'+oggi+'<div class="hero-content"><div class="gpanel"><span class="badge-costo badge-costo-'+(top.price==='gratis'?'gratis':top.price==='a pagamento'?'pagamento':'misto')+'">'+(top.price==='gratis'?'GRATIS':top.price==='a pagamento'?'A PAGAMENTO':'MISTO')+'</span><span class="gold">'+top.tags[0]+'</span><h2>'+top.title+'</h2><p>'+top.description+'</p><div class="meta">📅 '+top.displayDate+' &nbsp;·&nbsp; 🕐 '+top.time+' &nbsp;·&nbsp; '+top.venue+'</div><a href="'+top.sourceUrl+'" target="_blank" rel="noopener" aria-label="Apri i dettagli di '+top.title+'" style="position:absolute;right:0;bottom:0;left:0;height:45%;text-indent:-9999px;pointer-events:auto">Dettagli</a></div></div></div>';
   }else h.innerHTML='';
   var html='';
   lista.forEach(function(e){
-      var o=isOggi(e.data)?'<div class="oggi">● In corso</div>':'';
-      var bd='<div class="badge">'+e.data+'</div>';
-      var im=e.img&&e.img!=='N/A'?'<img src="'+e.img+'" alt="'+e.titolo+'" loading="lazy">':'<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 80% 10%,rgba(89,241,213,.15),transparent 45%),linear-gradient(135deg,#0b2638,#153c50);color:#59f1d5;font-size:2.5rem;font-weight:800;font-family:Montserrat">'+getIniziali(e.titolo)+'</div>';
-      html+='<article class="card-evento">'+im+'<div class="grad"></div>'+o+bd+'<div class="info"><div class="gpanel"><span class="cat"><span class="badge-costo badge-costo-'+(e.costo==='gratis'?'gratis':e.costo==='a pagamento'?'pagamento':'misto')+'">'+(e.costo==='gratis'?'GRATIS':e.costo==='a pagamento'?'A PAGAMENTO':'MISTO')+'</span> '+e.citta+' · '+e.tag[0]+'</span><h3>'+e.titolo+'</h3><div class="luogo">'+e.luogo+'</div></div></div><a class="cover-link" href="'+e.fonte+'" target="_blank" rel="noopener" aria-label="Apri i dettagli di '+e.titolo+'">Dettagli</a></article>';
+      var o=isOggi(e)?'<div class="oggi">● In corso</div>':'';
+      var bd='<div class="badge">'+e.displayDate+'</div>';
+      var im=e.image&&e.image!=='N/A'?'<img src="'+e.image+'" alt="'+e.title+'" loading="lazy">':'<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 80% 10%,rgba(89,241,213,.15),transparent 45%),linear-gradient(135deg,#0b2638,#153c50);color:#59f1d5;font-size:2.5rem;font-weight:800;font-family:Montserrat">'+getIniziali(e.title)+'</div>';
+      html+='<article class="card-evento">'+im+'<div class="grad"></div>'+o+bd+'<div class="info"><div class="gpanel"><span class="cat"><span class="badge-costo badge-costo-'+(e.price==='gratis'?'gratis':e.price==='a pagamento'?'pagamento':'misto')+'">'+(e.price==='gratis'?'GRATIS':e.price==='a pagamento'?'A PAGAMENTO':'MISTO')+'</span> '+e.city+' · '+e.tags[0]+'</span><h3>'+e.title+'</h3><div class="luogo">'+e.venue+'</div></div></div><a class="cover-link" href="'+e.sourceUrl+'" target="_blank" rel="noopener" aria-label="Apri i dettagli di '+e.title+'">Dettagli</a></article>';
   });
   c.innerHTML=html;
   document.getElementById('stats').textContent=lista.length+(lista.length===1?' evento ':' eventi ')+(vistaArchivio?'in archivio':'da vivere');
 }
 function getIniziali(t){return t.replace(/['"]/g,'').split(/[\s–—‑-]+/).filter(function(w){return w.length>0&&!['di','del','della','degli','dei','il','la','le','gli','un','una','al','con','per'].includes(w.toLowerCase())}).slice(0,2).map(function(w){return w[0].toUpperCase()}).join('')}
-function isOggi(s){
-  var o=new Date();o.setHours(0,0,0,0);var ts=o.getTime(),m;
-  m=s.match(/^(\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);if(m){var d=pd(m[1],m[2],m[3]);return d&&d.getTime()===ts}
-  m=s.match(/^(\d{1,2})[–-](\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);if(m){var s2=pd(m[1],m[3],m[4]),e2=pd(m[2],m[3],m[4]);return s2&&e2&&ts>=s2.getTime()&&ts<=e2.getTime()}
-  m=s.match(/^(\d{1,2})\s([A-Za-z]+)\s*[–-]\s*(\d{1,2})\s([A-Za-z]+)\s(\d{4})$/);if(m){var s3=pd(m[1],m[2],m[5]),e3=pd(m[3],m[4],m[5]);return s3&&e3&&ts>=s3.getTime()&&ts<=e3.getTime()}
-  return false;
-}
-function mn(n){var map={gen:0,feb:1,mar:2,apr:3,mag:4,giu:5,lug:6,ago:7,set:8,ott:9,nov:10,dic:11,gennaio:0,febbraio:1,marzo:2,aprile:3,maggio:4,giugno:5,luglio:6,agosto:7,settembre:8,ottobre:9,novembre:10,dicembre:11};return map[n.toLowerCase().slice(0,3)]!==undefined?map[n.toLowerCase().slice(0,3)]:null}
-function pd(g,m,a){var mm=mn(m);return mm===null?null:new Date(parseInt(a),mm,parseInt(g),0,0,0,0)}
+function dataISOOggi(){var o=new Date(),m=String(o.getMonth()+1).padStart(2,'0'),d=String(o.getDate()).padStart(2,'0');return o.getFullYear()+'-'+m+'-'+d}
+function isOggi(e){var oggi=dataISOOggi();return e.startDate<=oggi&&e.endDate>=oggi}
 var vistaArchivio=false;
-function intervalloData(s){
-  var m,inizio,fine;
-  m=s.match(/^(\d{1,2})\s+([A-Za-zÀ-ÿ]+)\s+(\d{4})$/);
-  if(m){inizio=pd(m[1],m[2],m[3]);fine=inizio?new Date(inizio):null;return{inizio:inizio,fine:fine}}
-  m=s.match(/^(\d{1,2})[–-](\d{1,2})\s+([A-Za-zÀ-ÿ]+)\s+(\d{4})$/);
-  if(m){return{inizio:pd(m[1],m[3],m[4]),fine:pd(m[2],m[3],m[4])}}
-  m=s.match(/^(\d{1,2})\s+([A-Za-zÀ-ÿ]+)\s*[–-]\s*(\d{1,2})\s+([A-Za-zÀ-ÿ]+)\s+(\d{4})$/);
-  if(m){return{inizio:pd(m[1],m[2],m[5]),fine:pd(m[3],m[4],m[5])}}
-  m=s.match(/^([A-Za-zÀ-ÿ]+)[–-]([A-Za-zÀ-ÿ]+)\s+(\d{4})$/);
-  if(m){var mi=mn(m[1]),mf=mn(m[2]);if(mi!==null&&mf!==null){inizio=new Date(parseInt(m[3]),mi,1);fine=new Date(parseInt(m[3]),mf+1,0);return{inizio:inizio,fine:fine}}}
-  return{inizio:null,fine:null};
-}
-function eventoPassato(e){var r=intervalloData(e.data),oggi=new Date();oggi.setHours(0,0,0,0);return !!(r.fine&&r.fine.getTime()<oggi.getTime())}
-function dataOrdinamento(e){var r=intervalloData(e.data);return r.inizio?r.inizio.getTime():Number.MAX_SAFE_INTEGER}
+function eventoPassato(e){return e.endDate<dataISOOggi()}
+function dataOrdinamento(e){return Date.parse(e.startDate+'T00:00:00')}
 function cambiaVista(archivio){
   vistaArchivio=!!archivio;
   document.body.classList.toggle('archivio',vistaArchivio);
@@ -363,7 +312,7 @@ function cambiaVista(archivio){
 }
 function filtra(){
   var q=document.getElementById('search').value.toLowerCase().trim(),a=document.querySelector('#filtri .attivo'),fc=a?a.dataset.filtro:'tutti';
-  var f=eventi.filter(function(e){if(eventoPassato(e)!==vistaArchivio)return false;if(fc!=='tutti'&&e.citta!==fc)return false;if(!q)return true;return(e.titolo+' '+e.luogo+' '+e.desc+' '+e.data+' '+e.tag.join(' ')).toLowerCase().includes(q)});
+  var f=eventi.filter(function(e){if(eventoPassato(e)!==vistaArchivio)return false;if(fc!=='tutti'&&e.city!==fc)return false;if(!q)return true;return(e.title+' '+e.venue+' '+e.description+' '+e.displayDate+' '+e.tags.join(' ')).toLowerCase().includes(q)});
   f.sort(function(x,y){return vistaArchivio?dataOrdinamento(y)-dataOrdinamento(x):dataOrdinamento(x)-dataOrdinamento(y)});
   renderizza(f);
 }
@@ -382,7 +331,19 @@ function openLightbox(s,a){var lb=document.createElement('div');lb.className='li
 document.getElementById('search').addEventListener('input',filtra);
 document.querySelectorAll('#filtri button').forEach(function(btn){btn.addEventListener('click',function(){document.querySelectorAll('#filtri button').forEach(function(b){b.classList.remove('attivo')});btn.classList.add('attivo');filtra()})});
 document.getElementById('aggiornato').textContent=new Date().toLocaleDateString('it-IT',{day:'numeric',month:'short'});
-filtra();
+fetch('./data/events.json',{cache:'no-cache'})
+  .then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json()})
+  .then(function(d){if(!Array.isArray(d))throw new Error('Formato dati non valido');eventi=d;filtra()})
+  ['catch'](function(err){
+    document.getElementById('hero-container').innerHTML='';
+    document.getElementById('gabbia').innerHTML='';
+    var n=document.getElementById('nessun-risultato');
+    n.style.display='block';
+    n.setAttribute('role','alert');
+    n.textContent='Impossibile caricare gli eventi. Controlla la connessione e riprova.';
+    document.getElementById('stats').textContent='Errore di caricamento';
+    console.error('Caricamento data/events.json fallito:',err);
+  });
 var ve=document.getElementById('visitCount'),ce=document.querySelector('.visit-counter');ce.classList.add('loading');ve.innerHTML='<span style="display:inline-block;width:12px;height:12px;border:2px solid #a68b82;border-top-color:transparent;border-radius:50%;animation:spin 0.6s linear infinite;vertical-align:middle;margin-right:4px"></span>';
 fetch('https://countapi.mileshilliard.com/api/v1/hit/roseto-eventi-visits').then(function(r){return r.json()}).then(function(d){ve.textContent=Number(d.value).toLocaleString('it-IT');ce.classList.remove('loading')})['catch'](function(){ve.textContent=Number(11246).toLocaleString('it-IT');ce.classList.remove('loading')});
 if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js')['catch'](function(){});

@@ -1,4 +1,4 @@
-const CACHE = 'roseto-eventi-v3';
+const CACHE = 'roseto-eventi-v4';
 const ASSETS = [
   '/roseto-eventi/',
   '/roseto-eventi/index.html',
@@ -19,6 +19,16 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
+  const url = new URL(e.request.url);
+  if (e.request.method === 'GET' && url.origin === self.location.origin && url.pathname.endsWith('/data/events.json')) {
+    e.respondWith(
+      fetch(e.request).then(res => {
+        if (res.ok) caches.open(CACHE).then(cache => cache.put(e.request, res.clone()));
+        return res;
+      }).catch(() => caches.match(e.request))
+    );
+    return;
+  }
   e.respondWith(
     caches.match(e.request).then(cached => cached || fetch(e.request).then(res => {
       const clone = res.clone();
