@@ -18,7 +18,6 @@
     "image": "images/img-1.jpg",
     "updatedAt": "2026-07-26"
   },
-
   {
     "id": "matteo-mancuso-in-concerto-2026",
     "startDate": "2026-07-21",
@@ -58,7 +57,6 @@
     "image": "images/img-21.jpg",
     "updatedAt": "2026-07-26"
   },
-
   {
     "id": "17-sagra-de-lu-stennmass-2026",
     "startDate": "2026-07-22",
@@ -127,7 +125,11 @@
     "venue": "Giulianova",
     "city": "Giulianova",
     "description": "Oltre 160 appuntamenti: Fiorella Mannoia (5/8), Sarah Toscano (9/8), Carnevale Estivo (1/8), Enrico Brignano (28/8), Vincenzo Salemme (29/8) e molti altri. Programma completo su visitgiulianova.com.",
-    "tags": ["Musica", "Cultura", "Spettacolo"],
+    "tags": [
+      "Musica",
+      "Cultura",
+      "Spettacolo"
+    ],
     "sourceUrl": "https://www.visitgiulianova.com/eventi.php",
     "price": "misto",
     "image": "",
@@ -545,7 +547,10 @@
     "venue": "Roseto degli Abruzzi",
     "city": "Roseto",
     "description": "Personale di Illustrazioni di Pasquale Testa. Mostra di illustrazioni umoristiche.",
-    "tags": ["Cultura", "Arte"],
+    "tags": [
+      "Cultura",
+      "Arte"
+    ],
     "sourceUrl": "https://www.visitroseto.it/en/events/",
     "price": "gratis",
     "image": "",
@@ -561,7 +566,10 @@
     "venue": "Roseto degli Abruzzi",
     "city": "Roseto",
     "description": "Festa patronale in onore di Santa Maria Assunta. Primo appuntamento dei festeggiamenti estivi.",
-    "tags": ["Cultura", "Tradizione"],
+    "tags": [
+      "Cultura",
+      "Tradizione"
+    ],
     "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi",
     "price": "gratis",
     "image": "",
@@ -577,7 +585,10 @@
     "venue": "Piazza Caduti di Nassirya, Tortoreto",
     "city": "Tortoreto",
     "description": "Tradizionale sagra della vongola a Tortoreto Lido. Specialità di mare e atmosfera di festa.",
-    "tags": ["Enogastronomia", "Sagra"],
+    "tags": [
+      "Enogastronomia",
+      "Sagra"
+    ],
     "sourceUrl": "https://mammadovemiporti.it/2026/05/12/estate-tortoretana-caledario-eventi-estate-2026-a-tortoreto/",
     "price": "gratis",
     "image": "",
@@ -593,7 +604,10 @@
     "venue": "Piazza dei Pini, Silvi Marina",
     "city": "Silvi",
     "description": "Concerto del cantautore romano. Successi come 'Una rosa blu', 'L'amore vuole amore' e 'Gli anni'.",
-    "tags": ["Musica", "Concerto"],
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
     "sourceUrl": "https://www.visitsilvi.it/eventi-e-manifestazioni/eventi-principali-calendario-estivo-2026/29-68.html",
     "price": "gratis",
     "image": "images/img-48.jpg",
@@ -609,7 +623,10 @@
     "venue": "Giulianova Lido",
     "city": "Giulianova",
     "description": "XIII Edizione. Degustazione di Cerasuolo d'Abruzzo in riva all'Adriatico. Profumi e sapori d'Abruzzo.",
-    "tags": ["Enogastronomia", "Cultura"],
+    "tags": [
+      "Enogastronomia",
+      "Cultura"
+    ],
     "sourceUrl": "https://www.visitgiulianova.com/eventi.php",
     "price": "a pagamento",
     "image": "",
@@ -625,7 +642,10 @@
     "venue": "Lungomare Zara, Giulianova Lido",
     "city": "Giulianova",
     "description": "Gran Carnevale estivo: sfilata dei carri allegorici delle sei contrade, concerti, animazione per bambini e street food sul lungomare.",
-    "tags": ["Cultura", "Spettacolo"],
+    "tags": [
+      "Cultura",
+      "Spettacolo"
+    ],
     "sourceUrl": "https://www.discoverteramo.it/Eventi/CARNEVALE-GIULIANOVA/4-1135-1.html",
     "price": "gratis",
     "image": "",
@@ -641,10 +661,71 @@
     "venue": "Banchina di riva del porto, Giulianova",
     "city": "Giulianova",
     "description": "Concerto di Fiorella Mannoia. Una delle voci più iconiche della musica italiana.",
-    "tags": ["Musica", "Concerto"],
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
     "sourceUrl": "https://www.visitgiulianova.com/eventi.php",
     "price": "a pagamento",
     "image": "",
     "updatedAt": "2026-07-31"
+  },
+  {
+    "id": "emma-live-2026",
+    "startDate": "2026-08-02",
+    "endDate": "2026-08-02",
+    "displayDate": "2 Ago 2026",
+    "time": "21:00",
+    "title": "Emma – Live 2026",
+    "venue": "Porto Turistico, Pescara",
+    "city": "Pescara",
+    "description": "Concerto di Emma Marrone. Biglietti su TicketOne.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.ticketone.it/event/emma-live-2026-porto-turistico-21119965/",
+    "price": "a pagamento",
+    "image": "images/img-7.jpg",
+    "updatedAt": "2026-07-26"
+  },
+  {
+    "id": "marche-manouche-dario-napoli-trio-2026",
+    "startDate": "2026-07-22",
+    "endDate": "2026-07-22",
+    "displayDate": "22 Lug 2026",
+    "time": "21:00",
+    "title": "Marche Manouche – Dario Napoli Trio",
+    "venue": "San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Jazz Manouche moderno.",
+    "tags": [
+      "Musica",
+      "Jazz"
+    ],
+    "sourceUrl": "https://www.nonsoloeventimarche.it/",
+    "price": "gratis",
+    "image": "images/img-22.jpg",
+    "updatedAt": "2026-07-26"
+  },
+  {
+    "id": "eventi-estate-sbt-2026",
+    "startDate": "2026-07-01",
+    "endDate": "2026-09-30",
+    "displayDate": "Luglio–Settembre 2026",
+    "time": "Vari orari",
+    "title": "Eventi Estate SBT 2026",
+    "venue": "San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Concerti, sagre e spettacoli lungo tutta l'estate.",
+    "tags": [
+      "Musica",
+      "Cultura",
+      "Sagra"
+    ],
+    "sourceUrl": "https://www.comune.sanbenedettodeltronto.ap.it/",
+    "price": "misto",
+    "image": "images/img-27.jpg",
+    "updatedAt": "2026-07-26"
   }
 ]
