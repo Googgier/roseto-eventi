@@ -18,25 +18,7 @@
     "image": "images/img-1.jpg",
     "updatedAt": "2026-07-26"
   },
-  {
-    "id": "emma-live-2026",
-    "startDate": "2026-08-02",
-    "endDate": "2026-08-02",
-    "displayDate": "2 Ago 2026",
-    "time": "21:00",
-    "title": "Emma – Live 2026",
-    "venue": "Porto Turistico, Pescara",
-    "city": "Pescara",
-    "description": "Concerto di Emma Marrone. Biglietti su TicketOne.",
-    "tags": [
-      "Musica",
-      "Concerto"
-    ],
-    "sourceUrl": "https://www.ticketone.it/event/emma-live-2026-porto-turistico-21119965/",
-    "price": "a pagamento",
-    "image": "images/img-7.jpg",
-    "updatedAt": "2026-07-26"
-  },
+
   {
     "id": "matteo-mancuso-in-concerto-2026",
     "startDate": "2026-07-21",
@@ -76,25 +58,7 @@
     "image": "images/img-21.jpg",
     "updatedAt": "2026-07-26"
   },
-  {
-    "id": "marche-manouche-dario-napoli-trio-2026",
-    "startDate": "2026-07-22",
-    "endDate": "2026-07-22",
-    "displayDate": "22 Lug 2026",
-    "time": "21:00",
-    "title": "Marche Manouche – Dario Napoli Trio",
-    "venue": "San Benedetto del Tronto",
-    "city": "San Benedetto",
-    "description": "Jazz Manouche moderno.",
-    "tags": [
-      "Musica",
-      "Jazz"
-    ],
-    "sourceUrl": "https://www.nonsoloeventimarche.it/",
-    "price": "gratis",
-    "image": "images/img-22.jpg",
-    "updatedAt": "2026-07-26"
-  },
+
   {
     "id": "17-sagra-de-lu-stennmass-2026",
     "startDate": "2026-07-22",
@@ -156,40 +120,18 @@
   {
     "id": "concerti-estate-giulianova-2026",
     "startDate": "2026-07-28",
-    "endDate": "2026-08-14",
-    "displayDate": "28 Lug – 14 Ago 2026",
+    "endDate": "2026-09-06",
+    "displayDate": "28 Lug – 6 Set 2026",
     "time": "Vari orari",
-    "title": "Concerti Estate Giulianova",
+    "title": "GiuliaEventi Estate 2026",
     "venue": "Giulianova",
     "city": "Giulianova",
-    "description": "Vari concerti in programma. Info su visitgiulianova.com.",
-    "tags": [
-      "Musica"
-    ],
+    "description": "Oltre 160 appuntamenti: Fiorella Mannoia (5/8), Sarah Toscano (9/8), Carnevale Estivo (1/8), Enrico Brignano (28/8), Vincenzo Salemme (29/8) e molti altri. Programma completo su visitgiulianova.com.",
+    "tags": ["Musica", "Cultura", "Spettacolo"],
     "sourceUrl": "https://www.visitgiulianova.com/eventi.php",
-    "price": "a pagamento",
-    "image": "",
-    "updatedAt": "2026-07-26"
-  },
-  {
-    "id": "eventi-estate-sbt-2026",
-    "startDate": "2026-07-01",
-    "endDate": "2026-09-30",
-    "displayDate": "Luglio–Settembre 2026",
-    "time": "Vari orari",
-    "title": "Eventi Estate SBT 2026",
-    "venue": "San Benedetto del Tronto",
-    "city": "San Benedetto",
-    "description": "Concerti, sagre e spettacoli lungo tutta l'estate.",
-    "tags": [
-      "Musica",
-      "Cultura",
-      "Sagra"
-    ],
-    "sourceUrl": "https://www.comune.sanbenedettodeltronto.ap.it/",
     "price": "misto",
-    "image": "images/img-27.jpg",
-    "updatedAt": "2026-07-26"
+    "image": "",
+    "updatedAt": "2026-07-31"
   },
   {
     "id": "c-era-una-volta-morricone-e-leone-2026",
@@ -671,6 +613,38 @@
     "sourceUrl": "https://www.visitgiulianova.com/eventi.php",
     "price": "a pagamento",
     "image": "",
-    "updatedAt": "2026-07-28"
+    "updatedAt": "2026-07-31"
+  },
+  {
+    "id": "carnevale-estivo-giuliese-2026",
+    "startDate": "2026-08-01",
+    "endDate": "2026-08-01",
+    "displayDate": "1 Ago 2026",
+    "time": "20:00",
+    "title": "Carnevale Estivo Giuliese",
+    "venue": "Lungomare Zara, Giulianova Lido",
+    "city": "Giulianova",
+    "description": "Gran Carnevale estivo: sfilata dei carri allegorici delle sei contrade, concerti, animazione per bambini e street food sul lungomare.",
+    "tags": ["Cultura", "Spettacolo"],
+    "sourceUrl": "https://www.discoverteramo.it/Eventi/CARNEVALE-GIULIANOVA/4-1135-1.html",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-07-31"
+  },
+  {
+    "id": "fiorella-mannoia-in-concerto-2026",
+    "startDate": "2026-08-05",
+    "endDate": "2026-08-05",
+    "displayDate": "5 Ago 2026",
+    "time": "21:00",
+    "title": "Fiorella Mannoia in concerto",
+    "venue": "Banchina di riva del porto, Giulianova",
+    "city": "Giulianova",
+    "description": "Concerto di Fiorella Mannoia. Una delle voci più iconiche della musica italiana.",
+    "tags": ["Musica", "Concerto"],
+    "sourceUrl": "https://www.visitgiulianova.com/eventi.php",
+    "price": "a pagamento",
+    "image": "",
+    "updatedAt": "2026-07-31"
   }
 ]
