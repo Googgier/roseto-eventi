@@ -1,4 +1,4 @@
-const CACHE = 'roseto-eventi-v5';
+const CACHE = 'roseto-eventi-v6';
 const ASSETS = [
   '/roseto-eventi/',
   '/roseto-eventi/index.html',
@@ -23,17 +23,24 @@ self.addEventListener('fetch', e => {
   if (e.request.method === 'GET' && url.origin === self.location.origin && (url.pathname.endsWith('/data/events.json') || url.pathname.endsWith('/data/sagre.json'))) {
     e.respondWith(
       fetch(e.request).then(res => {
-        if (res.ok) caches.open(CACHE).then(cache => cache.put(e.request, res.clone()));
-        return res;
+        if (!res.ok) return res;
+        const clone = res.clone();
+        return caches.open(CACHE)
+          .then(cache => cache.put(e.request, clone))
+          .catch(() => undefined)
+          .then(() => res);
       }).catch(() => caches.match(e.request))
     );
     return;
   }
   e.respondWith(
     caches.match(e.request).then(cached => cached || fetch(e.request).then(res => {
-      const clone = res.clone();
       if (res.ok && e.request.method === 'GET' && e.request.url.startsWith(self.location.origin)) {
-        caches.open(CACHE).then(cache => cache.put(e.request, clone));
+        const clone = res.clone();
+        return caches.open(CACHE)
+          .then(cache => cache.put(e.request, clone))
+          .catch(() => undefined)
+          .then(() => res);
       }
       return res;
     }).catch(() => caches.match('/roseto-eventi/')))
