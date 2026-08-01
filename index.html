@@ -20,7 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script>try{
-tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-fixed-dim":"#ffb95a","surface-container-low":"#151b29","on-surface":"#dde2f6","surface-container":"#191f2e","on-secondary-container":"#004c46","on-primary-container":"#6c2000","on-surface-variant":"#dec0b6","tertiary-fixed":"#ffddb6","surface-container-lowest":"#080e1c","surface-variant":"#2f3544","secondary-container":"#00c6b6","surface-dim":"#0d1321","on-secondary-fixed":"#00201d","surface-bright":"#333948","secondary-fixed":"#61f9e9","secondary-fixed-dim":"#3adccc","error-container":"#93000a","on-tertiary-container":"#533300","tertiary":"#ffb95a","background":"#0d1321","surface-container-high":"#242a39","on-secondary":"#003732","outline-variant":"#57423b","primary-fixed-dim":"#ffb59c","inverse-primary":"#a43c12","error":"#ffb4ab","on-tertiary-fixed-variant":"#643f00","surface-container-highest":"#2f3544","on-secondary-fixed-variant":"#005049","surface":"#0d1321","on-tertiary":"#462a00","inverse-on-surface":"#2a303f","on-primary-fixed-variant":"#822800","on-primary":"#5c1a00","on-tertiary-fixed":"#2a1800","on-background":"#dde2f6","primary":"#ffb59c","outline":"#a68b82","on-error-container":"#ffdad6","surface-tint":"#ffb59c","on-error":"#690005","tertiary-container":"#dc952a","primary-container":"#ff7f50","secondary":"#43e2d2","inverse-surface":"#dde2f6","primary-fixed":"#ffdbcf","on-primary-fixed":"#380c00"},fontFamily:{"label-sm":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"display-lg":["Montserrat"],"headline-md":["Montserrat"],"headline-lg":["Montserrat"],"body-md":["Inter"]},fontSize:{"label-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0.05em",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"0.01em",fontWeight:"400"}],"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg-mobile":["28px",{lineHeight:"34px",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}]}}}}catch(_e){}</script>
+tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-fixed-dim":"#ffb95a","surface-container-low":"#151b29","on-surface":"#dde2f6","surface-container":"#191f2e","on-secondary-container":"#004c46","on-primary-container":"#6c2000","on-surface-variant":"#dec0b6","tertiary-fixed":"#ffddb6","surface-container-lowest":"#080e1c","surface-variant":"#2f3544","secondary-container":"#00c6b6","surface-dim":"#0d1321","on-secondary-fixed":"#00201d","surface-bright":"#333948","secondary-fixed":"#61f9e9","secondary-fixed-dim":"#3adccc","error-container":"#93000a","on-tertiary-container":"#533300","tertiary":"#ffb95a","background":"#0d1321","surface-container-high":"#242a39","on-secondary":"#003732","outline-variant":"#57423b","primary-fixed-dim":"#ffb59c","inverse-primary":"#a43c12","error":"#ffb4ab","on-tertiary-fixed-variant":"#643f00","surface-container-highest":"#2f3544","on-secondary-fixed-variant":"#005049","surface":"#0d1321","on-tertiary":"#462a00","inverse-on-surface":"#2a303f","on-primary-fixed-variant":"#822800","on-primary":"#5c1a00","on-tertiary-fixed":"#2a1800","on-background":"#dde2f6","primary":"#ffb59c","outline":"#a68b82","on-error-container":"#ffdad6","surface-tint":"#ffb59c","on-error":"#690005","tertiary-container":"#dc952a","primary-container":"#ff7f50","secondary":"#43e2d2","inverse-surface":"#dde2f6","primary-fixed":"#ffdbcf","on-primary-fixed":"#380c00"},fontFamily:{"label-sm":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"display-lg":["Montserrat"],"headline-md":["Montserrat"],"headline-lg":["Montserrat"],"body-md":["Inter"]},fontSize:{"label-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0.05em",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"0.01em",fontWeight:"400"}],"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg-mobile":["28px",{lineHeight:"34px",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}]}}}}}catch(_e){}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Eventi Roseto degli Abruzzi &amp; Dintorni","url":"https://googgier.github.io/roseto-eventi/"}</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -185,6 +185,16 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
 .bottom-nav a.attivo{color:#06251f;background:linear-gradient(135deg,var(--aqua),#a8ffeb);box-shadow:0 9px 24px rgba(89,241,213,.18)}
 body.archivio .archive-only-title{display:inline}body:not(.archivio) .archive-only-title{display:none}
 body.archivio .main-only{display:none!important}
+.sagre-view{display:none}body.sagre .event-view{display:none!important}body.sagre .sagre-view{display:block}body.sagre .archive-only-title{display:none}
+.sagre-hero{padding:clamp(24px,5vw,52px);margin-bottom:22px;border:1px solid rgba(255,210,119,.2);border-radius:30px;background:radial-gradient(circle at 90% 10%,rgba(255,210,119,.2),transparent 38%),linear-gradient(135deg,#392017,#132b38);box-shadow:var(--shadow)}
+.sagre-hero .eyebrow{color:var(--sun)}.sagre-hero p{max-width:700px;color:#c9bdb5;line-height:1.6;margin-top:14px;font-size:.9rem}.sagre-hero .page-title em{color:var(--sun)}
+.sagre-tools{display:grid;gap:12px;margin-bottom:18px;padding:14px;border:1px solid var(--line);border-radius:22px;background:rgba(11,30,47,.74)}
+.sagre-search{width:100%;height:52px;padding:0 16px;border:1px solid transparent;border-radius:14px;background:rgba(3,15,26,.66);color:var(--foam);font-size:.92rem}.sagre-search:focus{outline:0;border-color:rgba(255,210,119,.6)}
+.sagre-filters{display:flex;gap:8px;overflow:auto}.sagre-filters button,.sagre-period button{flex:none;padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.025);color:var(--mist);font-weight:700;font-size:.73rem;cursor:pointer}.sagre-filters button.attivo,.sagre-period button.attivo{background:var(--sun);border-color:var(--sun);color:#382400}
+.sagre-period{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.sagre-period-label{font-size:.72rem;color:var(--mist);margin-right:2px}.sagre-count{color:var(--mist);font-size:.78rem;margin:0 0 14px 4px}
+.sagre-grid{display:grid;grid-template-columns:1fr;gap:13px}.sagra-card{position:relative;overflow:hidden;min-height:180px;padding:22px;border:1px solid rgba(255,210,119,.13);border-radius:22px;background:radial-gradient(circle at 100% 0,rgba(255,210,119,.13),transparent 46%),linear-gradient(145deg,rgba(28,42,51,.96),rgba(12,31,45,.96))}.sagra-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(var(--sun),var(--coral))}.sagra-date{display:inline-flex;padding:6px 9px;border-radius:8px;background:rgba(255,210,119,.12);color:var(--sun);font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.sagra-card h2{font-family:Montserrat,sans-serif;font-size:1.12rem;line-height:1.25;margin:16px 0 12px}.sagra-place{display:flex;gap:7px;align-items:flex-start;color:#c5d8df;font-size:.83rem;line-height:1.4}.province{position:absolute;right:18px;top:20px;display:grid;place-items:center;min-width:34px;height:27px;border:1px solid rgba(255,210,119,.25);border-radius:8px;color:var(--sun);font-size:.68rem;font-weight:800}.sagre-empty{display:none;padding:55px 20px;text-align:center;border:1px dashed var(--line);border-radius:22px;color:var(--mist)}
+@media(min-width:700px){.sagre-tools{grid-template-columns:1fr auto;align-items:center}.sagre-search{grid-column:1/-1}.sagre-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1050px){.sagre-grid{grid-template-columns:repeat(3,1fr)}}
 .lightbox{background:rgba(1,7,12,.94);backdrop-filter:blur(12px)}.lightbox-img{border-radius:18px;box-shadow:var(--shadow)}
 @media(min-width:640px){#gabbia{grid-template-columns:repeat(2,1fr)}.page-shell{width:min(1240px,calc(100% - 48px))}.discover-panel{padding:16px}.card-evento{aspect-ratio:4/5}.hero-section{height:min(66vh,640px)}}
 @media(min-width:1024px){#gabbia{grid-template-columns:repeat(3,1fr);gap:22px}.discover-panel{display:grid;grid-template-columns:minmax(280px,.8fr) 1.7fr;align-items:center;gap:14px}.discover-panel #filtri{margin:0}.card-evento{min-height:440px}.hero-content{padding:58px}}
@@ -210,11 +220,11 @@ body.archivio .main-only{display:none!important}
   <div class="header-meta"><span class="live-dot"></span><span class="update-label">Aggiornato </span><span id="aggiornato"></span></div>
 </header>
 <main class="page-shell">
-  <section class="intro-bar">
+  <section class="intro-bar event-view">
     <div><div class="eyebrow"><span class="main-only">Estate 2026</span><span class="archive-only-title">Memorie d'estate</span></div><h1 class="page-title"><span class="main-only">La costa si accende<br><em>dopo il tramonto.</em></span><span class="archive-only-title">L’archivio delle<br><em>notti passate.</em></span></h1></div>
     <div class="visit-counter" id="counterTop"><span class="material-symbols-outlined">visibility</span><span id="visitCount">—</span> visite</div>
   </section>
-  <section class="discover-panel" aria-label="Cerca e filtra gli eventi">
+  <section class="discover-panel event-view" aria-label="Cerca e filtra gli eventi">
     <div class="search-wrap"><span class="material-symbols-outlined">search</span><input type="text" id="search" placeholder="Cerca evento, luogo, data…" autocomplete="off" aria-label="Cerca eventi"></div>
     <nav id="filtri" class="hide-scrollbar" aria-label="Filtra per città">
       <button data-filtro="tutti" class="attivo">Tutti</button>
@@ -229,19 +239,36 @@ body.archivio .main-only{display:none!important}
       <button data-filtro="San Benedetto">S.Benedetto</button>
     </nav>
   </section>
-  <div class="stats" id="stats"></div>
-  <div id="hero-container"></div>
-  <div class="sponsor-card main-only">
+  <div class="stats event-view" id="stats"></div>
+  <div class="event-view" id="hero-container"></div>
+  <div class="sponsor-card main-only event-view">
     <div style="position:relative;z-index:1">
       <p class="sponsor-label">Partner dell'estate</p>
       <h4>Adriatico Gin Experience</h4>
     </div>
     <button class="sponsor-close" onclick="this.parentElement.remove()" aria-label="Chiudi sponsor">&times;</button>
   </div>
-  <div id="gabbia"></div>
-  <div id="nessun-risultato">Nessun evento trovato &#x1f615;</div>
+  <div class="event-view" id="gabbia"></div>
+  <div class="event-view" id="nessun-risultato">Nessun evento trovato &#x1f615;</div>
+  <section class="sagre-view" id="sagreView" aria-labelledby="sagreTitle">
+    <div class="sagre-hero">
+      <div class="eyebrow">Abruzzo · Agosto 2026</div>
+      <h1 class="page-title" id="sagreTitle">Paesi in festa,<br><em>sapori in viaggio.</em></h1>
+      <p>Una raccolta separata degli appuntamenti riportati nelle tre locandine “Sagre in Abruzzo”. Date e località sono trascritte dalla fonte, senza aggiungere informazioni non presenti.</p>
+    </div>
+    <div class="sagre-tools">
+      <input class="sagre-search" id="sagreSearch" type="search" placeholder="Cerca sagra o località…" aria-label="Cerca sagre">
+      <div class="sagre-filters hide-scrollbar" id="sagreProvince" aria-label="Filtra sagre per provincia">
+        <button class="attivo" data-province="tutte">Tutte</button><button data-province="AQ">L’Aquila</button><button data-province="CH">Chieti</button><button data-province="PE">Pescara</button><button data-province="TE">Teramo</button>
+      </div>
+      <div class="sagre-period" id="sagrePeriod" aria-label="Filtra sagre per periodo"><span class="sagre-period-label">Periodo</span><button class="attivo" data-period="future">In programma</button><button data-period="week">Prossimi 7 giorni</button><button data-period="past">Passate</button></div>
+    </div>
+    <p class="sagre-count" id="sagreCount" aria-live="polite"></p>
+    <div class="sagre-grid" id="sagreGrid"></div>
+    <div class="sagre-empty" id="sagreEmpty">Nessuna sagra corrisponde ai filtri selezionati.</div>
+  </section>
   <!-- NAVETTA -->
-  <div class="navetta-section">
+  <div class="navetta-section event-view">
     <button class="navetta-toggle" id="navettaToggle" onclick="toggleNavetta()">
       <span>&#x1f68c; Orari Navetta Gratuita</span>
       <span class="arrow">&#x25bc;</span>
@@ -264,7 +291,8 @@ body.archivio .main-only{display:none!important}
 </main>
 <nav class="bottom-nav">
   <a href="#" id="navEventi" class="attivo" onclick="cambiaVista(false);return false"><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1">celebration</span>Eventi</a>
-  <a href="#" onclick="document.getElementById('navettaToggle')?.click();document.getElementById('navettaToggle')?.scrollIntoView({behavior:'smooth',block:'center'});return false"><span class="material-symbols-outlined">directions_bus</span>Navetta</a>
+  <a href="#" id="navSagre" onclick="cambiaVistaSagre();return false"><span class="material-symbols-outlined">local_dining</span>Sagre</a>
+  <a href="#" onclick="cambiaVista(false);document.getElementById('navettaToggle')?.click();document.getElementById('navettaToggle')?.scrollIntoView({behavior:'smooth',block:'center'});return false"><span class="material-symbols-outlined">directions_bus</span>Navetta</a>
   <a href="#" id="navArchivio" onclick="cambiaVista(true);return false"><span class="material-symbols-outlined">history</span>Archivio</a>
 </nav>
 <div class="footer">
@@ -302,13 +330,47 @@ var vistaArchivio=false;
 function eventoPassato(e){return e.endDate<dataISOOggi()}
 function dataOrdinamento(e){return Date.parse(e.startDate+'T00:00:00')}
 function cambiaVista(archivio){
+  document.body.classList.remove('sagre');
   vistaArchivio=!!archivio;
   document.body.classList.toggle('archivio',vistaArchivio);
   document.getElementById('navEventi').classList.toggle('attivo',!vistaArchivio);
+  document.getElementById('navSagre').classList.remove('attivo');
   document.getElementById('navArchivio').classList.toggle('attivo',vistaArchivio);
   document.getElementById('search').placeholder=vistaArchivio?'Cerca nell’archivio…':'Cerca evento, luogo, data…';
   window.scrollTo({top:0,behavior:'smooth'});
   filtra();
+}
+var sagre=[];
+function cambiaVistaSagre(){
+  document.body.classList.add('sagre');
+  document.body.classList.remove('archivio');
+  document.getElementById('navEventi').classList.remove('attivo');
+  document.getElementById('navArchivio').classList.remove('attivo');
+  document.getElementById('navSagre').classList.add('attivo');
+  window.scrollTo({top:0,behavior:'smooth'});
+  filtraSagre();
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function renderizzaSagre(lista){
+  var grid=document.getElementById('sagreGrid'),empty=document.getElementById('sagreEmpty');
+  grid.innerHTML=lista.map(function(s){return '<article class="sagra-card"><span class="sagra-date">'+escapeHtml(s.displayDate)+'</span><span class="province" aria-label="Provincia '+escapeHtml(s.province)+'">'+escapeHtml(s.province)+'</span><h2>'+escapeHtml(s.title)+'</h2><p class="sagra-place"><span class="material-symbols-outlined" aria-hidden="true">location_on</span><span>'+escapeHtml(s.venue)+'</span></p></article>'}).join('');
+  empty.style.display=lista.length?'none':'block';
+  document.getElementById('sagreCount').textContent=lista.length+(lista.length===1?' sagra visualizzata':' sagre visualizzate')+' su '+sagre.length;
+}
+function filtraSagre(){
+  var q=document.getElementById('sagreSearch').value.toLowerCase().trim();
+  var pb=document.querySelector('#sagreProvince .attivo'),province=pb?pb.dataset.province:'tutte';
+  var tb=document.querySelector('#sagrePeriod .attivo'),period=tb?tb.dataset.period:'future';
+  var today=dataISOOggi(),limit=new Date(today+'T12:00:00');limit.setDate(limit.getDate()+7);var limitIso=limit.getFullYear()+'-'+String(limit.getMonth()+1).padStart(2,'0')+'-'+String(limit.getDate()).padStart(2,'0');
+  var list=sagre.filter(function(s){
+    if(province!=='tutte'&&s.province!==province)return false;
+    if(period==='past'&&s.endDate>=today)return false;
+    if(period==='future'&&s.endDate<today)return false;
+    if(period==='week'&&(s.endDate<today||s.startDate>limitIso))return false;
+    return !q||(s.title+' '+s.venue+' '+s.province+' '+s.displayDate).toLowerCase().includes(q);
+  });
+  list.sort(function(a,b){return period==='past'?b.startDate.localeCompare(a.startDate):a.startDate.localeCompare(b.startDate)||a.title.localeCompare(b.title,'it')});
+  renderizzaSagre(list);
 }
 function filtra(){
   var q=document.getElementById('search').value.toLowerCase().trim(),a=document.querySelector('#filtri .attivo'),fc=a?a.dataset.filtro:'tutti';
@@ -330,6 +392,8 @@ function toggleNavetta(){document.getElementById('navettaToggle').classList.togg
 function openLightbox(s,a){var lb=document.createElement('div');lb.className='lightbox';lb.innerHTML='<span class="lightbox-close">&times;</span><img class="lightbox-img" src="'+s+'" alt="'+a+'">';lb.addEventListener('click',function(e){if(e.target===lb||e.target.className==='lightbox-close')lb.remove()});document.body.appendChild(lb)}
 document.getElementById('search').addEventListener('input',filtra);
 document.querySelectorAll('#filtri button').forEach(function(btn){btn.addEventListener('click',function(){document.querySelectorAll('#filtri button').forEach(function(b){b.classList.remove('attivo')});btn.classList.add('attivo');filtra()})});
+document.getElementById('sagreSearch').addEventListener('input',filtraSagre);
+['sagreProvince','sagrePeriod'].forEach(function(id){document.getElementById(id).addEventListener('click',function(e){if(e.target.tagName!=='BUTTON')return;this.querySelectorAll('button').forEach(function(b){b.classList.remove('attivo')});e.target.classList.add('attivo');filtraSagre()})});
 document.getElementById('aggiornato').textContent='31 Lug 2026';
 fetch('./data/events.json',{cache:'no-cache'})
   .then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json()})
@@ -344,6 +408,10 @@ fetch('./data/events.json',{cache:'no-cache'})
     document.getElementById('stats').textContent='Errore di caricamento';
     console.error('Caricamento data/events.json fallito:',err);
   });
+fetch('./data/sagre.json',{cache:'no-cache'})
+  .then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json()})
+  .then(function(d){if(!Array.isArray(d))throw new Error('Formato dati non valido');sagre=d;filtraSagre()})
+  ['catch'](function(err){document.getElementById('sagreGrid').innerHTML='';document.getElementById('sagreEmpty').style.display='block';document.getElementById('sagreEmpty').textContent='Impossibile caricare le sagre. Controlla la connessione e riprova.';document.getElementById('sagreCount').textContent='Errore di caricamento';console.error('Caricamento data/sagre.json fallito:',err)});
 var ve=document.getElementById('visitCount'),ce=document.querySelector('.visit-counter');ce.classList.add('loading');ve.innerHTML='<span style="display:inline-block;width:12px;height:12px;border:2px solid #a68b82;border-top-color:transparent;border-radius:50%;animation:spin 0.6s linear infinite;vertical-align:middle;margin-right:4px"></span>';
 fetch('https://countapi.mileshilliard.com/api/v1/hit/roseto-eventi-visits').then(function(r){return r.json()}).then(function(d){ve.textContent=Number(d.value).toLocaleString('it-IT');ce.classList.remove('loading')})['catch'](function(){ve.textContent=Number(11246).toLocaleString('it-IT');ce.classList.remove('loading')});
 if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js')['catch'](function(){});
