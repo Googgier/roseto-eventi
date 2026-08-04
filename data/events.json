@@ -1,5 +1,63 @@
 [
   {
+    "id": "i-mercoledi-della-cultura-2026",
+    "startDate": "2026-06-24",
+    "endDate": "2026-09-02",
+    "displayDate": "24 Giu – 2 Set 2026",
+    "time": "18:30 (mercoledì)",
+    "title": "I Mercoledì della Cultura",
+    "venue": "Villa Comunale, Roseto",
+    "city": "Roseto",
+    "description": "Rassegna culturale settimanale. Libri, incontri e presentazioni ogni mercoledì.",
+    "tags": [
+      "Cultura",
+      "Libri"
+    ],
+    "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-07-26"
+  },
+  {
+    "id": "personaggi-drammatici-che-si-manifestano-comicamente-2026",
+    "startDate": "2026-07-01",
+    "endDate": "2026-09-06",
+    "displayDate": "1 Lug – 6 Set 2026",
+    "time": "Tutto il giorno",
+    "title": "Personaggi drammatici che si manifestano comicamente",
+    "venue": "Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Personale di Illustrazioni di Pasquale Testa. Mostra di illustrazioni umoristiche.",
+    "tags": [
+      "Cultura",
+      "Arte"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/en/events/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-07-28"
+  },
+  {
+    "id": "eventi-estate-sbt-2026",
+    "startDate": "2026-07-01",
+    "endDate": "2026-09-30",
+    "displayDate": "Luglio–Settembre 2026",
+    "time": "Vari orari",
+    "title": "Eventi Estate SBT 2026",
+    "venue": "San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Concerti, sagre e spettacoli lungo tutta l'estate.",
+    "tags": [
+      "Musica",
+      "Cultura",
+      "Sagra"
+    ],
+    "sourceUrl": "https://www.comune.sanbenedettodeltronto.ap.it/",
+    "price": "misto",
+    "image": "images/img-27.jpg",
+    "updatedAt": "2026-07-26"
+  },
+  {
     "id": "villa-in-arte-2026",
     "startDate": "2026-07-10",
     "endDate": "2026-09-06",
@@ -38,6 +96,25 @@
     "updatedAt": "2026-07-26"
   },
   {
+    "id": "17-sagra-de-lu-stennmass-2026",
+    "startDate": "2026-07-22",
+    "endDate": "2026-07-26",
+    "displayDate": "22–26 Lug 2026",
+    "time": "Dalle 19:00",
+    "title": "17ª Sagra 'De lu Stennmass'",
+    "venue": "Cologna Paese, Roseto",
+    "city": "Roseto",
+    "description": "Sagra enogastronomica tradizionale. Specialità locali e atmosfera di festa.",
+    "tags": [
+      "Enogastronomia",
+      "Sagra"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/eventi/",
+    "price": "gratis",
+    "image": "images/img-23.jpg",
+    "updatedAt": "2026-07-26"
+  },
+  {
     "id": "billy-cobham-time-machine-2026",
     "startDate": "2026-07-22",
     "endDate": "2026-07-22",
@@ -58,22 +135,22 @@
     "updatedAt": "2026-07-26"
   },
   {
-    "id": "17-sagra-de-lu-stennmass-2026",
+    "id": "marche-manouche-dario-napoli-trio-2026",
     "startDate": "2026-07-22",
-    "endDate": "2026-07-26",
-    "displayDate": "22–26 Lug 2026",
-    "time": "Dalle 19:00",
-    "title": "17ª Sagra 'De lu Stennmass'",
-    "venue": "Cologna Paese, Roseto",
-    "city": "Roseto",
-    "description": "Sagra enogastronomica tradizionale. Specialità locali e atmosfera di festa.",
+    "endDate": "2026-07-22",
+    "displayDate": "22 Lug 2026",
+    "time": "21:00",
+    "title": "Marche Manouche – Dario Napoli Trio",
+    "venue": "San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Jazz Manouche moderno.",
     "tags": [
-      "Enogastronomia",
-      "Sagra"
+      "Musica",
+      "Jazz"
     ],
-    "sourceUrl": "https://www.visitroseto.it/eventi/",
+    "sourceUrl": "https://www.nonsoloeventimarche.it/",
     "price": "gratis",
-    "image": "images/img-23.jpg",
+    "image": "images/img-22.jpg",
     "updatedAt": "2026-07-26"
   },
   {
@@ -93,6 +170,45 @@
     "sourceUrl": "https://www.moonjunefest.com/",
     "price": "a pagamento",
     "image": "images/img-24.jpg",
+    "updatedAt": "2026-07-26"
+  },
+  {
+    "id": "art-in-act-2026",
+    "startDate": "2026-07-24",
+    "endDate": "2026-07-24",
+    "displayDate": "24 Lug 2026",
+    "time": "18:30",
+    "title": "Art in Act 2026",
+    "venue": "Villa Paris (via Marcacci 1), Roseto",
+    "city": "Roseto",
+    "description": "Inaugurazione mostra d'arte collettiva.",
+    "tags": [
+      "Cultura",
+      "Arte"
+    ],
+    "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-07-26"
+  },
+  {
+    "id": "c-era-una-volta-morricone-e-leone-2026",
+    "startDate": "2026-07-24",
+    "endDate": "2026-07-24",
+    "displayDate": "24 Lug 2026",
+    "time": "21:30",
+    "title": "C'era una volta... Morricone e Leone",
+    "venue": "Piazza Ponno, Roseto",
+    "city": "Roseto",
+    "description": "Omaggio al sodalizio artistico tra Ennio Morricone e Sergio Leone. Musica e immagini.",
+    "tags": [
+      "Musica",
+      "Cultura",
+      "Spettacolo"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/eventi/",
+    "price": "gratis",
+    "image": "images/img-28.jpg",
     "updatedAt": "2026-07-26"
   },
   {
@@ -116,6 +232,63 @@
     "updatedAt": "2026-07-26"
   },
   {
+    "id": "che-s-e-benedette-sti-badante-commedia-2026",
+    "startDate": "2026-07-25",
+    "endDate": "2026-07-25",
+    "displayDate": "25 Lug 2026",
+    "time": "21:00",
+    "title": "Che s'è benedette sti badante – Commedia",
+    "venue": "Voltarrosto, Roseto",
+    "city": "Roseto",
+    "description": "Commedia teatrale dialettale. Serata di teatro popolare.",
+    "tags": [
+      "Cultura",
+      "Teatro"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/eventi/",
+    "price": "gratis",
+    "image": "images/img-29.jpg",
+    "updatedAt": "2026-07-26"
+  },
+  {
+    "id": "giornata-mondiale-della-prevenzione-dell-annegamento-2026",
+    "startDate": "2026-07-25",
+    "endDate": "2026-07-25",
+    "displayDate": "25 Lug 2026",
+    "time": "11:00",
+    "title": "Giornata Mondiale della Prevenzione dell'Annegamento",
+    "venue": "Lido Celommi, Roseto",
+    "city": "Roseto",
+    "description": "Mattinata dedicata alla sicurezza in mare e alla prevenzione degli incidenti balneari. Bandiera Blu.",
+    "tags": [
+      "Sport",
+      "Cultura"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/eventi/",
+    "price": "gratis",
+    "image": "images/img-40.jpg",
+    "updatedAt": "2026-07-26"
+  },
+  {
+    "id": "roseto-d-amare-gran-gala-lirico-2026",
+    "startDate": "2026-07-26",
+    "endDate": "2026-07-26",
+    "displayDate": "26 Lug 2026",
+    "time": "21:15",
+    "title": "Roseto d'aMare – Gran Galà Lirico",
+    "venue": "Piazza del Municipio, Montepagano",
+    "city": "Roseto",
+    "description": "Orchestra 'Duchi d'Acquaviva'. Sara Fulvi (soprano), Giacomo Leone (tenore), Vittorio Del Monte (basso-baritono).",
+    "tags": [
+      "Musica",
+      "Classica"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/eventi/",
+    "price": "gratis",
+    "image": "images/img-30.jpg",
+    "updatedAt": "2026-07-26"
+  },
+  {
     "id": "concerti-estate-giulianova-2026",
     "startDate": "2026-07-28",
     "endDate": "2026-09-06",
@@ -136,61 +309,22 @@
     "updatedAt": "2026-07-31"
   },
   {
-    "id": "c-era-una-volta-morricone-e-leone-2026",
-    "startDate": "2026-07-24",
-    "endDate": "2026-07-24",
-    "displayDate": "24 Lug 2026",
-    "time": "21:30",
-    "title": "C'era una volta... Morricone e Leone",
-    "venue": "Piazza Ponno, Roseto",
+    "id": "roseto-west-fest-2026",
+    "startDate": "2026-07-29",
+    "endDate": "2026-08-02",
+    "displayDate": "29 Lug – 2 Ago 2026",
+    "time": "19:30",
+    "title": "Roseto West Fest 2026",
+    "venue": "Chiesa di Santa Teresa di Calcutta, Roseto",
     "city": "Roseto",
-    "description": "Omaggio al sodalizio artistico tra Ennio Morricone e Sergio Leone. Musica e immagini.",
+    "description": "Cinque serate all'insegna di enogastronomia, musica e intrattenimento per tutta la famiglia.",
     "tags": [
-      "Musica",
-      "Cultura",
-      "Spettacolo"
+      "Enogastronomia",
+      "Musica"
     ],
     "sourceUrl": "https://www.visitroseto.it/eventi/",
     "price": "gratis",
-    "image": "images/img-28.jpg",
-    "updatedAt": "2026-07-26"
-  },
-  {
-    "id": "che-s-e-benedette-sti-badante-commedia-2026",
-    "startDate": "2026-07-25",
-    "endDate": "2026-07-25",
-    "displayDate": "25 Lug 2026",
-    "time": "21:00",
-    "title": "Che s'è benedette sti badante – Commedia",
-    "venue": "Voltarrosto, Roseto",
-    "city": "Roseto",
-    "description": "Commedia teatrale dialettale. Serata di teatro popolare.",
-    "tags": [
-      "Cultura",
-      "Teatro"
-    ],
-    "sourceUrl": "https://www.visitroseto.it/eventi/",
-    "price": "gratis",
-    "image": "images/img-29.jpg",
-    "updatedAt": "2026-07-26"
-  },
-  {
-    "id": "roseto-d-amare-gran-gala-lirico-2026",
-    "startDate": "2026-07-26",
-    "endDate": "2026-07-26",
-    "displayDate": "26 Lug 2026",
-    "time": "21:15",
-    "title": "Roseto d'aMare – Gran Galà Lirico",
-    "venue": "Piazza del Municipio, Montepagano",
-    "city": "Roseto",
-    "description": "Orchestra 'Duchi d'Acquaviva'. Sara Fulvi (soprano), Giacomo Leone (tenore), Vittorio Del Monte (basso-baritono).",
-    "tags": [
-      "Musica",
-      "Classica"
-    ],
-    "sourceUrl": "https://www.visitroseto.it/eventi/",
-    "price": "gratis",
-    "image": "images/img-30.jpg",
+    "image": "images/img-41.jpg",
     "updatedAt": "2026-07-26"
   },
   {
@@ -232,6 +366,82 @@
     "updatedAt": "2026-07-26"
   },
   {
+    "id": "carnevale-estivo-giuliese-2026",
+    "startDate": "2026-08-01",
+    "endDate": "2026-08-01",
+    "displayDate": "1 Ago 2026",
+    "time": "20:00",
+    "title": "Carnevale Estivo Giuliese",
+    "venue": "Lungomare Zara, Giulianova Lido",
+    "city": "Giulianova",
+    "description": "Gran Carnevale estivo: sfilata dei carri allegorici delle sei contrade, concerti, animazione per bambini e street food sul lungomare.",
+    "tags": [
+      "Cultura",
+      "Spettacolo"
+    ],
+    "sourceUrl": "https://www.discoverteramo.it/Eventi/CARNEVALE-GIULIANOVA/4-1135-1.html",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-07-31"
+  },
+  {
+    "id": "emma-live-2026",
+    "startDate": "2026-08-02",
+    "endDate": "2026-08-02",
+    "displayDate": "2 Ago 2026",
+    "time": "21:00",
+    "title": "Emma – Live 2026",
+    "venue": "Porto Turistico, Pescara",
+    "city": "Pescara",
+    "description": "Concerto di Emma Marrone. Biglietti su TicketOne.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.ticketone.it/event/emma-live-2026-porto-turistico-21119965/",
+    "price": "a pagamento",
+    "image": "images/img-7.jpg",
+    "updatedAt": "2026-07-26"
+  },
+  {
+    "id": "festa-madonna-del-portosalvo-2026",
+    "startDate": "2026-08-02",
+    "endDate": "2026-08-09",
+    "displayDate": "2–9 Ago 2026",
+    "time": "Da definire",
+    "title": "Festa Madonna del Portosalvo",
+    "venue": "Giulianova",
+    "city": "Giulianova",
+    "description": "Festa religiosa e popolare in onore della Madonna del Portosalvo con appuntamenti religiosi, musica e intrattenimento.",
+    "tags": [
+      "Cultura",
+      "Tradizione"
+    ],
+    "sourceUrl": "https://www.visitgiulianova.com/eventi.php",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "festa-patronale-santa-maria-assunta-prima-parte-2026",
+    "startDate": "2026-08-03",
+    "endDate": "2026-08-03",
+    "displayDate": "3 Ago 2026",
+    "time": "Da definire",
+    "title": "Festa Patronale Santa Maria Assunta – Prima parte",
+    "venue": "Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Festa patronale in onore di Santa Maria Assunta. Primo appuntamento dei festeggiamenti estivi.",
+    "tags": [
+      "Cultura",
+      "Tradizione"
+    ],
+    "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-07-28"
+  },
+  {
     "id": "tiromancino-in-concerto-2026",
     "startDate": "2026-08-05",
     "endDate": "2026-08-05",
@@ -251,158 +461,42 @@
     "updatedAt": "2026-07-26"
   },
   {
-    "id": "roseto-d-amare-morricone-western-2026",
-    "startDate": "2026-08-09",
+    "id": "48-sagra-della-vongola-2026",
+    "startDate": "2026-08-05",
     "endDate": "2026-08-09",
-    "displayDate": "9 Ago 2026",
-    "time": "21:15",
-    "title": "Roseto d'aMare – Morricone Western",
-    "venue": "Piazza G. Rossa, Cologna Paese",
-    "city": "Roseto",
-    "description": "Morricone Western Orchestra. Direttore Nataliya Gonchak. Omaggio a Ennio Morricone.",
+    "displayDate": "5–9 Ago 2026",
+    "time": "Dalle 19:00",
+    "title": "48ª Sagra della Vongola",
+    "venue": "Piazza Caduti di Nassirya, Tortoreto",
+    "city": "Tortoreto",
+    "description": "Tradizionale sagra della vongola a Tortoreto Lido. Specialità di mare e atmosfera di festa.",
     "tags": [
-      "Musica",
-      "Classica"
+      "Enogastronomia",
+      "Sagra"
     ],
-    "sourceUrl": "https://www.visitroseto.it/eventi/",
+    "sourceUrl": "https://mammadovemiporti.it/2026/05/12/estate-tortoretana-caledario-eventi-estate-2026-a-tortoreto/",
     "price": "gratis",
-    "image": "images/img-33.jpg",
-    "updatedAt": "2026-07-26"
+    "image": "",
+    "updatedAt": "2026-07-28"
   },
   {
-    "id": "roseto-d-amare-tango-di-piazzolla-2026",
-    "startDate": "2026-08-13",
-    "endDate": "2026-08-13",
-    "displayDate": "13 Ago 2026",
-    "time": "21:15",
-    "title": "Roseto d'aMare – Tango di Piazzolla",
-    "venue": "Roseto degli Abruzzi",
-    "city": "Roseto",
-    "description": "Il Tango di Astor Piazzolla con il Gianni Iorio Quartet.",
-    "tags": [
-      "Musica",
-      "Jazz",
-      "Classica"
-    ],
-    "sourceUrl": "https://www.visitroseto.it/eventi/",
-    "price": "gratis",
-    "image": "images/img-34.jpg",
-    "updatedAt": "2026-07-26"
-  },
-  {
-    "id": "transumare-fest-2026",
-    "startDate": "2026-08-19",
-    "endDate": "2026-08-22",
-    "displayDate": "19–22 Ago 2026",
-    "time": "18:00–23:45",
-    "title": "Transumare Fest 2026",
-    "venue": "Roseto degli Abruzzi",
-    "city": "Roseto",
-    "description": "Festival multidisciplinare: musica, arte e cultura. Tre giorni di eventi. Biglietti su Xceed.me.",
-    "tags": [
-      "Musica",
-      "Festival",
-      "Cultura"
-    ],
-    "sourceUrl": "https://www.transumarefest.com/",
-    "price": "a pagamento",
-    "image": "images/img-35.jpg",
-    "updatedAt": "2026-07-26"
-  },
-  {
-    "id": "francesca-michielin-concerto-gratuito-2026",
-    "startDate": "2026-08-29",
-    "endDate": "2026-08-29",
-    "displayDate": "29 Ago 2026",
+    "id": "fiorella-mannoia-in-concerto-2026",
+    "startDate": "2026-08-05",
+    "endDate": "2026-08-05",
+    "displayDate": "5 Ago 2026",
     "time": "21:00",
-    "title": "Francesca Michielin – concerto gratuito",
-    "venue": "Roseto degli Abruzzi",
-    "city": "Roseto",
-    "description": "Concerto gratuito della cantautrice per la chiusura dell'estate rosetana.",
+    "title": "Fiorella Mannoia in concerto",
+    "venue": "Banchina di riva del porto, Giulianova",
+    "city": "Giulianova",
+    "description": "Concerto di Fiorella Mannoia. Una delle voci più iconiche della musica italiana.",
     "tags": [
       "Musica",
       "Concerto"
     ],
-    "sourceUrl": "https://www.visitroseto.it/eventi/",
-    "price": "gratis",
-    "image": "images/img-36.jpg",
-    "updatedAt": "2026-07-26"
-  },
-  {
-    "id": "art-in-act-2026",
-    "startDate": "2026-07-24",
-    "endDate": "2026-07-24",
-    "displayDate": "24 Lug 2026",
-    "time": "18:30",
-    "title": "Art in Act 2026",
-    "venue": "Villa Paris (via Marcacci 1), Roseto",
-    "city": "Roseto",
-    "description": "Inaugurazione mostra d'arte collettiva.",
-    "tags": [
-      "Cultura",
-      "Arte"
-    ],
-    "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi",
-    "price": "gratis",
+    "sourceUrl": "https://www.visitgiulianova.com/eventi.php",
+    "price": "a pagamento",
     "image": "",
-    "updatedAt": "2026-07-26"
-  },
-  {
-    "id": "i-mercoledi-della-cultura-2026",
-    "startDate": "2026-06-24",
-    "endDate": "2026-09-02",
-    "displayDate": "24 Giu – 2 Set 2026",
-    "time": "18:30 (mercoledì)",
-    "title": "I Mercoledì della Cultura",
-    "venue": "Villa Comunale, Roseto",
-    "city": "Roseto",
-    "description": "Rassegna culturale settimanale. Libri, incontri e presentazioni ogni mercoledì.",
-    "tags": [
-      "Cultura",
-      "Libri"
-    ],
-    "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi",
-    "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-07-26"
-  },
-  {
-    "id": "giornata-mondiale-della-prevenzione-dell-annegamento-2026",
-    "startDate": "2026-07-25",
-    "endDate": "2026-07-25",
-    "displayDate": "25 Lug 2026",
-    "time": "11:00",
-    "title": "Giornata Mondiale della Prevenzione dell'Annegamento",
-    "venue": "Lido Celommi, Roseto",
-    "city": "Roseto",
-    "description": "Mattinata dedicata alla sicurezza in mare e alla prevenzione degli incidenti balneari. Bandiera Blu.",
-    "tags": [
-      "Sport",
-      "Cultura"
-    ],
-    "sourceUrl": "https://www.visitroseto.it/eventi/",
-    "price": "gratis",
-    "image": "images/img-40.jpg",
-    "updatedAt": "2026-07-26"
-  },
-  {
-    "id": "roseto-west-fest-2026",
-    "startDate": "2026-07-29",
-    "endDate": "2026-08-02",
-    "displayDate": "29 Lug – 2 Ago 2026",
-    "time": "19:30",
-    "title": "Roseto West Fest 2026",
-    "venue": "Chiesa di Santa Teresa di Calcutta, Roseto",
-    "city": "Roseto",
-    "description": "Cinque serate all'insegna di enogastronomia, musica e intrattenimento per tutta la famiglia.",
-    "tags": [
-      "Enogastronomia",
-      "Musica"
-    ],
-    "sourceUrl": "https://www.visitroseto.it/eventi/",
-    "price": "gratis",
-    "image": "images/img-41.jpg",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-31"
   },
   {
     "id": "emozioni-in-musica-serena-brancale-2026",
@@ -422,6 +516,63 @@
     "price": "a pagamento",
     "image": "images/img-42.jpg",
     "updatedAt": "2026-07-26"
+  },
+  {
+    "id": "massimo-di-cataldo-fontanelle-2026",
+    "startDate": "2026-08-06",
+    "endDate": "2026-08-06",
+    "displayDate": "6 Ago 2026",
+    "time": "Da definire",
+    "title": "Massimo Di Cataldo – concerto",
+    "venue": "Fontanelle, Atri",
+    "city": "Atri",
+    "description": "Concerto del cantautore Massimo Di Cataldo nella frazione Fontanelle di Atri, nell'ambito di Atri Cultura in Eventi 2026.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.ekuonews.it/atri-cultura-in-eventi-2026-oltre-220-appuntamenti-da-luglio-a-settembre/",
+    "price": "gratis",
+    "image": "images/img-59.jpg",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "michele-zarrillo-in-concerto-2026",
+    "startDate": "2026-08-06",
+    "endDate": "2026-08-06",
+    "displayDate": "6 Ago 2026",
+    "time": "22:00",
+    "title": "Michele Zarrillo in concerto",
+    "venue": "Piazza dei Pini, Silvi Marina",
+    "city": "Silvi",
+    "description": "Concerto del cantautore romano. Successi come 'Una rosa blu', 'L'amore vuole amore' e 'Gli anni'.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.visitsilvi.it/eventi-e-manifestazioni/eventi-principali-calendario-estivo-2026/29-68.html",
+    "price": "gratis",
+    "image": "images/img-48.jpg",
+    "updatedAt": "2026-07-28"
+  },
+  {
+    "id": "santa-maria-a-valle-in-festa-2026",
+    "startDate": "2026-08-06",
+    "endDate": "2026-08-07",
+    "displayDate": "6–7 Ago 2026",
+    "time": "21:30",
+    "title": "Santa Maria a Valle in Festa – VI edizione",
+    "venue": "Santa Maria a Valle, Pineto",
+    "city": "Pineto",
+    "description": "Festa nella frazione Santa Maria a Valle di Pineto con musica e intrattenimento serale.",
+    "tags": [
+      "Cultura",
+      "Tradizione"
+    ],
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
   },
   {
     "id": "3-palio-delle-contrade-roseto-senza-frontiere-2026",
@@ -462,156 +613,81 @@
     "updatedAt": "2026-07-26"
   },
   {
-    "id": "eventi-d-amare-2026",
-    "startDate": "2026-08-14",
-    "endDate": "2026-08-17",
-    "displayDate": "14–17 Ago 2026",
+    "id": "abruzzo-organ-festival-pineto-2026",
+    "startDate": "2026-08-07",
+    "endDate": "2026-08-07",
+    "displayDate": "7 Ago 2026",
     "time": "21:00",
-    "title": "Eventi d'Amare 2026",
-    "venue": "Piazza Pineta Centrale, Roseto",
-    "city": "Roseto",
-    "description": "Quattro serate di musica dal vivo: 14/8 Le Ombre, 15/8 Tributo Gianna Nannini, 16/8 Straisland (Dire Straits Tribute), 17/8 gran finale. Spettacolo pirotecnico Ferragosto.",
+    "title": "Abruzzo Organ Festival – VI edizione",
+    "venue": "Chiesa Sant'Agnese, Pineto",
+    "city": "Pineto",
+    "description": "Concerto d'organo nell'ambito dell'Abruzzo Organ Festival alla Chiesa Sant'Agnese.",
     "tags": [
       "Musica",
-      "Spettacolo"
+      "Classica"
+    ],
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "roseto-d-amare-morricone-western-2026",
+    "startDate": "2026-08-09",
+    "endDate": "2026-08-09",
+    "displayDate": "9 Ago 2026",
+    "time": "21:15",
+    "title": "Roseto d'aMare – Morricone Western",
+    "venue": "Piazza G. Rossa, Cologna Paese",
+    "city": "Roseto",
+    "description": "Morricone Western Orchestra. Direttore Nataliya Gonchak. Omaggio a Ennio Morricone.",
+    "tags": [
+      "Musica",
+      "Classica"
     ],
     "sourceUrl": "https://www.visitroseto.it/eventi/",
     "price": "gratis",
-    "image": "",
+    "image": "images/img-33.jpg",
     "updatedAt": "2026-07-26"
   },
   {
-    "id": "straisland-the-finest-dire-straits-tribute-2026",
-    "startDate": "2026-08-16",
-    "endDate": "2026-08-16",
-    "displayDate": "16 Ago 2026",
-    "time": "21:00",
-    "title": "Straisland – The Finest Dire Straits Tribute",
-    "venue": "Piazza Pineta Centrale, Roseto",
-    "city": "Roseto",
-    "description": "Tributo ai Dire Straits: Sultans of Swing, Money for Nothing, Brothers in Arms.",
-    "tags": [
-      "Musica",
-      "Spettacolo"
-    ],
-    "sourceUrl": "https://www.visitroseto.it/eventi/",
-    "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-07-26"
-  },
-  {
-    "id": "giuliano-palma-in-concerto-2026",
-    "startDate": "2026-08-23",
-    "endDate": "2026-08-23",
-    "displayDate": "23 Ago 2026",
-    "time": "21:30",
-    "title": "Giuliano Palma in concerto",
-    "venue": "Piazza Redipuglia, Cologna Spiaggia, Roseto",
-    "city": "Roseto",
-    "description": "Concerto di Giuliano Palma, una delle voci più amate della scena italiana.",
+    "id": "sarah-toscano-giulianova-2026",
+    "startDate": "2026-08-09",
+    "endDate": "2026-08-09",
+    "displayDate": "9 Ago 2026",
+    "time": "Da definire",
+    "title": "Sarah Toscano – concerto gratuito",
+    "venue": "Piazza del Mare, Giulianova",
+    "city": "Giulianova",
+    "description": "Concerto gratuito della vincitrice di Amici 2024 nell'ambito di GiuliaEventi Estate 2026.",
     "tags": [
       "Musica",
       "Concerto"
     ],
-    "sourceUrl": "https://www.visitroseto.it/eventi/",
+    "sourceUrl": "https://www.visitgiulianova.com/eventi.php",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-07-26"
+    "image": "images/img-53.jpg",
+    "updatedAt": "2026-08-04"
   },
   {
-    "id": "roseto-d-amare-glem-clarinet-quartet-2026",
-    "startDate": "2026-09-05",
-    "endDate": "2026-09-05",
-    "displayDate": "5 Set 2026",
-    "time": "21:00",
-    "title": "Roseto d'aMare – Glem Clarinet Quartet",
-    "venue": "Villa Comunale, Roseto",
+    "id": "borsacchio-sotto-le-stelle-di-san-lorenzo-2026",
+    "startDate": "2026-08-10",
+    "endDate": "2026-08-10",
+    "displayDate": "10 Ago 2026",
+    "time": "19:00",
+    "title": "Borsacchio sotto le Stelle di San Lorenzo",
+    "venue": "Quartiere Borsacchio, Roseto",
     "city": "Roseto",
-    "description": "(JAZZ) Glem Clarinet Quartet. Giuseppe Federico Paci, Maurizio Croci, Edoardo Mancini, Lorenzo Poli.",
-    "tags": [
-      "Musica",
-      "Jazz"
-    ],
-    "sourceUrl": "https://www.visitroseto.it/eventi/",
-    "price": "gratis",
-    "image": "images/img-47.jpg",
-    "updatedAt": "2026-07-26"
-  },
-  {
-    "id": "personaggi-drammatici-che-si-manifestano-comicamente-2026",
-    "startDate": "2026-07-01",
-    "endDate": "2026-09-06",
-    "displayDate": "1 Lug – 6 Set 2026",
-    "time": "Tutto il giorno",
-    "title": "Personaggi drammatici che si manifestano comicamente",
-    "venue": "Roseto degli Abruzzi",
-    "city": "Roseto",
-    "description": "Personale di Illustrazioni di Pasquale Testa. Mostra di illustrazioni umoristiche.",
-    "tags": [
-      "Cultura",
-      "Arte"
-    ],
-    "sourceUrl": "https://www.visitroseto.it/en/events/",
-    "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-07-28"
-  },
-  {
-    "id": "festa-patronale-santa-maria-assunta-prima-parte-2026",
-    "startDate": "2026-08-03",
-    "endDate": "2026-08-03",
-    "displayDate": "3 Ago 2026",
-    "time": "Da definire",
-    "title": "Festa Patronale Santa Maria Assunta – Prima parte",
-    "venue": "Roseto degli Abruzzi",
-    "city": "Roseto",
-    "description": "Festa patronale in onore di Santa Maria Assunta. Primo appuntamento dei festeggiamenti estivi.",
-    "tags": [
-      "Cultura",
-      "Tradizione"
-    ],
-    "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi",
-    "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-07-28"
-  },
-  {
-    "id": "48-sagra-della-vongola-2026",
-    "startDate": "2026-08-05",
-    "endDate": "2026-08-09",
-    "displayDate": "5–9 Ago 2026",
-    "time": "Dalle 19:00",
-    "title": "48ª Sagra della Vongola",
-    "venue": "Piazza Caduti di Nassirya, Tortoreto",
-    "city": "Tortoreto",
-    "description": "Tradizionale sagra della vongola a Tortoreto Lido. Specialità di mare e atmosfera di festa.",
+    "description": "Serata dedicata alla tradizione, alla convivialità e alla festa patronale di San Lorenzo nel quartiere Borsacchio. Enogastronomia, intrattenimento e musica.",
     "tags": [
       "Enogastronomia",
-      "Sagra"
+      "Intrattenimento",
+      "Musica"
     ],
-    "sourceUrl": "https://mammadovemiporti.it/2026/05/12/estate-tortoretana-caledario-eventi-estate-2026-a-tortoreto/",
+    "sourceUrl": "https://www.visitroseto.it/events/borsacchio-sotto-le-stelle-di-san-lorenzo/",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-07-28"
-  },
-  {
-    "id": "michele-zarrillo-in-concerto-2026",
-    "startDate": "2026-08-06",
-    "endDate": "2026-08-06",
-    "displayDate": "6 Ago 2026",
-    "time": "22:00",
-    "title": "Michele Zarrillo in concerto",
-    "venue": "Piazza dei Pini, Silvi Marina",
-    "city": "Silvi",
-    "description": "Concerto del cantautore romano. Successi come 'Una rosa blu', 'L'amore vuole amore' e 'Gli anni'.",
-    "tags": [
-      "Musica",
-      "Concerto"
-    ],
-    "sourceUrl": "https://www.visitsilvi.it/eventi-e-manifestazioni/eventi-principali-calendario-estivo-2026/29-68.html",
-    "price": "gratis",
-    "image": "images/img-48.jpg",
-    "updatedAt": "2026-07-28"
+    "image": "images/img-49.jpg",
+    "updatedAt": "2026-08-04"
   },
   {
     "id": "cerasuolo-a-mare-2026",
@@ -633,99 +709,651 @@
     "updatedAt": "2026-07-31"
   },
   {
-    "id": "carnevale-estivo-giuliese-2026",
-    "startDate": "2026-08-01",
-    "endDate": "2026-08-01",
-    "displayDate": "1 Ago 2026",
-    "time": "20:00",
-    "title": "Carnevale Estivo Giuliese",
-    "venue": "Lungomare Zara, Giulianova Lido",
-    "city": "Giulianova",
-    "description": "Gran Carnevale estivo: sfilata dei carri allegorici delle sei contrade, concerti, animazione per bambini e street food sul lungomare.",
-    "tags": [
-      "Cultura",
-      "Spettacolo"
-    ],
-    "sourceUrl": "https://www.discoverteramo.it/Eventi/CARNEVALE-GIULIANOVA/4-1135-1.html",
-    "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-07-31"
-  },
-  {
-    "id": "fiorella-mannoia-in-concerto-2026",
-    "startDate": "2026-08-05",
-    "endDate": "2026-08-05",
-    "displayDate": "5 Ago 2026",
-    "time": "21:00",
-    "title": "Fiorella Mannoia in concerto",
-    "venue": "Banchina di riva del porto, Giulianova",
-    "city": "Giulianova",
-    "description": "Concerto di Fiorella Mannoia. Una delle voci più iconiche della musica italiana.",
+    "id": "enrico-ruggeri-electric-tour-atri-2026",
+    "startDate": "2026-08-10",
+    "endDate": "2026-08-10",
+    "displayDate": "10 Ago 2026",
+    "time": "22:00",
+    "title": "Enrico Ruggeri – Electric Tour 2026",
+    "venue": "Piazza Duchi d'Acquaviva, Atri",
+    "city": "Atri",
+    "description": "Concerto gratuito di Enrico Ruggeri con il suo Electric Tour 2026, concertone Atrincontra.",
     "tags": [
       "Musica",
       "Concerto"
+    ],
+    "sourceUrl": "https://www.abruzzonews.eu/events/enrico-ruggeri-atri-10-agosto-2026",
+    "price": "gratis",
+    "image": "images/img-52.jpg",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "musica-elettronica-joseph-capriati-tortoreto-2026",
+    "startDate": "2026-08-10",
+    "endDate": "2026-08-10",
+    "displayDate": "10 Ago 2026",
+    "time": "Da definire",
+    "title": "Musica elettronica – Joseph Capriati",
+    "venue": "Tortoreto Lido",
+    "city": "Tortoreto",
+    "description": "Serata di musica elettronica con il DJ Joseph Capriati e numerosi ospiti.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/25-282.html",
+    "price": "a pagamento",
+    "image": "images/img-55.jpg",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "gabriele-cirilli-giulianova-2026",
+    "startDate": "2026-08-11",
+    "endDate": "2026-08-11",
+    "displayDate": "11 Ago 2026",
+    "time": "Da definire",
+    "title": "Gabriele Cirilli – spettacolo",
+    "venue": "Giulianova",
+    "city": "Giulianova",
+    "description": "Spettacolo comico di Gabriele Cirilli a ingresso libero.",
+    "tags": [
+      "Spettacolo",
+      "Cabaret"
     ],
     "sourceUrl": "https://www.visitgiulianova.com/eventi.php",
-    "price": "a pagamento",
-    "image": "",
-    "updatedAt": "2026-07-31"
+    "price": "gratis",
+    "image": "images/img-56.jpg",
+    "updatedAt": "2026-08-04"
   },
   {
-    "id": "emma-live-2026",
-    "startDate": "2026-08-02",
-    "endDate": "2026-08-02",
-    "displayDate": "2 Ago 2026",
-    "time": "21:00",
-    "title": "Emma – Live 2026",
-    "venue": "Porto Turistico, Pescara",
-    "city": "Pescara",
-    "description": "Concerto di Emma Marrone. Biglietti su TicketOne.",
+    "id": "festa-patronale-santa-maria-assunta-seconda-parte-2026",
+    "startDate": "2026-08-12",
+    "endDate": "2026-08-16",
+    "displayDate": "12–16 Ago 2026",
+    "time": "Da definire",
+    "title": "Festa Patronale Santa Maria Assunta – Seconda parte",
+    "venue": "Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Seconda parte dei festeggiamenti patronali in onore di Santa Maria Assunta. Manifestazioni, feste patronali.",
+    "tags": [
+      "Cultura",
+      "Tradizione"
+    ],
+    "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi/cerca-eventi/381-festa-patronale-santa-maria-assunta-seconda-parte/2026-08-12-00-00",
+    "price": "gratis",
+    "image": "images/img-50.jpg",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "atri-a-tavola-2026",
+    "startDate": "2026-08-12",
+    "endDate": "2026-08-13",
+    "displayDate": "12–13 Ago 2026",
+    "time": "Da definire",
+    "title": "Atri a Tavola 2026",
+    "venue": "Centro storico, Atri",
+    "city": "Atri",
+    "description": "Rassegna enogastronomica che celebra i sapori e le tradizioni d'Abruzzo lungo le vie del centro storico di Atri.",
+    "tags": [
+      "Enogastronomia",
+      "Cultura"
+    ],
+    "sourceUrl": "https://www.ekuonews.it/atri-cultura-in-eventi-2026-oltre-220-appuntamenti-da-luglio-a-settembre/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "roseto-d-amare-tango-di-piazzolla-2026",
+    "startDate": "2026-08-13",
+    "endDate": "2026-08-13",
+    "displayDate": "13 Ago 2026",
+    "time": "21:15",
+    "title": "Roseto d'aMare – Tango di Piazzolla",
+    "venue": "Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Il Tango di Astor Piazzolla con il Gianni Iorio Quartet.",
     "tags": [
       "Musica",
-      "Concerto"
+      "Jazz",
+      "Classica"
     ],
-    "sourceUrl": "https://www.ticketone.it/event/emma-live-2026-porto-turistico-21119965/",
-    "price": "a pagamento",
-    "image": "images/img-7.jpg",
+    "sourceUrl": "https://www.visitroseto.it/eventi/",
+    "price": "gratis",
+    "image": "images/img-34.jpg",
     "updatedAt": "2026-07-26"
   },
   {
-    "id": "marche-manouche-dario-napoli-trio-2026",
-    "startDate": "2026-07-22",
-    "endDate": "2026-07-22",
-    "displayDate": "22 Lug 2026",
+    "id": "eventi-d-amare-2026",
+    "startDate": "2026-08-14",
+    "endDate": "2026-08-17",
+    "displayDate": "14–17 Ago 2026",
     "time": "21:00",
-    "title": "Marche Manouche – Dario Napoli Trio",
-    "venue": "San Benedetto del Tronto",
-    "city": "San Benedetto",
-    "description": "Jazz Manouche moderno.",
+    "title": "Eventi d'Amare 2026",
+    "venue": "Piazza Pineta Centrale, Roseto",
+    "city": "Roseto",
+    "description": "Quattro serate di musica dal vivo: 14/8 Le Ombre, 15/8 Tributo Gianna Nannini, 16/8 Straisland (Dire Straits Tribute), 17/8 gran finale. Spettacolo pirotecnico Ferragosto.",
+    "tags": [
+      "Musica",
+      "Spettacolo"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-07-26"
+  },
+  {
+    "id": "angela-mosley-silvi-2026",
+    "startDate": "2026-08-14",
+    "endDate": "2026-08-14",
+    "displayDate": "14 Ago 2026",
+    "time": "22:00",
+    "title": "Angela Mosley – concerto",
+    "venue": "Le Dune, Silvi Marina",
+    "city": "Silvi",
+    "description": "Concerto di Angela Mosley nell'ambito degli eventi principali dell'estate silvana.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.visitsilvi.it/eventi-e-manifestazioni/eventi-principali-calendario-estivo-2026/29-68.html",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "apertura-porta-santa-perdono-celestiniano-atri-2026",
+    "startDate": "2026-08-14",
+    "endDate": "2026-08-14",
+    "displayDate": "14 Ago 2026",
+    "time": "Da definire",
+    "title": "Apertura Porta Santa – Perdono Celestiniano",
+    "venue": "Basilica Concattedrale, Atri",
+    "city": "Atri",
+    "description": "Corteo storico e solenne cerimonia di Apertura della Porta Santa della Basilica Concattedrale, legata al Perdono Celestiniano.",
+    "tags": [
+      "Cultura",
+      "Tradizione"
+    ],
+    "sourceUrl": "https://www.ekuonews.it/atri-cultura-in-eventi-2026-oltre-220-appuntamenti-da-luglio-a-settembre/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "formula-3-tortoreto-2026",
+    "startDate": "2026-08-14",
+    "endDate": "2026-08-14",
+    "displayDate": "14 Ago 2026",
+    "time": "Da definire",
+    "title": "Formula 3 – concerto",
+    "venue": "Tortoreto Lido",
+    "city": "Tortoreto",
+    "description": "Concerto della storica band italiana degli anni Settanta, legata a Lucio Battisti.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/25-282.html",
+    "price": "a pagamento",
+    "image": "images/img-54.jpg",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "pinecore-fest-2026",
+    "startDate": "2026-08-14",
+    "endDate": "2026-08-14",
+    "displayDate": "14 Ago 2026",
+    "time": "Da definire",
+    "title": "Pinecore Fest",
+    "venue": "Parco della Pace, Pineto",
+    "city": "Pineto",
+    "description": "Festival musicale al Parco della Pace di Pineto.",
+    "tags": [
+      "Musica",
+      "Festival"
+    ],
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "festa-maria-santissima-pineto-2026",
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-16",
+    "displayDate": "15–16 Ago 2026",
+    "time": "21:30",
+    "title": "Festa in onore di Maria Santissima",
+    "venue": "Pineto Centro",
+    "city": "Pineto",
+    "description": "Festa tradizionale in onore di Maria Santissima nel centro di Pineto.",
+    "tags": [
+      "Cultura",
+      "Tradizione"
+    ],
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "gaia-summer-live-tortoreto-2026",
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "displayDate": "15 Ago 2026",
+    "time": "21:30",
+    "title": "Gaia – Summer Live 2026",
+    "venue": "Rotonda Carducci, Tortoreto Lido",
+    "city": "Tortoreto",
+    "description": "Grande appuntamento di Ferragosto: Gaia in concerto alla Rotonda Carducci. Ingresso gratuito.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/gaia/25-282.html",
+    "price": "gratis",
+    "image": "images/img-51.jpg",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "sfilata-carri-buoi-atri-2026",
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "displayDate": "15 Ago 2026",
+    "time": "Da definire",
+    "title": "Sfilata dei carri trainati dai buoi",
+    "venue": "Atri",
+    "city": "Atri",
+    "description": "Tradizionale sfilata dei carri trainati dai buoi e dei cori folkloristici, custode della memoria contadina di Atri.",
+    "tags": [
+      "Cultura",
+      "Tradizione"
+    ],
+    "sourceUrl": "https://www.ekuonews.it/atri-cultura-in-eventi-2026-oltre-220-appuntamenti-da-luglio-a-settembre/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "straisland-the-finest-dire-straits-tribute-2026",
+    "startDate": "2026-08-16",
+    "endDate": "2026-08-16",
+    "displayDate": "16 Ago 2026",
+    "time": "21:00",
+    "title": "Straisland – The Finest Dire Straits Tribute",
+    "venue": "Piazza Pineta Centrale, Roseto",
+    "city": "Roseto",
+    "description": "Tributo ai Dire Straits: Sultans of Swing, Money for Nothing, Brothers in Arms.",
+    "tags": [
+      "Musica",
+      "Spettacolo"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-07-26"
+  },
+  {
+    "id": "i-love-80-90-pineto-2026",
+    "startDate": "2026-08-16",
+    "endDate": "2026-08-16",
+    "displayDate": "16 Ago 2026",
+    "time": "21:30",
+    "title": "I Love 80/90",
+    "venue": "Parco della Pace, Pineto",
+    "city": "Pineto",
+    "description": "Serata musicale a tema anni Ottanta e Novanta al Parco della Pace.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "claudio-guerrini-silvi-2026",
+    "startDate": "2026-08-18",
+    "endDate": "2026-08-18",
+    "displayDate": "18 Ago 2026",
+    "time": "22:30",
+    "title": "Claudio Guerrini – spettacolo",
+    "venue": "Piazza Marconi, Silvi Marina",
+    "city": "Silvi",
+    "description": "Spettacolo comico di Claudio Guerrini in piazza Marconi.",
+    "tags": [
+      "Spettacolo",
+      "Cabaret"
+    ],
+    "sourceUrl": "https://www.visitsilvi.it/eventi-e-manifestazioni/eventi-principali-calendario-estivo-2026/29-68.html",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "lirica-in-villa-tre-tenori-pineto-2026",
+    "startDate": "2026-08-18",
+    "endDate": "2026-08-18",
+    "displayDate": "18 Ago 2026",
+    "time": "21:30",
+    "title": "Lirica in Villa – I Tre Tenori",
+    "venue": "Villa Filiani, Pineto",
+    "city": "Pineto",
+    "description": "Serata di grande lirica con i Tre Tenori a Villa Filiani.",
+    "tags": [
+      "Musica",
+      "Classica"
+    ],
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "a pagamento",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "transumare-fest-2026",
+    "startDate": "2026-08-19",
+    "endDate": "2026-08-22",
+    "displayDate": "19–22 Ago 2026",
+    "time": "18:00–23:45",
+    "title": "Transumare Fest 2026",
+    "venue": "Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Festival multidisciplinare: musica, arte e cultura. Tre giorni di eventi. Biglietti su Xceed.me.",
+    "tags": [
+      "Musica",
+      "Festival",
+      "Cultura"
+    ],
+    "sourceUrl": "https://www.transumarefest.com/",
+    "price": "a pagamento",
+    "image": "images/img-35.jpg",
+    "updatedAt": "2026-07-26"
+  },
+  {
+    "id": "concerto-cover-band-gli-stadio-pineto-2026",
+    "startDate": "2026-08-19",
+    "endDate": "2026-08-19",
+    "displayDate": "19 Ago 2026",
+    "time": "21:30",
+    "title": "Concerto Cover Band Gli Stadio",
+    "venue": "Via Volturno, Scerne di Pineto",
+    "city": "Pineto",
+    "description": "Tributo alla storica band romana con la cover band Gli Stadio.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "festa-san-francesco-pineto-2026",
+    "startDate": "2026-08-21",
+    "endDate": "2026-08-23",
+    "displayDate": "21–23 Ago 2026",
+    "time": "21:30",
+    "title": "Festa in onore di San Francesco",
+    "venue": "Quartiere Dei Poeti, Pineto",
+    "city": "Pineto",
+    "description": "Festa tradizionale in onore di San Francesco nel Quartiere Dei Poeti.",
+    "tags": [
+      "Cultura",
+      "Tradizione"
+    ],
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "giuliano-palma-in-concerto-2026",
+    "startDate": "2026-08-23",
+    "endDate": "2026-08-23",
+    "displayDate": "23 Ago 2026",
+    "time": "21:30",
+    "title": "Giuliano Palma in concerto",
+    "venue": "Piazza Redipuglia, Cologna Spiaggia, Roseto",
+    "city": "Roseto",
+    "description": "Concerto di Giuliano Palma, una delle voci più amate della scena italiana.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-07-26"
+  },
+  {
+    "id": "poesia-e-musica-per-una-bella-estate-pineto-2026",
+    "startDate": "2026-08-24",
+    "endDate": "2026-08-24",
+    "displayDate": "24 Ago 2026",
+    "time": "21:15",
+    "title": "Poesia e Musica per una Bella Estate",
+    "venue": "Chiesa Sant'Agnese, Pineto",
+    "city": "Pineto",
+    "description": "Concerto lirico-musicale alla Chiesa Sant'Agnese di Pineto.",
+    "tags": [
+      "Musica",
+      "Classica"
+    ],
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "concerto-di-fiati-pineto-2026",
+    "startDate": "2026-08-27",
+    "endDate": "2026-08-27",
+    "displayDate": "27 Ago 2026",
+    "time": "21:30",
+    "title": "Concerto di Fiati",
+    "venue": "Villa Filiani, Pineto",
+    "city": "Pineto",
+    "description": "Concerto di fiati a Villa Filiani.",
+    "tags": [
+      "Musica",
+      "Classica"
+    ],
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "festa-madonna-annunziata-2026",
+    "startDate": "2026-08-27",
+    "endDate": "2026-09-06",
+    "displayDate": "27 Ago – 6 Set 2026",
+    "time": "Da definire",
+    "title": "Festa Madonna Annunziata",
+    "venue": "Giulianova",
+    "city": "Giulianova",
+    "description": "Festa in onore della Madonna Annunziata con celebrazioni religiose e iniziative popolari.",
+    "tags": [
+      "Cultura",
+      "Tradizione"
+    ],
+    "sourceUrl": "https://www.visitgiulianova.com/eventi.php",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "diorama-festival-silvi-2026",
+    "startDate": "2026-08-28",
+    "endDate": "2026-08-28",
+    "displayDate": "28 Ago 2026",
+    "time": "Dalle 20:00",
+    "title": "Diorama Festival",
+    "venue": "Le Dune, Silvi Marina",
+    "city": "Silvi",
+    "description": "Festival musicale alle Dune di Silvi Marina.",
+    "tags": [
+      "Musica",
+      "Festival"
+    ],
+    "sourceUrl": "https://www.visitsilvi.it/eventi-e-manifestazioni/eventi-principali-calendario-estivo-2026/29-68.html",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "enrico-brignano-giulianova-2026",
+    "startDate": "2026-08-28",
+    "endDate": "2026-08-28",
+    "displayDate": "28 Ago 2026",
+    "time": "Da definire",
+    "title": "Enrico Brignano – spettacolo",
+    "venue": "Giulianova",
+    "city": "Giulianova",
+    "description": "Spettacolo comico di Enrico Brignano nell'ambito di GiuliaEventi Estate 2026.",
+    "tags": [
+      "Spettacolo",
+      "Cabaret"
+    ],
+    "sourceUrl": "https://www.visitgiulianova.com/eventi.php",
+    "price": "a pagamento",
+    "image": "images/img-57.jpg",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "suite-fir-six-pineto-2026",
+    "startDate": "2026-08-28",
+    "endDate": "2026-08-28",
+    "displayDate": "28 Ago 2026",
+    "time": "21:30",
+    "title": "Suite Fir Six",
+    "venue": "Villa Filiani, Pineto",
+    "city": "Pineto",
+    "description": "Concerto della Suite Fir Six a Villa Filiani.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "francesca-michielin-concerto-gratuito-2026",
+    "startDate": "2026-08-29",
+    "endDate": "2026-08-29",
+    "displayDate": "29 Ago 2026",
+    "time": "21:00",
+    "title": "Francesca Michielin – concerto gratuito",
+    "venue": "Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Concerto gratuito della cantautrice per la chiusura dell'estate rosetana.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/eventi/",
+    "price": "gratis",
+    "image": "images/img-36.jpg",
+    "updatedAt": "2026-07-26"
+  },
+  {
+    "id": "le-donne-di-puccini-pineto-2026",
+    "startDate": "2026-08-29",
+    "endDate": "2026-08-29",
+    "displayDate": "29 Ago 2026",
+    "time": "21:30",
+    "title": "Le Donne di Puccini",
+    "venue": "Villa Filiani, Pineto",
+    "city": "Pineto",
+    "description": "Spettacolo dedicato alle eroine pucciniane a Villa Filiani.",
+    "tags": [
+      "Musica",
+      "Classica"
+    ],
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "a pagamento",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "vincenzo-salemme-giulianova-2026",
+    "startDate": "2026-08-29",
+    "endDate": "2026-08-29",
+    "displayDate": "29 Ago 2026",
+    "time": "Da definire",
+    "title": "Vincenzo Salemme – spettacolo",
+    "venue": "Giulianova",
+    "city": "Giulianova",
+    "description": "Spettacolo di Vincenzo Salemme nell'ambito di GiuliaEventi Estate 2026.",
+    "tags": [
+      "Spettacolo",
+      "Teatro"
+    ],
+    "sourceUrl": "https://www.visitgiulianova.com/eventi.php",
+    "price": "a pagamento",
+    "image": "images/img-58.jpg",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "roseto-d-amare-glem-clarinet-quartet-2026",
+    "startDate": "2026-09-05",
+    "endDate": "2026-09-05",
+    "displayDate": "5 Set 2026",
+    "time": "21:00",
+    "title": "Roseto d'aMare – Glem Clarinet Quartet",
+    "venue": "Villa Comunale, Roseto",
+    "city": "Roseto",
+    "description": "(JAZZ) Glem Clarinet Quartet. Giuseppe Federico Paci, Maurizio Croci, Edoardo Mancini, Lorenzo Poli.",
     "tags": [
       "Musica",
       "Jazz"
     ],
-    "sourceUrl": "https://www.nonsoloeventimarche.it/",
+    "sourceUrl": "https://www.visitroseto.it/eventi/",
     "price": "gratis",
-    "image": "images/img-22.jpg",
+    "image": "images/img-47.jpg",
     "updatedAt": "2026-07-26"
   },
   {
-    "id": "eventi-estate-sbt-2026",
-    "startDate": "2026-07-01",
-    "endDate": "2026-09-30",
-    "displayDate": "Luglio–Settembre 2026",
-    "time": "Vari orari",
-    "title": "Eventi Estate SBT 2026",
-    "venue": "San Benedetto del Tronto",
-    "city": "San Benedetto",
-    "description": "Concerti, sagre e spettacoli lungo tutta l'estate.",
+    "id": "festa-san-rocco-pineto-2026",
+    "startDate": "2026-09-05",
+    "endDate": "2026-09-06",
+    "displayDate": "5–6 Set 2026",
+    "time": "21:00",
+    "title": "Festa in onore di San Rocco",
+    "venue": "Torre San Rocco, Pineto",
+    "city": "Pineto",
+    "description": "Festa tradizionale in onore di San Rocco a Torre San Rocco.",
     "tags": [
-      "Musica",
       "Cultura",
-      "Sagra"
+      "Tradizione"
     ],
-    "sourceUrl": "https://www.comune.sanbenedettodeltronto.ap.it/",
-    "price": "misto",
-    "image": "images/img-27.jpg",
-    "updatedAt": "2026-07-26"
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "festa-dei-commercianti-pineto-2026",
+    "startDate": "2026-09-06",
+    "endDate": "2026-09-06",
+    "displayDate": "6 Set 2026",
+    "time": "Dalle 10:00",
+    "title": "Festa dei Commercianti",
+    "venue": "Pineto Centro",
+    "city": "Pineto",
+    "description": "Giornata dedicata al commercio locale con iniziative nel centro di Pineto.",
+    "tags": [
+      "Cultura",
+      "Mercatini"
+    ],
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-04"
   }
 ]

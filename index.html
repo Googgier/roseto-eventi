@@ -394,7 +394,7 @@ document.getElementById('search').addEventListener('input',filtra);
 document.querySelectorAll('#filtri button').forEach(function(btn){btn.addEventListener('click',function(){document.querySelectorAll('#filtri button').forEach(function(b){b.classList.remove('attivo')});btn.classList.add('attivo');filtra()})});
 document.getElementById('sagreSearch').addEventListener('input',filtraSagre);
 ['sagreProvince','sagrePeriod'].forEach(function(id){document.getElementById(id).addEventListener('click',function(e){if(e.target.tagName!=='BUTTON')return;this.querySelectorAll('button').forEach(function(b){b.classList.remove('attivo')});e.target.classList.add('attivo');filtraSagre()})});
-document.getElementById('aggiornato').textContent='31 Lug 2026';
+document.getElementById('aggiornato').textContent='4 Ago 2026';
 fetch('./data/events.json',{cache:'no-cache'})
   .then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json()})
   .then(function(d){if(!Array.isArray(d))throw new Error('Formato dati non valido');eventi=d;filtra()})
