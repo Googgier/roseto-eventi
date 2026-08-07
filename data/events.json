@@ -38,26 +38,6 @@
     "updatedAt": "2026-07-28"
   },
   {
-    "id": "eventi-estate-sbt-2026",
-    "startDate": "2026-07-01",
-    "endDate": "2026-09-30",
-    "displayDate": "Luglio–Settembre 2026",
-    "time": "Vari orari",
-    "title": "Eventi Estate SBT 2026",
-    "venue": "San Benedetto del Tronto",
-    "city": "San Benedetto",
-    "description": "Concerti, sagre e spettacoli lungo tutta l'estate.",
-    "tags": [
-      "Musica",
-      "Cultura",
-      "Sagra"
-    ],
-    "sourceUrl": "https://www.comune.sanbenedettodeltronto.ap.it/",
-    "price": "misto",
-    "image": "images/img-27.jpg",
-    "updatedAt": "2026-07-26"
-  },
-  {
     "id": "villa-in-arte-2026",
     "startDate": "2026-07-10",
     "endDate": "2026-09-06",
@@ -289,26 +269,6 @@
     "updatedAt": "2026-07-26"
   },
   {
-    "id": "concerti-estate-giulianova-2026",
-    "startDate": "2026-07-28",
-    "endDate": "2026-09-06",
-    "displayDate": "28 Lug – 6 Set 2026",
-    "time": "Vari orari",
-    "title": "GiuliaEventi Estate 2026",
-    "venue": "Giulianova",
-    "city": "Giulianova",
-    "description": "Oltre 160 appuntamenti: Fiorella Mannoia (5/8), Sarah Toscano (9/8), Carnevale Estivo (1/8), Enrico Brignano (28/8), Vincenzo Salemme (29/8) e molti altri. Programma completo su visitgiulianova.com.",
-    "tags": [
-      "Musica",
-      "Cultura",
-      "Spettacolo"
-    ],
-    "sourceUrl": "https://www.visitgiulianova.com/eventi.php",
-    "price": "misto",
-    "image": "",
-    "updatedAt": "2026-07-31"
-  },
-  {
     "id": "roseto-west-fest-2026",
     "startDate": "2026-07-29",
     "endDate": "2026-08-02",
@@ -425,13 +385,13 @@
   {
     "id": "festa-patronale-santa-maria-assunta-prima-parte-2026",
     "startDate": "2026-08-03",
-    "endDate": "2026-08-03",
-    "displayDate": "3 Ago 2026",
+    "endDate": "2026-08-11",
+    "displayDate": "3–11 Ago 2026",
     "time": "Da definire",
     "title": "Festa Patronale Santa Maria Assunta – Prima parte",
     "venue": "Roseto degli Abruzzi",
     "city": "Roseto",
-    "description": "Festa patronale in onore di Santa Maria Assunta. Primo appuntamento dei festeggiamenti estivi.",
+    "description": "Festa patronale in onore di Santa Maria Assunta: appuntamenti il 3, 5, 6, 8, 10 e 11 agosto.",
     "tags": [
       "Cultura",
       "Tradizione"
@@ -439,7 +399,7 @@
     "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi",
     "price": "gratis",
     "image": "",
-    "updatedAt": "2026-07-28"
+    "updatedAt": "2026-08-07"
   },
   {
     "id": "tiromancino-in-concerto-2026",
@@ -632,6 +592,26 @@
     "updatedAt": "2026-08-04"
   },
   {
+    "id": "la-pineta-degli-artisti-2026",
+    "startDate": "2026-08-08",
+    "endDate": "2026-08-08",
+    "displayDate": "8 Ago 2026",
+    "time": "10:00–22:00",
+    "title": "La Pineta degli Artisti 2026",
+    "venue": "Pineta Celommi, Roseto",
+    "city": "Roseto",
+    "description": "Giornata dedicata all'arte e alla creatività: esposizioni, laboratori e area bambini. Programma laboratori: 'I segreti del vetro' (11:00), 'Primi passi all'uncinetto' (16:30), 'I segreti in cucina' (18:00), 'Colorare la donna con amore' (19:00).",
+    "tags": [
+      "Cultura",
+      "Arte",
+      "Intrattenimento"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/events/la-pineta-degli-artisti-2026/",
+    "price": "gratis",
+    "image": "images/img-la-pineta-degli-artisti-2026.jpg",
+    "updatedAt": "2026-08-07"
+  },
+  {
     "id": "roseto-d-amare-morricone-western-2026",
     "startDate": "2026-08-09",
     "endDate": "2026-08-09",
@@ -651,6 +631,24 @@
     "updatedAt": "2026-07-26"
   },
   {
+    "id": "pedalostorto-2026",
+    "startDate": "2026-08-09",
+    "endDate": "2026-08-09",
+    "displayDate": "9 Ago 2026",
+    "time": "09:00",
+    "title": "PedaloStorto",
+    "venue": "Rotonda Sirena, Lungomare Sirena, Tortoreto",
+    "city": "Tortoreto",
+    "description": "Cicloturistica di 32 km sulle colline tortoretane. Partenza e arrivo dalla Rotonda Sirena sul Lungomare Sirena. Costo di iscrizione non pubblicato sulla fonte.",
+    "tags": [
+      "Sport"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/pedalostorto/25-279.html",
+    "price": "a pagamento",
+    "image": "images/img-pedalostorto-2026.jpg",
+    "updatedAt": "2026-08-07"
+  },
+  {
     "id": "sarah-toscano-giulianova-2026",
     "startDate": "2026-08-09",
     "endDate": "2026-08-09",
@@ -668,6 +666,25 @@
     "price": "gratis",
     "image": "images/img-53.jpg",
     "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "teatro-a-cappello-2026",
+    "startDate": "2026-08-09",
+    "endDate": "2026-08-09",
+    "displayDate": "9 Ago 2026",
+    "time": "Dalle 19:00",
+    "title": "Teatro a Cappello²",
+    "venue": "Tortoreto Alto",
+    "city": "Tortoreto",
+    "description": "Monologhi, arte e intrattenimento nel borgo di Tortoreto Alto, con salottini all'aperto e aperitivo, ispirati a 'Sogno di una notte di mezza estate'.",
+    "tags": [
+      "Cultura",
+      "Teatro"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/teatro-a-cappello%C2%B2/25-277.html",
+    "price": "gratis",
+    "image": "images/img-teatro-a-cappello-2026.jpg",
+    "updatedAt": "2026-08-07"
   },
   {
     "id": "borsacchio-sotto-le-stelle-di-san-lorenzo-2026",
@@ -747,6 +764,26 @@
     "updatedAt": "2026-08-04"
   },
   {
+    "id": "campo-a-mare-fest-2026",
+    "startDate": "2026-08-11",
+    "endDate": "2026-08-11",
+    "displayDate": "11 Ago 2026",
+    "time": "20:00",
+    "title": "Campo a Mare Fest – Cabaret, musica e sapori",
+    "venue": "Campetto Sportivo, Campo a Mare, Roseto",
+    "city": "Roseto",
+    "description": "Serata del Campo a Mare Fest al Campetto Sportivo: cabaret di Nduccio, musica dal vivo dei Masters Live Tour e stand food & beverage. Ingresso libero.",
+    "tags": [
+      "Enogastronomia",
+      "Intrattenimento",
+      "Musica"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/events/campo-a-mare-fest-cabaret-musica-e-sapori/",
+    "price": "gratis",
+    "image": "images/img-campo-a-mare-fest-2026.jpg",
+    "updatedAt": "2026-08-07"
+  },
+  {
     "id": "gabriele-cirilli-giulianova-2026",
     "startDate": "2026-08-11",
     "endDate": "2026-08-11",
@@ -764,6 +801,25 @@
     "price": "gratis",
     "image": "images/img-56.jpg",
     "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "tarantella-live-tour-2026",
+    "startDate": "2026-08-11",
+    "endDate": "2026-08-11",
+    "displayDate": "11 Ago 2026",
+    "time": "21:30",
+    "title": "Tarantella Live Tour",
+    "venue": "Terrabianca, Tortoreto",
+    "city": "Tortoreto",
+    "description": "La Tequila & Montepulciano Band porta il Tarantella Live Tour a Terrabianca: musica, energia e tradizione popolare. Ingresso libero.",
+    "tags": [
+      "Musica",
+      "Tradizione"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/tarantella-live-tour/25-273.html",
+    "price": "gratis",
+    "image": "images/img-tarantella-live-tour-2026.jpg",
+    "updatedAt": "2026-08-07"
   },
   {
     "id": "festa-patronale-santa-maria-assunta-seconda-parte-2026",
@@ -785,6 +841,25 @@
     "updatedAt": "2026-08-04"
   },
   {
+    "id": "roseto-d-amare-tre-tenori-2026",
+    "startDate": "2026-08-12",
+    "endDate": "2026-08-12",
+    "displayDate": "12 Ago 2026",
+    "time": "21:15",
+    "title": "Roseto d'aMare – I Tre Tenori",
+    "venue": "Piazza della Repubblica, Roseto",
+    "city": "Roseto",
+    "description": "Serata lirica con I Tre Tenori: arie celebri, canzoni napoletane e brani del repertorio classico. Rassegna Roseto d'aMare 2026, ingresso libero.",
+    "tags": [
+      "Musica",
+      "Classica"
+    ],
+    "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi/cerca-eventi/374-roseto-d-amare/2026-08-12-00-00",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-07"
+  },
+  {
     "id": "atri-a-tavola-2026",
     "startDate": "2026-08-12",
     "endDate": "2026-08-13",
@@ -802,6 +877,25 @@
     "price": "gratis",
     "image": "",
     "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "mago-gabriel-2026",
+    "startDate": "2026-08-12",
+    "endDate": "2026-08-12",
+    "displayDate": "12 Ago 2026",
+    "time": "21:00",
+    "title": "Mago Gabriel",
+    "venue": "Largo Marconi, Tortoreto",
+    "city": "Tortoreto",
+    "description": "Spettacolo del Mago Gabriel a Largo Marconi: magia, sorprese e divertimento per tutta la famiglia.",
+    "tags": [
+      "Intrattenimento",
+      "Famiglia"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/mago-gabriel/25-284.html",
+    "price": "gratis",
+    "image": "images/img-mago-gabriel-2026.jpg",
+    "updatedAt": "2026-08-07"
   },
   {
     "id": "roseto-d-amare-tango-di-piazzolla-2026",
@@ -822,6 +916,44 @@
     "price": "gratis",
     "image": "images/img-34.jpg",
     "updatedAt": "2026-07-26"
+  },
+  {
+    "id": "2-watt-live-music-2026",
+    "startDate": "2026-08-13",
+    "endDate": "2026-08-13",
+    "displayDate": "13 Ago 2026",
+    "time": "21:30",
+    "title": "2 Watt Live Music",
+    "venue": "Rotonda Carducci, Tortoreto Lido",
+    "city": "Tortoreto",
+    "description": "I 2 Watt Live Music con i migliori successi italiani alla Rotonda Carducci. Serata di musica dal vivo tutta da cantare.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/2-watt-live-music/25-286.html",
+    "price": "gratis",
+    "image": "images/img-2-watt-live-music-2026.jpg",
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "id": "enne-live-2026",
+    "startDate": "2026-08-13",
+    "endDate": "2026-08-13",
+    "displayDate": "13 Ago 2026",
+    "time": "21:00",
+    "title": "Enne Live",
+    "venue": "Rotonda Carducci, Tortoreto Lido",
+    "city": "Tortoreto",
+    "description": "Serata di musica dal vivo alla Rotonda Carducci di Tortoreto.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/enne-live/25-283.html",
+    "price": "gratis",
+    "image": "images/img-enne-live-2026.jpg",
+    "updatedAt": "2026-08-07"
   },
   {
     "id": "eventi-d-amare-2026",
@@ -1014,6 +1146,25 @@
     "updatedAt": "2026-08-04"
   },
   {
+    "id": "roseto-d-amare-note-d-autore-2026",
+    "startDate": "2026-08-17",
+    "endDate": "2026-08-17",
+    "displayDate": "17 Ago 2026",
+    "time": "21:15",
+    "title": "Roseto d'aMare – Note d'Autore",
+    "venue": "Villa Comunale, Roseto",
+    "city": "Roseto",
+    "description": "Concerto di musica da camera con l'Orchestra Note d'Autore nella Villa Comunale. Rassegna Roseto d'aMare 2026, ingresso libero.",
+    "tags": [
+      "Musica",
+      "Classica"
+    ],
+    "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi/cerca-eventi/374-roseto-d-amare/2026-08-17-00-00",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-07"
+  },
+  {
     "id": "claudio-guerrini-silvi-2026",
     "startDate": "2026-08-18",
     "endDate": "2026-08-18",
@@ -1050,6 +1201,25 @@
     "price": "a pagamento",
     "image": "",
     "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "roseto-d-amare-glam-saxophone-quartet-2026",
+    "startDate": "2026-08-19",
+    "endDate": "2026-08-19",
+    "displayDate": "19 Ago 2026",
+    "time": "21:15",
+    "title": "Roseto d'aMare – Glam Saxophone Quartet",
+    "venue": "Piazza del Vecchio Borgo, Montepagano, Roseto",
+    "city": "Roseto",
+    "description": "Concerto del Glam Saxophone Quartet dedicato al repertorio contemporaneo del sassofono. Rassegna Roseto d'aMare 2026, ingresso libero.",
+    "tags": [
+      "Musica",
+      "Classica"
+    ],
+    "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi/cerca-eventi/374-roseto-d-amare/2026-08-19-00-00",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-07"
   },
   {
     "id": "transumare-fest-2026",
@@ -1298,6 +1468,43 @@
     "price": "a pagamento",
     "image": "images/img-58.jpg",
     "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "roseto-d-amare-orchestra-citta-di-celano-2026",
+    "startDate": "2026-08-30",
+    "endDate": "2026-08-30",
+    "displayDate": "30 Ago 2026",
+    "time": "21:15",
+    "title": "Roseto d'aMare – Orchestra Città di Celano",
+    "venue": "Piazza Guido Rossa, Cologna Paese, Roseto",
+    "city": "Roseto",
+    "description": "Concerto dell'Orchestra Città di Celano dedicato alla tradizione bandistica italiana. Rassegna Roseto d'aMare 2026, ingresso libero.",
+    "tags": [
+      "Musica",
+      "Classica"
+    ],
+    "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi/cerca-eventi/374-roseto-d-amare/2026-08-30-00-00",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-07"
+  },
+  {
+    "id": "crazy-games-fit-fun-2026",
+    "startDate": "2026-08-30",
+    "endDate": "2026-08-30",
+    "displayDate": "30 Ago 2026",
+    "time": "09:00",
+    "title": "Crazy Games, Fit & Fun",
+    "venue": "Lungomare Sud, Scerne di Pineto",
+    "city": "Pineto",
+    "description": "Giornata di sport e attività all'aria aperta sul Lungomare Sud di Scerne. Programma eventi Estate 2026 del Comune di Pineto.",
+    "tags": [
+      "Sport"
+    ],
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-07"
   },
   {
     "id": "roseto-d-amare-glem-clarinet-quartet-2026",
