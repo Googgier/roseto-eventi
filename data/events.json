@@ -345,6 +345,25 @@
     "updatedAt": "2026-07-31"
   },
   {
+    "id": "sbt-infinito-pratico-2026",
+    "startDate": "2026-08-01",
+    "endDate": "2026-08-25",
+    "displayDate": "1–25 Ago 2026",
+    "time": "Tutto il giorno",
+    "title": "Infinito Pratico – mostra d’arte contemporanea",
+    "venue": "Palazzina Azzurra e sedi diffuse, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Mostra d’arte contemporanea promossa dall’Associazione Adriatica Contemporanea, con pittura, scultura, video e pratiche sonore di undici artisti italiani.",
+    "tags": [
+      "Cultura",
+      "Arte"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/infinito-pratico-mostra-darte-contemporanea-alla-palazzina-azzurra/",
+    "price": "gratis",
+    "image": "images/img-sbt-infinito-pratico-2026.jpg",
+    "updatedAt": "2026-08-14"
+  },
+  {
     "id": "emma-live-2026",
     "startDate": "2026-08-02",
     "endDate": "2026-08-02",
@@ -898,6 +917,25 @@
     "updatedAt": "2026-08-07"
   },
   {
+    "id": "sbt-benedetto-brodetto-2026",
+    "startDate": "2026-08-12",
+    "endDate": "2026-08-16",
+    "displayDate": "12–16 Ago 2026",
+    "time": "18:00–23:00",
+    "title": "Benedetto Brodetto 2026 – Festival della Cucina Marinara",
+    "venue": "Piazza Giorgini, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Festival della cucina marinara e del brodetto alla sambenedettese. Area eventi libera; degustazioni, cene e laboratori con modalità diverse.",
+    "tags": [
+      "Enogastronomia",
+      "Festival"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/benedetto-brodetto-2026/",
+    "price": "misto",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
     "id": "roseto-d-amare-tango-di-piazzolla-2026",
     "startDate": "2026-08-13",
     "endDate": "2026-08-13",
@@ -1127,6 +1165,45 @@
     "updatedAt": "2026-08-14"
   },
   {
+    "id": "sbt-breakfast-run-2026",
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "displayDate": "15 Ago 2026",
+    "time": "07:00–09:00",
+    "title": "Breakfast Run – corsa e colazione a Ferragosto",
+    "venue": "Chalet La Siesta, concessione 42, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Corsa o camminata non agonistica con ritrovo alle 7:15, partenza alle 7:30 e colazione offerta dagli organizzatori. Partecipazione libera.",
+    "tags": [
+      "Sport",
+      "Famiglia"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/breakfast-run/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-color-day-2026",
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "displayDate": "15 Ago 2026",
+    "time": "15:00–19:00",
+    "title": "Color Day 2026",
+    "venue": "Ex Camping, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Pomeriggio di festa con musica, polveri colorate e intrattenimento per famiglie e giovani.",
+    "tags": [
+      "Musica",
+      "Intrattenimento",
+      "Famiglia"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/color-day-2026/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
     "id": "straisland-the-finest-dire-straits-tribute-2026",
     "startDate": "2026-08-16",
     "endDate": "2026-08-16",
@@ -1299,6 +1376,25 @@
     "updatedAt": "2026-08-04"
   },
   {
+    "id": "sbt-gloria-conti-in-concerto-2026",
+    "startDate": "2026-08-19",
+    "endDate": "2026-08-19",
+    "displayDate": "19 Ago 2026",
+    "time": "21:30",
+    "title": "Gloria Conti in concerto",
+    "venue": "Palazzina Azzurra, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Concerto di Gloria Conti con il Maestro Marco Spaccasassi, tra grandi classici italiani e internazionali. Ingresso libero.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/gloria-conti-in-concerto/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
     "id": "festa-san-francesco-pineto-2026",
     "startDate": "2026-08-21",
     "endDate": "2026-08-23",
@@ -1332,6 +1428,44 @@
       "Cabaret"
     ],
     "sourceUrl": "https://www.festivalinitalia.it/festival/rido-al-lido-tortoreto",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-antico-e-le-palme-2026",
+    "startDate": "2026-08-21",
+    "endDate": "2026-08-23",
+    "displayDate": "21–23 Ago 2026",
+    "time": "17:00–20:00",
+    "title": "L’Antico e le Palme – Gran Mercato dell’Antiquariato",
+    "venue": "Piazza Giorgini e Viale Buozzi, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Fiera cittadina dedicata all’antiquariato e al modernariato con espositori, oggetti d’epoca e rarità. Ingresso libero.",
+    "tags": [
+      "Mercatini",
+      "Cultura"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/lantico-e-le-palme-2026/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-70-80s-summer-gospel-night-2026",
+    "startDate": "2026-08-22",
+    "endDate": "2026-08-22",
+    "displayDate": "22 Ago 2026",
+    "time": "21:00",
+    "title": "70/80s Summer Gospel Night",
+    "venue": "Palazzina Azzurra, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Concerto dell’ANCORAinCORO Gospel Choir con 35 cantori e una band di quattro musicisti, tra gospel, pop, rock e dance. Ingresso libero fino a esaurimento posti.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/70-80s-summer-gospel-night/",
     "price": "gratis",
     "image": "",
     "updatedAt": "2026-08-14"
@@ -1373,6 +1507,25 @@
     "price": "gratis",
     "image": "",
     "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "sbt-kriss-corradetti-trio-2026",
+    "startDate": "2026-08-26",
+    "endDate": "2026-08-26",
+    "displayDate": "26 Ago 2026",
+    "time": "21:00",
+    "title": "Kriss Corradetti Trio – I live dalla Palazzina",
+    "venue": "Palazzina Azzurra, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Concerto tra canzone d’autore, jazz, pop-rock e improvvisazione, con presentazione dell’album “SE”. Ingresso libero.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/kriss-corradetti-trio/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "concerto-di-fiati-pineto-2026",
@@ -1508,6 +1661,64 @@
     "updatedAt": "2026-08-14"
   },
   {
+    "id": "sbt-le-miss-fever-2026",
+    "startDate": "2026-08-28",
+    "endDate": "2026-08-28",
+    "displayDate": "28 Ago 2026",
+    "time": "21:30",
+    "title": "Le Miss Fever – I live dalla Palazzina",
+    "venue": "Palazzina Azzurra, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Concerto del trio vocale marchigiano tra swing, blues e jazz italiani e internazionali. Ingresso libero.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/le-miss-fever/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-mercatino-regionale-francese-2026",
+    "startDate": "2026-08-28",
+    "endDate": "2026-08-31",
+    "displayDate": "28–31 Ago 2026",
+    "time": "09:00–23:00",
+    "title": "Mercatino Regionale Francese",
+    "venue": "Viale Bruno Buozzi, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Mercatino dedicato alle specialità enogastronomiche e all’artigianato francese, tra baguette, formaggi, dolci, spezie e prodotti tipici. Ingresso libero.",
+    "tags": [
+      "Mercatini",
+      "Enogastronomia"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/mercatino-regionale-francese-2/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-rosso-blues-2026",
+    "startDate": "2026-08-28",
+    "endDate": "2026-08-28",
+    "displayDate": "28 Ago 2026",
+    "time": "19:00–23:30",
+    "title": "Rosso & Blues – cibo e musica sotto la Torre",
+    "venue": "Paese Alto, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Serata di enogastronomia e spettacolo con Osteria, vini collinari, corner food, musica live e lo spettacolo “SOUL, la musica dell’anima”. Ingresso libero.",
+    "tags": [
+      "Enogastronomia",
+      "Musica",
+      "Spettacolo"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/rosso-blues-cibo-e-musica-sotto-la-torre/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
     "id": "francesca-michielin-concerto-gratuito-2026",
     "startDate": "2026-08-29",
     "endDate": "2026-08-29",
@@ -1621,6 +1832,25 @@
     "updatedAt": "2026-08-14"
   },
   {
+    "id": "sbt-francesca-scotti-2026",
+    "startDate": "2026-09-03",
+    "endDate": "2026-09-03",
+    "displayDate": "3 Set 2026",
+    "time": "21:15",
+    "title": "Francesca Scotti presenta “La stagione delle case vuote”",
+    "venue": "Palazzina Azzurra, via Buozzi 14, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Appuntamento della rassegna “Parliamone!” con Francesca Scotti e il romanzo “La stagione delle case vuote”. Ingresso gratuito.",
+    "tags": [
+      "Cultura",
+      "Libri"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/francesca-scotti-a-parliamone-con-la-stagione-delle-case-vuote/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
     "id": "roseto-d-amare-glem-clarinet-quartet-2026",
     "startDate": "2026-09-05",
     "endDate": "2026-09-05",
@@ -1693,6 +1923,25 @@
     "sourceUrl": "https://www.visitgiulianova.com/evento.php?id=843",
     "price": "gratis",
     "image": "images/img-memorial-gianni-marcozzi-2026.jpg",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-risate-in-palazzina-lando-dino-2026",
+    "startDate": "2026-09-06",
+    "endDate": "2026-09-06",
+    "displayDate": "6 Set 2026",
+    "time": "21:00",
+    "title": "Risate in Palazzina con Lando e Dino",
+    "venue": "Palazzina Azzurra, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Serata della rassegna “Risate in Palazzina” con Lando e Dino, Enrico Paris e la conduzione di Angelo Carestia.",
+    "tags": [
+      "Spettacolo",
+      "Cabaret"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/risate-in-palazzina-con-lando-e-dino/",
+    "price": "gratis",
+    "image": "",
     "updatedAt": "2026-08-14"
   },
   {
