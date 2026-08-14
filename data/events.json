@@ -2056,5 +2056,235 @@
     "price": "gratis",
     "image": "",
     "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-super-tropical-summer-game-2026",
+    "startDate": "2026-08-13",
+    "endDate": "2026-08-15",
+    "displayDate": "13–15 Ago 2026",
+    "time": "Dalle 16:00",
+    "title": "Super Tropical Summer Game",
+    "venue": "Spiaggia libera Giardino dei Bambini, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Tre giornate gratuite di sport, musica e intrattenimento sulla spiaggia libera tra le concessioni 71 e 71 bis, con spettacoli, beach games e il concerto dei Gemelli Diversi il 14 agosto.",
+    "tags": [
+      "Musica",
+      "Sport",
+      "Intrattenimento"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/super-tropical-summer-game-2026/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-tesori-in-centro-14-ago-2026",
+    "startDate": "2026-08-14",
+    "endDate": "2026-08-14",
+    "displayDate": "14 Ago 2026",
+    "time": "18:30–22:30",
+    "title": "Tesori in Centro",
+    "venue": "Viale Secondo Moretti e Piazza Matteotti, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Manifestazione commerciale straordinaria con banchi selezionati, prodotti del territorio, specialità enogastronomiche e artigianato nel centro cittadino.",
+    "tags": [
+      "Mercatini",
+      "Enogastronomia"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/tesori-in-centro-8/2026-08-14/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-armonie-in-controluce-2026",
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "displayDate": "15 Ago 2026",
+    "time": "05:30",
+    "title": "Armonie in controluce – Concerto all’alba di Ferragosto",
+    "venue": "Giardino Nuttate de Lune, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Concerto all’alba con l’Orchestra dell’Istituto Vivaldi, i solisti Lito Fontana e Piersilvio De Santis, a cura dell’associazione sEVENTeen e del Comune.",
+    "tags": [
+      "Musica",
+      "Classica"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/armonie-in-controluce-concerto-allalba-di-ferragosto/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-una-rotonda-sul-mare-15-2026",
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "displayDate": "15 Ago 2026",
+    "time": "21:30–23:00",
+    "title": "Una Rotonda sul Mare – Serata danzante",
+    "venue": "Piazza Salvo D’Acquisto, Porto d’Ascoli, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Serata danzante a ingresso libero organizzata dall’associazione culturale Arte Viva nella piazza di Porto d’Ascoli.",
+    "tags": [
+      "Musica",
+      "Intrattenimento"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/una-rotonda-sul-mare-serate-danzanti-2/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-roberta-cutini-velvera-live-band-2026",
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "displayDate": "15 Ago 2026",
+    "time": "21:30–23:30",
+    "title": "Roberta Cutini e Velvèra Live Band",
+    "venue": "Palazzina Azzurra, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Concerto di Roberta Cutini e dei Velvèra Live Band per la serata di Ferragosto alla Palazzina Azzurra. Ingresso gratuito.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/roberta-cutini-e-velvera-live-band/",
+    "price": "gratis",
+    "image": "images/sbt-roberta-cutini-2026.jpg",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-teatro-della-stoppia-2026",
+    "startDate": "2026-08-17",
+    "endDate": "2026-08-19",
+    "displayDate": "17–19 Ago 2026",
+    "time": "Dalle 19:00",
+    "title": "Teatro della Stoppia",
+    "venue": "Contrada Fosso dei Galli, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Tre serate tra cultura, incontri, letteratura e musica: Stefano Massini, Domenico Iannacone, Edoardo Prati ed Erocaddeo, con food, espositori e attività gratuite.",
+    "tags": [
+      "Cultura",
+      "Musica",
+      "Spettacolo"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/teatro-della-stoppia/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-memorie-nella-notte-palazzina-2026",
+    "startDate": "2026-08-17",
+    "endDate": "2026-08-17",
+    "displayDate": "17 Ago 2026",
+    "time": "21:00",
+    "title": "Memorie nella Notte in Palazzina",
+    "venue": "Palazzina Azzurra e Lungomare, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Proiezioni e racconti sulla svolta turistica degli anni Trenta, con la Palazzina Azzurra, il Lungomare e la civiltà marinara al centro della serata.",
+    "tags": [
+      "Cultura",
+      "Cinema"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/memorie-nella-notte-in-palazzina/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-note-al-tramonto-korero-duo-2026",
+    "startDate": "2026-08-20",
+    "endDate": "2026-08-20",
+    "displayDate": "20 Ago 2026",
+    "time": "19:00–20:00",
+    "title": "Note al Tramonto – Korero Duo",
+    "venue": "Monumento al Gabbiano Jonathan, Molo Sud, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Concerto gratuito del Korero Duo, Letizia Scaringella alla voce e Federico De Laurentiis alla chitarra, nell’ambito della rassegna Note al Tramonto.",
+    "tags": [
+      "Musica"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/note-al-tramonto-20-agosto/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-francesco-fabretti-una-notte-casa-leopardi-2026",
+    "startDate": "2026-08-20",
+    "endDate": "2026-08-20",
+    "displayDate": "20 Ago 2026",
+    "time": "21:00–23:30",
+    "title": "A Parliamone! Francesco Fabretti presenta “Una notte a casa Leopardi”",
+    "venue": "Palazzina Azzurra, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Francesco Fabretti presenta il libro “Una notte a casa Leopardi” con Silvia Ballestra, nell’ambito della rassegna Parliamone!. Ingresso libero.",
+    "tags": [
+      "Cultura",
+      "Libri"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/a-parliamone-francesco-fabretti-presenta-una-notte-a-casa-leopardi/",
+    "price": "gratis",
+    "image": "images/sbt-francesco-fabretti-2026.jpg",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-una-rotonda-sul-mare-4-set-2026",
+    "startDate": "2026-09-04",
+    "endDate": "2026-09-04",
+    "displayDate": "4 Set 2026",
+    "time": "21:30–23:00",
+    "title": "Una Rotonda sul Mare – Serata danzante",
+    "venue": "Piazza Salvo D’Acquisto, Porto d’Ascoli, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Serata danzante a ingresso libero organizzata dall’associazione culturale Arte Viva nella piazza di Porto d’Ascoli.",
+    "tags": [
+      "Musica",
+      "Intrattenimento"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/una-rotonda-sul-mare-serate-danzanti-3/2026-09-04/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-gisonna-fischetti-2026",
+    "startDate": "2026-09-10",
+    "endDate": "2026-09-10",
+    "displayDate": "10 Set 2026",
+    "time": "21:00–23:00",
+    "title": "Risate in Palazzina con Salvatore Gisonna ed Enzo Fischetti",
+    "venue": "Palazzina Azzurra, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Serata finale di Risate in Palazzina con la conduzione di Christian Rosati e gli interventi comici di Salvatore Gisonna ed Enzo Fischetti.",
+    "tags": [
+      "Spettacolo",
+      "Cabaret"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/gisonna-fischetti/",
+    "price": "gratis",
+    "image": "images/sbt-gisonna-fischetti-2026.jpg",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "sbt-visitiamo-sentina-20-set-2026",
+    "startDate": "2026-09-20",
+    "endDate": "2026-09-20",
+    "displayDate": "20 Set 2026",
+    "time": "09:00–13:00",
+    "title": "Visitiamo la Sentina – Escursione nella Storia",
+    "venue": "Riserva Naturale Regionale Sentina, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Passeggiata guidata e gratuita lungo i Sentieri della Storia, tra biodiversità costiera e memoria rurale della Riserva Naturale Sentina.",
+    "tags": [
+      "Cultura",
+      "Natura",
+      "Sport"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/visitiamo-la-sentina-escursione-nella-storia-4/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
   }
 ]
