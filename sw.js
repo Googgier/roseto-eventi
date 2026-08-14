@@ -1,4 +1,4 @@
-const CACHE = 'roseto-eventi-v6';
+const CACHE = 'roseto-eventi-v7';
 const ASSETS = [
   '/roseto-eventi/',
   '/roseto-eventi/index.html',

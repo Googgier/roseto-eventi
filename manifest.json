@@ -6,8 +6,8 @@
   "scope": "/roseto-eventi/",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "background_color": "#f5f5f5",
-  "theme_color": "#1a1a2e",
+  "background_color": "#f4f0e8",
+  "theme_color": "#f4f0e8",
   "categories": ["events", "lifestyle", "travel"],
   "icons": [
     {
