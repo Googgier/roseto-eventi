@@ -1108,6 +1108,25 @@
     "updatedAt": "2026-08-04"
   },
   {
+    "id": "ulla-festival-2026",
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "displayDate": "15 Ago 2026",
+    "time": "21:00",
+    "title": "Ulla Festival",
+    "venue": "Piazza Matteotti, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Dj set e musica dal vivo per la serata di Ferragosto in Piazza Matteotti: una discoteca all'aperto per celebrare l'estate sul lungomare.",
+    "tags": [
+      "Musica",
+      "Festival"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/ulla-festival-musica-e-spettacolo-a-ferragosto/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
     "id": "straisland-the-finest-dire-straits-tribute-2026",
     "startDate": "2026-08-16",
     "endDate": "2026-08-16",
@@ -1144,6 +1163,25 @@
     "price": "gratis",
     "image": "",
     "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "palio-del-barone-2026",
+    "startDate": "2026-08-16",
+    "endDate": "2026-08-16",
+    "displayDate": "16 Ago 2026",
+    "time": "Da definire",
+    "title": "XXIII Palio del Barone",
+    "venue": "Centro Storico, Tortoreto Alta",
+    "city": "Tortoreto",
+    "description": "Rievocazione storica medievale: le contrade Terravecchia e Terranova si contendono il Drappo con giochi storici e il grande corteo di oltre 350 figuranti. Ingresso libero.",
+    "tags": [
+      "Tradizione",
+      "Rievocazione"
+    ],
+    "sourceUrl": "https://www.festivalinitalia.it/festival/palio-del-barone",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "roseto-d-amare-note-d-autore-2026",
@@ -1280,6 +1318,25 @@
     "updatedAt": "2026-08-04"
   },
   {
+    "id": "rido-al-lido-festival-cabaret-2026",
+    "startDate": "2026-08-21",
+    "endDate": "2026-08-22",
+    "displayDate": "21–22 Ago 2026",
+    "time": "21:30",
+    "title": "Rido al Lido – Festival del Cabaret",
+    "venue": "Rotonda Carducci, Tortoreto Lido",
+    "city": "Tortoreto",
+    "description": "Due serate di cabaret con Stefano Chiodaroli, Emanuela Aureli, i Sequestrattori e Uccio De Santis. Conduzione e direzione artistica di Alex De Palo. Ingresso libero.",
+    "tags": [
+      "Teatro",
+      "Cabaret"
+    ],
+    "sourceUrl": "https://www.festivalinitalia.it/festival/rido-al-lido-tortoreto",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
     "id": "giuliano-palma-in-concerto-2026",
     "startDate": "2026-08-23",
     "endDate": "2026-08-23",
@@ -1337,6 +1394,25 @@
     "updatedAt": "2026-08-04"
   },
   {
+    "id": "concerto-roppoppo-2026",
+    "startDate": "2026-08-27",
+    "endDate": "2026-08-27",
+    "displayDate": "27 Ago 2026",
+    "time": "21:00",
+    "title": "Concerto Ropoppo'",
+    "venue": "Rotonda Monti, Tortoreto Lido",
+    "city": "Tortoreto",
+    "description": "Concerto serale della band Ropoppo' alla Rotonda Monti, sul lungomare di Tortoreto. Calendario Estate Tortoretana 2026.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.cityrumorsabruzzo.it/wp-content/uploads/2026/04/Calendario-Eventi-Estate-Tortoretana-2026.pdf",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
     "id": "festa-madonna-annunziata-2026",
     "startDate": "2026-08-27",
     "endDate": "2026-09-06",
@@ -1358,13 +1434,13 @@
   {
     "id": "diorama-festival-silvi-2026",
     "startDate": "2026-08-28",
-    "endDate": "2026-08-28",
-    "displayDate": "28 Ago 2026",
-    "time": "Dalle 20:00",
+    "endDate": "2026-08-30",
+    "displayDate": "28–30 Ago 2026",
+    "time": "21:30",
     "title": "Diorama Festival",
     "venue": "Le Dune, Silvi Marina",
     "city": "Silvi",
-    "description": "Festival musicale alle Dune di Silvi Marina.",
+    "description": "3ª edizione del festival musicale alle Dune di Silvi Marina, in programma dal 28 al 30 agosto.",
     "tags": [
       "Musica",
       "Festival"
@@ -1372,7 +1448,7 @@
     "sourceUrl": "https://www.visitsilvi.it/eventi-e-manifestazioni/eventi-principali-calendario-estivo-2026/29-68.html",
     "price": "gratis",
     "image": "",
-    "updatedAt": "2026-08-04"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "enrico-brignano-giulianova-2026",
@@ -1411,6 +1487,25 @@
     "price": "gratis",
     "image": "",
     "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "tortoreto-comix-2026",
+    "startDate": "2026-08-28",
+    "endDate": "2026-08-29",
+    "displayDate": "28–29 Ago 2026",
+    "time": "Da definire",
+    "title": "Tortoreto Comix",
+    "venue": "Lungomare Sirena, Tortoreto",
+    "city": "Tortoreto",
+    "description": "Festival dedicato al fumetto e alla cultura pop sul Lungomare Sirena di Tortoreto. Calendario Estate Tortoretana 2026.",
+    "tags": [
+      "Cultura",
+      "Fumetti"
+    ],
+    "sourceUrl": "https://www.cityrumorsabruzzo.it/wp-content/uploads/2026/04/Calendario-Eventi-Estate-Tortoretana-2026.pdf",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "francesca-michielin-concerto-gratuito-2026",
@@ -1507,6 +1602,25 @@
     "updatedAt": "2026-08-07"
   },
   {
+    "id": "mannarino-in-concerto-2026",
+    "startDate": "2026-08-30",
+    "endDate": "2026-08-30",
+    "displayDate": "30 Ago 2026",
+    "time": "21:00",
+    "title": "Mannarino in concerto – Live Tour 2026",
+    "venue": "Banchina Malfizia, porto di San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Concerto gratuito di Mannarino per il Sunbeach Weekend: il cantautore romano presenta il Live Tour 2026 e l'album 'Primo amore'. Ingresso libero.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/mannarino-in-concerto-live-tour-2026/",
+    "price": "gratis",
+    "image": "images/img-mannarino-in-concerto-2026.jpg",
+    "updatedAt": "2026-08-14"
+  },
+  {
     "id": "roseto-d-amare-glem-clarinet-quartet-2026",
     "startDate": "2026-09-05",
     "endDate": "2026-09-05",
@@ -1562,5 +1676,136 @@
     "price": "gratis",
     "image": "",
     "updatedAt": "2026-08-04"
+  },
+  {
+    "id": "memorial-gianni-marcozzi-2026",
+    "startDate": "2026-09-06",
+    "endDate": "2026-09-06",
+    "displayDate": "6 Set 2026",
+    "time": "16:15",
+    "title": "I Memorial Gianni Marcozzi",
+    "venue": "Terrazza Palazzo Kursaal, Giulianova",
+    "city": "Giulianova",
+    "description": "Torneo di bridge a coppie dedicato a Gianni Marcozzi sulla Terrazza di Palazzo Kursaal.",
+    "tags": [
+      "Sport"
+    ],
+    "sourceUrl": "https://www.visitgiulianova.com/evento.php?id=843",
+    "price": "gratis",
+    "image": "images/img-memorial-gianni-marcozzi-2026.jpg",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "2-torneo-internazionale-beach-volley-2026",
+    "startDate": "2026-09-10",
+    "endDate": "2026-09-12",
+    "displayDate": "10–12 Set 2026",
+    "time": "Da definire",
+    "title": "2° Torneo Internazionale Beach Volley",
+    "venue": "Stabilimento La Conchiglia, Silvi Marina",
+    "city": "Silvi",
+    "description": "Seconda edizione del torneo internazionale di beach volley allo stabilimento La Conchiglia di Silvi Marina.",
+    "tags": [
+      "Sport"
+    ],
+    "sourceUrl": "https://www.visitsilvi.it/eventi-e-manifestazioni/2-torneo-internazionale-beach-volley/29-123.html",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "festa-dell-uva-mosciano-2026",
+    "startDate": "2026-09-10",
+    "endDate": "2026-09-13",
+    "displayDate": "10–13 Set 2026",
+    "time": "Da definire",
+    "title": "68ª Festa dell'Uva",
+    "venue": "Centro Storico, Mosciano Sant'Angelo",
+    "city": "Mosciano Sant'Angelo",
+    "description": "Una delle sagre più antiche d'Abruzzo (dal 1922): vendemmia, vini d'Abruzzo, carri allegorici, Palio delle Botti, Corteo della Dote, giochi popolari e spettacoli folkloristici. Organizzata dalla Pro Loco Musiano, ingresso libero.",
+    "tags": [
+      "Enogastronomia",
+      "Sagra"
+    ],
+    "sourceUrl": "https://www.festivalinitalia.it/festival/festa-uva-mosciano-santangelo",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "i-bambini-in-festa-2026",
+    "startDate": "2026-09-20",
+    "endDate": "2026-09-20",
+    "displayDate": "20 Set 2026",
+    "time": "Da definire",
+    "title": "I Bambini in Festa",
+    "venue": "Terrabianca, Tortoreto",
+    "city": "Tortoreto",
+    "description": "Festa dedicata ai più piccoli a Terrabianca. Calendario Estate Tortoretana 2026.",
+    "tags": [
+      "Famiglia",
+      "Bambini"
+    ],
+    "sourceUrl": "https://www.cityrumorsabruzzo.it/wp-content/uploads/2026/04/Calendario-Eventi-Estate-Tortoretana-2026.pdf",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "festa-san-pio-pineto-2026",
+    "startDate": "2026-09-23",
+    "endDate": "2026-09-23",
+    "displayDate": "23 Set 2026",
+    "time": "19:00",
+    "title": "Festa in onore di San Pio",
+    "venue": "Scerne di Pineto",
+    "city": "Pineto",
+    "description": "Festa tradizionale in onore di San Pio a Scerne di Pineto. Programma eventi Estate 2026 del Comune di Pineto.",
+    "tags": [
+      "Cultura",
+      "Tradizione"
+    ],
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "la-lanterna-magica-film-fest-2026",
+    "startDate": "2026-09-25",
+    "endDate": "2026-09-25",
+    "displayDate": "25 Set 2026",
+    "time": "21:00",
+    "title": "La Lanterna Magica Film Fest",
+    "venue": "Biblioparco, Silvi Marina",
+    "city": "Silvi",
+    "description": "Cinema all'aperto gratuito per bambini e famiglie al Biblioparco di Silvi Marina, a cura dell'Istituto Cinematografico dell'Aquila.",
+    "tags": [
+      "Cinema",
+      "Famiglia"
+    ],
+    "sourceUrl": "https://www.visitsilvi.it/eventi-e-manifestazioni/la-lanterna-magica-film-fest/29-82.html",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "festa-sant-ilario-mutignano-2026",
+    "startDate": "2026-09-26",
+    "endDate": "2026-09-27",
+    "displayDate": "26–27 Set 2026",
+    "time": "21:30",
+    "title": "Festa in onore di Sant'Ilario",
+    "venue": "Mutignano, Pineto",
+    "city": "Pineto",
+    "description": "Festa tradizionale in onore di Sant'Ilario nella frazione di Mutignano. Programma eventi Estate 2026 del Comune di Pineto.",
+    "tags": [
+      "Cultura",
+      "Tradizione"
+    ],
+    "sourceUrl": "https://www.visitpineto.it/eventi/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-14"
   }
 ]
