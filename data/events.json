@@ -1324,7 +1324,7 @@
     "displayDate": "19 Ago 2026",
     "time": "21:15",
     "title": "Roseto d'aMare – Glam Saxophone Quartet",
-    "venue": "Piazza del Vecchio Borgo, Montepagano, Roseto",
+    "venue": "Piazza Re di Puglia, Cologna Spiaggia, Roseto",
     "city": "Roseto",
     "description": "Concerto del Glam Saxophone Quartet dedicato al repertorio contemporaneo del sassofono. Rassegna Roseto d'aMare 2026, ingresso libero.",
     "tags": [
@@ -1334,7 +1334,7 @@
     "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi/cerca-eventi/374-roseto-d-amare/2026-08-19-00-00",
     "price": "gratis",
     "image": "",
-    "updatedAt": "2026-08-07"
+    "updatedAt": "2026-08-18"
   },
   {
     "id": "transumare-fest-2026",
@@ -1725,7 +1725,7 @@
     "displayDate": "29 Ago 2026",
     "time": "21:00",
     "title": "Francesca Michielin – concerto gratuito",
-    "venue": "Roseto degli Abruzzi",
+    "venue": "Rotonda Sud, Roseto degli Abruzzi",
     "city": "Roseto",
     "description": "Concerto gratuito della cantautrice per la chiusura dell'estate rosetana.",
     "tags": [
@@ -1735,7 +1735,7 @@
     "sourceUrl": "https://www.visitroseto.it/eventi/",
     "price": "gratis",
     "image": "images/img-36.jpg",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-08-18"
   },
   {
     "id": "le-donne-di-puccini-pineto-2026",
@@ -1780,9 +1780,9 @@
     "startDate": "2026-08-30",
     "endDate": "2026-08-30",
     "displayDate": "30 Ago 2026",
-    "time": "21:15",
+    "time": "21:00",
     "title": "Roseto d'aMare – Orchestra Città di Celano",
-    "venue": "Piazza Guido Rossa, Cologna Paese, Roseto",
+    "venue": "Santa Lucia, Roseto",
     "city": "Roseto",
     "description": "Concerto dell'Orchestra Città di Celano dedicato alla tradizione bandistica italiana. Rassegna Roseto d'aMare 2026, ingresso libero.",
     "tags": [
@@ -1792,7 +1792,7 @@
     "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi/cerca-eventi/374-roseto-d-amare/2026-08-30-00-00",
     "price": "gratis",
     "image": "",
-    "updatedAt": "2026-08-07"
+    "updatedAt": "2026-08-18"
   },
   {
     "id": "crazy-games-fit-fun-2026",
@@ -2286,5 +2286,157 @@
     "price": "gratis",
     "image": "",
     "updatedAt": "2026-08-14"
+  },
+  {
+    "id": "teatro-dialettale-teatro-sotto-le-stelle-18-2026",
+    "startDate": "2026-08-18",
+    "endDate": "2026-08-18",
+    "displayDate": "18 Ago 2026",
+    "time": "21:00",
+    "title": "Teatro Dialettale – Teatro sotto le Stelle",
+    "venue": "Piazza Re di Puglia, Cologna Spiaggia, Roseto",
+    "city": "Roseto",
+    "description": "Spettacolo di teatro dialettale nell'ambito della rassegna Teatro sotto le Stelle.",
+    "tags": [
+      "Teatro",
+      "Cultura"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/events/eventi-mese-di-agosto-2026/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-18"
+  },
+  {
+    "id": "la-notte-delle-cirtelle-2026",
+    "startDate": "2026-08-18",
+    "endDate": "2026-08-18",
+    "displayDate": "18 Ago 2026",
+    "time": "21:00",
+    "title": "La Notte delle Cirtelle",
+    "venue": "Piazza Pineta Centrale, Roseto",
+    "city": "Roseto",
+    "description": "Serata culturale tra musica, racconti e tradizioni popolari.",
+    "tags": [
+      "Cultura",
+      "Musica"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/events/eventi-mese-di-agosto-2026/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-18"
+  },
+  {
+    "id": "concerto-canto-di-donna-belle-figliole-2026",
+    "startDate": "2026-08-18",
+    "endDate": "2026-08-18",
+    "displayDate": "18 Ago 2026",
+    "time": "21:00",
+    "title": "Concerto Canto di Donna – Belle Figliole",
+    "venue": "Montepagano, Roseto",
+    "city": "Roseto",
+    "description": "Concerto del Trio la Firlinghina nell'ambito degli appuntamenti estivi di Roseto.",
+    "tags": [
+      "Musica",
+      "Cultura"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/events/eventi-mese-di-agosto-2026/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-18"
+  },
+  {
+    "id": "i-tastaferri-silvi-2026",
+    "startDate": "2026-08-20",
+    "endDate": "2026-08-20",
+    "displayDate": "20 Ago 2026",
+    "time": "21:30",
+    "title": "I Tastaferri",
+    "venue": "Piazza Indipendenza, Pianacce, Silvi Marina",
+    "city": "Silvi",
+    "description": "Concerto degli I Tastaferri con repertorio pop italiano, internazionale e dance.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.visitsilvi.it/eventi-e-manifestazioni/i-tastaferri/29-116.html",
+    "price": "gratis",
+    "image": "images/img-i-tastaferri-silvi-2026.jpg",
+    "updatedAt": "2026-08-18"
+  },
+  {
+    "id": "festeggiamenti-san-gabriele-addolorata-2026",
+    "startDate": "2026-08-20",
+    "endDate": "2026-08-23",
+    "displayDate": "20–23 Ago 2026",
+    "time": "Da definire",
+    "title": "Festeggiamenti San Gabriele dell'Addolorata",
+    "venue": "Piazza Re di Puglia, Cologna Spiaggia, Roseto",
+    "city": "Roseto",
+    "description": "Festeggiamenti in onore di San Gabriele dell'Addolorata a Cologna Spiaggia.",
+    "tags": [
+      "Cultura",
+      "Tradizione"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/events/eventi-mese-di-agosto-2026/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-18"
+  },
+  {
+    "id": "riserva-e-luna-piena-2026",
+    "startDate": "2026-08-28",
+    "endDate": "2026-08-28",
+    "displayDate": "28 Ago 2026",
+    "time": "21:00",
+    "title": "Riserva e Luna Piena",
+    "venue": "Santa Lucia, Roseto",
+    "city": "Roseto",
+    "description": "Esperienza notturna di yoga e meditazione nella Riserva.",
+    "tags": [
+      "Natura",
+      "Sport"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/events/eventi-mese-di-agosto-2026/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-18"
+  },
+  {
+    "id": "teatro-dialettale-teatro-sotto-le-stelle-29-2026",
+    "startDate": "2026-08-29",
+    "endDate": "2026-08-29",
+    "displayDate": "29 Ago 2026",
+    "time": "21:00",
+    "title": "Teatro Dialettale – Teatro sotto le Stelle",
+    "venue": "Santa Lucia, Roseto",
+    "city": "Roseto",
+    "description": "Spettacolo di teatro dialettale nell'ambito della rassegna Teatro sotto le Stelle.",
+    "tags": [
+      "Teatro",
+      "Cultura"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/events/eventi-mese-di-agosto-2026/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-18"
+  },
+  {
+    "id": "festa-dello-sport-roseto-2026",
+    "startDate": "2026-09-05",
+    "endDate": "2026-09-05",
+    "displayDate": "5 Set 2026",
+    "time": "17:00",
+    "title": "Festa dello Sport",
+    "venue": "Lungomare Roma, Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Quarta edizione della Festa dello Sport, con associazioni sportive, atleti, famiglie e cittadini del territorio rosetano.",
+    "tags": [
+      "Sport",
+      "Famiglia"
+    ],
+    "sourceUrl": "https://www.facebook.com/annalisadelpidio/posts/-la-festa-dello-sport-2026-prende-forma-stiamo-lavorando-con-entusiasmo-alla-4%C2%AA-/1068727059018149/",
+    "price": "gratis",
+    "image": "images/img-festa-dello-sport-roseto-2026.jpg",
+    "updatedAt": "2026-08-18"
   }
 ]
