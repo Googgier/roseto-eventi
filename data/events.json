@@ -1524,8 +1524,8 @@
     ],
     "sourceUrl": "https://turismo.comunesbt.it/evento/kriss-corradetti-trio/",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-14"
+    "image": "images/sbt-kriss-corradetti-trio-2026.jpg",
+    "updatedAt": "2026-08-25"
   },
   {
     "id": "concerto-di-fiati-pineto-2026",
@@ -1551,19 +1551,19 @@
     "startDate": "2026-08-27",
     "endDate": "2026-08-27",
     "displayDate": "27 Ago 2026",
-    "time": "21:00",
-    "title": "Concerto Ropoppo'",
-    "venue": "Rotonda Monti, Tortoreto Lido",
+    "time": "21:30",
+    "title": "Roppoppò il Cantastorie in concerto",
+    "venue": "Rotonda Monti, Lungomare Sirena, Tortoreto",
     "city": "Tortoreto",
-    "description": "Concerto serale della band Ropoppo' alla Rotonda Monti, sul lungomare di Tortoreto. Calendario Estate Tortoretana 2026.",
+    "description": "Serata tra musica, allegria e tradizione popolare con Roppoppò il Cantastorie.",
     "tags": [
       "Musica",
       "Concerto"
     ],
-    "sourceUrl": "https://www.cityrumorsabruzzo.it/wp-content/uploads/2026/04/Calendario-Eventi-Estate-Tortoretana-2026.pdf",
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/roppoppo-il-cantastorie-in-concerto/25-294.html",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-14"
+    "image": "images/tortoreto-roppoppo-2026.jpg",
+    "updatedAt": "2026-08-25"
   },
   {
     "id": "festa-madonna-annunziata-2026",
@@ -1598,10 +1598,10 @@
       "Musica",
       "Festival"
     ],
-    "sourceUrl": "https://www.visitsilvi.it/eventi-e-manifestazioni/eventi-principali-calendario-estivo-2026/29-68.html",
+    "sourceUrl": "https://www.visitsilvi.it/eventi-e-manifestazioni/3-edizione-diorama-festival/29-120.html",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-14"
+    "image": "images/diorama-festival-silvi-2026.jpg",
+    "updatedAt": "2026-08-25"
   },
   {
     "id": "enrico-brignano-giulianova-2026",
@@ -1647,18 +1647,18 @@
     "endDate": "2026-08-29",
     "displayDate": "28–29 Ago 2026",
     "time": "Da definire",
-    "title": "Tortoreto Comix",
-    "venue": "Lungomare Sirena, Tortoreto",
+    "title": "Tortoreto Comix and Games 2026",
+    "venue": "Lungomare Sirena, Rotonda Carducci, Tortoreto",
     "city": "Tortoreto",
-    "description": "Festival dedicato al fumetto e alla cultura pop sul Lungomare Sirena di Tortoreto. Calendario Estate Tortoretana 2026.",
+    "description": "Due giornate dedicate a fumetti, giochi e divertimento sul Lungomare Sirena. Ingresso gratuito.",
     "tags": [
       "Cultura",
       "Fumetti"
     ],
-    "sourceUrl": "https://www.cityrumorsabruzzo.it/wp-content/uploads/2026/04/Calendario-Eventi-Estate-Tortoretana-2026.pdf",
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/tortoreto-comix-and-games-2026/25-291.html",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-14"
+    "image": "images/tortoreto-comix-2026.jpg",
+    "updatedAt": "2026-08-25"
   },
   {
     "id": "sbt-le-miss-fever-2026",
@@ -1676,8 +1676,8 @@
     ],
     "sourceUrl": "https://turismo.comunesbt.it/evento/le-miss-fever/",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-14"
+    "image": "images/sbt-le-miss-fever-2026.jpg",
+    "updatedAt": "2026-08-25"
   },
   {
     "id": "sbt-mercatino-regionale-francese-2026",
@@ -1695,8 +1695,8 @@
     ],
     "sourceUrl": "https://turismo.comunesbt.it/evento/mercatino-regionale-francese-2/",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-14"
+    "image": "images/sbt-mercatino-regionale-francese-2026.jpg",
+    "updatedAt": "2026-08-25"
   },
   {
     "id": "sbt-rosso-blues-2026",
@@ -1715,8 +1715,8 @@
     ],
     "sourceUrl": "https://turismo.comunesbt.it/evento/rosso-blues-cibo-e-musica-sotto-la-torre/",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-14"
+    "image": "images/sbt-rosso-blues-2026.jpg",
+    "updatedAt": "2026-08-25"
   },
   {
     "id": "francesca-michielin-concerto-gratuito-2026",
@@ -1847,8 +1847,8 @@
     ],
     "sourceUrl": "https://turismo.comunesbt.it/evento/francesca-scotti-a-parliamone-con-la-stagione-delle-case-vuote/",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-14"
+    "image": "images/sbt-francesca-scotti-2026.jpg",
+    "updatedAt": "2026-08-25"
   },
   {
     "id": "roseto-d-amare-glem-clarinet-quartet-2026",
@@ -1941,8 +1941,8 @@
     ],
     "sourceUrl": "https://turismo.comunesbt.it/evento/risate-in-palazzina-con-lando-e-dino/",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-14"
+    "image": "images/sbt-risate-in-palazzina-lando-dino-2026.jpg",
+    "updatedAt": "2026-08-25"
   },
   {
     "id": "2-torneo-internazionale-beach-volley-2026",
@@ -2021,22 +2021,22 @@
   },
   {
     "id": "la-lanterna-magica-film-fest-2026",
-    "startDate": "2026-09-25",
-    "endDate": "2026-09-25",
-    "displayDate": "25 Set 2026",
+    "startDate": "2026-08-27",
+    "endDate": "2026-08-27",
+    "displayDate": "27 Ago 2026",
     "time": "21:00",
     "title": "La Lanterna Magica Film Fest",
-    "venue": "Biblioparco, Silvi Marina",
+    "venue": "Biblioparco, via Tevere, Silvi Marina",
     "city": "Silvi",
-    "description": "Cinema all'aperto gratuito per bambini e famiglie al Biblioparco di Silvi Marina, a cura dell'Istituto Cinematografico dell'Aquila.",
+    "description": "Proiezione gratuita di Big Hero 6 per famiglie al Biblioparco di Silvi Marina, nell’ambito del La Lanterna Magica Film Fest.",
     "tags": [
       "Cinema",
       "Famiglia"
     ],
-    "sourceUrl": "https://www.visitsilvi.it/eventi-e-manifestazioni/la-lanterna-magica-film-fest/29-82.html",
+    "sourceUrl": "https://www.visitsilvi.it/eventi-e-manifestazioni/la-lanterna-magica-film-fest/29-124.html",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-14"
+    "image": "images/lanterna-magica-silvi-2026.jpg",
+    "updatedAt": "2026-08-25"
   },
   {
     "id": "festa-sant-ilario-mutignano-2026",
@@ -2245,8 +2245,8 @@
     ],
     "sourceUrl": "https://turismo.comunesbt.it/evento/una-rotonda-sul-mare-serate-danzanti-3/2026-09-04/",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-14"
+    "image": "images/sbt-una-rotonda-sul-mare-4-set-2026.jpg",
+    "updatedAt": "2026-08-25"
   },
   {
     "id": "sbt-gisonna-fischetti-2026",
@@ -2284,8 +2284,8 @@
     ],
     "sourceUrl": "https://turismo.comunesbt.it/evento/visitiamo-la-sentina-escursione-nella-storia-4/",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-14"
+    "image": "images/sbt-visitiamo-sentina-20-set-2026.jpg",
+    "updatedAt": "2026-08-25"
   },
   {
     "id": "teatro-dialettale-teatro-sotto-le-stelle-18-2026",
@@ -2438,5 +2438,306 @@
     "price": "gratis",
     "image": "images/img-festa-dello-sport-roseto-2026.jpg",
     "updatedAt": "2026-08-18"
+  },
+  {
+    "id": "pescara-1566-battaglia-aternum-tortoreto-2026",
+    "startDate": "2026-08-26",
+    "endDate": "2026-08-26",
+    "displayDate": "26 Ago 2026",
+    "time": "21:30",
+    "title": "Pescara 1566 – La battaglia dell’Aternum",
+    "venue": "Rotonda Carducci, Tortoreto Lido",
+    "city": "Tortoreto",
+    "description": "Spettacolo teatrale liberamente tratto dal romanzo di Andrea Verrocchio, tra storia, teatro e memoria.",
+    "tags": [
+      "Cultura",
+      "Teatro"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/pescara-1566-la-battaglia-dell-aternum/25-292.html",
+    "price": "gratis",
+    "image": "images/tortoreto-pescara-1566-2026.jpg",
+    "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "alex-mago-ventriloquo-show-tortoreto-2026",
+    "startDate": "2026-08-27",
+    "endDate": "2026-08-27",
+    "displayDate": "27 Ago 2026",
+    "time": "21:00",
+    "title": "Alex Mago Ventriloquo Show",
+    "venue": "Rotonda Carducci, Tortoreto",
+    "city": "Tortoreto",
+    "description": "Spettacolo di magia, comicità e ventriloquia pensato per divertire grandi e piccoli.",
+    "tags": [
+      "Intrattenimento",
+      "Famiglia"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/alex-mago-ventriloquo-show/25-303.html",
+    "price": "gratis",
+    "image": "images/tortoreto-alex-mago-2026.jpg",
+    "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "presentazione-romanzo-in-nome-di-quale-dio-2026",
+    "startDate": "2026-08-29",
+    "endDate": "2026-08-29",
+    "displayDate": "29 Ago 2026",
+    "time": "18:30",
+    "title": "Presentazione del romanzo “In nome di quale Dio”",
+    "venue": "Circolo del Tennis, via Napoli 8, Tortoreto",
+    "city": "Tortoreto",
+    "description": "Silvia Vercesi presenta il romanzo “In nome di quale Dio”; dialoga con l’autrice lo storiografo Gianluigi Chiaserotti.",
+    "tags": [
+      "Cultura",
+      "Libri"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/presentazione-del-romanzo-in-nome-di-quale-dio/25-287.html",
+    "price": "gratis",
+    "image": "images/tortoreto-romanzo-2026.jpg",
+    "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "roseto-d-amare-nick-di-giovanni-2026",
+    "startDate": "2026-10-03",
+    "endDate": "2026-10-03",
+    "displayDate": "3 Ott 2026",
+    "time": "21:00",
+    "title": "Roseto d’aMare – Nick Di Giovanni e Davide Aquino",
+    "venue": "Museo di Montepagano, Roseto",
+    "city": "Roseto",
+    "description": "Concerto jazz della rassegna Roseto d’aMare: Nick Di Giovanni (oboe e chitarra) e Davide Aquino (fagotto).",
+    "tags": [
+      "Musica",
+      "Jazz"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/events/roseto-damare-classica-jazz-2026-7/",
+    "price": "gratis",
+    "image": "images/roseto-nick-di-giovanni-2026.jpg",
+    "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "sbt-ludobus-legnogiocando-25-ago-2026",
+    "startDate": "2026-08-25",
+    "endDate": "2026-08-25",
+    "displayDate": "25 Ago 2026",
+    "time": "21:00–23:30",
+    "title": "Ludobus Legnogiocando – Giochi in legno itineranti",
+    "venue": "Piazza Matteotti, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Giochi in legno itineranti e divertimento gratuito per bambini e famiglie sotto le stelle.",
+    "tags": [
+      "Intrattenimento",
+      "Famiglia"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/ludobus-legnogiocando-giochi-in-legno-itineranti-2/2026-08-25/",
+    "price": "gratis",
+    "image": "images/sbt-ludobus-25-ago-2026.jpg",
+    "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "sbt-tra-le-note-e-i-giardini-25-ago-2026",
+    "startDate": "2026-08-25",
+    "endDate": "2026-08-25",
+    "displayDate": "25 Ago 2026",
+    "time": "21:30–23:30",
+    "title": "Tra le note e i Giardini – Punti e Virgola Acoustic Trio",
+    "venue": "Giardino delle Palme, Lungomare Sud, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Esibizione gratuita dei Punti e Virgola Acoustic Trio nella rassegna musicale Tra le note e i Giardini.",
+    "tags": [
+      "Musica"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/tra-le-note-e-i-giardini-26/",
+    "price": "gratis",
+    "image": "images/sbt-tra-le-note-25-ago-2026.jpg",
+    "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "sbt-favola-delle-nuvole-26-ago-2026",
+    "startDate": "2026-08-26",
+    "endDate": "2026-08-26",
+    "displayDate": "26 Ago 2026",
+    "time": "21:00–22:30",
+    "title": "Favola delle nuvole e del profumo – Fiabe al Parco 2026",
+    "venue": "Parco Manzini, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Spettacolo di teatro d’attore, pupazzi animati e canto dal vivo a cura di Proscenio Teatro.",
+    "tags": [
+      "Teatro",
+      "Famiglia"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/favola-delle-nuvole-26-08/",
+    "price": "gratis",
+    "image": "images/sbt-favola-delle-nuvole-2026.jpg",
+    "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "sbt-eva-montanari-27-ago-2026",
+    "startDate": "2026-08-27",
+    "endDate": "2026-08-27",
+    "displayDate": "27 Ago 2026",
+    "time": "18:30–23:30",
+    "title": "Eva Montanari, le sue illustrazioni e i suoi sogni a Parliamone!",
+    "venue": "Palazzina Azzurra, via Buozzi 14, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Doppio incontro con Eva Montanari tra illustrazioni e laboratori creativi, per famiglie ed educatori.",
+    "tags": [
+      "Cultura",
+      "Libri"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/eva-montanari-le-sue-illustrazioni-e-i-suoi-sogni-a-parliamone/",
+    "price": "gratis",
+    "image": "images/sbt-eva-montanari-2026.jpg",
+    "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "sbt-spiaggia-dei-sogni-27-ago-2026",
+    "startDate": "2026-08-27",
+    "endDate": "2026-08-27",
+    "displayDate": "27 Ago 2026",
+    "time": "21:00–23:00",
+    "title": "Spiaggia dei Sogni – Animazione per i bimbi",
+    "venue": "Giardino dei Bambini, Lungomare Rinascimento, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Animazione gratuita per bambini con giochi di gruppo, laboratori creativi, baby dance e spettacoli.",
+    "tags": [
+      "Intrattenimento",
+      "Famiglia"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/spiaggia-dei-sogni-animazione-per-i-bimbi-2-2/2026-08-27/",
+    "price": "gratis",
+    "image": "images/sbt-spiaggia-dei-sogni-27-ago-2026.jpg",
+    "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "sbt-tesori-in-centro-28-ago-2026",
+    "startDate": "2026-08-28",
+    "endDate": "2026-08-28",
+    "displayDate": "28 Ago 2026",
+    "time": "18:30–22:30",
+    "title": "Tesori in Centro",
+    "venue": "Piazza Matteotti e Viale Secondo Moretti, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Passeggiata tra sapori, saperi e tradizioni nel cuore di San Benedetto, con commercio e artigianato locale.",
+    "tags": [
+      "Mercatini",
+      "Enogastronomia"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/tesori-in-centro-8/2026-08-28/",
+    "price": "gratis",
+    "image": "images/sbt-tesori-in-centro-28-ago-2026.jpg",
+    "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "sbt-una-rotonda-sul-mare-28-ago-2026",
+    "startDate": "2026-08-28",
+    "endDate": "2026-08-28",
+    "displayDate": "28 Ago 2026",
+    "time": "21:30–23:00",
+    "title": "Una Rotonda sul Mare – Serata danzante",
+    "venue": "Piazza Salvo D’Acquisto, Porto d’Ascoli, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Serata danzante a ingresso libero organizzata dall’associazione culturale Arte Viva.",
+    "tags": [
+      "Musica",
+      "Intrattenimento"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/una-rotonda-sul-mare-serate-danzanti-3/2026-08-28/",
+    "price": "gratis",
+    "image": "images/sbt-una-rotonda-sul-mare-28-ago-2026.jpg",
+    "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "sbt-snack-club-show-meet-29-ago-2026",
+    "startDate": "2026-08-29",
+    "endDate": "2026-08-29",
+    "displayDate": "29 Ago 2026",
+    "time": "21:30–23:30",
+    "title": "The Snack Club, show & meet – Sunbeach Weekend",
+    "venue": "Piazza Salvo D’Acquisto, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Show & meet con i creator di The Snack Club, tra talk dal vivo e meet and greet.",
+    "tags": [
+      "Intrattenimento",
+      "Musica"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/snack-club-show-meet-sunbeach-weekend/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "sbt-trofeo-challenger-j-la-bolina-g-latini-30-ago-2026",
+    "startDate": "2026-08-30",
+    "endDate": "2026-08-30",
+    "displayDate": "30 Ago 2026",
+    "time": "Tutto il giorno",
+    "title": "Trofeo Challenger J. La Bolina e G. Latini",
+    "venue": "Mare antistante la costa sambenedettese",
+    "city": "San Benedetto",
+    "description": "Regata velica organizzata dalla Lega Navale Italiana, sezione di San Benedetto del Tronto.",
+    "tags": [
+      "Sport"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/trofeo-challenger-j-la-bolina-e-g-latini-5/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "sbt-curiosando-al-mare-31-ago-2026",
+    "startDate": "2026-08-31",
+    "endDate": "2026-08-31",
+    "displayDate": "31 Ago 2026",
+    "time": "18:00–23:30",
+    "title": "Curiosando al mare",
+    "venue": "Lungomare Rinascimento, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Mercatino serale sul lungomare con artigianato e sapori tipici del territorio.",
+    "tags": [
+      "Mercatini",
+      "Enogastronomia"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/curiosando-al-mare-13/2026-08-31/",
+    "price": "gratis",
+    "image": "images/sbt-curiosando-al-mare-31-ago-2026.jpg",
+    "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "sbt-concerto-pianoforte-31-ago-2026",
+    "startDate": "2026-08-31",
+    "endDate": "2026-08-31",
+    "displayDate": "31 Ago 2026",
+    "time": "21:00–23:00",
+    "title": "Concerto di Pianoforte",
+    "venue": "Palazzina Azzurra, viale Bruno Buozzi 14, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Concerto della Prof.ssa Lara Narcisi, in un viaggio musicale tra classici e romanticismo.",
+    "tags": [
+      "Musica"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/concerto-di-pianoforte/",
+    "price": "gratis",
+    "image": "images/sbt-concerto-pianoforte-31-ago-2026.jpg",
+    "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "sbt-favola-amicizia-31-ago-2026",
+    "startDate": "2026-08-31",
+    "endDate": "2026-08-31",
+    "displayDate": "31 Ago 2026",
+    "time": "21:00–22:30",
+    "title": "La Favola dell’amicizia – Fiabe al Parco 2026",
+    "venue": "Parco Varo Ristori, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Spettacolo di teatro d’attore con interazione del pubblico, a cura della compagnia Fantacadabra.",
+    "tags": [
+      "Teatro",
+      "Famiglia"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/favola-amicizia-31-08/",
+    "price": "gratis",
+    "image": "images/sbt-favola-amicizia-2026.jpg",
+    "updatedAt": "2026-08-25"
   }
 ]
