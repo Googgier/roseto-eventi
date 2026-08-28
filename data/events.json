@@ -32,10 +32,10 @@
       "Cultura",
       "Arte"
     ],
-    "sourceUrl": "https://www.visitroseto.it/en/events/",
+    "sourceUrl": "https://www.visitroseto.it/en/events/personaggi-drammatici-che-si-manifestano-comicamente/",
     "price": "gratis",
     "image": "",
-    "updatedAt": "2026-07-28"
+    "updatedAt": "2026-08-28"
   },
   {
     "id": "villa-in-arte-2026",
@@ -155,9 +155,9 @@
   {
     "id": "art-in-act-2026",
     "startDate": "2026-07-24",
-    "endDate": "2026-07-24",
-    "displayDate": "24 Lug 2026",
-    "time": "18:30",
+    "endDate": "2026-10-31",
+    "displayDate": "24 Lug – 31 Ott 2026",
+    "time": "18:30–21:30 (mercoledì–venerdì; settembre e ottobre su richiesta)",
     "title": "Art in Act 2026",
     "venue": "Villa Paris (via Marcacci 1), Roseto",
     "city": "Roseto",
@@ -166,10 +166,10 @@
       "Cultura",
       "Arte"
     ],
-    "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi",
+    "sourceUrl": "https://www.rosetoproloco.it/index.php/eventi/cerca-eventi/376-art-in-act-2026/2026-07-24-00-00",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-07-26"
+    "image": "images/img-art-in-act-2026.jpg",
+    "updatedAt": "2026-08-28"
   },
   {
     "id": "c-era-una-volta-morricone-e-leone-2026",
@@ -1995,10 +1995,10 @@
       "Famiglia",
       "Bambini"
     ],
-    "sourceUrl": "https://www.cityrumorsabruzzo.it/wp-content/uploads/2026/04/Calendario-Eventi-Estate-Tortoretana-2026.pdf",
+    "sourceUrl": "https://www.vivitortoreto.it/resources/VIVITORTORETO-estate-2026.pdf",
     "price": "gratis",
     "image": "",
-    "updatedAt": "2026-08-14"
+    "updatedAt": "2026-08-28"
   },
   {
     "id": "festa-san-pio-pineto-2026",
@@ -2175,10 +2175,10 @@
   },
   {
     "id": "sbt-memorie-nella-notte-palazzina-2026",
-    "startDate": "2026-08-17",
-    "endDate": "2026-08-17",
-    "displayDate": "17 Ago 2026",
-    "time": "21:00",
+    "startDate": "2026-09-01",
+    "endDate": "2026-09-01",
+    "displayDate": "1 Set 2026",
+    "time": "21:15",
     "title": "Memorie nella Notte in Palazzina",
     "venue": "Palazzina Azzurra e Lungomare, San Benedetto del Tronto",
     "city": "San Benedetto",
@@ -2190,7 +2190,7 @@
     "sourceUrl": "https://turismo.comunesbt.it/evento/memorie-nella-notte-in-palazzina/",
     "price": "gratis",
     "image": "",
-    "updatedAt": "2026-08-14"
+    "updatedAt": "2026-08-28"
   },
   {
     "id": "sbt-note-al-tramonto-korero-duo-2026",
@@ -2739,5 +2739,157 @@
     "price": "gratis",
     "image": "images/sbt-favola-amicizia-2026.jpg",
     "updatedAt": "2026-08-25"
+  },
+  {
+    "id": "incontri-con-lautore-isa-grassano-2026",
+    "startDate": "2026-09-01",
+    "endDate": "2026-09-01",
+    "displayDate": "1 Set 2026",
+    "time": "21:30",
+    "title": "Incontri con l’Autore: Isa Grassano presenta “A volte è complicato”",
+    "venue": "Mondadori Bookstore, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Isa Grassano presenta il romanzo “A volte è complicato” nell’ambito della rassegna Incontri con l’Autore. Ingresso libero.",
+    "tags": [
+      "Cultura",
+      "Libri"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/incontri-con-lautore-isa-grassano-presenta-a-volte-e-complicato/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-28"
+  },
+  {
+    "id": "un-mare-di-note-jazz-piano-san-benedetto-2026",
+    "startDate": "2026-09-03",
+    "endDate": "2026-09-10",
+    "displayDate": "3–10 Set 2026",
+    "time": "Da definire",
+    "title": "Un mare di note: il jazz al piano",
+    "venue": "Molo Sud e Palazzina Azzurra, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Rassegna di piano solo tra mare e storia, con appuntamenti il 3, 8 e 10 settembre. Ingresso libero.",
+    "tags": [
+      "Musica",
+      "Jazz"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/un-mare-di-note-il-jazz-al-piano-a-san-benedetto-del-tronto/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-28"
+  },
+  {
+    "id": "sbt-una-rotonda-sul-mare-11-set-2026",
+    "startDate": "2026-09-11",
+    "endDate": "2026-09-11",
+    "displayDate": "11 Set 2026",
+    "time": "21:30–23:00",
+    "title": "Una Rotonda sul Mare – Serata danzante",
+    "venue": "Piazza Salvo D’Acquisto, Porto d’Ascoli, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Serata danzante a ingresso libero organizzata dall’associazione culturale Arte Viva nella piazza di Porto d’Ascoli.",
+    "tags": [
+      "Musica",
+      "Intrattenimento"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/una-rotonda-sul-mare-serate-danzanti-3/2026-09-11/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-28"
+  },
+  {
+    "id": "animazione-tortoreto-baby-friendly-2-set-2026",
+    "startDate": "2026-09-02",
+    "endDate": "2026-09-02",
+    "displayDate": "2 Set 2026",
+    "time": "Da definire",
+    "title": "Animazione Tortoreto Baby Friendly",
+    "venue": "Rotonda Carducci, Tortoreto",
+    "city": "Tortoreto",
+    "description": "Animazione per bambini e famiglie nell’ambito del calendario Estate Tortoretana 2026.",
+    "tags": [
+      "Famiglia",
+      "Intrattenimento"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/resources/VIVITORTORETO-estate-2026.pdf",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-28"
+  },
+  {
+    "id": "passi-d-oro-tortoreto-2026",
+    "startDate": "2026-09-04",
+    "endDate": "2026-09-04",
+    "displayDate": "4 Set 2026",
+    "time": "Da definire",
+    "title": "Passi d’oro",
+    "venue": "Azienda Agricola Biologica Olio Monaco, Tortoreto",
+    "city": "Tortoreto",
+    "description": "Appuntamento della rassegna Tortoreto GREENDAYS presso l’Azienda Agricola Biologica Olio Monaco.",
+    "tags": [
+      "Natura",
+      "Sport"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/resources/VIVITORTORETO-estate-2026.pdf",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-28"
+  },
+  {
+    "id": "evento-finale-tortoreto-greendays-2026",
+    "startDate": "2026-09-05",
+    "endDate": "2026-09-05",
+    "displayDate": "5 Set 2026",
+    "time": "Da definire",
+    "title": "Evento finale Tortoreto GREENDAYS",
+    "venue": "Centro Storico, Tortoreto",
+    "city": "Tortoreto",
+    "description": "Evento finale della rassegna Tortoreto GREENDAYS nel centro storico.",
+    "tags": [
+      "Natura",
+      "Cultura"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/resources/VIVITORTORETO-estate-2026.pdf",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-28"
+  },
+  {
+    "id": "animazione-tortoreto-baby-friendly-9-set-2026",
+    "startDate": "2026-09-09",
+    "endDate": "2026-09-09",
+    "displayDate": "9 Set 2026",
+    "time": "Da definire",
+    "title": "Animazione Tortoreto Baby Friendly",
+    "venue": "Rotonda Carducci, Tortoreto",
+    "city": "Tortoreto",
+    "description": "Animazione per bambini e famiglie nell’ambito del calendario Estate Tortoretana 2026.",
+    "tags": [
+      "Famiglia",
+      "Intrattenimento"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/resources/VIVITORTORETO-estate-2026.pdf",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-28"
+  },
+  {
+    "id": "nettare-degli-dei-tortoreto-2026",
+    "startDate": "2026-09-11",
+    "endDate": "2026-09-11",
+    "displayDate": "11 Set 2026",
+    "time": "Da definire",
+    "title": "Nettare degli Dei",
+    "venue": "Terra di Ea, Tortoreto",
+    "city": "Tortoreto",
+    "description": "Appuntamento della rassegna Tortoreto GREENDAYS presso Terra di Ea.",
+    "tags": [
+      "Enogastronomia",
+      "Cultura"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/resources/VIVITORTORETO-estate-2026.pdf",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-08-28"
   }
 ]
