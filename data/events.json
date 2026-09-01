@@ -34,8 +34,8 @@
     ],
     "sourceUrl": "https://www.visitroseto.it/en/events/personaggi-drammatici-che-si-manifestano-comicamente/",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-28"
+    "image": "images/personaggi-drammatici-che-si-manifestano-comicamente-2026.jpg",
+    "updatedAt": "2026-09-01"
   },
   {
     "id": "villa-in-arte-2026",
@@ -2189,8 +2189,8 @@
     ],
     "sourceUrl": "https://turismo.comunesbt.it/evento/memorie-nella-notte-in-palazzina/",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-28"
+    "image": "images/sbt-memorie-nella-notte-palazzina-2026.jpg",
+    "updatedAt": "2026-09-01"
   },
   {
     "id": "sbt-note-al-tramonto-korero-duo-2026",
@@ -2756,8 +2756,8 @@
     ],
     "sourceUrl": "https://turismo.comunesbt.it/evento/incontri-con-lautore-isa-grassano-presenta-a-volte-e-complicato/",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-28"
+    "image": "images/incontri-con-lautore-isa-grassano-2026.jpg",
+    "updatedAt": "2026-09-01"
   },
   {
     "id": "un-mare-di-note-jazz-piano-san-benedetto-2026",
@@ -2775,8 +2775,8 @@
     ],
     "sourceUrl": "https://turismo.comunesbt.it/evento/un-mare-di-note-il-jazz-al-piano-a-san-benedetto-del-tronto/",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-28"
+    "image": "images/un-mare-di-note-jazz-piano-san-benedetto-2026.jpg",
+    "updatedAt": "2026-09-01"
   },
   {
     "id": "sbt-una-rotonda-sul-mare-11-set-2026",
@@ -2794,8 +2794,8 @@
     ],
     "sourceUrl": "https://turismo.comunesbt.it/evento/una-rotonda-sul-mare-serate-danzanti-3/2026-09-11/",
     "price": "gratis",
-    "image": "",
-    "updatedAt": "2026-08-28"
+    "image": "images/sbt-una-rotonda-sul-mare-11-set-2026.jpg",
+    "updatedAt": "2026-09-01"
   },
   {
     "id": "animazione-tortoreto-baby-friendly-2-set-2026",
@@ -2891,5 +2891,104 @@
     "price": "gratis",
     "image": "",
     "updatedAt": "2026-08-28"
+  },
+  {
+    "id": "sbt-pochade-napolitaine-2026",
+    "startDate": "2026-09-02",
+    "endDate": "2026-09-02",
+    "displayDate": "2 Set 2026",
+    "time": "21:30–23:30",
+    "title": "Spettacolo teatrale “Pochade Napolitaine”",
+    "venue": "Palazzina Azzurra, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Spettacolo teatrale della Compagnia Gli O’Scenici APS e AIFAS, liberamente ispirato alla commedia “Tre pecore viziose” di Eduardo Scarpetta.",
+    "tags": [
+      "Spettacolo",
+      "Teatro"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/spettacolo-teatrale-pochade-napolitaine/",
+    "price": "gratis",
+    "image": "images/sbt-pochade-napolitaine-2026.jpg",
+    "updatedAt": "2026-09-01"
+  },
+  {
+    "id": "sotto-il-cielo-di-settembre-morro-d-oro-2026",
+    "startDate": "2026-09-03",
+    "endDate": "2026-09-06",
+    "displayDate": "3–6 Set 2026",
+    "time": "Dalle 19:30",
+    "title": "Sotto il Cielo di Settembre",
+    "venue": "Piazza Duca degli Abruzzi, Morro d'Oro",
+    "city": "Morro d'Oro",
+    "description": "Seconda edizione della festa della Pro Loco di Morro d’Oro, con il piatto tipico locale tagliolini e fagioli.",
+    "tags": [
+      "Enogastronomia",
+      "Sagra",
+      "Tradizione"
+    ],
+    "sourceUrl": "https://abruzzoconleproloco.it/2026/08/24/sotto-il-cielo-di-settembre-morro-doro-3-6-settembre-2026/",
+    "price": "gratis",
+    "image": "images/sotto-il-cielo-di-settembre-morro-doro-2026.jpg",
+    "updatedAt": "2026-09-01"
+  },
+  {
+    "id": "muccigna-festival-san-benedetto-2026",
+    "startDate": "2026-09-05",
+    "endDate": "2026-09-06",
+    "displayDate": "5–6 Set 2026",
+    "time": "Da definire",
+    "title": "Muccigna Festival – Piccolo festival della cultura marinara",
+    "venue": "Mercato Ittico Comunale, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Festival dedicato alla memoria, ai racconti e alle tradizioni della marineria sambenedettese, a cura del Coordinamento Progetto Galatea e Pulchra.",
+    "tags": [
+      "Cultura",
+      "Tradizione",
+      "Enogastronomia"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/muccigna-festival-piccolo-festival-della-cultura-marinara/",
+    "price": "gratis",
+    "image": "images/sbt-muccigna-festival-2026.jpg",
+    "updatedAt": "2026-09-01"
+  },
+  {
+    "id": "rotonda-sunset-festival-2026",
+    "startDate": "2026-09-06",
+    "endDate": "2026-09-06",
+    "displayDate": "6 Set 2026",
+    "time": "18:00–23:30",
+    "title": "Rotonda Sunset Festival",
+    "venue": "Rotonda di Porto d'Ascoli, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Festival al tramonto con musica dal vivo, DJ set, intrattenimento di Radio Azzurra e street food in riva al mare.",
+    "tags": [
+      "Musica",
+      "Enogastronomia",
+      "Intrattenimento"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/rotonda-sunset-festival/",
+    "price": "gratis",
+    "image": "images/sbt-rotonda-sunset-festival-2026.jpg",
+    "updatedAt": "2026-09-01"
+  },
+  {
+    "id": "cose-da-paz-2026",
+    "startDate": "2026-09-11",
+    "endDate": "2026-09-13",
+    "displayDate": "11–13 Set 2026",
+    "time": "Da definire",
+    "title": "Cose da Paz! 2026: la città celebra “il suo” Andrea Pazienza",
+    "venue": "Palazzo Piacentini, Molo Sud, Palazzina Azzurra e altre sedi, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Seconda edizione del festival dedicato ad Andrea Pazienza, tra fumetto, arte e teatro. Ingresso libero, tranne lo spettacolo di Sergio Rubini.",
+    "tags": [
+      "Cultura",
+      "Arte",
+      "Teatro"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/cose-da-paz-2026-la-citta-celebra-il-suo-andrea-pazienza/",
+    "price": "misto",
+    "image": "images/sbt-cose-da-paz-2026.jpg",
+    "updatedAt": "2026-09-01"
   }
 ]
