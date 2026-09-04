@@ -1964,22 +1964,22 @@
   },
   {
     "id": "festa-dell-uva-mosciano-2026",
-    "startDate": "2026-09-10",
+    "startDate": "2026-09-11",
     "endDate": "2026-09-13",
-    "displayDate": "10–13 Set 2026",
+    "displayDate": "11–13 Set 2026",
     "time": "Da definire",
     "title": "68ª Festa dell'Uva",
     "venue": "Centro Storico, Mosciano Sant'Angelo",
     "city": "Mosciano Sant'Angelo",
-    "description": "Una delle sagre più antiche d'Abruzzo (dal 1922): vendemmia, vini d'Abruzzo, carri allegorici, Palio delle Botti, Corteo della Dote, giochi popolari e spettacoli folkloristici. Organizzata dalla Pro Loco Musiano, ingresso libero.",
+    "description": "La 68ª Festa dell'Uva e del Vino – Memorial Luigi Galiffa anima il centro storico con giochi della tradizione, carri allegorici, Serenata della Sposa, Palio delle Botti, Corteo della Dote e degustazioni. Pro Loco Musiano.",
     "tags": [
       "Enogastronomia",
       "Sagra"
     ],
-    "sourceUrl": "https://www.festivalinitalia.it/festival/festa-uva-mosciano-santangelo",
+    "sourceUrl": "https://piazzamartirinews.com/mosciano-dall11-al-13-settembre-la-68a-festa-delluva-e-del-vino/",
     "price": "gratis",
     "image": "",
-    "updatedAt": "2026-08-14"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "i-bambini-in-festa-2026",
@@ -2990,5 +2990,158 @@
     "price": "misto",
     "image": "images/sbt-cose-da-paz-2026.jpg",
     "updatedAt": "2026-09-01"
+  },
+  {
+    "id": "dinner-in-the-sky-san-benedetto-2026",
+    "startDate": "2026-09-03",
+    "endDate": "2026-09-06",
+    "displayDate": "3–6 Set 2026",
+    "time": "Colazioni, pranzi, aperitivi e cene",
+    "title": "Dinner in the Sky a San Benedetto del Tronto",
+    "venue": "Area ex Bocciofila, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Esperienza gastronomica a 50 metri d’altezza con colazioni, pranzi, aperitivi e cene, curata da Antico Caffè Soriano e DITS Italia Srl. Posti limitati e prenotazione obbligatoria.",
+    "tags": [
+      "Enogastronomia",
+      "Intrattenimento"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/dinner-in-the-sky-a-san-benedetto-del-tronto/",
+    "price": "a pagamento",
+    "image": "",
+    "updatedAt": "2026-09-04"
+  },
+  {
+    "id": "incontri-con-lautore-simone-regazzoni-2026",
+    "startDate": "2026-09-04",
+    "endDate": "2026-09-04",
+    "displayDate": "4 Set 2026",
+    "time": "21:30–23:00",
+    "title": "Incontri con l’Autore: Simone Regazzoni presenta “Platone nella Silicon Valley”",
+    "venue": "Palazzina Azzurra, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Simone Regazzoni presenta il saggio “Platone nella Silicon Valley” nell’ambito della 45ª edizione della rassegna Incontri con l’Autore “Mimmo Minuto”. Modera Stefania Farnesi.",
+    "tags": [
+      "Cultura",
+      "Libri"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/incontri-con-lautore-simone-regazzoni-presenta-platone-nella-silicon-valley/",
+    "price": "gratis",
+    "image": "images/incontri-simone-regazzoni-2026.jpg",
+    "updatedAt": "2026-09-04"
+  },
+  {
+    "id": "incontri-con-lautore-fabio-parenti-2026",
+    "startDate": "2026-09-05",
+    "endDate": "2026-09-05",
+    "displayDate": "5 Set 2026",
+    "time": "21:30–23:00",
+    "title": "Incontri con l’Autore: Fabio Massimo Parenti presenta “La Cina non si USA”",
+    "venue": "Palazzina Azzurra, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Fabio Massimo Parenti presenta “La Cina non si USA” nell’ambito della 45ª edizione della rassegna Incontri con l’Autore “Mimmo Minuto”. Modera Ettore Picardi.",
+    "tags": [
+      "Cultura",
+      "Libri"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/incontri-con-lautore-fabio-massimo-parenti/",
+    "price": "gratis",
+    "image": "images/incontri-fabio-parenti-2026.jpg",
+    "updatedAt": "2026-09-04"
+  },
+  {
+    "id": "la-notte-delle-stelle-2026",
+    "startDate": "2026-09-05",
+    "endDate": "2026-09-05",
+    "displayDate": "5 Set 2026",
+    "time": "21:00–23:00",
+    "title": "La Notte delle Stelle",
+    "venue": "Riserva del Borsacchio, Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Escursione notturna tra le dune della Riserva del Borsacchio e osservazione astronomica con telescopi, a cura delle Guide del Borsacchio e del gruppo IADI. Contributo libero.",
+    "tags": [
+      "Natura",
+      "Intrattenimento",
+      "Sport"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/events/la-notte-delle-stelle-2/",
+    "price": "gratis",
+    "image": "images/la-notte-delle-stelle-2026.jpg",
+    "updatedAt": "2026-09-04"
+  },
+  {
+    "id": "radici-e-oltre-gloria-scipione-marco-pomanti-2026",
+    "startDate": "2026-09-05",
+    "endDate": "2026-09-05",
+    "displayDate": "5 Set 2026",
+    "time": "22:00",
+    "title": "Radici e oltre – Gloria Scipione e Marco Pomanti",
+    "venue": "Lungomare Roma, Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Serata musicale della Festa dello Sport con Gloria Scipione, soprano, e Marco Pomanti alla fisarmonica.",
+    "tags": [
+      "Musica",
+      "Concerto"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/events/radici-e-oltre-gloria-scipione-e-marco-pomanti/",
+    "price": "gratis",
+    "image": "images/radici-e-oltre-2026.jpg",
+    "updatedAt": "2026-09-04"
+  },
+  {
+    "id": "cercasi-marito-pensionato-l-importante-che-muoia-subito-2026",
+    "startDate": "2026-09-06",
+    "endDate": "2026-09-06",
+    "displayDate": "6 Set 2026",
+    "time": "21:00",
+    "title": "Cercasi marito pensionato, l’importante che muoia subito",
+    "venue": "Pineta Centrale, Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Commedia della compagnia teatrale Roseto in Scena, scritta da Giovanni Allotta e diretta da Manila Santori.",
+    "tags": [
+      "Teatro",
+      "Intrattenimento"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/events/cercasi-marito-pensionato-limportante-che-muoia-subito/",
+    "price": "gratis",
+    "image": "images/cercasi-marito-pensionato-2026.jpg",
+    "updatedAt": "2026-09-04"
+  },
+  {
+    "id": "dario-de-remigis-eccentric-illusionist-2026",
+    "startDate": "2026-09-09",
+    "endDate": "2026-09-09",
+    "displayDate": "9 Set 2026",
+    "time": "21:00",
+    "title": "Dario De Remigis – Eccentric Illusionist",
+    "venue": "Rotonda Carducci, Tortoreto",
+    "city": "Tortoreto",
+    "description": "Spettacolo di magia e illusionismo pensato per stupire e divertire tutta la famiglia.",
+    "tags": [
+      "Intrattenimento",
+      "Famiglia"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/dario-de-remigis-eccentric-illusionist/25-305.html",
+    "price": "gratis",
+    "image": "images/dario-de-remigis-2026.jpg",
+    "updatedAt": "2026-09-04"
+  },
+  {
+    "id": "la-palma-d-oro-concorso-pianistico-2026",
+    "startDate": "2026-09-25",
+    "endDate": "2026-09-27",
+    "displayDate": "25–27 Set 2026",
+    "time": "Audizioni pubbliche; finale 27/9 alle 18:00",
+    "title": "La Palma d’Oro – Concorso Pianistico Internazionale",
+    "venue": "Teatro Concordia, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Decima edizione del Concorso Pianistico Internazionale La Palma d’Oro, con audizioni pubbliche e concerto finale con la FORM – Orchestra Filarmonica Marchigiana. Ingresso libero.",
+    "tags": [
+      "Musica",
+      "Classica"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/la-palma-doro-concorso-pianistico-internazionale/",
+    "price": "gratis",
+    "image": "images/la-palma-d-oro-2026.jpg",
+    "updatedAt": "2026-09-04"
   }
 ]
