@@ -40,8 +40,8 @@
   {
     "id": "villa-in-arte-2026",
     "startDate": "2026-07-10",
-    "endDate": "2026-09-06",
-    "displayDate": "10 Lug – 6 Set 2026",
+    "endDate": "2026-11-30",
+    "displayDate": "10 Lug – 30 Nov 2026",
     "time": "Tutto il giorno",
     "title": "Villa in Arte",
     "venue": "Villa Comunale, Roseto degli Abruzzi",
@@ -51,10 +51,10 @@
       "Cultura",
       "Arte"
     ],
-    "sourceUrl": "https://www.visitroseto.it/eventi/",
+    "sourceUrl": "https://www.cityrumorsabruzzo.it/teramo/roseto-rassegna-villa-in-arte-2026-la-mostra-prorogata-fino-al-30-novembre.html",
     "price": "gratis",
     "image": "images/img-1.jpg",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-09-08"
   },
   {
     "id": "matteo-mancuso-in-concerto-2026",
@@ -1971,15 +1971,15 @@
     "title": "68ª Festa dell'Uva",
     "venue": "Centro Storico, Mosciano Sant'Angelo",
     "city": "Mosciano Sant'Angelo",
-    "description": "La 68ª Festa dell'Uva e del Vino – Memorial Luigi Galiffa anima il centro storico con giochi della tradizione, carri allegorici, Serenata della Sposa, Palio delle Botti, Corteo della Dote e degustazioni. Pro Loco Musiano.",
+    "description": "La 68ª Festa dell’Uva e del Vino – Memorial Luigi Galiffa anima il centro storico con giochi della tradizione, carri allegorici, Serenata della sposa, Palio delle Botti, Corteo della Dote, musica e degustazioni. Pro Loco Musiano.",
     "tags": [
       "Enogastronomia",
       "Sagra"
     ],
-    "sourceUrl": "https://piazzamartirinews.com/mosciano-dall11-al-13-settembre-la-68a-festa-delluva-e-del-vino/",
+    "sourceUrl": "https://www.abruzzospeciale.it/2026/09/03/mosciano-torna-la-festa-delluva-cinque-comuni-fanno-squadra-nel-segno-del-vino/",
     "price": "gratis",
     "image": "",
-    "updatedAt": "2026-09-04"
+    "updatedAt": "2026-09-08"
   },
   {
     "id": "i-bambini-in-festa-2026",
