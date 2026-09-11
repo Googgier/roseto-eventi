@@ -3143,5 +3143,62 @@
     "price": "gratis",
     "image": "images/la-palma-d-oro-2026.jpg",
     "updatedAt": "2026-09-04"
+  },
+  {
+    "id": "passioni-in-piazza-vincenzo-schettini-2026",
+    "startDate": "2026-09-12",
+    "endDate": "2026-09-12",
+    "displayDate": "12 Set 2026",
+    "time": "17:00–23:30",
+    "title": "Passioni in Piazza: sport, cultura e scienza con Vincenzo Schettini",
+    "venue": "Piazza Giorgini e Viale Buozzi, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Open day ed esibizioni delle associazioni sportive e culturali del territorio, con ospite Vincenzo Schettini e lo spettacolo “La fisica che ci piace”.",
+    "tags": [
+      "Cultura",
+      "Sport"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/passioni-in-piazza-sport-cultura-e-scienza-con-vincenzo-schettini/",
+    "price": "gratis",
+    "image": "images/img-passioni-in-piazza-vincenzo-schettini-2026.jpg",
+    "updatedAt": "2026-09-11"
+  },
+  {
+    "id": "campionato-mondiale-platu-25-2026",
+    "startDate": "2026-09-14",
+    "endDate": "2026-09-19",
+    "displayDate": "14–19 Set 2026",
+    "time": "15:00–21:00 (Villaggio Vela, 18 settembre)",
+    "title": "Campionato Mondiale Platu 25",
+    "venue": "Circolo Nautico Sambenedettese e Darsena Nuova (Molo Sud), San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Il Mondiale Platu 25 fa tappa a San Benedetto del Tronto. Il 18 settembre il Villaggio Vela propone sport, motori, sapori e la kermesse culturale “Il mare che unisce”.",
+    "tags": [
+      "Sport",
+      "Cultura"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/campionato-mondiale-platu-25/",
+    "price": "gratis",
+    "image": "images/img-campionato-mondiale-platu-25-2026.jpg",
+    "updatedAt": "2026-09-11"
+  },
+  {
+    "id": "i-reami-del-trono-di-spade-2026",
+    "startDate": "2026-09-18",
+    "endDate": "2026-09-20",
+    "displayDate": "18–20 Set 2026",
+    "time": "20:00 (18/9); 16:00–24:00 (19/9); mattina (20/9)",
+    "title": "I Reami del Trono di Spade",
+    "venue": "Associazione Spazio Ludico, Via G. Voltattorni 59, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Weekend immersivo tra giochi di ruolo, giochi da tavolo, card game e miniature; domenica torneo di miniature valido per la qualificazione al Battle of Realms di Varsavia.",
+    "tags": [
+      "Intrattenimento",
+      "Cultura"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/i-reami-del-trono-di-spade/",
+    "price": "misto",
+    "image": "images/img-i-reami-del-trono-di-spade-2026.jpg",
+    "updatedAt": "2026-09-11"
   }
 ]
