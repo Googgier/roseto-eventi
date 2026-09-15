@@ -3200,5 +3200,24 @@
     "price": "misto",
     "image": "images/img-i-reami-del-trono-di-spade-2026.jpg",
     "updatedAt": "2026-09-11"
+  },
+  {
+    "id": "animazione-con-cristina-2026",
+    "startDate": "2026-09-02",
+    "endDate": "2027-01-02",
+    "displayDate": "2 Set 2026 – 2 Gen 2027",
+    "time": "21:00–23:00 (mercoledì)",
+    "title": "Animazione con Cristina",
+    "venue": "Rotonda Carducci, Tortoreto",
+    "city": "Tortoreto",
+    "description": "Serata di animazione con Cristina, tra creatività, divertimento e sorprese per grandi e piccoli. Appuntamento ufficiale del Comune di Tortoreto e di viviTortoreto.",
+    "tags": [
+      "Intrattenimento",
+      "Famiglia"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/animazione-con-cristina/25-306.html",
+    "price": "gratis",
+    "image": "images/img-animazione-con-cristina-2026.jpg",
+    "updatedAt": "2026-09-15"
   }
 ]
