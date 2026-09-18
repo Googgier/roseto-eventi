@@ -40,21 +40,21 @@
   {
     "id": "villa-in-arte-2026",
     "startDate": "2026-07-10",
-    "endDate": "2026-11-30",
-    "displayDate": "10 Lug – 30 Nov 2026",
-    "time": "Tutto il giorno",
+    "endDate": "2026-11-29",
+    "displayDate": "10 Lug – 29 Nov 2026",
+    "time": "15:00–21:00 (sabato e domenica)",
     "title": "Villa in Arte",
-    "venue": "Villa Comunale, Roseto degli Abruzzi",
+    "venue": "Villa Comunale, Via Nazionale 250, Roseto degli Abruzzi",
     "city": "Roseto",
-    "description": "Mostra d'arte contemporanea. Protagonisti dell'arte nella Villa Comunale.",
+    "description": "Mostra collettiva con oltre 60 opere, da Modigliani e De Chirico fino a Warhol e Kostabi, ospitata nella Villa Comunale di Roseto degli Abruzzi.",
     "tags": [
       "Cultura",
       "Arte"
     ],
-    "sourceUrl": "https://www.cityrumorsabruzzo.it/teramo/roseto-rassegna-villa-in-arte-2026-la-mostra-prorogata-fino-al-30-novembre.html",
+    "sourceUrl": "https://www.visitroseto.it/events/14838/",
     "price": "gratis",
     "image": "images/img-1.jpg",
-    "updatedAt": "2026-09-08"
+    "updatedAt": "2026-09-18"
   },
   {
     "id": "matteo-mancuso-in-concerto-2026",
@@ -1986,19 +1986,19 @@
     "startDate": "2026-09-20",
     "endDate": "2026-09-20",
     "displayDate": "20 Set 2026",
-    "time": "Da definire",
+    "time": "Dalle 15:30",
     "title": "I Bambini in Festa",
     "venue": "Terrabianca, Tortoreto",
     "city": "Tortoreto",
-    "description": "Festa dedicata ai più piccoli a Terrabianca. Calendario Estate Tortoretana 2026.",
+    "description": "10ª edizione organizzata dal Circolo Culturale Ricreativo Il Vecchio Focolare con il patrocinio del Comune di Tortoreto: animazione, palloncini, truccabimbi, gonfiabili, spettacolo di bolle di sapone e merenda. Partecipazione libera e gratuita.",
     "tags": [
       "Famiglia",
       "Bambini"
     ],
-    "sourceUrl": "https://www.vivitortoreto.it/resources/VIVITORTORETO-estate-2026.pdf",
+    "sourceUrl": "https://mammadovemiporti.it/2026/09/16/i-bambini-in-festa-2026-a-tortoreto-truccabimbi-gonfiabili-bolle-e-merenda/",
     "price": "gratis",
     "image": "",
-    "updatedAt": "2026-08-28"
+    "updatedAt": "2026-09-18"
   },
   {
     "id": "festa-san-pio-pineto-2026",
@@ -3219,5 +3219,45 @@
     "price": "gratis",
     "image": "images/img-animazione-con-cristina-2026.jpg",
     "updatedAt": "2026-09-15"
+  },
+  {
+    "id": "rievocazione-storica-circuito-motociclistico-cittadino-2026",
+    "startDate": "2026-09-20",
+    "endDate": "2026-09-20",
+    "displayDate": "20 Set 2026",
+    "time": "09:00–18:00",
+    "title": "Rievocazione Storica del Circuito Motociclistico Cittadino",
+    "venue": "Lungomare Roma, Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Manifestazione del Motoclub Roseto “Lido delle Rose”, con esposizione di moto d’epoca e vecchie moto da corsa e sfilata lungo lo storico percorso cittadino. Il circuito sarà chiuso al traffico.",
+    "tags": [
+      "Sport",
+      "Intrattenimento",
+      "Cultura"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/events/rievocazione-storica-del-circuito-motociclistico-cittadino/",
+    "price": "gratis",
+    "image": "images/rievocazione-storica-circuito-motociclistico-cittadino-2026.jpg",
+    "updatedAt": "2026-09-18"
+  },
+  {
+    "id": "comedy-village-vol-7-2026",
+    "startDate": "2026-09-16",
+    "endDate": "2026-09-20",
+    "displayDate": "16–20 Set 2026",
+    "time": "Workshop e spettacoli serali",
+    "title": "Comedy Village Vol.7",
+    "venue": "Villaggio Lido d’Abruzzo, Viale Makarska 1, Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Vacanza studio immersiva dedicata alla stand-up comedy, con workshop, incontri, open mic e spettacoli serali. Pass a pagamento da 225 € a persona.",
+    "tags": [
+      "Spettacolo",
+      "Teatro",
+      "Intrattenimento"
+    ],
+    "sourceUrl": "https://apical.org/comedy-village/",
+    "price": "a pagamento",
+    "image": "images/comedy-village-vol-7-2026.jpg",
+    "updatedAt": "2026-09-18"
   }
 ]
