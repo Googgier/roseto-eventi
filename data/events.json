@@ -3259,5 +3259,120 @@
     "price": "a pagamento",
     "image": "images/comedy-village-vol-7-2026.jpg",
     "updatedAt": "2026-09-18"
+  },
+  {
+    "id": "fotonica-prolungata-2026",
+    "startDate": "2026-06-19",
+    "endDate": "2026-10-15",
+    "displayDate": "19 Giu – 15 Ott 2026",
+    "time": "Orari della Libreria La Cura",
+    "title": "Fotonica – mostra fotografica",
+    "venue": "Libreria La Cura, Via Latini 26, Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Mostra della fotografa e artista rosetana Rachele Lamolinara, tra riflessi, geometrie, luce e prospettive inaspettate. Allestimento curato da Bauhaus2000.",
+    "tags": [
+      "Cultura",
+      "Arte"
+    ],
+    "sourceUrl": "https://www.abruzzoturismo.it/it/eventi/fotonica-prolungata-roseto-degli-abruzzi-te",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "matti-per-il-calcio-sbt-2026",
+    "startDate": "2026-09-24",
+    "endDate": "2026-09-26",
+    "displayDate": "24–26 Set 2026",
+    "time": "16:00 (24/9); partite e finali (25–26/9)",
+    "title": "Matti per il calcio",
+    "venue": "Stadio Giulio Merlini, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "XVIII rassegna nazionale UISP dei Dipartimenti di Salute Mentale: 12 squadre e 30 partite di calcio a 7 tra sport, inclusione e salute mentale.",
+    "tags": [
+      "Sport",
+      "Cultura",
+      "Inclusione"
+    ],
+    "sourceUrl": "https://www.ilmascalzone.it/2026/09/matti-per-il-calcio/",
+    "price": "gratis",
+    "image": "images/matti-per-il-calcio-sbt-2026.jpg",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "giornate-europee-del-patrimonio-sbt-2026",
+    "startDate": "2026-09-26",
+    "endDate": "2026-09-27",
+    "displayDate": "26–27 Set 2026",
+    "time": "16:30 (26/9); 17:00 (27/9)",
+    "title": "Giornate Europee del Patrimonio 2026",
+    "venue": "Museo del Mare e Pinacoteca del Mare, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Due appuntamenti del Museo del Mare: laboratorio per bambini “Storie di mare e colori” il 26 settembre e visita sensoriale “Oltre il quadro” il 27 settembre.",
+    "tags": [
+      "Cultura",
+      "Famiglia"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/giornate-europee-del-patrimonio-2026-a-san-benedetto-del-tronto/",
+    "price": "a pagamento",
+    "image": "",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "50-anniversario-capitaneria-porto-sbt-2026",
+    "startDate": "2026-10-01",
+    "endDate": "2026-10-02",
+    "displayDate": "1–2 Ott 2026",
+    "time": "16:30 (1/10); 10:30–17:00 (2/10)",
+    "title": "50° Anniversario della Capitaneria di Porto",
+    "venue": "Teatro Concordia, Piazzale Sansolini e Palazzina Azzurra, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Celebrazioni per il 50° anniversario dell’istituzione della Capitaneria di Porto di San Benedetto del Tronto, con convegno, cerimonia, dimostrazione aeronavale e mostra storico-fotografica.",
+    "tags": [
+      "Cultura",
+      "Tradizione"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/50-anniversario-della-capitaneria-di-porto-di-san-benedetto-del-tronto/",
+    "price": "gratis",
+    "image": "images/capitaneria-50-anniversario-sbt-2026.jpg",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "roseto-d-amare-duo-leonard-2026",
+    "startDate": "2026-11-07",
+    "endDate": "2026-11-07",
+    "displayDate": "7 Nov 2026",
+    "time": "21:00",
+    "title": "Roseto d'aMare – Duo Leonard",
+    "venue": "Villa Comunale, Via Nazionale 250, Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Concerto di musica classica della rassegna Roseto d’aMare con il Duo Leonard: Francesco Ciccaglione al violino e Paolo D’Agostino al pianoforte.",
+    "tags": [
+      "Musica",
+      "Classica"
+    ],
+    "sourceUrl": "https://www.visitroseto.it/events/roseto-damare-classica-jazz-2026-8/",
+    "price": "gratis",
+    "image": "images/roseto-damare-duo-leonard-2026.jpg",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "xi-trofeo-citta-tortoreto-2026",
+    "startDate": "2026-10-11",
+    "endDate": "2026-10-11",
+    "displayDate": "11 Ott 2026",
+    "time": "09:30",
+    "title": "XI Trofeo Città di Tortoreto – Memorial Paolo Iustini",
+    "venue": "Tortoreto",
+    "city": "Tortoreto",
+    "description": "Urban trail di 9,7 km con dislivello positivo di 170 m e eco passeggiata TerraViva di circa 4 km, con partenza alle 9:30.",
+    "tags": [
+      "Sport",
+      "Natura"
+    ],
+    "sourceUrl": "https://www.vivitortoreto.it/eventi/xi-trofeo-citta-di-tortoreto-memorial-paolo-iustini/25-310.html",
+    "price": "a pagamento",
+    "image": "images/xi-trofeo-citta-tortoreto-2026.jpg",
+    "updatedAt": "2026-09-25"
   }
 ]
