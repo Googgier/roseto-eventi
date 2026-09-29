@@ -3338,6 +3338,45 @@
     "updatedAt": "2026-09-25"
   },
   {
+    "id": "sbt-mostra-agostino-straulino-2026",
+    "startDate": "2026-10-02",
+    "endDate": "2026-10-18",
+    "displayDate": "2–18 Ott 2026",
+    "time": "10:00–13:00 e 17:00–20:00 (mercoledì–domenica)",
+    "title": "Mostra Agostino Straulino – Marinaio, ufficiale, sportivo",
+    "venue": "Palazzina Azzurra, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Mostra dedicata ad Agostino Straulino, promossa dalla Lega Navale Italiana e curata dal Cantiere della Memoria, nell’ambito delle celebrazioni per il 50° anniversario della Capitaneria di Porto. Ingresso libero.",
+    "tags": [
+      "Cultura",
+      "Arte"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/mostra-agostino-straulino-marinaio-ufficiale-sportivo/",
+    "price": "gratis",
+    "image": "images/sbt-mostra-agostino-straulino-2026.jpg",
+    "updatedAt": "2026-09-29"
+  },
+  {
+    "id": "sbt-festa-patrono-san-benedetto-martire-2026",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-13",
+    "displayDate": "9–13 Ott 2026",
+    "time": "Programma articolato (9–13 ottobre)",
+    "title": "Festa del Patrono San Benedetto Martire",
+    "venue": "Paese Alto, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Cinque giorni di celebrazioni religiose, musica, intrattenimento, mostre, visite guidate e stand gastronomici nel Paese Alto. Ingresso libero per intrattenimento e mostre; alcune attività richiedono prenotazione e le consumazioni sono a pagamento.",
+    "tags": [
+      "Cultura",
+      "Tradizione",
+      "Intrattenimento"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/festa-patrono-2026/",
+    "price": "misto",
+    "image": "",
+    "updatedAt": "2026-09-29"
+  },
+  {
     "id": "roseto-d-amare-duo-leonard-2026",
     "startDate": "2026-11-07",
     "endDate": "2026-11-07",
