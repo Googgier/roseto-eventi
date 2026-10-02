@@ -3373,8 +3373,8 @@
     ],
     "sourceUrl": "https://turismo.comunesbt.it/evento/festa-patrono-2026/",
     "price": "misto",
-    "image": "",
-    "updatedAt": "2026-09-29"
+    "image": "images/sbt-festa-patrono-san-benedetto-martire-2026.jpg",
+    "updatedAt": "2026-10-02"
   },
   {
     "id": "roseto-d-amare-duo-leonard-2026",
@@ -3413,5 +3413,64 @@
     "price": "a pagamento",
     "image": "images/xi-trofeo-citta-tortoreto-2026.jpg",
     "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "passeggia-osserva-raccogli-riserva-sentina-2026",
+    "startDate": "2026-10-04",
+    "endDate": "2026-10-04",
+    "displayDate": "4 Ott 2026",
+    "time": "09:30–13:00",
+    "title": "Passeggia, Osserva, Raccogli – Puliamo il Mondo nella Riserva Sentina",
+    "venue": "Ingresso sud della Riserva Naturale Sentina, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Passeggiata guidata e raccolta dei rifiuti sulla spiaggia alla foce del fiume Tronto, nell’ambito della campagna Puliamo il Mondo e del progetto Plasticentro.",
+    "tags": [
+      "Natura",
+      "Sport",
+      "Ambiente"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/passeggia-riserva-sentina/",
+    "price": "gratis",
+    "image": "images/sbt-passeggia-osserva-raccogli-2026.jpg",
+    "updatedAt": "2026-10-02"
+  },
+  {
+    "id": "carmine-galie-e-i-racconti-di-qfwfq-2026",
+    "startDate": "2026-09-26",
+    "endDate": "2026-10-04",
+    "displayDate": "26 Set – 4 Ott 2026",
+    "time": "17:00–19:00 (inaugurazione 26/9 alle 17:00)",
+    "title": "Carmine Galiè e i racconti di Qfwfq",
+    "venue": "Loggiato Riccardo Cerulli, Piazza Belvedere, Giulianova",
+    "city": "Giulianova",
+    "description": "Mostra di Carmine Galiè ispirata alle Cosmicomiche di Italo Calvino, a cura di Marialuisa De Santis. Visitabile tutti i giorni dalle 17:00 alle 19:00.",
+    "tags": [
+      "Cultura",
+      "Arte"
+    ],
+    "sourceUrl": "https://www.visitgiulianova.com/evento.php?id=866",
+    "price": "gratis",
+    "image": "images/carmine-galie-e-i-racconti-di-qfwfq-2026.jpg",
+    "updatedAt": "2026-10-02"
+  },
+  {
+    "id": "festa-dei-nonni-giulianova-2026",
+    "startDate": "2026-10-04",
+    "endDate": "2026-10-04",
+    "displayDate": "4 Ott 2026",
+    "time": "16:00–19:00",
+    "title": "Festa dei Nonni – Il villaggio dei giochi dimenticati",
+    "venue": "Piazza Buozzi, Giulianova",
+    "city": "Giulianova",
+    "description": "Pomeriggio di giochi tradizionali per nonni e bambini, organizzato da AUSER Giulianova con la Biblioteca civica Vincenzo Bindi e il patrocinio della Città di Giulianova.",
+    "tags": [
+      "Famiglia",
+      "Intrattenimento",
+      "Cultura"
+    ],
+    "sourceUrl": "https://www.visitgiulianova.com/evento.php?id=865",
+    "price": "gratis",
+    "image": "images/festa-dei-nonni-giulianova-2026.jpg",
+    "updatedAt": "2026-10-02"
   }
 ]
