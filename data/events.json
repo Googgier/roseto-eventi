@@ -3472,5 +3472,24 @@
     "price": "gratis",
     "image": "images/festa-dei-nonni-giulianova-2026.jpg",
     "updatedAt": "2026-10-02"
+  },
+  {
+    "id": "libri-in-circolo-2026",
+    "startDate": "2026-10-07",
+    "endDate": "2026-12-02",
+    "displayDate": "7 Ott – 2 Dic 2026",
+    "time": "21:00 (7/10, 21/10, 4/11, 18/11, 2/12)",
+    "title": "Libri in Circolo: rassegna letteraria al quartiere Ponterotto",
+    "venue": "Salone parrocchiale della Chiesa Madonna del Suffragio, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Rassegna letteraria del Circolo Auser Ponterotto con cinque incontri il 7 e 21 ottobre, 4 e 18 novembre e 2 dicembre. Ingresso libero.",
+    "tags": [
+      "Cultura",
+      "Libri"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/libri-in-circolo/",
+    "price": "gratis",
+    "image": "images/libri-in-circolo-2026.jpg",
+    "updatedAt": "2026-10-06"
   }
 ]
