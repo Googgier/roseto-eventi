@@ -3491,5 +3491,24 @@
     "price": "gratis",
     "image": "images/libri-in-circolo-2026.jpg",
     "updatedAt": "2026-10-06"
+  },
+  {
+    "id": "premio-citta-delle-rose-2026",
+    "startDate": "2026-10-10",
+    "endDate": "2026-10-10",
+    "displayDate": "10 Ott 2026",
+    "time": "Serata",
+    "title": "24° Premio Internazionale di Saggistica “Città delle Rose”",
+    "venue": "Hotel Bellavista, Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Cerimonia della 24ª edizione del Premio Internazionale di Saggistica “Città delle Rose”, con la premiazione di Filippo La Porta e ospiti tra cui Ilaria Capua e Alcide Pierantozzi.",
+    "tags": [
+      "Cultura",
+      "Libri"
+    ],
+    "sourceUrl": "https://www.abruzzonews.eu/premio-citta-delle-rose-a-roseto-la-grande-festa-della-saggistica-italiana-696213.html",
+    "price": "gratis",
+    "image": "images/premio-citta-delle-rose-2026.jpg",
+    "updatedAt": "2026-10-09"
   }
 ]
