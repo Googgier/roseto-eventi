@@ -59,8 +59,8 @@
   {
     "id": "villa-in-arte-2026",
     "startDate": "2026-07-10",
-    "endDate": "2026-11-29",
-    "displayDate": "10 Lug – 29 Nov 2026",
+    "endDate": "2026-11-30",
+    "displayDate": "10 Lug – 30 Nov 2026",
     "time": "15:00–21:00 (sabato e domenica)",
     "title": "Villa in Arte",
     "venue": "Villa Comunale, Via Nazionale 250, Roseto degli Abruzzi",
@@ -73,7 +73,7 @@
     "sourceUrl": "https://www.visitroseto.it/events/14838/",
     "price": "gratis",
     "image": "images/img-1.jpg",
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-10-20"
   },
   {
     "id": "matteo-mancuso-in-concerto-2026",
@@ -3682,5 +3682,24 @@
     "price": "a pagamento",
     "image": "",
     "updatedAt": "2026-10-16"
+  },
+  {
+    "id": "comunicazione-efficace-anche-nella-coppia-2026",
+    "startDate": "2026-11-14",
+    "endDate": "2026-11-14",
+    "displayDate": "14 Nov 2026",
+    "time": "15:00–18:00",
+    "title": "Comunicazione efficace anche nella coppia",
+    "venue": "Laboratorio della Ragione, Via Garibaldi 80, Roseto",
+    "city": "Roseto",
+    "description": "Seminario formativo a cura di Marco Di Martino, Coach e Counselor in MediaComunicazione; partecipazione in presenza e online.",
+    "tags": [
+      "Cultura",
+      "Formazione"
+    ],
+    "sourceUrl": "https://laboratoriodellaragione.it/calendario-eventi/",
+    "price": "a pagamento",
+    "image": "",
+    "updatedAt": "2026-10-20"
   }
 ]
