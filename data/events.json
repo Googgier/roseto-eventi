@@ -3701,5 +3701,82 @@
     "price": "a pagamento",
     "image": "",
     "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "piceno-cinema-festival-quinta-edizione-2026",
+    "startDate": "2026-10-24",
+    "endDate": "2026-10-25",
+    "displayDate": "24–25 Ott 2026",
+    "time": "21:00 (24/10); 18:00 (25/10)",
+    "title": "Piceno Cinema Festival – quinta edizione",
+    "venue": "Teatro San Filippo Neri e Teatro Concordia, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Proiezioni dei film in concorso sabato 24 ottobre e premiazione con Ricky Tognazzi domenica 25 ottobre. Ingresso gratuito su prenotazione.",
+    "tags": [
+      "Cinema",
+      "Cultura"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/piceno-cinema-festival-2026/",
+    "price": "gratis",
+    "image": "images/sbt-piceno-cinema-festival-2026.jpg",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "odissea-poema-del-mare-e-del-ritorno-2026",
+    "startDate": "2026-10-24",
+    "endDate": "2026-10-24",
+    "displayDate": "24 Ott 2026",
+    "time": "18:00–19:30",
+    "title": "L’Odissea, poema del mare e del ritorno",
+    "venue": "Circolo Mare Bunazz, Ex Galoppatoio – Molo Sud, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Lettura e narrazione dedicata all’Odissea, a cura dell’Associazione degli Incorreggibili Ottimisti. Ingresso libero.",
+    "tags": [
+      "Cultura",
+      "Teatro"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/odissea/",
+    "price": "gratis",
+    "image": "images/sbt-odissea-2026.jpg",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "sun-beach-da-paura-halloween-tour-2026",
+    "startDate": "2026-10-31",
+    "endDate": "2026-11-01",
+    "displayDate": "31 Ott – 1 Nov 2026",
+    "time": "18:00–24:00",
+    "title": "Sun Beach da paura: Halloween Tour",
+    "venue": "Pineta Buozzi, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Halloween Tour con animazione e attività per famiglie nel centro cittadino. Ingresso gratuito.",
+    "tags": [
+      "Intrattenimento",
+      "Famiglia"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/sun-beach-da-paura/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "visitiamo-la-sentina-27-dicembre-2026",
+    "startDate": "2026-12-27",
+    "endDate": "2026-12-27",
+    "displayDate": "27 Dic 2026",
+    "time": "09:00–13:00",
+    "title": "Visitiamo la Sentina – Escursione nella Storia",
+    "venue": "Riserva Naturale Regionale Sentina, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Escursione guidata nella storia immersi nel paesaggio della Riserva Naturale Sentina, a cura dell’Associazione Sentina e dell’Associazione Club Amici della Sentina.",
+    "tags": [
+      "Cultura",
+      "Natura",
+      "Sport"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/visitiamo-la-sentina-escursione-nella-storia-6/",
+    "price": "gratis",
+    "image": "images/sbt-visitiamo-la-sentina-27-dic-2026.jpg",
+    "updatedAt": "2026-10-23"
   }
 ]
