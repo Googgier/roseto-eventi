@@ -3778,5 +3778,62 @@
     "price": "gratis",
     "image": "images/sbt-visitiamo-la-sentina-27-dic-2026.jpg",
     "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "taranta-e-femmina-2026",
+    "startDate": "2026-11-07",
+    "endDate": "2026-11-07",
+    "displayDate": "7 Nov 2026",
+    "time": "20:00",
+    "title": "Taranta è femmina – Musica, solidarietà e impegno",
+    "venue": "Villaggio Lido d’Abruzzo, Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Cena spettacolo benefica organizzata dall’Associazione Il Guscio APS contro la violenza, con il gruppo Core Meu e danze di pizzica e tarantella.",
+    "tags": [
+      "Musica",
+      "Solidarietà"
+    ],
+    "sourceUrl": "https://www.ekuonews.it/taranta-e-femmina-la-musica-contro-la-violenza/",
+    "price": "a pagamento",
+    "image": "",
+    "updatedAt": "2026-10-27"
+  },
+  {
+    "id": "museo-cuma-montepagano-2026",
+    "startDate": "2025-12-01",
+    "endDate": "2026-12-31",
+    "displayDate": "Fino al 31 Dic 2026",
+    "time": "10:00–12:30 / 15:00–18:00",
+    "title": "CUMA – Museo Civico della Cultura Materiale",
+    "venue": "Corso Umberto I, 51, Montepagano",
+    "city": "Roseto",
+    "description": "Museo civico dedicato a oggetti, usanze e racconti della vita quotidiana di Montepagano, con percorso digitale e interattivo. Nel periodo invernale è aperto nei feriali; sabato e domenica su prenotazione.",
+    "tags": [
+      "Cultura",
+      "Musei"
+    ],
+    "sourceUrl": "https://museocuma.it/",
+    "price": "a pagamento",
+    "image": "",
+    "updatedAt": "2026-10-27"
+  },
+  {
+    "id": "car-boot-sale-roseto-2026",
+    "startDate": "2026-09-13",
+    "endDate": "2027-06-13",
+    "displayDate": "13 Set 2026 – 13 Giu 2027",
+    "time": "09:00–13:00",
+    "title": "Car Boot Sale – Mercatino del riuso e del vintage",
+    "venue": "Piazza Olimpia, PalaMaggetti, Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "Mercatino del riuso, del vintage e del collezionismo con esposizione direttamente dal bagagliaio dell’auto; appuntamento ogni seconda domenica del mese.",
+    "tags": [
+      "Mercatini",
+      "Famiglie"
+    ],
+    "sourceUrl": "https://www.cittando.com/it/italia/abruzzo/teramo/cose-da-fare-a-roseto-degli-abruzzi/car-boot-sale-roseto-degli-abruzzi-te",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-10-27"
   }
 ]
