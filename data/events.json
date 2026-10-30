@@ -3835,5 +3835,81 @@
     "price": "gratis",
     "image": "",
     "updatedAt": "2026-10-27"
+  },
+  {
+    "id": "incontro-rifiuti-rosseto-3-novembre-2026",
+    "startDate": "2026-11-03",
+    "endDate": "2026-11-03",
+    "displayDate": "3 Nov 2026",
+    "time": "20:30",
+    "title": "Incontro pubblico su rifiuti e raccolta differenziata",
+    "venue": "Scuola Elementare “G. D’Annunzio”",
+    "city": "Roseto",
+    "description": "Incontro pubblico del Comune di Roseto e Diodoro Ecologia sulle modalità di conferimento, le novità del servizio e il contrasto all’abbandono dei rifiuti.",
+    "tags": [
+      "Incontri",
+      "Ambiente"
+    ],
+    "sourceUrl": "https://www.comune.roseto.te.it/novita/comunicati/al-via-un-ciclo-di-incontri-pubblici-sulla-gestione-dei-rifiuti-e-la-raccolta-differenziata/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-10-30"
+  },
+  {
+    "id": "autismo-dalla-diagnosi-al-progetto-di-vita-2026",
+    "startDate": "2026-11-07",
+    "endDate": "2026-11-07",
+    "displayDate": "7 Nov 2026",
+    "time": "10:00–12:30",
+    "title": "Autismo. Dalla diagnosi al progetto di vita – Sfide e prospettive",
+    "venue": "Hotel Bellavista",
+    "city": "Roseto",
+    "description": "Convegno promosso dall’Associazione Abruzzo Amore Solidarietà e Beneficenza su diagnosi, inclusione e progetto di vita.",
+    "tags": [
+      "Incontri",
+      "Sociale"
+    ],
+    "sourceUrl": "https://www.csvabruzzo.it/teramo/bacheca-associazioni-teramo/autismo-dalla-diagnosi-al-progetto-di-vita-sfide-e-prospettive-il-convegno-il-7-novembre-a-roseto/",
+    "price": "gratis",
+    "image": "images/autismo-dalla-diagnosi-al-progetto-di-vita-2026.jpg",
+    "updatedAt": "2026-10-30"
+  },
+  {
+    "id": "incontro-rifiuti-casal-thaulero-2026",
+    "startDate": "2026-11-12",
+    "endDate": "2026-11-12",
+    "displayDate": "12 Nov 2026",
+    "time": "20:30",
+    "title": "Incontro pubblico su rifiuti e raccolta differenziata",
+    "venue": "Scuola dell’Infanzia di Casal Thaulero",
+    "city": "Roseto",
+    "description": "Incontro pubblico del Comune di Roseto e Diodoro Ecologia dedicato a Casal Thaulero, San Giovanni, Santa Lucia, Santa Petronilla e Montepagano.",
+    "tags": [
+      "Incontri",
+      "Ambiente"
+    ],
+    "sourceUrl": "https://www.comune.roseto.te.it/novita/comunicati/al-via-un-ciclo-di-incontri-pubblici-sulla-gestione-dei-rifiuti-e-la-raccolta-differenziata/",
+    "price": "gratis",
+    "image": "",
+    "updatedAt": "2026-10-30"
+  },
+  {
+    "id": "canestri-di-storia-7-luglio-1976-2026",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-21",
+    "displayDate": "21 Nov 2026",
+    "time": "18:00 e 21:00",
+    "title": "Canestri di Storia – 7 luglio 1976",
+    "venue": "Lido d’Abruzzo",
+    "city": "Roseto",
+    "description": "Serata del Trofeo Lido delle Rose – Amarcord con presentazione del libro di Roberto Bergogni e intervista a Iwan Bisson, Pierluigi Marzorati e Renzo Bariviera.",
+    "tags": [
+      "Sport",
+      "Incontri"
+    ],
+    "sourceUrl": "https://www.roseto.com/scheda_news.php?id=23421",
+    "price": "gratis",
+    "image": "images/canestri-di-storia-2026.jpg",
+    "updatedAt": "2026-10-30"
   }
 ]
