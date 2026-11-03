@@ -3911,5 +3911,45 @@
     "price": "gratis",
     "image": "images/canestri-di-storia-2026.jpg",
     "updatedAt": "2026-10-30"
+  },
+  {
+    "id": "festival-fa-vola-collodi-2026",
+    "startDate": "2026-10-19",
+    "endDate": "2026-12-31",
+    "displayDate": "19 Ott – 31 Dic 2026",
+    "time": "Programma articolato",
+    "title": "Festival di Fa'Volà – edizione speciale per il bicentenario di Collodi",
+    "venue": "Sedi varie, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Decima edizione del festival dedicato a Carlo Lorenzini detto Collodi, con mostra Pinocchio in Mostra, incontri letterari, spettacoli e iniziative fino al 31 dicembre.",
+    "tags": [
+      "Cultura",
+      "Famiglia",
+      "Teatro"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/favola-edizione-collodi/",
+    "price": "gratis",
+    "image": "images/festival-favola-2026.jpg",
+    "updatedAt": "2026-11-03"
+  },
+  {
+    "id": "teatro-san-filippo-neri-stagione-2026-2027",
+    "startDate": "2026-11-20",
+    "endDate": "2027-03-19",
+    "displayDate": "20 Nov 2026 – 19 Mar 2027",
+    "time": "21:15 (prosa); 17:00 (famiglie)",
+    "title": "Teatro San Filippo Neri – Stagione teatrale 2026/2027",
+    "venue": "Cineteatro San Filippo Neri, Piazza San Filippo Neri 1, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Stagione CONTROVENTO con sette spettacoli serali di prosa e tre appuntamenti pomeridiani per famiglie, curata da Caleidoscopio APS.",
+    "tags": [
+      "Teatro",
+      "Cultura",
+      "Famiglia"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/sfn-stagione-2026-2027/",
+    "price": "a pagamento",
+    "image": "images/teatro-san-filippo-neri-stagione-2026-2027.jpg",
+    "updatedAt": "2026-11-03"
   }
 ]
