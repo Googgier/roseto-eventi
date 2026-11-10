@@ -3667,8 +3667,8 @@
   {
     "id": "teatro-concordia-stagione-2026-2027",
     "startDate": "2026-11-19",
-    "endDate": "2027-03-21",
-    "displayDate": "19 Nov 2026 – 21 Mar 2027",
+    "endDate": "2027-04-29",
+    "displayDate": "19 Nov 2026 – 29 Apr 2027",
     "time": "20:45 (prosa); domenica per famiglie",
     "title": "Teatro Concordia – Stagione teatrale 2026/2027",
     "venue": "Teatro Concordia, San Benedetto del Tronto",
@@ -3678,10 +3678,10 @@
       "Teatro",
       "Cultura"
     ],
-    "sourceUrl": "https://turismo.comunesbt.it/evento/teatro-concordia-stagione-teatrale-2026-2027/",
+    "sourceUrl": "https://turismo.comunesbt.it/evento/concordia-stagione-26-27/",
     "price": "a pagamento",
-    "image": "",
-    "updatedAt": "2026-10-16"
+    "image": "images/teatro-concordia-stagione-2026-2027.jpg",
+    "updatedAt": "2026-11-10"
   },
   {
     "id": "comunicazione-efficace-anche-nella-coppia-2026",
@@ -3951,5 +3951,44 @@
     "price": "a pagamento",
     "image": "images/teatro-san-filippo-neri-stagione-2026-2027.jpg",
     "updatedAt": "2026-11-03"
+  },
+  {
+    "id": "teatro-concordia-domeniche-in-famiglia-2026",
+    "startDate": "2026-11-08",
+    "endDate": "2027-03-21",
+    "displayDate": "8 Nov 2026 – 21 Mar 2027",
+    "time": "16:30",
+    "title": "Teatro Concordia – Domeniche in famiglia",
+    "venue": "Teatro Concordia, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Tre appuntamenti domenicali dedicati ai più piccoli e alle famiglie: Cenerentola e la scarpetta di cristallo, Nel ripostiglio di Mastro Geppetto e Legami.",
+    "tags": [
+      "Teatro",
+      "Famiglia",
+      "Cultura"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/teatro-concordia-domeniche-in-famiglia/",
+    "price": "a pagamento",
+    "image": "images/sbt-teatro-concordia-domeniche-famiglia-2026.jpg",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "incontri-pascale-chapaux-morelli-cuore-di-sabbia-2026",
+    "startDate": "2026-11-13",
+    "endDate": "2026-11-13",
+    "displayDate": "13 Nov 2026",
+    "time": "18:00–20:00",
+    "title": "Incontri con l’autore: Pascale Chapaux-Morelli presenta Cuore di sabbia",
+    "venue": "Mondadori Bookstore, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "La 45ª edizione della rassegna Incontri con l’autore ospita Pascale Chapaux-Morelli per la presentazione del libro Cuore di sabbia.",
+    "tags": [
+      "Cultura",
+      "Libri"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/incontri-con-lautore-pascale-chapaux-morelli-presenta-cuore-di-sabbia/",
+    "price": "gratis",
+    "image": "images/sbt-cuore-di-sabbia-2026.jpg",
+    "updatedAt": "2026-11-10"
   }
 ]
