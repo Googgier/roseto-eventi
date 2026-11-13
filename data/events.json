@@ -3990,5 +3990,24 @@
     "price": "gratis",
     "image": "images/sbt-cuore-di-sabbia-2026.jpg",
     "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "sbt-omaggio-a-pinocchio-2026",
+    "startDate": "2026-11-14",
+    "endDate": "2026-12-06",
+    "displayDate": "14 Nov – 6 Dic 2026",
+    "time": "10:30 inaugurazione; orari mostra da verificare",
+    "title": "Mostra d’Arte “Omaggio a Pinocchio”: da Mazzanti a Capri Otti",
+    "venue": "Sala Consiliare, Comune di San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Mostra dedicata a Pinocchio con 38 sculture inedite di Capri Otti, ispirate alle illustrazioni di Enrico Mazzanti, nell’edizione speciale del Festival di Fa’Volà per il bicentenario di Carlo Collodi.",
+    "tags": [
+      "Cultura",
+      "Arte"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/mostra-pinocchio-2026/",
+    "price": "gratis",
+    "image": "images/sbt-omaggio-pinocchio-2026.jpg",
+    "updatedAt": "2026-11-13"
   }
 ]
