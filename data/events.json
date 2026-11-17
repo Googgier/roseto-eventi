@@ -59,8 +59,8 @@
   {
     "id": "villa-in-arte-2026",
     "startDate": "2026-07-10",
-    "endDate": "2026-11-30",
-    "displayDate": "10 Lug – 30 Nov 2026",
+    "endDate": "2026-11-29",
+    "displayDate": "10 Lug – 29 Nov 2026",
     "time": "15:00–21:00 (sabato e domenica)",
     "title": "Villa in Arte",
     "venue": "Villa Comunale, Via Nazionale 250, Roseto degli Abruzzi",
@@ -73,7 +73,7 @@
     "sourceUrl": "https://www.visitroseto.it/events/14838/",
     "price": "gratis",
     "image": "images/img-1.jpg",
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-11-17"
   },
   {
     "id": "matteo-mancuso-in-concerto-2026",
@@ -4009,5 +4009,25 @@
     "price": "gratis",
     "image": "images/sbt-omaggio-pinocchio-2026.jpg",
     "updatedAt": "2026-11-13"
+  },
+  {
+    "id": "gran-gala-internazionale-pattinaggio-artistico-2026",
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-05",
+    "displayDate": "5 Dic 2026",
+    "time": "20:30",
+    "title": "40° Gran Galà Internazionale di Pattinaggio Artistico",
+    "venue": "PalaMaggetti, Roseto degli Abruzzi",
+    "city": "Roseto",
+    "description": "40ª edizione del Gran Galà Internazionale di Pattinaggio Artistico – Memorial Licia Giunco, con campioni del mondo e gruppi show. Il ricavato sarà devoluto in beneficenza.",
+    "tags": [
+      "Sport",
+      "Spettacolo",
+      "Solidarietà"
+    ],
+    "sourceUrl": "https://www.latestata.it/abruzzo/gran-gala-internazionale-di-pattinaggio-artistico-roseto-degli-abruzzi/",
+    "price": "a pagamento",
+    "image": "images/gran-gala-pattinaggio-2026.jpg",
+    "updatedAt": "2026-11-17"
   }
 ]
