@@ -3508,8 +3508,8 @@
     ],
     "sourceUrl": "https://turismo.comunesbt.it/evento/quartiere-cinema/",
     "price": "a pagamento",
-    "image": "",
-    "updatedAt": "2026-10-16"
+    "image": "images/quartiere-cinema-2026.jpg",
+    "updatedAt": "2026-11-20"
   },
   {
     "id": "xi-trofeo-citta-tortoreto-2026",
@@ -4029,5 +4029,43 @@
     "price": "a pagamento",
     "image": "images/gran-gala-pattinaggio-2026.jpg",
     "updatedAt": "2026-11-17"
+  },
+  {
+    "id": "incontri-stefano-petrocchi-romanzo-privato-2026",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-21",
+    "displayDate": "21 Nov 2026",
+    "time": "18:00–19:30",
+    "title": "Stefano Petrocchi presenta “Romanzo privato”",
+    "venue": "Sala della Poesia, Palazzo Bice Piacentini, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Presentazione del libro “Romanzo privato” di Stefano Petrocchi, nell’ambito della rassegna Incontri con l’autore Mimmo Minuto. Interviene Giuseppe Merlini. Ingresso libero.",
+    "tags": [
+      "Cultura",
+      "Libri"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/petrocchi-romanzo-privato/",
+    "price": "gratis",
+    "image": "images/incontri-stefano-petrocchi-romanzo-privato-2026.jpg",
+    "updatedAt": "2026-11-20"
+  },
+  {
+    "id": "oltre-il-silenzio-spettacolo-teatrale-2026",
+    "startDate": "2026-11-24",
+    "endDate": "2026-11-24",
+    "displayDate": "24 Nov 2026",
+    "time": "21:00–22:30",
+    "title": "Oltre il Silenzio – spettacolo teatrale “Punto”",
+    "venue": "Teatro Concordia, San Benedetto del Tronto",
+    "city": "San Benedetto",
+    "description": "Spettacolo teatrale “Punto” con Debora Giobbi e Daniele Antonini, seguito da un dibattito con il pubblico, nell’ambito del percorso regionale La Voce Conta. Ingresso gratuito fino a esaurimento posti.",
+    "tags": [
+      "Cultura",
+      "Teatro"
+    ],
+    "sourceUrl": "https://turismo.comunesbt.it/evento/oltre-il-silenzio/",
+    "price": "gratis",
+    "image": "images/oltre-il-silenzio-2026.jpg",
+    "updatedAt": "2026-11-20"
   }
 ]
